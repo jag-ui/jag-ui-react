@@ -20,7 +20,8 @@
     "start:storybook": "yarn workspace @jag-ui-react/storybook storybook",
     "start:storybook-ts": "yarn workspace @jag-ui-react/storybook-typescript storybook",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
-    "deploy": "FORCE_COLOR=true lerna run deploy"
+    "deploy": "FORCE_COLOR=true lerna run deploy",
+    "release-new-version": "FORCE_COLOR=true lerna version --conventional-commits --yes"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
