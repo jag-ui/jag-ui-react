@@ -1,6 +1,6 @@
 {
   "name": "@jag-ui-react/example",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "homepage": "https://jag-ui.github.io/react",
   "private": true,
   "publishConfig": {
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@jag-ui-react/components": "^1.0.7",
-    "@jag-ui-react/core": "^1.0.8",
+    "@jag-ui-react/core": "^1.0.9",
     "@react-workspaces/react-scripts": "3.4.0-alpha-01",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
