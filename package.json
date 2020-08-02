@@ -12,13 +12,7 @@
     ]
   },
   "scripts": {
-    "start:example": "yarn workspace @jag-ui-react/example start",
-    "start:app-ant-design": "yarn workspace @jag-ui-react/app-ant-design-rewired start",
-    "start:app-multi": "yarn workspace @jag-ui-react/app-multi-comps start",
-    "start:app-single": "yarn workspace @jag-ui-react/app-single-comp start",
-    "start:app-ts": "yarn workspace @jag-ui-react/app-typescript start",
-    "start:storybook": "yarn workspace @jag-ui-react/storybook storybook",
-    "start:storybook-ts": "yarn workspace @jag-ui-react/storybook-typescript storybook",
+    "start": "yarn workspace @jag-ui-react/example start",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
     "deploy": "FORCE_COLOR=true lerna run deploy",
     "release-new-version": "FORCE_COLOR=true lerna version --conventional-commits --yes",
@@ -40,7 +34,8 @@
     "husky": "^4.0.6",
     "jest-prop-type-error": "^1.1.0",
     "lerna": "^3.20.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "microbundle": "^0.12.2"
   },
   "husky": {
     "hooks": {

@@ -1,5 +1,5 @@
-import { CoreComp1 } from '@jag-ui-react/core';
-import { CompOne, CompTwo } from '@jag-ui-react/components';
+import { Box } from '@jag-ui-react/core';
+// import { CompOne, CompTwo } from '@jag-ui-react/components';
 import React, { Component } from 'react';
 import './App.css';
 
@@ -16,9 +16,9 @@ class App extends Component {
             <code className="file">packages/components/src/CompTwo/CompTwo.js</code>
           </p>
           <div className="components">
-            <CoreComp1 />
-            <CompOne />
-            <CompTwo />
+            <Box px={4} py={3} color="white" bg="salmon">
+              Box
+            </Box>
           </div>
         </header>
       </div>

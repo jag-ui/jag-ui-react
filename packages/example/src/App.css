@@ -46,10 +46,6 @@ h2 {
   display: block;
 }
 
-.components div {
-  margin: 1vmin;
-  float: left;
-}
 
 .React-logo {
   animation: React-logo-spin infinite 20s linear;
