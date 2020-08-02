@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react/storybook",
+  "name": "jag-ui-react-storybook",
   "version": "1.0.11",
   "private": true,
   "publishConfig": {
