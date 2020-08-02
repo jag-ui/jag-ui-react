@@ -1,6 +1,6 @@
 {
   "name": "@jag-ui-react/components",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@jag-ui-react/core": "^1.0.10"
+    "@jag-ui-react/core": "^1.0.11"
   },
   "peerDependencies": {
     "react": "^16.8.0"
