@@ -1435,16 +1435,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@jag-ui-react/components@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@jag-ui-react/components/-/components-1.0.7.tgz#0df18e23a331f98196c6ca6b9005f6efd4b0dcc5"
-  integrity sha512-Du9Yx3I2Mu4HqF6+zlBk1vQ8tb9hRzx0DXyuNilP0+qHv8T7NzruMa3VPtaYB91Npc+sIoT3ZNAtubydNzQpaQ==
-  dependencies:
-    "@react-workspaces/react-scripts" "3.4.0-alpha-01"
-    "@storybook/react" "^5.2.8"
-    react "^16.12.0"
-    react-dom "^16.12.0"
-
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
