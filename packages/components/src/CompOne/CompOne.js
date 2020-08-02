@@ -3,7 +3,7 @@ import './CompOne.css';
 
 const CompOne = () => (
   <div className="CompOne">
-    <h3> Comp1</h3>
+    <h3>Comp1</h3>
   </div>
 );
 
