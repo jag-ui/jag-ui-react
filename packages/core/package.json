@@ -1,6 +1,6 @@
 {
   "name": "@jag-ui-react/core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://jag-ui.github.io/react",
   "main": "src/index.js",
   "main:src": "src/index.js",
@@ -46,5 +46,5 @@
     }
   },
   "license": "MIT",
-  "gitHead": "c03f9610b70b48297cba504c4c1494dfc5b6bf91"
+  "gitHead": "9d651b4b1f3f93be5bb5f078afbe2a90134686d7"
 }
