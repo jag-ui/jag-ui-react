@@ -201,9 +201,7 @@ export default {
     },
   },
   buttons: {
-    primary: {
-      color: "background",
-      bg: "primary",
+    default: {
       border: "none",
       px: 3,
       py: 2,
@@ -211,7 +209,16 @@ export default {
         bg: "text",
       },
     },
+    primary: {
+      variant: "buttons.default",
+      color: "background",
+      bg: "primary",
+      "&:hover": {
+        bg: "text",
+      },
+    },
     secondary: {
+      variant: "buttons.default",
       color: "background",
       bg: "secondary",
     },
@@ -303,7 +310,7 @@ export default {
       borderColor: "gray",
       "&:focus": {
         borderColor: "primary",
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: "none",
       },
     },
@@ -311,7 +318,7 @@ export default {
       borderColor: "gray",
       "&:focus": {
         borderColor: "primary",
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: "none",
       },
     },
@@ -319,7 +326,7 @@ export default {
       borderColor: "gray",
       "&:focus": {
         borderColor: "primary",
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: "none",
       },
     },

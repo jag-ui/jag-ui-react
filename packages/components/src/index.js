@@ -15,6 +15,5 @@ export { Link } from "./Link";
 export { Message } from "./Message";
 export { NavLink } from "./NavLink";
 export { Progress } from "./Progress";
-export { Slider } from "./Slider";
 export { Spinner } from "./Spinner";
 export { Text } from "./Text";

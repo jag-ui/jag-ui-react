@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "theme-ui";
-
-import ThemeUIDemo from "./ThemeUIDemo";
+import Demo from "./demo";
+import SwitchTheme from "./SwitchTheme";
 import bootstrap from "./themes/bootstrap";
 import jtheme1 from "./themes/jag-theme1";
-
-import SwitchTheme from "./SwitchTheme";
-import Demo from "./demo";
+import ThemeUIDemo from "./ThemeUIDemo";
 
 const themes = {
   bootstrap,

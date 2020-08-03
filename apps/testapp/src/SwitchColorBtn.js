@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { useColorMode } from "theme-ui";
-import PropTypes from "prop-types";
-
 import { Button } from "@jag-ui-react/components";
+import React from "react";
+import { useColorMode } from "theme-ui";
 
 const modes = ["lite", "dark"];
-const Dot = props => (
+const Dot = (props) => (
   <svg
     viewBox="0 0 32 32"
     width="24"
@@ -13,8 +11,7 @@ const Dot = props => (
     fill="currentcolor"
     style={{
       display: "block",
-    }}
-  >
+    }}>
     <circle cx="16" cy="16" r="14" fill="none" stroke="currentcolor" strokeWidth="4" />
     <path
       d={`
@@ -28,9 +25,8 @@ const Dot = props => (
 
 const SwitchColorBtn = () => {
   const [mode, setMode] = useColorMode();
-  // const [mode, setMode] = useState("lite");
 
-  const cycleMode = e => {
+  const cycleMode = (e) => {
     const i = (modes.indexOf(mode) + 1) % modes.length;
     const newColorMode = modes[i];
     console.log({ newColorMode });

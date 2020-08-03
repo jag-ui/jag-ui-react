@@ -1,96 +1,45 @@
-import React from 'react';
+import React from "react";
 import {
+  Alert,
+  AspectRatio,
+  Avatar,
+  Badge,
   Box,
   Button,
   Card,
-  Checkbox,
+  Close,
+  Container,
+  Divider,
   Donut,
-  Field,
+  Embed,
   Flex,
   Grid,
   Heading,
-  Image,
-  Input,
-  Label,
-  Link,
-  Progress,
-  Radio,
-  Select,
-  Slider,
-  Text,
-  Textarea,
-  Spinner,
-  Badge,
-  Avatar,
-  Alert,
-  Close,
-  Divider,
-  Embed,
-  AspectRatio,
-  Container,
-  NavLink,
-  Message,
   IconButton,
+  Image,
+  Link,
   MenuButton,
+  Message,
+  NavLink,
+  Progress,
+  Spinner,
   Styled,
-} from 'theme-ui';
+  Text,
+} from "theme-ui";
 
-const IMG = 'https://via.placeholder.com/800/f2f2f2/fff.png';
-
-const Form = () => {
-  return (
-    <Box as="form" onSubmit={e => e.preventDefault()}>
-      <Label htmlFor="username">Username</Label>
-      <Input name="username" id="username" mb={3} />
-      <Label htmlFor="password">Password</Label>
-      <Input type="password" name="password" id="password" mb={3} />
-      <Box>
-        <Label mb={3}>
-          <Checkbox />
-          Remember me
-        </Label>
-      </Box>
-      <Label htmlFor="sound">Sound</Label>
-      <Select name="sound" id="sound" mb={3}>
-        <option>Beep</option>
-        <option>Boop</option>
-        <option>Blip</option>
-      </Select>
-      <Label htmlFor="comment">Comment</Label>
-      <Textarea name="comment" id="comment" rows="6" mb={3} />
-      <Flex mb={3}>
-        <Label>
-          <Radio name="letter" /> Alpha
-        </Label>
-        <Label>
-          <Radio name="letter" /> Bravo
-        </Label>
-        <Label>
-          <Radio name="letter" /> Charlie
-        </Label>
-      </Flex>
-
-      <Field label="Email" name="email" defaultValue="" />
-
-      <Label>Slider</Label>
-      <Slider mb={3} />
-      <Button>Submit</Button>
-    </Box>
-  );
-};
+const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 
 const ThemeUIDemo = () => {
   return (
     <Box variant="styles.root" m={5}>
-      <Styled.h1 sx={{ color: 'primary', mb: 3 }}>Hello Theme UI</Styled.h1>
+      <Styled.h1 sx={{ color: "primary", mb: 3 }}>Hello Theme UI</Styled.h1>
       <Styled.p>Start editing to see some magic happen!</Styled.p>
 
       <Text
         sx={{
           fontSize: 4,
-          fontWeight: 'bold',
-        }}
-      >
+          fontWeight: "bold",
+        }}>
         Hello
       </Text>
       <Text variant="caps">Hello</Text>
@@ -102,7 +51,7 @@ const ThemeUIDemo = () => {
         Beep
       </Box>
       <Flex my={3}>
-        <Box p={2} bg="primary" sx={{ flex: '1 1 auto' }}>
+        <Box p={2} bg="primary" sx={{ flex: "1 1 auto" }}>
           Flex
         </Box>
         <Box p={2} bg="muted">
@@ -121,7 +70,7 @@ const ThemeUIDemo = () => {
         <Box bg="primary">Box</Box>
         <Box bg="muted">Box</Box>
       </Grid>
-      <Grid gap={2} columns={[2, '1fr 2fr']} my={5}>
+      <Grid gap={2} columns={[2, "1fr 2fr"]} my={5}>
         <Box bg="primary">Box</Box>
         <Box bg="muted">Box</Box>
         <Box bg="primary">Box</Box>
@@ -144,8 +93,7 @@ const ThemeUIDemo = () => {
       <Card
         sx={{
           maxWidth: 256,
-        }}
-      >
+        }}>
         <Image src={IMG} />
         <Text>Card</Text>
       </Card>
@@ -196,13 +144,12 @@ const ThemeUIDemo = () => {
         ratio={16 / 9}
         sx={{
           p: 4,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'background',
-          bg: 'primary',
-        }}
-      >
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "background",
+          bg: "primary",
+        }}>
         <Heading>Aspect Ratio</Heading>
       </AspectRatio>
 
@@ -210,7 +157,7 @@ const ThemeUIDemo = () => {
         <Image
           src={IMG}
           sx={{
-            objectFit: 'cover',
+            objectFit: "cover",
           }}
         />
       </AspectRatio>
@@ -240,8 +187,6 @@ const ThemeUIDemo = () => {
       </IconButton>
 
       <MenuButton aria-label="Toggle Menu" />
-
-      <Form />
     </Box>
   );
 };
