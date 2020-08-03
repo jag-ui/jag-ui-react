@@ -1,14 +1,13 @@
 import { Box } from "@jag-ui-react/core";
-import { Divider } from "@jag-ui-react/components";
+import { Heading, Text, Divider } from "@jag-ui-react/components";
 import React from "react";
-import { Heading, Text } from "theme-ui";
 
 export default function TypographyDemo() {
   return (
     <Box>
       <Heading>Typography Demo</Heading>
       <Divider />
-      <Box>
+      <Box my={10} p={4}>
         <Heading variant="display">Display</Heading>
         <Heading>Default Heading</Heading>
         <Heading as="h1">Heading 1</Heading>
@@ -38,16 +37,11 @@ export default function TypographyDemo() {
         </Heading>
 
         <Text fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
-          Responsive Font Size [NW]
+          Responsive Font Size
         </Text>
         <Text fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
-          Responsive Font Size [NW]
+          Responsive Font Size
         </Text>
-
-        {/* 
-        <Styled.h1 sx={{ color: "primary", mb: 3 }}>Hello Jag UI</Styled.h1>
-        <Styled.p>Start editing to see some magic happen!</Styled.p>
-        */}
 
         <Text sx={{ fontSize: 4, fontWeight: "bold" }}>Hello</Text>
         <Text variant="caps">Hello</Text>
