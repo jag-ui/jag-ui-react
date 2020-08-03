@@ -56,7 +56,7 @@ const theme1 = {
     5: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
     6: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
   },
-  // rebass variants
+  // jagUI variants
   text: {
     heading: {
       fontFamily: "heading",
@@ -101,6 +101,13 @@ const theme1 = {
     },
   },
 
+  images: {
+    avatar: {
+      width: 48,
+      height: 48,
+      borderRadius: 99999,
+    },
+  },
   buttons: {
     default: {
       px: 3,

@@ -1,5 +1,5 @@
 import { props as systemProps } from "@styled-system/should-forward-prop";
-const rebassProps = [...systemProps, "sx", "variant"];
+const jagUIProps = [...systemProps, "sx", "variant"];
 
 export const getProps = (test) => (props) => {
   const next = {};
@@ -14,5 +14,5 @@ const MRE = /^m[trblxy]?$/;
 export const getMargin = getProps((k) => MRE.test(k));
 export const omitMargin = getProps((k) => !MRE.test(k));
 
-const PRE = new RegExp(`^(${rebassProps.join("|")})$`);
+const PRE = new RegExp(`^(${jagUIProps.join("|")})$`);
 export const getSystemProps = getProps((k) => PRE.test(k));

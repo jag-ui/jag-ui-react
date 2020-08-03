@@ -10,7 +10,7 @@ const NavBarEx = () => {
       </Heading>
       <Flex px={2} color="white" bg="black" alignItems="center">
         <Text p={2} fontWeight="bold">
-          Rebass
+          jagUI
         </Text>
         <Box mx="auto" />
         <Link variant="nav" href="#!">

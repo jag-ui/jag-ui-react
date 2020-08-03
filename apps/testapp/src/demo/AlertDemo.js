@@ -10,7 +10,7 @@ export default function AlertDemo() {
       <Divider />
       <Box my={10} p={4}>
         <Alert mb={3}>
-          Beep boop, this is an alert!
+          Hello Jag, this is an alert!
           {/* <Close ml="auto" mr={-2} /> */}
         </Alert>
 

@@ -113,7 +113,7 @@ export default function FlexDemo() {
       <Divider />
       <Box my={10} p={4}>
         <Box p={4} my={3} color="white" bg="primary">
-          Beep
+          Hello
         </Box>
         <Flex my={3}>
           <Box p={2} bg="primary" sx={{ flex: "1 1 auto" }}>
