@@ -32,21 +32,6 @@ const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 const ThemeUIDemo = () => {
   return (
     <Box variant="styles.root" m={5}>
-      <Styled.h1 sx={{ color: "primary", mb: 3 }}>Hello Theme UI</Styled.h1>
-      <Styled.p>Start editing to see some magic happen!</Styled.p>
-
-      <Text
-        sx={{
-          fontSize: 4,
-          fontWeight: "bold",
-        }}>
-        Hello
-      </Text>
-      <Text variant="caps">Hello</Text>
-
-      <Heading>Hello</Heading>
-      <Heading as="h3">Subhead</Heading>
-
       <Box p={4} my={3} color="white" bg="primary">
         Beep
       </Box>

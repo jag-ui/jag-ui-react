@@ -1,41 +1,56 @@
 import { Box } from "@jag-ui-react/core";
+import { Divider } from "@jag-ui-react/components";
 import React from "react";
 import { Heading, Text } from "theme-ui";
 
 export default function TypographyDemo() {
   return (
     <Box>
-      <Heading as="h2" variant="styles.h2">
-        TypographyDemo
-      </Heading>
+      <Heading>Typography Demo</Heading>
+      <Divider />
       <Box>
         <Heading variant="display">Display</Heading>
+        <Heading>Default Heading</Heading>
+        <Heading as="h1">Heading 1</Heading>
+        <Heading as="h3">Heading 2</Heading>
+        <Heading as="h3">Heading 3</Heading>
+        <Heading as="h4">Heading 4</Heading>
+        <Heading as="h5">Heading 5</Heading>
+        <Heading as="h6">Heading 6</Heading>
+
         <Heading as="h1" variant="styles.h1">
-          Heading1
+          Theme Heading 1
         </Heading>
         <Heading as="h2" variant="styles.h2">
-          Heading2
+          Theme Heading 2
         </Heading>
         <Heading as="h3" variant="styles.h3">
-          Heading3
+          Theme Heading 3
         </Heading>
         <Heading as="h4" variant="styles.h4">
-          Heading4
+          Theme Heading 4
         </Heading>
         <Heading as="h5" variant="styles.h5">
-          Heading5
+          Theme Heading 5
         </Heading>
         <Heading as="h6" variant="styles.h6">
-          Heading6
+          Theme Heading 6
         </Heading>
-        <Heading variant="h3">Heading1</Heading>
-        <Heading variant="h4">Heading1</Heading>
+
         <Text fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
           Responsive Font Size [NW]
         </Text>
         <Text fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
           Responsive Font Size [NW]
         </Text>
+
+        {/* 
+        <Styled.h1 sx={{ color: "primary", mb: 3 }}>Hello Jag UI</Styled.h1>
+        <Styled.p>Start editing to see some magic happen!</Styled.p>
+        */}
+
+        <Text sx={{ fontSize: 4, fontWeight: "bold" }}>Hello</Text>
+        <Text variant="caps">Hello</Text>
       </Box>
     </Box>
   );

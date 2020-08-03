@@ -1,4 +1,4 @@
-import { Button, Heading } from "@jag-ui-react/components";
+import { Button, Heading, Divider } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import { Checkbox, Field, Input, Label, Radio, Select, Slider, Switch, Textarea } from "@jag-ui-react/form";
 import React, { useState } from "react";
@@ -237,6 +237,8 @@ function FormDemo2() {
 export default function FormDemo() {
   return (
     <Box>
+      <Heading>Form Demo</Heading>
+      <Divider />
       <FormDemo1 />
       <FormDemo2 />
     </Box>
