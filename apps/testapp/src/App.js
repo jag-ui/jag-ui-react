@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { ThemeProvider } from 'theme-ui';
-import ThemeUIDemo from './ThemeUIDemo';
-import bootstrap from './themes/bootstrap';
-import jtheme1 from './themes/jag-theme1';
-import SwitchColor from './SwitchColor';
-import SwitchTheme from './SwitchTheme';
+import React, { useState } from "react";
+import { ThemeProvider } from "theme-ui";
+
+import ThemeUIDemo from "./ThemeUIDemo";
+import bootstrap from "./themes/bootstrap";
+import jtheme1 from "./themes/jag-theme1";
+
+import SwitchTheme from "./SwitchTheme";
+import Demo from "./demo";
 
 const themes = {
   bootstrap,
@@ -12,12 +14,12 @@ const themes = {
 };
 
 function App() {
-  const [currTheme, setCurrTheme] = useState('bootstrap');
+  const [currTheme, setCurrTheme] = useState("bootstrap");
   console.log({ currTheme });
   return (
     <ThemeProvider theme={themes[currTheme]}>
-      <SwitchTheme onClick={() => setCurrTheme(currTheme === 'bootstrap' ? 'jtheme1' : 'bootstrap')} />
-      <SwitchColor />
+      <SwitchTheme currTheme={currTheme} setCurrTheme={setCurrTheme} />
+      <Demo />
       <ThemeUIDemo />
     </ThemeProvider>
   );

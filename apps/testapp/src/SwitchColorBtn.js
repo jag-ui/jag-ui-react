@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useColorMode } from 'theme-ui';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import { useColorMode } from "theme-ui";
+import PropTypes from "prop-types";
 
-import { Button } from '@jag-ui-react/components';
+import { Button } from "@jag-ui-react/components";
 
-const modes = ['lite', 'dark'];
+const modes = ["lite", "dark"];
 const Dot = props => (
   <svg
     viewBox="0 0 32 32"
@@ -12,7 +12,7 @@ const Dot = props => (
     height="24"
     fill="currentcolor"
     style={{
-      display: 'block',
+      display: "block",
     }}
   >
     <circle cx="16" cy="16" r="14" fill="none" stroke="currentcolor" strokeWidth="4" />
@@ -26,7 +26,7 @@ const Dot = props => (
   </svg>
 );
 
-const SwitchColor = () => {
+const SwitchColorBtn = () => {
   const [mode, setMode] = useColorMode();
   // const [mode, setMode] = useState("lite");
 
@@ -44,6 +44,6 @@ const SwitchColor = () => {
   );
 };
 
-SwitchColor.propTypes = {};
+SwitchColorBtn.propTypes = {};
 
-export default SwitchColor;
+export default SwitchColorBtn;

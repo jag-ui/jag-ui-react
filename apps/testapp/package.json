@@ -16,8 +16,10 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
-    "@jag-ui-react/components": "^1.0.11",
     "@jag-ui-react/core": "^1.0.11",
+    "@jag-ui-react/components": "^1.0.11",
+    "@jag-ui-react/form": "^1.0.11",
+    "@jag-ui-react/icons": "^1.0.11",
     "@react-workspaces/react-scripts": "3.4.0-alpha-01",
     "@theme-ui/presets": "^0.3.0",
     "react": "^16.12.0",

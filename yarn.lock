@@ -1435,25 +1435,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@jag-ui-react/components@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@jag-ui-react/components/-/components-1.0.11.tgz#312afff4378d97f3aee93c1dc515d8781b4936f2"
-  integrity sha512-Ax2SNcVXzWWTkXL8fAea6Ol2WyAxFiR5A3U4NOQsnf31QN3quQoipPrhFu0IeOQTm74c6wExaVSGtu+xbvRD2A==
-  dependencies:
-    "@jag-ui-react/core" "^1.0.11"
-
-"@jag-ui-react/core@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@jag-ui-react/core/-/core-1.0.11.tgz#19c56d4419f9af3a0c923c068facf70abb57a107"
-  integrity sha512-ft0OdTYT7YnQj68+A8iqZI9sYchKZD3nqpXk5XOmCoFTOWSpHlEB0m/Akn4ov4AqN8/9nLbI+yZvvPHd9MiVdg==
-  dependencies:
-    "@emotion/core" "^10.0.0"
-    "@emotion/styled" "^10.0.0"
-    "@styled-system/color" "^5.1.2"
-    "@styled-system/should-forward-prop" "^5.1.2"
-    "@styled-system/space" "^5.1.2"
-    "@theme-ui/css" "^0.4.0-rc.1"
-
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"

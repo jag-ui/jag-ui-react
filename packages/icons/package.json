@@ -1,0 +1,23 @@
+{
+  "name": "@jag-ui-react/icons",
+  "version": "1.0.11",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --jsx React.createElement",
+    "watch": "microbundle watch --no-compress --jsx React.createElement",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@jag-ui-react/core": "^1.0.11"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
+  "license": "MIT"
+}
