@@ -4,7 +4,6 @@ import Demo from "./demo";
 import SwitchTheme from "./SwitchTheme";
 import bootstrap from "./themes/bootstrap";
 import jtheme1 from "./themes/jag-theme1";
-import ThemeUIDemo from "./ThemeUIDemo";
 
 const themes = {
   bootstrap,
@@ -18,7 +17,6 @@ function App() {
     <ThemeProvider theme={themes[currTheme]}>
       <SwitchTheme currTheme={currTheme} setCurrTheme={setCurrTheme} />
       <Demo />
-      <ThemeUIDemo />
     </ThemeProvider>
   );
 }
