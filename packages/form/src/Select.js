@@ -1,11 +1,11 @@
 import React from "react";
-import { Box, SVG } from "@jag-ui-react/core";
+import { Box, Svg } from "@jag-ui-react/core";
 import { getMargin, omitMargin } from "./util";
 
 const DownArrow = (props) => (
-  <SVG {...props}>
+  <Svg {...props}>
     <path d="M7 10l5 5 5-5z" />
-  </SVG>
+  </Svg>
 );
 
 export const Select = React.forwardRef((props, ref) => (

@@ -1,6 +1,8 @@
-import React from "react";
+import { Badge, Divider, Heading, Avatar } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
-import { Heading, Text, Divider } from "@jag-ui-react/components";
+import React from "react";
+
+const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 
 export default function BadgeDemo() {
   return (
@@ -8,7 +10,19 @@ export default function BadgeDemo() {
       <Heading>Badge Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
-        xxxxxxx
+        <Badge>Badge</Badge>
+
+        <Heading>
+          Components
+          <Badge variant="accent">New</Badge>
+          <Badge variant="outline" ml={1}>
+            Cool
+          </Badge>
+          <Avatar src={IMG} />
+          <Badge variant="circle" ml={-3} mt={-3}>
+            16
+          </Badge>
+        </Heading>
       </Box>
     </Box>
   );

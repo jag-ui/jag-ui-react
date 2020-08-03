@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "./Box";
 
-export const SVG = ({ size = 24, ...props }) => (
+export const Svg = ({ size = 24, ...props }) => (
   <Box
     as="svg"
     xmlns="http://www.w3.org/2000/svg"

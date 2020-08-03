@@ -1,6 +1,25 @@
 import React from "react";
-import { Box } from "@jag-ui-react/core";
-import { Heading, Text, Divider } from "@jag-ui-react/components";
+import { Box, Flex } from "@jag-ui-react/core";
+import { Heading, Text, Divider, NavLink, Link } from "@jag-ui-react/components";
+
+const NavBarEx = () => {
+  return (
+    <>
+      <Heading as="h1" mt={4} mb={2}>
+        NavBar
+      </Heading>
+      <Flex px={2} color="white" bg="black" alignItems="center">
+        <Text p={2} fontWeight="bold">
+          Rebass
+        </Text>
+        <Box mx="auto" />
+        <Link variant="nav" href="#!">
+          Profile
+        </Link>
+      </Flex>
+    </>
+  );
+};
 
 export default function NavbarDemo() {
   return (
@@ -8,7 +27,18 @@ export default function NavbarDemo() {
       <Heading>Navbar Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
-        xxxxxxx
+        <NavBarEx />
+        <Flex as="nav">
+          <NavLink href="#!" p={2}>
+            Home
+          </NavLink>
+          <NavLink href="#!" p={2}>
+            Blog
+          </NavLink>
+          <NavLink href="#!" p={2}>
+            About
+          </NavLink>
+        </Flex>
       </Box>
     </Box>
   );
