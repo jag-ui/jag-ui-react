@@ -11,7 +11,7 @@ const themes = {
 };
 
 function App() {
-  const [currTheme, setCurrTheme] = useState("bootstrap");
+  const [currTheme, setCurrTheme] = useState("jtheme1");
   console.log({ currTheme });
   return (
     <ThemeProvider theme={themes[currTheme]}>

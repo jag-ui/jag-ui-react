@@ -10,7 +10,6 @@ const BtnEx = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Button mr={3}>Default</Button>
         <Button mr={3} variant="primary">
           Primary
         </Button>
@@ -26,13 +25,29 @@ const BtnEx = () => {
       </Flex>
 
       <Heading variant="h1" my={2}>
+        Buttons (Disabled)
+      </Heading>
+
+      <Flex mb={4}>
+        <Button mr={3} variant="primary" disabled>
+          Primary
+        </Button>
+        <Button variant="secondary" mr={3} disabled>
+          Secondary
+        </Button>
+        <Button variant="success" mr={3} disabled>
+          Success
+        </Button>
+        <Button variant="danger" mr={3} disabled>
+          Danger
+        </Button>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
         Buttons (Outline)
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" mr={3}>
-          Outline
-        </Button>
         <Button variant="primaryOutline" mr={3}>
           Primary
         </Button>
@@ -46,25 +61,17 @@ const BtnEx = () => {
           Danger
         </Button>
       </Flex>
-
-      <Heading variant="h1" my={2}>
-        Buttons (Disabled)
-      </Heading>
-
       <Flex mb={4}>
-        <Button mr={3} disabled>
-          Default
-        </Button>
-        <Button mr={3} variant="primary" disabled>
+        <Button variant="primaryOutline" mr={3} disabled>
           Primary
         </Button>
-        <Button variant="secondary" mr={3} disabled>
+        <Button variant="secondaryOutline" mr={3} disabled>
           Secondary
         </Button>
-        <Button variant="success" mr={3} disabled>
+        <Button variant="successOutline" mr={3} disabled>
           Success
         </Button>
-        <Button variant="danger" mr={3} disabled>
+        <Button variant="dangerOutline" mr={3} disabled>
           Danger
         </Button>
       </Flex>
@@ -101,9 +108,6 @@ const BtnEx = () => {
       </Heading>
 
       <Flex mb={4} alignItems="center">
-        <Link href="#" mr={3}>
-          Default
-        </Link>
         <Link href="#" mr={3} variant="primary">
           Primary
         </Link>
