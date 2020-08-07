@@ -219,6 +219,12 @@ const palette = {
     dark: mcolors.grey["300"],
     contrastText: mcolors.grey["900"],
   },
+  // secondary: {
+  //   main: mcolors.grey["700"],
+  //   light: mcolors.grey["A100"],
+  //   dark: mcolors.grey["900"],
+  //   contrastText: common.white,
+  // },
   success: {
     main: mcolors.green["800"],
     light: mcolors.green["100"],
@@ -414,7 +420,7 @@ const theme1 = {
       bg: "palette.success.main",
       color: "palette.success.contrastText",
     },
-    error: {
+    danger: {
       variant: "alerts.base",
       bg: "palette.danger.main",
       color: "palette.danger.contrastText",
@@ -424,9 +430,37 @@ const theme1 = {
       bg: "palette.info.main",
       color: "palette.info.contrastText",
     },
-    muted: {
-      color: "text",
-      bg: "muted",
+
+    baseOutline: {
+      variant: "alerts.base",
+      bg: "transparent",
+      borderWidth: "1px",
+      borderStyle: "solid",
+    },
+    primaryOutline: {
+      variant: "alerts.baseOutline",
+      color: "palette.primary.main",
+      borderColor: "palette.primary.main",
+    },
+    secondaryOutline: {
+      variant: "alerts.baseOutline",
+      color: "palette.secondary.contrastText",
+      borderColor: "palette.secondary.contrastText",
+    },
+    successOutline: {
+      variant: "alerts.baseOutline",
+      color: "palette.success.main",
+      borderColor: "palette.success.main",
+    },
+    errorOutline: {
+      variant: "alerts.baseOutline",
+      color: "palette.danger.main",
+      borderColor: "palette.danger.main",
+    },
+    infoOutline: {
+      variant: "alerts.baseOutline",
+      color: "palette.info.main",
+      borderColor: "palette.primary.main",
     },
   },
 

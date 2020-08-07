@@ -9,17 +9,21 @@ export const IconButton = React.forwardRef(({ size = 32, ...props }, ref) => (
     {...props}
     __themeKey="buttons"
     __css={{
-      appearance: "none",
       display: "inline-flex",
       alignItems: "center",
       justifyContent: "center",
-      padding: 1,
-      width: size,
-      height: size,
+      textAlign: "center",
+      lineHeight: "inherit",
+      fontSize: "inherit",
+      border: 0,
       color: "inherit",
       bg: "transparent",
-      border: "none",
-      borderRadius: 4,
+      cursor: "pointer",
+      appearance: "none",
+      textDecoration: "none",
+      width: size,
+      height: size,
+      padding: 1,
     }}
   />
 ));
