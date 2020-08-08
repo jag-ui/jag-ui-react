@@ -133,44 +133,6 @@ const BtnEx = () => {
           Big Secondary
         </Button>
       </Flex>
-
-      <Heading variant="h1" my={2}>
-        Link
-      </Heading>
-
-      <Flex mb={4} alignItems="center">
-        <Link href="#" mr={3}>
-          Primary Link
-        </Link>
-        <Link href="#" variant="secondary" mr={3}>
-          Secondary Link
-        </Link>
-        <Link href="#" variant="success" mr={3}>
-          Success Link
-        </Link>
-        <Link href="#" variant="danger" mr={3}>
-          Danger Link
-        </Link>
-      </Flex>
-
-      <Heading variant="h1" my={2}>
-        Link (Button Style)
-      </Heading>
-
-      <Flex mb={4} alignItems="center">
-        <Link href="#" kind="button" mr={3}>
-          Primary Link
-        </Link>
-        <Link href="#" kind="button" variant="secondary" mr={3}>
-          Secondary Link
-        </Link>
-        <Link href="#" kind="button" variant="success" mr={3}>
-          Success Link
-        </Link>
-        <Link href="#" kind="button" variant="danger" mr={3}>
-          Danger Link
-        </Link>
-      </Flex>
     </Box>
   );
 };
@@ -223,6 +185,50 @@ const IconBtnDemo = () => {
   );
 };
 
+const LinkDemo = () => {
+  return (
+    <Box my={2}>
+      <Heading variant="h1" my={2}>
+        Link
+      </Heading>
+
+      <Flex mb={4} alignItems="center">
+        <Link href="#" mr={3}>
+          Primary Link
+        </Link>
+        <Link href="#" variant="secondary" mr={3}>
+          Secondary Link
+        </Link>
+        <Link href="#" variant="success" mr={3}>
+          Success Link
+        </Link>
+        <Link href="#" variant="danger" mr={3}>
+          Danger Link
+        </Link>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
+        Link (Button Style)
+      </Heading>
+
+      <Flex mb={4} alignItems="center">
+        <Link href="#" kind="button" mr={3}>
+          Primary Link
+        </Link>
+        <Link href="#" kind="button" variant="secondary" mr={3}>
+          Secondary Link
+        </Link>
+        <Link href="#" kind="button" variant="success" mr={3}>
+          Success Link
+        </Link>
+        <Link href="#" kind="button" variant="danger" mr={3}>
+          Danger Link
+        </Link>
+      </Flex>
+    </Box>
+  );
+};
+
 export default function ButtonDemo() {
   const context = useThemeUI();
   const { theme, components, colorMode, setColorMode } = context;
@@ -237,6 +243,9 @@ export default function ButtonDemo() {
 
         <BtnWithIconsDemo />
         <IconBtnDemo />
+
+        <LinkDemo />
+
         {/* 
         <Link href="#!">Hello</Link>
 
