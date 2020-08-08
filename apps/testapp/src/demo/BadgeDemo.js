@@ -1,4 +1,4 @@
-import { Badge, Divider, Heading, Avatar } from "@jag-ui-react/components";
+import { Avatar, Badge, Divider, Heading } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
 import React from "react";
 

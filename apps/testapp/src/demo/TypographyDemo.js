@@ -1,5 +1,5 @@
+import { Divider, Heading, Text } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
-import { Heading, Text, Divider } from "@jag-ui-react/components";
 import React from "react";
 
 export default function TypographyDemo() {

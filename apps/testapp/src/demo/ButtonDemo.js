@@ -2,7 +2,7 @@ import { Button, Divider, Heading, Icon, IconButton, Link } from "@jag-ui-react/
 import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
 import { FaCog, FaTimes } from "react-icons/fa";
-import { useThemeUI } from "theme-ui";
+// import { useThemeUI } from "theme-ui";
 
 const BtnEx = () => {
   return (
@@ -230,9 +230,9 @@ const LinkDemo = () => {
 };
 
 export default function ButtonDemo() {
-  const context = useThemeUI();
-  const { theme, components, colorMode, setColorMode } = context;
-  console.log("ButtonDemo: ", { theme });
+  // const context = useThemeUI();
+  // const { theme, components, colorMode, setColorMode } = context;
+  // console.log("ButtonDemo: ", { theme });
 
   return (
     <Box>

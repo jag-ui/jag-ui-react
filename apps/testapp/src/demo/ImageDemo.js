@@ -1,6 +1,6 @@
-import React from "react";
+import { Divider, Heading, Image } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
-import { Heading, Image, Divider } from "@jag-ui-react/components";
+import React from "react";
 
 const AVATAR = "http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg";
 const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";

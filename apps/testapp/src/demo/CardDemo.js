@@ -1,6 +1,6 @@
-import React from "react";
+import { Card, Divider, Grid, Heading, Image, Text } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
-import { Heading, Divider, Card, Image, Text, Grid } from "@jag-ui-react/components";
+import React from "react";
 
 const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 

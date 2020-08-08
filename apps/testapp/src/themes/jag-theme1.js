@@ -1,4 +1,5 @@
-import { darken, lighten } from "@theme-ui/color";
+// import { darken, lighten } from "@theme-ui/color";
+import { darken } from "@theme-ui/color";
 
 // materialUi: jagTheme // for sample
 const palatte1 = {

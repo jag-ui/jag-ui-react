@@ -1,6 +1,6 @@
-import React from "react";
+import { Divider, Heading } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
-import { Heading, Text, Divider } from "@jag-ui-react/components";
+import React from "react";
 
 export default function PaginationDemo() {
   return (

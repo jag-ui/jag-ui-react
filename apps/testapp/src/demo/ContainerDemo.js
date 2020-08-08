@@ -1,6 +1,6 @@
-import React from "react";
+import { Container, Divider, Heading } from "@jag-ui-react/components";
 import { Box } from "@jag-ui-react/core";
-import { Heading, Divider, Container } from "@jag-ui-react/components";
+import React from "react";
 
 export default function ContainerDemo() {
   return (
