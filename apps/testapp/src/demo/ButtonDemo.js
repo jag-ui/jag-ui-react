@@ -1,6 +1,7 @@
+import { Button, Divider, Heading, Icon, IconButton, Link } from "@jag-ui-react/components";
+import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
-import { Box, Flex, Badge } from "@jag-ui-react/core";
-import { Heading, Divider, Button, Link, IconButton } from "@jag-ui-react/components";
+import { FaCog, FaTimes } from "react-icons/fa";
 import { useThemeUI } from "theme-ui";
 
 const BtnEx = () => {
@@ -26,25 +27,6 @@ const BtnEx = () => {
       </Flex>
 
       <Heading variant="h1" my={2}>
-        Buttons (Size)
-      </Heading>
-
-      <Flex mb={4}>
-        <Button variant="primary" size="sm" mr={3}>
-          Small
-        </Button>
-        <Button variant="primary" size="md" mr={3}>
-          Medium*
-        </Button>
-        <Button variant="primary" size="lg" mr={3}>
-          Large
-        </Button>
-        <Button variant="primary" size="xl" mr={3}>
-          X Large
-        </Button>
-      </Flex>
-
-      <Heading variant="h1" my={2}>
         Buttons (Disabled)
       </Heading>
 
@@ -64,6 +46,25 @@ const BtnEx = () => {
       </Flex>
 
       <Heading variant="h1" my={2}>
+        Buttons (Size)
+      </Heading>
+
+      <Flex mb={4}>
+        <Button variant="primary" size="sm" mr={3}>
+          Small
+        </Button>
+        <Button variant="primary" size="md" mr={3}>
+          Medium*
+        </Button>
+        <Button variant="primary" size="lg" mr={3}>
+          Large
+        </Button>
+        <Button variant="primary" size="xl" mr={3}>
+          X Large
+        </Button>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
         Buttons (Outline)
       </Heading>
 
@@ -78,6 +79,25 @@ const BtnEx = () => {
           Success
         </Button>
         <Button variant="dangerOutline" mr={3}>
+          Danger
+        </Button>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
+        Buttons (Disabled)
+      </Heading>
+
+      <Flex mb={4}>
+        <Button variant="primaryOutline" mr={3} disabled>
+          Primary
+        </Button>
+        <Button variant="secondaryOutline" mr={3} disabled>
+          Secondary
+        </Button>
+        <Button variant="successOutline" mr={3} disabled>
+          Success
+        </Button>
+        <Button variant="dangerOutline" mr={3} disabled>
           Danger
         </Button>
       </Flex>
@@ -102,25 +122,6 @@ const BtnEx = () => {
       </Flex>
 
       <Heading variant="h1" my={2}>
-        Buttons (Disabled) (Sizes)
-      </Heading>
-
-      <Flex mb={4}>
-        <Button variant="primaryOutline" mr={3} disabled>
-          Primary
-        </Button>
-        <Button variant="secondaryOutline" mr={3} disabled>
-          Secondary
-        </Button>
-        <Button variant="successOutline" mr={3} disabled>
-          Success
-        </Button>
-        <Button variant="dangerOutline" mr={3} disabled>
-          Danger
-        </Button>
-      </Flex>
-
-      <Heading variant="h1" my={2}>
         Buttons (Size)
       </Heading>
 
@@ -138,32 +139,85 @@ const BtnEx = () => {
       </Heading>
 
       <Flex mb={4} alignItems="center">
-        <Link href="#" mr={3} variant="link">
-          Link
+        <Link href="#" mr={3}>
+          Primary Link
         </Link>
-
-        <Link variant="nav" href="#">
-          Nav Link
+        <Link href="#" variant="secondary" mr={3}>
+          Secondary Link
+        </Link>
+        <Link href="#" variant="success" mr={3}>
+          Success Link
+        </Link>
+        <Link href="#" variant="danger" mr={3}>
+          Danger Link
         </Link>
       </Flex>
 
       <Heading variant="h1" my={2}>
-        Link (Button Styled)
+        Link (Button Style)
       </Heading>
 
       <Flex mb={4} alignItems="center">
-        <Link href="#" mr={3} variant="primary">
+        <Link href="#" kind="button" mr={3}>
+          Primary Link
+        </Link>
+        <Link href="#" kind="button" variant="secondary" mr={3}>
+          Secondary Link
+        </Link>
+        <Link href="#" kind="button" variant="success" mr={3}>
+          Success Link
+        </Link>
+        <Link href="#" kind="button" variant="danger" mr={3}>
+          Danger Link
+        </Link>
+      </Flex>
+    </Box>
+  );
+};
+
+const BtnWithIconsDemo = () => {
+  return (
+    <Box my={2}>
+      <Heading variant="h1" my={2}>
+        Button with Icons
+      </Heading>
+
+      <Flex mb={4}>
+        <Button mr={3} variant="primary">
+          <Icon icon={<FaCog />} mr={2} />
           Primary
-        </Link>
-        <Link href="#" variant="secondary" mr={3}>
+        </Button>
+        <Button variant="secondary" mr={3}>
+          <Icon icon={<FaCog />} mr={2} color="primary" />
           Secondary
-        </Link>
-        <Link href="#" variant="success" mr={3}>
+        </Button>
+        <Button variant="success" mr={3}>
+          <Icon icon={<FaCog />} mr={2} />
           Success
-        </Link>
-        <Link href="#" variant="danger" mr={3}>
+        </Button>
+        <Button variant="danger" mr={3}>
+          <Icon icon={<FaCog />} mr={2} />
           Danger
-        </Link>
+        </Button>
+      </Flex>
+    </Box>
+  );
+};
+
+const IconBtnDemo = () => {
+  return (
+    <Box my={2}>
+      <Heading variant="h1" my={2}>
+        IconButton
+      </Heading>
+
+      <Flex mb={4}>
+        <IconButton mr={3}>
+          <FaTimes />
+        </IconButton>
+        <IconButton mr={3}>
+          <FaCog />
+        </IconButton>
       </Flex>
     </Box>
   );
@@ -180,20 +234,17 @@ export default function ButtonDemo() {
       <Divider />
       <Box my={10} p={4}>
         <BtnEx />
-        <Box my={3}>
-          <Button mr={2} variant="primary">
-            Primary
-          </Button>
-          <Button variant="secondary">Secondary</Button>
-        </Box>
 
+        <BtnWithIconsDemo />
+        <IconBtnDemo />
+        {/* 
         <Link href="#!">Hello</Link>
 
         <IconButton aria-label="Toggle dark mode">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentcolor">
             <circle r={11} cx={12} cy={12} fill="none" stroke="currentcolor" strokeWidth={2} />
           </svg>
-        </IconButton>
+        </IconButton> */}
 
         {/* <MenuButton aria-label="Toggle Menu" /> */}
       </Box>

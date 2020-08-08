@@ -17,3 +17,4 @@ export { NavLink } from "./NavLink";
 export { Progress } from "./Progress";
 export { Spinner } from "./Spinner";
 export { Text } from "./Text";
+export { Icon } from "./Icon";

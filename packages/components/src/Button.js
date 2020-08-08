@@ -20,7 +20,9 @@ export const Button = React.forwardRef(({ size = "md", ...props }, ref) => {
       {...props}
       __themeKey="buttons"
       __css={{
-        display: "inline-block",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
         textAlign: "center",
         lineHeight: "inherit",
         fontSize: "inherit",

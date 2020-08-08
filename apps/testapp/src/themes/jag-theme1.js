@@ -268,16 +268,16 @@ const colors = {
     "#212529",
   ],
 
-  blue: "#0A48B3",
-  indigo: "#5603ad",
-  purple: "#8965e0",
-  pink: "#f3a4b5",
-  red: "#f5365c",
-  orange: "#fb6340",
-  yellow: "#ffd600",
-  green: "#2dce89",
-  teal: "#11cdef",
-  cyan: "#2bffc6",
+  // blue: "#0A48B3",
+  // indigo: "#5603ad",
+  // purple: "#8965e0",
+  // pink: "#f3a4b5",
+  // red: "#f5365c",
+  // orange: "#fb6340",
+  // yellow: "#ffd600",
+  // green: "#2dce89",
+  // teal: "#11cdef",
+  // cyan: "#2bffc6",
 
   // light: "#adb5bd",
   light: "#ced4da", // gray.3
@@ -286,19 +286,19 @@ const colors = {
   // darker: "#000",
   darker: darken("#212529", 0.15), // gray.8
 
-  // variants:
-  primary: palette.primary.dark,
-  secondary: "#f7fafc",
-  success: "#2dce89",
-  info: "#11cdef",
-  warning: "#fb6340",
-  danger: "#f5365c",
-
+  // base: colors
   text: "#212529",
   background: "#fff",
   default: "#172b4d",
   neutral: "#fff",
   muted: "#f6f6f9",
+
+  // variants: colors
+  primary: palette.primary.main,
+  secondary: palette.secondary.contrastText,
+  success: palette.success.main,
+  danger: palette.danger.main,
+  info: palette.info.main,
 
   // old
   // primary: "#0A48B3",
@@ -413,7 +413,7 @@ const theme1 = {
     secondary: {
       variant: "alerts.base",
       bg: "palette.secondary.main",
-      color: "palette.secondary.contrastText",
+      color: "secondary",
     },
     success: {
       variant: "alerts.base",
@@ -444,8 +444,8 @@ const theme1 = {
     },
     secondaryOutline: {
       variant: "alerts.baseOutline",
-      color: "palette.secondary.contrastText",
-      borderColor: "palette.secondary.contrastText",
+      color: "secondary",
+      borderColor: "secondary",
     },
     successOutline: {
       variant: "alerts.baseOutline",
@@ -525,7 +525,7 @@ const theme1 = {
     secondary: {
       variant: "buttons.base",
       bg: "palette.secondary.main",
-      color: "palette.secondary.contrastText",
+      color: "secondary",
       borderColor: "palette.secondary.main",
       "box-shadow": "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
       "&:hover": {
@@ -600,7 +600,7 @@ const theme1 = {
       "&:hover": {
         bg: "palette.secondary.dark",
         borderColor: "palette.secondary.dark",
-        color: "palette.secondary.contrastText",
+        color: "secondary",
       },
       "&:disabled": {
         backgroundColor: "transparent",
@@ -639,27 +639,29 @@ const theme1 = {
   },
 
   links: {
-    link: {
-      color: "primary",
+    base: {
+      // color: "primary",
+      textDecoration: "none",
       ":hover": {
-        fontWeight: "bold",
+        // fontWeight: "bold",
+        textDecoration: "underline",
       },
     },
     primary: {
-      variant: "buttons.primary",
-      textDecoration: "none",
+      variant: "links.base",
+      color: "primary",
     },
     secondary: {
-      variant: "buttons.secondary",
-      textDecoration: "none",
+      variant: "links.base",
+      color: "secondary",
     },
     danger: {
-      variant: "buttons.danger",
-      textDecoration: "none",
+      variant: "links.base",
+      color: "danger",
     },
     success: {
-      variant: "buttons.success",
-      textDecoration: "none",
+      variant: "links.base",
+      color: "success",
     },
   },
 
