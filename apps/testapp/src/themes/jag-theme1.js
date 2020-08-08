@@ -466,16 +466,22 @@ const theme1 = {
 
   images: {
     avatar: {
-      width: 48,
-      height: 48,
+      width: 40,
+      height: 40,
       borderRadius: 99999,
     },
   },
 
   buttons: {
+    sizes: {
+      sm: { px: 2, py: 1 },
+      md: { px: 3, py: 2 },
+      lg: { px: 4, py: 3 },
+      xl: { px: 5, py: 3 },
+    },
     base: {
-      px: 3,
-      py: 2,
+      // px: 3,
+      // py: 2,
       // bg: "primary",
       color: "primary0",
       border: "1px solid transparent",

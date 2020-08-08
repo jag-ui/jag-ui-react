@@ -12,8 +12,8 @@ const RoundedImgDemo = () => {
         src="http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg"
         mx={2}
         sx={{
-          width: 40,
-          height: 40,
+          width: 30,
+          height: 30,
           borderRadius: 9999,
         }}
       />
@@ -60,14 +60,14 @@ const RoundedImgDemo = () => {
 export default function AvatarDemo() {
   return (
     <Box>
-      <Heading>Avatar / Image Demo</Heading>
+      <Heading>Image / Avatar Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
-        <Box>
-          <Image src={AVATAR} variant="avatar" />
-          <Image src={AVATAR} variant="avatar" />
-          <Image src={AVATAR} variant="avatar" />
-        </Box>
+        <Flex flexWrap="wrap" alignItems="center">
+          <Image src={AVATAR} variant="avatar" mx={2} />
+          <Image src={AVATAR} variant="avatar" size="50px" mx={2} />
+          <Image src={AVATAR} variant="avatar" size="60px" mx={2} />
+        </Flex>
 
         <RoundedImgDemo />
         <Box>

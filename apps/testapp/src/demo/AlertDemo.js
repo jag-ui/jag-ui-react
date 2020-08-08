@@ -8,9 +8,10 @@ export default function AlertDemo() {
     <Box>
       <Heading>Alert Demo</Heading>
       <Divider />
-
-      <Heading>Alert Demo</Heading>
-      <Box my={10} p={4}>
+      <Box my={2} px={3}>
+        <Heading as="h3" mt={3} mb={2}>
+          Alerts: (Solid){" "}
+        </Heading>
         <Alert variant="primary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
@@ -82,7 +83,9 @@ export default function AlertDemo() {
           </IconButton>
         </Alert>
 
-        <Heading my={3}>Alert (Outline)</Heading>
+        <Heading as="h3" mt={4} mb={2}>
+          Alerts: (Outline){" "}
+        </Heading>
 
         <Alert variant="primaryOutline" my={2}>
           <Box mr={3}>

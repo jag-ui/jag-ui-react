@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Badge } from "@jag-ui-react/core";
 import { Heading, Divider, Button, Link, IconButton } from "@jag-ui-react/components";
+import { useThemeUI } from "theme-ui";
 
 const BtnEx = () => {
   return (
@@ -21,6 +22,25 @@ const BtnEx = () => {
         </Button>
         <Button variant="danger" mr={3}>
           Danger
+        </Button>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
+        Buttons (Size)
+      </Heading>
+
+      <Flex mb={4}>
+        <Button variant="primary" size="sm" mr={3}>
+          Small
+        </Button>
+        <Button variant="primary" size="md" mr={3}>
+          Medium*
+        </Button>
+        <Button variant="primary" size="lg" mr={3}>
+          Large
+        </Button>
+        <Button variant="primary" size="xl" mr={3}>
+          X Large
         </Button>
       </Flex>
 
@@ -61,6 +81,30 @@ const BtnEx = () => {
           Danger
         </Button>
       </Flex>
+
+      <Heading variant="h1" my={2}>
+        Buttons (Outline) (Sizes)
+      </Heading>
+
+      <Flex mb={4}>
+        <Button variant="primaryOutline" size="sm" mr={3}>
+          Small
+        </Button>
+        <Button variant="primaryOutline" size="md" mr={3}>
+          Medium
+        </Button>
+        <Button variant="primaryOutline" size="lg" mr={3}>
+          Large
+        </Button>
+        <Button variant="primaryOutline" size="xl" mr={3}>
+          X Large
+        </Button>
+      </Flex>
+
+      <Heading variant="h1" my={2}>
+        Buttons (Disabled) (Sizes)
+      </Heading>
+
       <Flex mb={4}>
         <Button variant="primaryOutline" mr={3} disabled>
           Primary
@@ -126,6 +170,10 @@ const BtnEx = () => {
 };
 
 export default function ButtonDemo() {
+  const context = useThemeUI();
+  const { theme, components, colorMode, setColorMode } = context;
+  console.log("ButtonDemo: ", { theme });
+
   return (
     <Box>
       <Heading>Button Demo</Heading>
