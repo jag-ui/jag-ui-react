@@ -1,7 +1,7 @@
 import { Button, Divider, Heading, Icon, IconButton, Link } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
-import { FaCog, FaTimes } from "react-icons/fa";
+import { FaCog, FaTimes, FaGlobe } from "react-icons/fa";
 // import { useThemeUI } from "theme-ui";
 
 const SimpleButtonDemo = () => {
@@ -12,6 +12,7 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
+        <Button mr={3}>Default</Button>
         <Button color="primary" mr={3}>
           Primary
         </Button>
@@ -40,6 +41,9 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
+        <Button borderRadius="full" mr={3}>
+          Default
+        </Button>
         <Button color="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
@@ -87,6 +91,9 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
+        <Button disabled mr={3}>
+          Default
+        </Button>
         <Button color="primary" disabled mr={3}>
           Primary
         </Button>
@@ -111,10 +118,14 @@ const SimpleButtonDemo = () => {
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Button with Icons
+        Button with Icon & Text [diabled]
       </Heading>
 
       <Flex mb={4}>
+        <Button mr={3}>
+          <Icon icon={<FaCog />} mr={2} />
+          Default
+        </Button>
         <Button color="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
@@ -255,7 +266,7 @@ const OutlineButtonDemo = () => {
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Button with Icons
+        Button with Icon & Text
       </Heading>
 
       <Flex mb={4}>
@@ -293,69 +304,84 @@ const OutlineButtonDemo = () => {
 };
 
 const BtnWithIconsDemo = () => {
-  return <Box my={2}></Box>;
-};
-
-const IconBtnDemo = () => {
   return (
-    <Box my={2}>
-      <Heading variant="h1" my={2}>
-        IconButton
+    <>
+      <Heading variant="styles.h5" mt={4} mb={3}>
+        Button with Icon [variant="simple"]
+      </Heading>
+      <Flex mb={4}>
+        <Button mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button mr={3}>
+          <Icon icon={<FaTimes />} />
+        </Button>
+        <Button mr={3}>
+          <Icon icon={<FaGlobe />} />
+        </Button>
+      </Flex>
+
+      <Heading variant="styles.h5" mt={4} mb={3}>
+        Button with Icon [variant="icon"]
       </Heading>
 
       <Flex mb={4}>
-        <IconButton mr={3}>
-          <FaTimes />
-        </IconButton>
-        <IconButton mr={3}>
-          <FaCog />
-        </IconButton>
+        <Button variant="icon" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="primary" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="secondary" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="white" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="success" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="danger" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="info" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="warning" mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
       </Flex>
-    </Box>
-  );
-};
-
-const LinkDemo = () => {
-  return (
-    <Box my={2}>
-      <Heading variant="h1" my={2}>
-        Link
+      <Heading variant="styles.h5" mt={4} mb={3}>
+        Button with Icon [variant="icon"] [disabled]
       </Heading>
 
-      <Flex mb={4} alignItems="center">
-        <Link href="#" mr={3}>
-          Primary Link
-        </Link>
-        <Link href="#" variant="secondary" mr={3}>
-          Secondary Link
-        </Link>
-        <Link href="#" variant="success" mr={3}>
-          Success Link
-        </Link>
-        <Link href="#" variant="danger" mr={3}>
-          Danger Link
-        </Link>
+      <Flex mb={4}>
+        <Button variant="icon" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="primary" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="secondary" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="white" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="success" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="danger" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="info" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
+        <Button variant="icon" color="warning" disabled mr={3}>
+          <Icon icon={<FaCog />} />
+        </Button>
       </Flex>
-
-      <Heading variant="h1" my={2}>
-        Link (Button Style)
-      </Heading>
-
-      <Flex mb={4} alignItems="center">
-        <Link href="#" kind="button" mr={3}>
-          Primary Link
-        </Link>
-        <Link href="#" kind="button" variant="secondary" mr={3}>
-          Secondary Link
-        </Link>
-        <Link href="#" kind="button" variant="success" mr={3}>
-          Success Link
-        </Link>
-        <Link href="#" kind="button" variant="danger" mr={3}>
-          Danger Link
-        </Link>
-      </Flex>
-    </Box>
+    </>
   );
 };
 
@@ -371,22 +397,7 @@ export default function ButtonDemo() {
       <Box my={10} p={4}>
         <SimpleButtonDemo />
         <OutlineButtonDemo />
-
         <BtnWithIconsDemo />
-        <IconBtnDemo />
-
-        <LinkDemo />
-
-        {/* 
-        <Link href="#!">Hello</Link>
-
-        <IconButton aria-label="Toggle dark mode">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentcolor">
-            <circle r={11} cx={12} cy={12} fill="none" stroke="currentcolor" strokeWidth={2} />
-          </svg>
-        </IconButton> */}
-
-        {/* <MenuButton aria-label="Toggle Menu" /> */}
       </Box>
     </Box>
   );

@@ -40,6 +40,19 @@ const btnCommonStyles = {
 };
 
 const btnColors = {
+  default: {
+    backgroundColor: "transparent",
+    color: `gray.7`,
+    boxShadow: "none",
+    "&:hover": {
+      boxShadow: "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
+      transform: "translateY(-1px)",
+    },
+    "&:hover&:disabled": {
+      boxShadow: "none",
+      transform: "none",
+    },
+  },
   primary: {
     backgroundColor: `primary`,
     color: `white`,
@@ -86,8 +99,6 @@ const btnColors = {
 
 const btnOutlineColors = {
   primary: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `primary`,
     color: `primary`,
     "&:hover": {
@@ -97,8 +108,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `primary`, color: `primary` },
   },
   secondary: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `secondary`,
     color: `secondary`,
     "&:hover": {
@@ -108,8 +117,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `secondary`, color: `secondary` },
   },
   white: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `gray.1`,
     color: `gray.7`,
     "&:hover": {
@@ -118,8 +125,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `gray.1`, color: `gray.7` },
   },
   success: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `success`,
     color: `success`,
     "&:hover": {
@@ -129,8 +134,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `success`, color: `success` },
   },
   danger: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `danger`,
     color: `danger`,
     "&:hover": {
@@ -140,8 +143,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `danger`, color: `danger` },
   },
   info: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `info`,
     color: `info`,
     "&:hover": {
@@ -151,8 +152,6 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `info`, color: `info` },
   },
   warning: {
-    borderWidth: `1px`,
-    borderStyle: `solid`,
     borderColor: `warning`,
     color: `warning`,
     "&:hover": {
@@ -167,7 +166,46 @@ const btnOutlineColors = {
   },
 };
 
+const btnIconColors = {
+  primary: {
+    color: `primary`,
+    "&:hover": { color: `primaryHover` },
+    "&:hover&:disabled": { color: `primary` },
+  },
+  secondary: {
+    color: `secondary`,
+    "&:hover": { color: `secondaryHover` },
+    "&:hover&:disabled": { color: `secondary` },
+  },
+  white: {
+    color: `gray.1`,
+    "&:hover": { color: `gray.7` },
+    "&:hover&:disabled": { color: `gray.1` },
+  },
+  success: {
+    color: `success`,
+    "&:hover": { color: `successHover` },
+    "&:hover&:disabled": { color: `success` },
+  },
+  danger: {
+    color: `danger`,
+    "&:hover": { color: `dangerHover` },
+    "&:hover&:disabled": { color: `danger` },
+  },
+  info: {
+    color: `info`,
+    "&:hover": { color: `infoHover` },
+    "&:hover&:disabled": { color: `info` },
+  },
+  warning: {
+    color: `warning`,
+    "&:hover": { color: `warningHover` },
+    "&:hover&:disabled": { color: `warning` },
+  },
+};
+
 const btnSizes = {
+  none: {},
   sm: { px: 2, py: 1 },
   md: { px: 3, py: 2 },
   lg: { px: 4, py: 3 },
@@ -203,6 +241,8 @@ export const buttons = {
       backgroundColor: `transparent`,
       fontWeight: `semibold`,
       borderRadius: `default`,
+      borderWidth: `1px`,
+      borderStyle: `solid`,
       "&:hover": {
         borderColor: `transparent`,
       },
@@ -210,54 +250,41 @@ export const buttons = {
     colors: { ...btnOutlineColors },
     sizes: { ...btnSizes },
   },
-  bordered: {
-    ...btnCommonStyles,
-
-    borderWidth: `1px`,
-    borderStyle: `solid`,
-    borderColor: `primaryHover`,
-
-    fontWeight: `bold`,
-    borderRadius: `default`,
+  icon: {
+    styles: {
+      ...btnCommonStyles,
+      backgroundColor: `transparent`,
+      border: `none`,
+      borderRadius: `default`,
+    },
+    colors: { ...btnIconColors },
+    // sizes: { ...btnSizes },
   },
-  disabled: {
-    ...btnCommonStyles,
+};
 
-    border: `none`,
-    opacity: 0.5,
-    cursor: `not-allowed`,
-
-    fontWeight: `bold`,
-    borderRadius: `default`,
+const linkCommonStyles = {
+  cursor: `pointer`,
+  lineHeight: `inherit`,
+  "&:disabled": {
+    opacity: ".65",
+    boxShadow: "none",
+    transform: "none",
+    cursor: "not-allowed",
   },
-  "3D": {
-    ...btnCommonStyles,
+};
 
-    border: `none`,
-    borderBottomWidth: `4px`,
-    borderBottomStyle: `solid`,
-    borderBottomColor: `primaryHover`,
-
-    fontWeight: `bold`,
-    borderRadius: `default`,
-    transition: `transform 0.3s ease-in-out`,
-    "&:hover": {
-      transform: `translateY(-1px)`,
+const links = {
+  simple: {
+    ...linkCommonStyles,
+    // color: "primary",
+    textDecoration: "none",
+    ":hover": {
+      // fontWeight: "bold",
+      textDecoration: "underline",
     },
   },
-  elevated: {
-    ...btnCommonStyles,
-    backgroundColor: `white`,
-    borderWidth: `1px`,
-    borderStyle: `solid`,
-    borderColor: `gray.4`,
-    color: `text`,
-    fontWeight: `bold`,
-    borderRadius: `default`,
-    boxShadow: `default`,
-    "&:hover": {
-      backgroundColor: `gray.1`,
-    },
+  icon: {
+    ...linkCommonStyles,
   },
 };
 
@@ -654,6 +681,7 @@ export const tailwind = {
   zIndices,
   styles,
   buttons,
+  links,
   inputs,
   transforms,
   transitions,

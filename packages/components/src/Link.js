@@ -6,5 +6,5 @@ export const Link = React.forwardRef(({ kind = "link", ...props }, ref) => {
   if (kind === "button") {
     return <Button ref={ref} as="a" {...props} />;
   }
-  return <Box ref={ref} as="a" variant="primary" {...props} __themeKey="links" />;
+  return <Box ref={ref} as="a" variant="simple" {...props} __themeKey="links" />;
 });

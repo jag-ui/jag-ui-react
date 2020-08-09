@@ -9,7 +9,7 @@ const defaultBtnsizes = {
   // xl: { px: 5, py: 3 },
 };
 
-export const Button = React.forwardRef(({ variant = "simple", color = "white", size = "md", ...props }, ref) => {
+export const Button = React.forwardRef(({ variant = "simple", color = "default", size = "md", ...props }, ref) => {
   const context = useThemeUI();
   let btnSizes = {};
   let btnColors = {};
@@ -36,9 +36,8 @@ export const Button = React.forwardRef(({ variant = "simple", color = "white", s
         cursor: "pointer",
         appearance: "none",
         textDecoration: "none",
-        ...btnSizes[size],
-        ...btnColors[color],
       }}
+      __xtras={{ ...btnSizes[size], ...btnColors[color] }}
     />
   );
 });

@@ -2,6 +2,7 @@ import { Box } from "@jag-ui-react/core";
 import React from "react";
 import AlertDemo from "./AlertDemo";
 import BadgeDemo from "./BadgeDemo";
+import LinkDemo from "./LinkDemo";
 import ButtonDemo from "./ButtonDemo";
 import CardDemo from "./CardDemo";
 import ContainerDemo from "./ContainerDemo";
@@ -28,6 +29,7 @@ export default function Demo() {
     <Box px={3} variant="styles.root">
       <AlertDemo />
       <BadgeDemo />
+      <LinkDemo />
       <ButtonDemo />
       <CardDemo />
       <ContainerDemo />

@@ -9,6 +9,7 @@ const variant = ({ theme, variant, __themeKey = "variants" }) => {
   const themeVariant = get(theme, __themeKey + "." + variant, get(theme, variant));
   return themeVariant && themeVariant.styles ? css(themeVariant.styles) : css(themeVariant);
 };
+const xtras = (props) => css(props.__xtras)(props.theme);
 
 export const Box = styled("div", {
   shouldForwardProp,
@@ -20,6 +21,8 @@ export const Box = styled("div", {
   },
   base,
   variant,
+  variant,
+  xtras,
   sx,
   (props) => props.css,
   compose(space, layout, typography, color, flexbox, shadow, border),
