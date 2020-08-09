@@ -11,10 +11,16 @@ const SwitchThemeBtn = ({ onClick }) => {
   );
 };
 
-const SwitchTheme = ({ currTheme, setCurrTheme }) => {
+const SwitchTheme = ({ themes, currTheme, setCurrTheme }) => {
   return (
     <Box display="flex" justifyContent="flex-end" py={2}>
-      <SwitchThemeBtn onClick={() => setCurrTheme(currTheme === "bootstrap" ? "jtheme1" : "bootstrap")} />
+      currTheme: {currTheme}
+      <SwitchThemeBtn
+        onClick={() => {
+          currTheme + 1 <= Object.keys(themes).length - 1 ? setCurrTheme(currTheme + 1) : setCurrTheme(0);
+          console.log(Object.keys(themes).length, currTheme + 1 > Object.keys(themes).length - 1);
+        }}
+      />
       <SwitchColorBtn />
     </Box>
   );

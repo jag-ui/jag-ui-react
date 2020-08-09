@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@jag-ui-react/core";
 
-export const IconButton = React.forwardRef(({ size = 32, ...props }, ref) => (
+export const IconButton = React.forwardRef(({ size = 5, ...props }, ref) => (
   <Box
     ref={ref}
     as="button"
