@@ -32,12 +32,14 @@ export default function Demo() {
       <LinkDemo />
       <ButtonDemo />
       <CardDemo />
+      <FormDemo />
+
       <ContainerDemo />
       <DividerDemo />
       <DropdownDemo />
       <EmbedDemo />
       <FlexDemo />
-      <FormDemo />
+
       <GridDemo />
       <ImageDemo />
       <MessageDemo />

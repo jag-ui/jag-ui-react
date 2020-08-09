@@ -395,6 +395,57 @@ const alerts = {
   // },
 };
 
+const forms = {
+  input: {
+    display: "block",
+    width: "100%",
+    height: "calc(1.5em + 1.25rem + 5px)",
+    px: 3,
+    py: 2,
+    fontSize: 2,
+    // fontSize: "0.875rem",
+    fontWeight: "body",
+    lineHeight: "1.5",
+    color: "#8898aa",
+    backgroundColor: "#fff",
+    backgroundClip: "padding-box",
+    border: "1px solid #dee2e6",
+    borderRadius: "0.25rem",
+    boxShadow: "0 3px 2px rgba(233, 236, 239, 0.05)",
+    transition: "all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+    // fontSize: "0.875rem",
+    // transition: 'all 0.15s ease-in-out',
+    ":focus": {
+      color: "#8898aa",
+      backgroundColor: "#fff",
+      borderColor: "#0A48B3",
+      outline: "0",
+      boxShadow: "0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(10, 72, 179, 0.1)",
+    },
+  },
+  shadowInput: {
+    variant: "forms.input",
+    boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
+    border: "0",
+    transition: "box-shadow .15s ease",
+    ":focus": {
+      boxShadow: "0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)",
+    },
+  },
+  textarea: {
+    variant: "forms.input",
+  },
+  shadowTextarea: {
+    variant: "forms.shadowInput",
+  },
+  select: {
+    variant: "forms.input",
+  },
+  shadowSelect: {
+    variant: "forms.shadowInput",
+  },
+};
+
 export const colors = {
   ...baseColors,
 
@@ -598,6 +649,7 @@ const tailwindMaxWidth = {
 };
 
 const tailwindWidth = {
+  "1": "100%",
   "1/2": "50%",
   "1/3": "33.333333%",
   "2/3": "66.666667%",
@@ -846,6 +898,7 @@ export const tailwind = {
   styles,
   buttons,
   alerts,
+  forms,
   text,
   links,
   inputs,

@@ -3,8 +3,8 @@ import { Box } from "@jag-ui-react/core";
 
 const thumb = {
   appearance: "none",
-  width: 16,
-  height: 16,
+  width: "16px",
+  height: "16px",
   bg: "currentcolor",
   border: 0,
   borderRadius: 9999,
@@ -22,7 +22,7 @@ export const Slider = React.forwardRef((props, ref) => (
     __css={{
       display: "block",
       width: "100%",
-      height: 4,
+      height: "4px",
       my: 2,
       cursor: "pointer",
       appearance: "none",
