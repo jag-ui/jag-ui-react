@@ -288,6 +288,113 @@ const links = {
   },
 };
 
+const alertColors = {
+  default: {
+    backgroundColor: "transparent",
+    color: "text",
+  },
+  primary: {
+    backgroundColor: `primary`,
+    color: `white`,
+  },
+  secondary: {
+    backgroundColor: `secondary`,
+    color: `white`,
+  },
+  white: {
+    backgroundColor: `gray.1`,
+    color: `gray.7`,
+  },
+  success: {
+    backgroundColor: `success`,
+    color: `white`,
+  },
+  danger: {
+    backgroundColor: `danger`,
+    color: `white`,
+  },
+  info: {
+    backgroundColor: `info`,
+    color: `white`,
+  },
+  warning: {
+    backgroundColor: `warning`,
+    color: `white`,
+  },
+};
+
+const alertOutlineColors = {
+  primary: {
+    borderColor: `primary`,
+    color: `primary`,
+  },
+  secondary: {
+    borderColor: `secondary`,
+    color: `secondary`,
+  },
+  white: {
+    borderColor: `gray.1`,
+    color: `gray.7`,
+  },
+  success: {
+    borderColor: `success`,
+    color: `success`,
+  },
+  danger: {
+    borderColor: `danger`,
+    color: `danger`,
+  },
+  info: {
+    borderColor: `info`,
+    color: `info`,
+  },
+  warning: {
+    borderColor: `warning`,
+    color: `warning`,
+  },
+};
+
+const alerts = {
+  base: {},
+  simple: {
+    styles: {
+      borderRadius: `default`,
+    },
+    colors: { ...alertColors },
+    // sizes: { ...btnSizes },
+  },
+  outline: {
+    styles: {
+      borderRadius: `default`,
+      borderWidth: `1px`,
+      borderStyle: `solid`,
+    },
+    colors: { ...alertOutlineColors },
+    // sizes: { ...btnSizes },
+  },
+
+  // white: {
+  //   variant: "alerts.base",
+  //   bg: "white",
+  //   color: "text",
+  // },
+  // success: {
+  //   variant: "alerts.base",
+  //   bg: "success",
+  //   color: "white",
+  // },
+  // danger: {
+  //   variant: "alerts.base",
+  //   bg: "danger",
+  //   color: "white",
+  // },
+  // info: {
+  //   variant: "alerts.base",
+  //   bg: "info",
+  //   color: "white",
+  // },
+};
+
 export const colors = {
   ...baseColors,
 
@@ -738,6 +845,7 @@ export const tailwind = {
   zIndices,
   styles,
   buttons,
+  alerts,
   text,
   links,
   inputs,

@@ -5,11 +5,23 @@ import { color, compose, flexbox, layout, space, typography, shadow, border } fr
 
 const sx = (props) => css(props.sx)(props.theme);
 const base = (props) => css(props.__css)(props.theme);
-const variant = ({ theme, variant, __themeKey = "variants" }) => {
+const variant = ({ theme, variant, __themeKey = "variants" }) =>
+  css(get(theme, __themeKey + "." + variant, get(theme, variant)));
+
+const xtras = ({ theme, variant, xcolor, xsize, __themeKey = "variants" }) => {
   const themeVariant = get(theme, __themeKey + "." + variant, get(theme, variant));
-  return themeVariant && themeVariant.styles ? css(themeVariant.styles) : css(themeVariant);
+  if (typeof themeVariant === "object" && themeVariant !== null) {
+    const results = [];
+    const { styles, colors, sizes } = themeVariant;
+    const color = get(colors, xcolor);
+    const size = get(sizes, xsize);
+    if (styles) results.push(css(styles));
+    if (color) results.push(css(color));
+    if (size) results.push(css(size));
+    return results;
+  }
+  return [];
 };
-const xtras = (props) => css(props.__xtras)(props.theme);
 
 export const Box = styled("div", {
   shouldForwardProp,
@@ -21,8 +33,7 @@ export const Box = styled("div", {
   },
   base,
   variant,
-  variant,
-  xtras,
+  ...xtras,
   sx,
   (props) => props.css,
   compose(space, layout, typography, color, flexbox, shadow, border),

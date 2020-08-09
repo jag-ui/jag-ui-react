@@ -12,7 +12,7 @@ export default function AlertDemo() {
         <Heading as="h3" mt={3} mb={2}>
           Alerts: (Solid){" "}
         </Heading>
-        <Alert variant="primary" my={2}>
+        <Alert variant="simple" xcolor="primary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -26,7 +26,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="secondary" my={2}>
+        <Alert variant="simple" xcolor="secondary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -40,7 +40,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="success" my={2}>
+        <Alert variant="simple" xcolor="success" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -54,7 +54,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="danger" my={2}>
+        <Alert variant="simple" xcolor="danger" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -68,7 +68,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="info" my={2}>
+        <Alert variant="simple" xcolor="info" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -87,7 +87,7 @@ export default function AlertDemo() {
           Alerts: (Outline){" "}
         </Heading>
 
-        <Alert variant="primaryOutline" my={2}>
+        <Alert variant="outline" xcolor="primary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -101,7 +101,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="secondaryOutline" my={2}>
+        <Alert variant="outline" xcolor="secondary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -115,7 +115,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="successOutline" my={2}>
+        <Alert variant="outline" xcolor="success" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -129,7 +129,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="errorOutline" my={2}>
+        <Alert variant="outline" xcolor="danger" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -143,7 +143,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="infoOutline" my={2}>
+        <Alert variant="outline" xcolor="info" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>

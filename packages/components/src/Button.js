@@ -10,20 +10,14 @@ const defaultBtnsizes = {
 };
 
 export const Button = React.forwardRef(
-  ({ variant = "simple", color = "default", size = "md", textColor, ...props }, ref) => {
-    const context = useThemeUI();
-    let btnSizes = {};
-    let btnColors = {};
-    if (context && context.theme && context.theme.buttons && context.theme.buttons[variant]) {
-      btnSizes = context.theme.buttons[variant].sizes || defaultBtnsizes;
-      btnColors = context.theme.buttons[variant].colors || btnColors;
-    }
-    // console.log("Button", { btnColors, btnSizes, size: btnSizes[size] });
+  ({ variant = "simple", xcolor = "default", xsize = "md", textColor, ...props }, ref) => {
     return (
       <Box
         ref={ref}
         as="button"
         variant={variant}
+        xcolor={xcolor}
+        xsize={xsize}
         {...props}
         __themeKey="buttons"
         __css={{
@@ -39,7 +33,6 @@ export const Button = React.forwardRef(
           textDecoration: "none",
           color: textColor,
         }}
-        __xtras={{ ...btnSizes[size], ...btnColors[color] }}
       />
     );
   },
