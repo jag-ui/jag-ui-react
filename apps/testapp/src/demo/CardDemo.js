@@ -1,6 +1,7 @@
-import { Card, Divider, Grid, Heading, Image, Text } from "@jag-ui-react/components";
-import { Box } from "@jag-ui-react/core";
+import { Button, Divider, Grid, Heading, Icon, Image, Text } from "@jag-ui-react/components";
+import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
+import { FaChartBar, FaChartLine, FaEllipsisH } from "react-icons/fa";
 
 const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 
@@ -13,7 +14,7 @@ const ImgCard = ({ title }) => {
         backgroundImage: "url(https://source.unsplash.com/random/1024x768)",
         backgroundSize: "cover",
         borderRadius: 8,
-        color: "white",
+        color: "light",
         bg: "gray",
       }}>
       <Heading textAlign="center" fontSize={[5, 6]}>
@@ -23,63 +24,119 @@ const ImgCard = ({ title }) => {
   );
 };
 
+const MyCustomCard = ({ icon, ...props }) => {
+  return (
+    <Box boxShadow="default" bg="light" mb={3} {...props}>
+      <Flex px={3} py={2}>
+        <Box flexGrow={1}>
+          <Heading>Card Title</Heading>
+          <Text>Card Description</Text>
+        </Box>
+        <Button>
+          <FaEllipsisH />
+        </Button>
+      </Flex>
+      <Divider />
+      <Flex justifyContent="center">{icon}</Flex>
+    </Box>
+  );
+};
+
+const MyImageCard = ({ icon, image }) => {
+  return (
+    <Box boxShadow="default" bg="light" mb={3}>
+      {image && <Flex justifyContent="center">{image}</Flex>}
+      {icon && <Flex justifyContent="center">{icon}</Flex>}
+      <Flex px={3} py={2}>
+        <Box flexGrow={1}>
+          <Heading>Card Title</Heading>
+          <Text>Card Description</Text>
+        </Box>
+        <Button variant="icon">
+          <FaEllipsisH />
+        </Button>
+      </Flex>
+    </Box>
+  );
+};
+
+const MyCustomImageCard = ({ imageUrl }) => {
+  return (
+    <Box
+      mb={3}
+      sx={{
+        display: "flex",
+        height: "20rem",
+        backgroundImage: `url(${imageUrl})`,
+        boxShadow: 3,
+        borderRadius: 6,
+      }}>
+      {/* {image && <Flex justifyContent="center">{image}</Flex>} */}
+      {/* {icon && <Flex justifyContent="center">{icon}</Flex>} */}
+      <Flex px={3} py={2} mt="auto" flexGrow={1}>
+        <Box flexGrow={1}>
+          <Heading color="white">Card Title</Heading>
+          <Text color="white">Card Description</Text>
+        </Box>
+        <Button variant="icon" color="white">
+          <FaEllipsisH />
+        </Button>
+      </Flex>
+    </Box>
+  );
+};
+
 export default function CardDemo() {
   return (
     <Box>
       <Heading>Card Demo</Heading>
-      <Divider />
-      <Box my={10} p={4}>
-        <Card
-          sx={{
-            maxWidth: 256,
-          }}>
-          <Image src={IMG} />
-          <Text>Card</Text>
-        </Card>
 
-        <Box>
-          <Card mb={3} variant="primary">
-            <Heading>Sample Card</Heading>
-            <Text>Sample Card</Text>
-          </Card>
-          <Card width={[256, 320]}>
-            <Image src="https://source.unsplash.com/random?space" />
-            <Text>Image Card</Text>
-          </Card>
-          <Card width={[256, 320]} mx="auto">
-            <Image src="https://source.unsplash.com/random?space" />
-            <Text>Image Card</Text>
-          </Card>
-          <Card width={[256, 320]} ml="auto">
-            <Image src="https://source.unsplash.com/random?space" />
-            <Text>Image Card</Text>
-          </Card>
-        </Box>
+      <Box my={10} p={4}>
+        <MyCustomCard icon={<Icon icon={<FaChartBar size={"32rem"} />} />} />
+        <MyCustomCard icon={<Icon icon={<FaChartLine size={"32rem"} />} />} />
 
         <Grid columns={[1, 2, 3, 4]}>
-          <Card width={1}>
-            <Image src={IMG} />
-            <Heading>Card1</Heading>
-          </Card>
-          <ImgCard width={1} title="Card2"></ImgCard>
-          <Card width={1}>
-            <Image src={IMG} />
-            <Heading>Card3</Heading>
-          </Card>
-          <ImgCard width={1} title="Card4"></ImgCard>
-          <Card width={1}>
-            <Image src={IMG} />
-            <Heading>Card5</Heading>
-          </Card>
-          <Card width={1}>
-            <Image src={IMG} />
-            <Heading>Card6</Heading>
-          </Card>
-          <Card width={1}>
-            <Image src={IMG} />
-            <Heading>Card7</Heading>
-          </Card>
+          <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
         </Grid>
+
+        <Grid columns={[1, 2, 3, 4]}>
+          <MyImageCard image={<Image src="https://source.unsplash.com/random?space" width="full" height={"15rem"} />} />
+          <MyImageCard image={<Image src="https://source.unsplash.com/random" width="full" height={"15rem"} />} />
+          <MyImageCard image={<Image src="https://source.unsplash.com/random?sky" width="full" height={"15rem"} />} />
+          <MyImageCard image={<Image src="https://source.unsplash.com/random?space" width="full" height={"15rem"} />} />
+          <MyImageCard image={<Image src="https://source.unsplash.com/random" width="full" height={"15rem"} />} />
+          <MyImageCard image={<Image src="https://source.unsplash.com/random?sky" width="full" height={"15rem"} />} />
+        </Grid>
+
+        <Grid columns={[1, 2, 3, 4]}>
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random?space" />
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random?house" />
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random?sky" />
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random?space" />
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random" />
+          <MyCustomImageCard imageUrl="https://source.unsplash.com/random?sky" />
+        </Grid>
+
+        <Heading variant="styles.h5" mt={4} mb={3}>
+          Responsive Widths
+        </Heading>
+
+        <Box>
+          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+        </Box>
       </Box>
     </Box>
   );

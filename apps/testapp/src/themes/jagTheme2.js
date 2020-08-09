@@ -42,10 +42,10 @@ const btnCommonStyles = {
 const btnColors = {
   default: {
     backgroundColor: "transparent",
-    color: `gray.7`,
+    color: "text",
     boxShadow: "none",
     "&:hover": {
-      boxShadow: "md",
+      boxShadow: 3,
       transform: "translateY(-1px)",
     },
     "&:hover&:disabled": {
@@ -216,7 +216,7 @@ export const buttons = {
   simple: {
     styles: {
       ...btnCommonStyles,
-      boxShadow: "md",
+      boxShadow: 3,
       border: `none`,
       fontWeight: `bold`,
       borderRadius: `default`,
@@ -290,9 +290,19 @@ const links = {
 
 export const colors = {
   ...baseColors,
-  grayDark: baseColors.gray[8],
-  text: baseColors.gray[8],
-  background: baseColors.white,
+
+  // TEXT:
+  text: baseColors.gray[7],
+
+  // BG:
+  background: baseColors.gray[2],
+  light: baseColors.white,
+  dark: baseColors.gray[8],
+
+  divider: "rgba(255, 255, 255, 0.12)",
+
+  // background: baseColors.white,
+
   primary: baseColors.blue[7],
   primaryHover: baseColors.blue[8],
   secondary: baseColors.gray[6],
@@ -305,10 +315,27 @@ export const colors = {
   infoHover: baseColors.blue[8],
   warning: baseColors.yellow[7],
   warningHover: baseColors.yellow[8],
-  light: baseColors.gray[1],
-  dark: baseColors.gray[8],
+
   muted: baseColors.gray[3],
   textMuted: baseColors.gray[6],
+
+  modes: {
+    dark: {
+      // TEXT:
+      text: baseColors.gray[6],
+
+      // BG:
+      background: "rgb(23, 43, 58)",
+      light: "rgb(15, 32, 45)",
+      dark: "rgb(9, 20, 28)",
+
+      divider: "rgba(255, 255, 255, 0.06)",
+
+      // BTN:
+      secondary: "rgb(15, 32, 45)",
+      secondaryHover: "rgb(9, 20, 28)",
+    },
+  },
 };
 
 export const baseFonts = {
@@ -502,13 +529,22 @@ export const sizes = {
 };
 
 export const shadows = {
-  xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
-  sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+  // xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
+  // sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+  //
+  // md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  // lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  // xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+  // "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+
+  0: "none",
+  1: "0 0 0 1px rgba(0, 0, 0, 0.05)",
+  2: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+  3: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  4: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  5: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+  6: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
   default: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-  md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-  lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-  xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-  "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
   inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
   outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
   none: "none",
@@ -580,10 +616,9 @@ export const styles = {
   code: {},
   pre: {},
   hr: {
-    bg: "muted",
+    bg: "divider",
     border: 0,
     height: "1px",
-    m: 3,
   },
 };
 
@@ -666,6 +701,27 @@ export const transitions = {
   },
 };
 
+const text = {
+  heading: {
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    color: "text",
+  },
+  display: {
+    fontFamily: "heading",
+    fontWeight: "heading",
+    lineHeight: "heading",
+    fontSize: [6, 7],
+    color: "text",
+  },
+  caps: {
+    textTransform: "uppercase",
+    letterSpacing: "0.1em",
+    color: "text",
+  },
+};
+
 export const tailwind = {
   borderWidths,
   breakpoints,
@@ -682,6 +738,7 @@ export const tailwind = {
   zIndices,
   styles,
   buttons,
+  text,
   links,
   inputs,
   transforms,

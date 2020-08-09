@@ -8,7 +8,7 @@ export const Divider = React.forwardRef((props, ref) => (
     variant="styles.hr"
     {...props}
     __css={{
-      color: "gray",
+      color: "divider",
       m: 0,
       my: 2,
       border: 0,
