@@ -45,7 +45,7 @@ const btnColors = {
     color: `gray.7`,
     boxShadow: "none",
     "&:hover": {
-      boxShadow: "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
+      boxShadow: "md",
       transform: "translateY(-1px)",
     },
     "&:hover&:disabled": {
@@ -216,7 +216,7 @@ export const buttons = {
   simple: {
     styles: {
       ...btnCommonStyles,
-      boxShadow: "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
+      boxShadow: "md",
       border: `none`,
       fontWeight: `bold`,
       borderRadius: `default`,
@@ -227,7 +227,7 @@ export const buttons = {
   rounded: {
     styles: {
       ...btnCommonStyles,
-      boxShadow: "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
+      boxShadow: "btn",
       border: `none`,
       fontWeight: `bold`,
       borderRadius: `full`,
@@ -512,6 +512,7 @@ export const shadows = {
   inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
   outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
   none: "none",
+  btn: "0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08)",
 };
 
 export const space = [0, "0.25rem", "0.5rem", "1rem", "2rem", "4rem", "8rem", "16rem", "32rem"];
