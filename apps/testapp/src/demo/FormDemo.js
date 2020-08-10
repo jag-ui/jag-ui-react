@@ -107,10 +107,10 @@ function FormDemo1() {
 
         <Flex mb={3}>
           <Box ml="auto">
-            <Button xcolor="secondary" mr={2}>
+            <Button vcolor="secondary" mr={2}>
               Cancel
             </Button>
-            <Button xcolor="primary">Save</Button>
+            <Button vcolor="primary">Save</Button>
           </Box>
         </Flex>
       </Box>
@@ -223,10 +223,10 @@ function FormDemo2() {
 
         <Flex mb={3}>
           <Box ml="auto">
-            <Button xcolor="secondary" mr={2}>
+            <Button vcolor="secondary" mr={2}>
               Cancel
             </Button>
-            <Button xcolor="primary">Save</Button>
+            <Button vcolor="primary">Save</Button>
           </Box>
         </Flex>
       </Box>

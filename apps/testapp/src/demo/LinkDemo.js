@@ -12,25 +12,25 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" xcolor="primary" mr={3}>
+        <Link href="#" vcolor="primary" mr={3}>
           Primary
         </Link>
-        <Link href="#" xcolor="secondary" mr={3}>
+        <Link href="#" vcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" xcolor="muted" mr={3}>
+        <Link href="#" vcolor="muted" mr={3}>
           Muted
         </Link>
-        <Link href="#" xcolor="success" mr={3}>
+        <Link href="#" vcolor="success" mr={3}>
           Success
         </Link>
-        <Link href="#" xcolor="danger" mr={3}>
+        <Link href="#" vcolor="danger" mr={3}>
           Danger
         </Link>
-        <Link href="#" xcolor="info" mr={3}>
+        <Link href="#" vcolor="info" mr={3}>
           Info
         </Link>
-        <Link href="#" xcolor="warning" mr={3}>
+        <Link href="#" vcolor="warning" mr={3}>
           Warning
         </Link>
       </Flex>
@@ -39,25 +39,25 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" xcolor="primary" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" xcolor="secondary" mr={3}>
+        <Link href="#" kind="button" vcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="muted" mr={3}>
+        <Link href="#" kind="button" vcolor="muted" mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" xcolor="success" mr={3}>
+        <Link href="#" kind="button" vcolor="success" mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" xcolor="danger" mr={3}>
+        <Link href="#" kind="button" vcolor="danger" mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" xcolor="info" mr={3}>
+        <Link href="#" kind="button" vcolor="info" mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" xcolor="warning" mr={3}>
+        <Link href="#" kind="button" vcolor="warning" mr={3}>
           Warning
         </Link>
       </Flex>
@@ -67,44 +67,44 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" xcolor="primary" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" xcolor="secondary" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="muted" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="muted" borderRadius="full" mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" xcolor="success" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="success" borderRadius="full" mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" xcolor="danger" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="danger" borderRadius="full" mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" xcolor="info" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="info" borderRadius="full" mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" xcolor="warning" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" vcolor="warning" borderRadius="full" mr={3}>
           Warning
         </Link>
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link Styled Link [kind="button"] [xsize="..."]
+        Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" xcolor="primary" xsize="sm" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Link>
-        <Link href="#" kind="button" xcolor="primary" xsize="md" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" vsize="md" mr={3}>
           Medium*
         </Link>
-        <Link href="#" kind="button" xcolor="primary" xsize="lg" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" vsize="lg" mr={3}>
           Large
         </Link>
-        <Link href="#" kind="button" xcolor="primary" xsize="xl" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" vsize="xl" mr={3}>
           X Large
         </Link>
       </Flex>
@@ -114,25 +114,25 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" xcolor="primary" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="primary" disabled mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" xcolor="secondary" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="secondary" disabled mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="muted" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="muted" disabled mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" xcolor="success" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="success" disabled mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" xcolor="danger" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="danger" disabled mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" xcolor="info" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="info" disabled mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" xcolor="warning" disabled mr={3}>
+        <Link href="#" kind="button" vcolor="warning" disabled mr={3}>
           Warning
         </Link>
       </Flex>
@@ -142,31 +142,31 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" xcolor="primary" mr={3}>
+        <Link href="#" kind="button" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
         </Link>
-        <Link href="#" kind="button" xcolor="secondary" mr={3}>
+        <Link href="#" kind="button" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="muted" mr={3}>
+        <Link href="#" kind="button" vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Muted
         </Link>
-        <Link href="#" kind="button" xcolor="success" mr={3}>
+        <Link href="#" kind="button" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Success
         </Link>
-        <Link href="#" kind="button" xcolor="danger" mr={3}>
+        <Link href="#" kind="button" vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Danger
         </Link>
-        <Link href="#" kind="button" xcolor="info" mr={3}>
+        <Link href="#" kind="button" vcolor="info" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Info
         </Link>
-        <Link href="#" kind="button" xcolor="warning" mr={3}>
+        <Link href="#" kind="button" vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Warning
         </Link>
@@ -183,25 +183,25 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="secondary" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="muted" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="muted" mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="success" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="success" mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="danger" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="danger" mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="info" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="info" mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="warning" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="warning" mr={3}>
           Warning
         </Link>
       </Flex>
@@ -211,44 +211,44 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="secondary" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="muted" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="muted" borderRadius="full" mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="success" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="success" borderRadius="full" mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="danger" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="danger" borderRadius="full" mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="info" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="info" borderRadius="full" mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="warning" borderRadius="full" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="warning" borderRadius="full" mr={3}>
           Warning
         </Link>
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link Styled Link [kind="button"] [xsize="..."]
+        Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" xsize="sm" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" xsize="md" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" vsize="md" mr={3}>
           Medium*
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" xsize="lg" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" vsize="lg" mr={3}>
           Large
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" xsize="xl" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" vsize="xl" mr={3}>
           X Large
         </Link>
       </Flex>
@@ -258,25 +258,25 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" disabled mr={3}>
           Primary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="secondary" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="secondary" disabled mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="muted" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="muted" disabled mr={3}>
           Muted
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="success" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="success" disabled mr={3}>
           Success
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="danger" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="danger" disabled mr={3}>
           Danger
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="info" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="info" disabled mr={3}>
           Info
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="warning" disabled mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="warning" disabled mr={3}>
           Warning
         </Link>
       </Flex>
@@ -286,31 +286,31 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" kind="button" variant="outline" xcolor="primary" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="secondary" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="muted" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Muted
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="success" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Success
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="danger" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Danger
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="info" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="info" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Info
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="warning" mr={3}>
+        <Link href="#" kind="button" variant="outline" vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Warning
         </Link>
@@ -345,25 +345,25 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="primary" mr={3}>
+        <Link variant="icon" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="secondary" mr={3}>
+        <Link variant="icon" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="muted" mr={3}>
+        <Link variant="icon" vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="success" mr={3}>
+        <Link variant="icon" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="danger" mr={3}>
+        <Link variant="icon" vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="info" mr={3}>
+        <Link variant="icon" vcolor="info" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="warning" mr={3}>
+        <Link variant="icon" vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
       </Flex>
@@ -375,25 +375,25 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="primary" disabled mr={3}>
+        <Link variant="icon" vcolor="primary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="secondary" disabled mr={3}>
+        <Link variant="icon" vcolor="secondary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="muted" disabled mr={3}>
+        <Link variant="icon" vcolor="muted" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="success" disabled mr={3}>
+        <Link variant="icon" vcolor="success" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="danger" disabled mr={3}>
+        <Link variant="icon" vcolor="danger" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="info" disabled mr={3}>
+        <Link variant="icon" vcolor="info" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="warning" disabled mr={3}>
+        <Link variant="icon" vcolor="warning" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
       </Flex>

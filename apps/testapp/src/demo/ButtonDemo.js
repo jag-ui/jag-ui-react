@@ -13,25 +13,25 @@ const SimpleButtonDemo = () => {
 
       <Flex mb={4}>
         <Button mr={3}>Default</Button>
-        <Button xcolor="primary" mr={3}>
+        <Button vcolor="primary" mr={3}>
           Primary
         </Button>
-        <Button xcolor="secondary" mr={3}>
+        <Button vcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button xcolor="muted" mr={3}>
+        <Button vcolor="muted" mr={3}>
           Muted
         </Button>
-        <Button xcolor="success" mr={3}>
+        <Button vcolor="success" mr={3}>
           Success
         </Button>
-        <Button xcolor="danger" mr={3}>
+        <Button vcolor="danger" mr={3}>
           Danger
         </Button>
-        <Button xcolor="info" mr={3}>
+        <Button vcolor="info" mr={3}>
           Info
         </Button>
-        <Button xcolor="warning" mr={3}>
+        <Button vcolor="warning" mr={3}>
           Warning
         </Button>
       </Flex>
@@ -44,44 +44,44 @@ const SimpleButtonDemo = () => {
         <Button borderRadius="full" mr={3}>
           Default
         </Button>
-        <Button xcolor="primary" borderRadius="full" mr={3}>
+        <Button vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
-        <Button xcolor="secondary" borderRadius="full" mr={3}>
+        <Button vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button xcolor="muted" borderRadius="full" mr={3}>
+        <Button vcolor="muted" borderRadius="full" mr={3}>
           Muted
         </Button>
-        <Button xcolor="success" borderRadius="full" mr={3}>
+        <Button vcolor="success" borderRadius="full" mr={3}>
           Success
         </Button>
-        <Button xcolor="danger" borderRadius="full" mr={3}>
+        <Button vcolor="danger" borderRadius="full" mr={3}>
           Danger
         </Button>
-        <Button xcolor="info" borderRadius="full" mr={3}>
+        <Button vcolor="info" borderRadius="full" mr={3}>
           Info
         </Button>
-        <Button xcolor="warning" borderRadius="full" mr={3}>
+        <Button vcolor="warning" borderRadius="full" mr={3}>
           Warning
         </Button>
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Button [xsize="..."]
+        Button [vsize="..."]
       </Heading>
 
       <Flex mb={4}>
-        <Button xcolor="primary" xsize="sm" mr={3}>
+        <Button vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
-        <Button xcolor="primary" xsize="md" mr={3}>
+        <Button vcolor="primary" vsize="md" mr={3}>
           Medium*
         </Button>
-        <Button xcolor="primary" xsize="lg" mr={3}>
+        <Button vcolor="primary" vsize="lg" mr={3}>
           Large
         </Button>
-        <Button xcolor="primary" xsize="xl" mr={3}>
+        <Button vcolor="primary" vsize="xl" mr={3}>
           X Large
         </Button>
       </Flex>
@@ -94,25 +94,25 @@ const SimpleButtonDemo = () => {
         <Button disabled mr={3}>
           Default
         </Button>
-        <Button xcolor="primary" disabled mr={3}>
+        <Button vcolor="primary" disabled mr={3}>
           Primary
         </Button>
-        <Button xcolor="secondary" disabled mr={3}>
+        <Button vcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button xcolor="muted" disabled mr={3}>
+        <Button vcolor="muted" disabled mr={3}>
           Muted
         </Button>
-        <Button xcolor="success" disabled mr={3}>
+        <Button vcolor="success" disabled mr={3}>
           Success
         </Button>
-        <Button xcolor="danger" disabled mr={3}>
+        <Button vcolor="danger" disabled mr={3}>
           Danger
         </Button>
-        <Button xcolor="info" disabled mr={3}>
+        <Button vcolor="info" disabled mr={3}>
           Info
         </Button>
-        <Button xcolor="warning" disabled mr={3}>
+        <Button vcolor="warning" disabled mr={3}>
           Warning
         </Button>
       </Flex>
@@ -126,31 +126,31 @@ const SimpleButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Default
         </Button>
-        <Button xcolor="primary" mr={3}>
+        <Button vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
         </Button>
-        <Button xcolor="secondary" mr={3}>
+        <Button vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button xcolor="muted" mr={3}>
+        <Button vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Muted
         </Button>
-        <Button xcolor="success" mr={3}>
+        <Button vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Success
         </Button>
-        <Button xcolor="danger" mr={3}>
+        <Button vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Danger
         </Button>
-        <Button xcolor="info" mr={3}>
+        <Button vcolor="info" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Info
         </Button>
-        <Button xcolor="warning" mr={3}>
+        <Button vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Warning
         </Button>
@@ -167,25 +167,25 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" xcolor="primary" mr={3}>
+        <Button variant="outline" vcolor="primary" mr={3}>
           Primary
         </Button>
-        <Button variant="outline" xcolor="secondary" mr={3}>
+        <Button variant="outline" vcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="muted" mr={3}>
+        <Button variant="outline" vcolor="muted" mr={3}>
           Muted
         </Button>
-        <Button variant="outline" xcolor="success" mr={3}>
+        <Button variant="outline" vcolor="success" mr={3}>
           Success
         </Button>
-        <Button variant="outline" xcolor="danger" mr={3}>
+        <Button variant="outline" vcolor="danger" mr={3}>
           Danger
         </Button>
-        <Button variant="outline" xcolor="info" mr={3}>
+        <Button variant="outline" vcolor="info" mr={3}>
           Info
         </Button>
-        <Button variant="outline" xcolor="warning" mr={3}>
+        <Button variant="outline" vcolor="warning" mr={3}>
           Warning
         </Button>
       </Flex>
@@ -195,44 +195,44 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" xcolor="primary" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
-        <Button variant="outline" xcolor="secondary" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="muted" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="muted" borderRadius="full" mr={3}>
           Muted
         </Button>
-        <Button variant="outline" xcolor="success" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="success" borderRadius="full" mr={3}>
           Success
         </Button>
-        <Button variant="outline" xcolor="danger" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="danger" borderRadius="full" mr={3}>
           Danger
         </Button>
-        <Button variant="outline" xcolor="info" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="info" borderRadius="full" mr={3}>
           Info
         </Button>
-        <Button variant="outline" xcolor="warning" borderRadius="full" mr={3}>
+        <Button variant="outline" vcolor="warning" borderRadius="full" mr={3}>
           Warning
         </Button>
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Button [xsize="..."]
+        Button [vsize="..."]
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" xcolor="primary" xsize="sm" mr={3}>
+        <Button variant="outline" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
-        <Button variant="outline" xcolor="primary" xsize="md" mr={3}>
+        <Button variant="outline" vcolor="primary" vsize="md" mr={3}>
           Medium*
         </Button>
-        <Button variant="outline" xcolor="primary" xsize="lg" mr={3}>
+        <Button variant="outline" vcolor="primary" vsize="lg" mr={3}>
           Large
         </Button>
-        <Button variant="outline" xcolor="primary" xsize="xl" mr={3}>
+        <Button variant="outline" vcolor="primary" vsize="xl" mr={3}>
           X Large
         </Button>
       </Flex>
@@ -242,25 +242,25 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" xcolor="primary" disabled mr={3}>
+        <Button variant="outline" vcolor="primary" disabled mr={3}>
           Primary
         </Button>
-        <Button variant="outline" xcolor="secondary" disabled mr={3}>
+        <Button variant="outline" vcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="muted" disabled mr={3}>
+        <Button variant="outline" vcolor="muted" disabled mr={3}>
           Muted
         </Button>
-        <Button variant="outline" xcolor="success" disabled mr={3}>
+        <Button variant="outline" vcolor="success" disabled mr={3}>
           Success
         </Button>
-        <Button variant="outline" xcolor="danger" disabled mr={3}>
+        <Button variant="outline" vcolor="danger" disabled mr={3}>
           Danger
         </Button>
-        <Button variant="outline" xcolor="info" disabled mr={3}>
+        <Button variant="outline" vcolor="info" disabled mr={3}>
           Info
         </Button>
-        <Button variant="outline" xcolor="warning" disabled mr={3}>
+        <Button variant="outline" vcolor="warning" disabled mr={3}>
           Warning
         </Button>
       </Flex>
@@ -270,31 +270,31 @@ const OutlineButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Button variant="outline" xcolor="primary" mr={3}>
+        <Button variant="outline" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
         </Button>
-        <Button variant="outline" xcolor="secondary" mr={3}>
+        <Button variant="outline" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button variant="outline" xcolor="muted" mr={3}>
+        <Button variant="outline" vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Muted
         </Button>
-        <Button variant="outline" xcolor="success" mr={3}>
+        <Button variant="outline" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Success
         </Button>
-        <Button variant="outline" xcolor="danger" mr={3}>
+        <Button variant="outline" vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Danger
         </Button>
-        <Button variant="outline" xcolor="info" mr={3}>
+        <Button variant="outline" vcolor="info" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Info
         </Button>
-        <Button variant="outline" xcolor="warning" mr={3}>
+        <Button variant="outline" vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Warning
         </Button>
@@ -329,25 +329,25 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="primary" mr={3}>
+        <Button variant="icon" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="secondary" mr={3}>
+        <Button variant="icon" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="muted" mr={3}>
+        <Button variant="icon" vcolor="muted" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="success" mr={3}>
+        <Button variant="icon" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="danger" mr={3}>
+        <Button variant="icon" vcolor="danger" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="info" mr={3}>
+        <Button variant="icon" vcolor="info" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="warning" mr={3}>
+        <Button variant="icon" vcolor="warning" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
       </Flex>
@@ -359,25 +359,25 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="primary" disabled mr={3}>
+        <Button variant="icon" vcolor="primary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="secondary" disabled mr={3}>
+        <Button variant="icon" vcolor="secondary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="muted" disabled mr={3}>
+        <Button variant="icon" vcolor="muted" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="success" disabled mr={3}>
+        <Button variant="icon" vcolor="success" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="danger" disabled mr={3}>
+        <Button variant="icon" vcolor="danger" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="info" disabled mr={3}>
+        <Button variant="icon" vcolor="info" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="warning" disabled mr={3}>
+        <Button variant="icon" vcolor="warning" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
       </Flex>

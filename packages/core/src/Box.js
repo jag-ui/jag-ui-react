@@ -8,13 +8,13 @@ const base = (props) => css(props.__css)(props.theme);
 const variant = ({ theme, variant, __themeKey = "variants" }) =>
   css(get(theme, __themeKey + "." + variant, get(theme, variant)));
 
-const xtras = ({ theme, variant, xcolor, xsize, __themeKey = "variants" }) => {
+const xtras = ({ theme, variant, vcolor, vsize, __themeKey = "variants" }) => {
   const themeVariant = get(theme, __themeKey + "." + variant, get(theme, variant));
   if (typeof themeVariant === "object" && themeVariant !== null) {
     const results = [];
     const { styles, colors, sizes } = themeVariant;
-    const color = get(colors, xcolor);
-    const size = get(sizes, xsize);
+    const color = get(colors, vcolor);
+    const size = get(sizes, vsize);
     if (styles) results.push(css(styles));
     if (color) results.push(css(color));
     if (size) results.push(css(size));

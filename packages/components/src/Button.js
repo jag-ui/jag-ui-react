@@ -10,14 +10,14 @@ const defaultBtnsizes = {
 };
 
 export const Button = React.forwardRef(
-  ({ variant = "simple", xcolor = "default", xsize = "md", textColor, ...props }, ref) => {
+  ({ variant = "simple", vcolor = "default", vsize = "md", textColor, ...props }, ref) => {
     return (
       <Box
         ref={ref}
         as="button"
         variant={variant}
-        xcolor={xcolor}
-        xsize={xsize}
+        vcolor={vcolor}
+        vsize={vsize}
         {...props}
         __themeKey="buttons"
         __css={{
