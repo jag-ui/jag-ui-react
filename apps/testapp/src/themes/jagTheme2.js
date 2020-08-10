@@ -16,6 +16,17 @@ export const baseColors = {
   black: "#000",
   white: "#fff",
   gray: [null, "#f7fafc", "#edf2f7", "#e2e8f0", "#cbd5e0", "#a0aec0", "#718096", "#4a5568", "#2d3748", "#1a202c"],
+  gray1: [
+    "#f6f9fc",
+    "#e9ecef",
+    "#dee2e6",
+    "#ced4da",
+    "#adb5bd",
+    "#8898aa", // Line footer color
+    "#525f7f", // Line p color
+    "#32325d", // Line heading color
+    "#212529",
+  ],
   red: [null, "#fff5f5", "#fed7d7", "#feb2b2", "#fc8181", "#f56565", "#e53e3e", "#c53030", "#9b2c2c", "#742a2a"],
   orange: [null, "#fffaf0", "#feebc8", "#fbd38d", "#f6ad55", "#ed8936", "#dd6b20", "#c05621", "#9c4221", "#7b341e"],
   yellow: [null, "#fffff0", "#fefcbf", "#faf089", "#f6e05e", "#ecc94b", "#d69e2e", "#b7791f", "#975a16", "#744210"],
@@ -61,15 +72,15 @@ const btnColors = {
   },
   secondary: {
     backgroundColor: `secondary`,
-    color: `white`,
+    color: `text`,
     "&:hover": { backgroundColor: `secondaryHover` },
     "&:hover&:disabled": { backgroundColor: "secondary" },
   },
-  white: {
-    backgroundColor: `gray.1`,
-    color: `gray.7`,
-    "&:hover": { backgroundColor: `gray.2` },
-    "&:hover&:disabled": { backgroundColor: "gray.1" },
+  muted: {
+    backgroundColor: `muted`,
+    color: `white`,
+    "&:hover": { backgroundColor: `mutedHover` },
+    "&:hover&:disabled": { backgroundColor: "muted" },
   },
   success: {
     backgroundColor: `success`,
@@ -108,21 +119,22 @@ const btnOutlineColors = {
     "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `primary`, color: `primary` },
   },
   secondary: {
-    borderColor: `secondary`,
-    color: `secondary`,
+    borderColor: `text`,
+    color: `text`,
     "&:hover": {
       backgroundColor: `secondaryHover`,
+      color: `text`,
+    },
+    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `secondary`, color: `text` },
+  },
+  muted: {
+    borderColor: `mutedHover`,
+    color: `mutedHover`,
+    "&:hover": {
+      backgroundColor: `mutedHover`,
       color: `white`,
     },
-    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `secondary`, color: `secondary` },
-  },
-  white: {
-    borderColor: `gray.1`,
-    color: `gray.7`,
-    "&:hover": {
-      backgroundColor: `gray.2`,
-    },
-    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `gray.1`, color: `gray.7` },
+    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: `mutedHover`, color: `mutedHover` },
   },
   success: {
     borderColor: `success`,
@@ -177,10 +189,10 @@ const btnIconColors = {
     "&:hover": { color: `secondaryHover` },
     "&:hover&:disabled": { color: `secondary` },
   },
-  white: {
-    color: `gray.1`,
-    "&:hover": { color: `gray.7` },
-    "&:hover&:disabled": { color: `gray.1` },
+  muted: {
+    color: `muted`,
+    "&:hover": { color: `mutedHover` },
+    "&:hover&:disabled": { color: `muted` },
   },
   success: {
     color: `success`,
@@ -299,11 +311,11 @@ const alertColors = {
   },
   secondary: {
     backgroundColor: `secondary`,
-    color: `white`,
+    color: `text`,
   },
-  white: {
-    backgroundColor: `gray.1`,
-    color: `gray.7`,
+  muted: {
+    backgroundColor: `muted`,
+    color: `white`,
   },
   success: {
     backgroundColor: `success`,
@@ -329,10 +341,10 @@ const alertOutlineColors = {
     color: `primary`,
   },
   secondary: {
-    borderColor: `secondary`,
-    color: `secondary`,
+    borderColor: `text`,
+    color: `text`,
   },
-  white: {
+  muted: {
     borderColor: `gray.1`,
     color: `gray.7`,
   },
@@ -372,27 +384,6 @@ const alerts = {
     colors: { ...alertOutlineColors },
     // sizes: { ...btnSizes },
   },
-
-  // white: {
-  //   variant: "alerts.base",
-  //   bg: "white",
-  //   color: "text",
-  // },
-  // success: {
-  //   variant: "alerts.base",
-  //   bg: "success",
-  //   color: "white",
-  // },
-  // danger: {
-  //   variant: "alerts.base",
-  //   bg: "danger",
-  //   color: "white",
-  // },
-  // info: {
-  //   variant: "alerts.base",
-  //   bg: "info",
-  //   color: "white",
-  // },
 };
 
 const forms = {
@@ -406,43 +397,28 @@ const forms = {
     // fontSize: "0.875rem",
     fontWeight: "body",
     lineHeight: "1.5",
-    color: "#8898aa",
-    backgroundColor: "#fff",
+    color: "inputColor",
+    backgroundColor: "inputBg",
     backgroundClip: "padding-box",
-    border: "1px solid #dee2e6",
     borderRadius: "0.25rem",
-    boxShadow: "0 3px 2px rgba(233, 236, 239, 0.05)",
-    transition: "all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
-    // fontSize: "0.875rem",
-    // transition: 'all 0.15s ease-in-out',
-    ":focus": {
-      color: "#8898aa",
-      backgroundColor: "#fff",
-      borderColor: "#0A48B3",
-      outline: "0",
-      boxShadow: "0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(10, 72, 179, 0.1)",
-    },
-  },
-  shadowInput: {
-    variant: "forms.input",
     boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
-    border: "0",
+    border: 0,
     transition: "box-shadow .15s ease",
     ":focus": {
+      color: "inputFocusColor",
+      backgroundColor: "inputFocusBg",
       boxShadow: "0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)",
+      outline: "none !important",
+      borderWidth: "1px",
+      borderStyle: "solid",
+      borderColor: "inputFocusBorder",
     },
   },
   textarea: {
     variant: "forms.input",
   },
-  shadowTextarea: {
-    variant: "forms.shadowInput",
-  },
   select: {
     variant: "forms.input",
-  },
-  shadowSelect: {
-    variant: "forms.shadowInput",
   },
 };
 
@@ -451,20 +427,32 @@ export const colors = {
 
   // TEXT:
   text: baseColors.gray[7],
+  textMuted: baseColors.gray[6],
 
   // BG:
-  background: baseColors.gray[2],
-  light: baseColors.white,
-  dark: baseColors.gray[8],
+  background: baseColors.white,
+  // background: baseColors.gray[2],
+  bg1: baseColors.white,
+  bg2: baseColors.gray[1],
+  bg3: baseColors.gray[3],
+  bg4: baseColors.gray[6],
 
+  // COMP:
   divider: "rgba(255, 255, 255, 0.12)",
 
-  // background: baseColors.white,
+  inputBg: baseColors.white,
+  inputColor: baseColors.gray[7],
+  inputFocusBg: baseColors.white,
+  inputFocusColor: baseColors.blue[7],
+  inputFocusBorder: baseColors.blue[7],
 
+  // ALL-COLORS:
   primary: baseColors.blue[7],
   primaryHover: baseColors.blue[8],
-  secondary: baseColors.gray[6],
-  secondaryHover: baseColors.gray[8],
+  secondary: baseColors.gray[1],
+  secondaryHover: baseColors.gray[3],
+  muted: baseColors.gray[6],
+  mutedHover: baseColors.gray[7],
   success: baseColors.green[7],
   successHover: baseColors.green[8],
   danger: baseColors.red[7],
@@ -474,9 +462,6 @@ export const colors = {
   warning: baseColors.yellow[7],
   warningHover: baseColors.yellow[8],
 
-  muted: baseColors.gray[3],
-  textMuted: baseColors.gray[6],
-
   modes: {
     dark: {
       // TEXT:
@@ -484,10 +469,20 @@ export const colors = {
 
       // BG:
       background: "rgb(23, 43, 58)",
-      light: "rgb(15, 32, 45)",
-      dark: "rgb(9, 20, 28)",
+      bg1: "rgba(15, 32, 45, 0.50)",
+      bg2: "rgb(15, 32, 45)",
+      bg3: "rgba(9, 20, 28, 0.50)",
+      bg4: "rgb(9, 20, 28)",
 
+      // COMP:
       divider: "rgba(255, 255, 255, 0.06)",
+
+      // INPUT:
+      inputBg: "rgb(23, 43, 58)",
+      inputColor: "baseColors.gray[6]",
+      inputFocusBg: "rgb(23, 43, 58)",
+      inputFocusColor: baseColors.white,
+      inputFocusBorder: baseColors.white,
 
       // BTN:
       secondary: "rgb(15, 32, 45)",
@@ -736,6 +731,9 @@ export const styles = {
     lineHeight: "body",
     fontWeight: "body",
     fontSize: 1,
+    maxWidth: "100%",
+    overflowX: "hidden",
+    overflowY: "auto",
   },
   a: {
     color: "primary",

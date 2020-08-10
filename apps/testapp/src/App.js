@@ -5,6 +5,7 @@ import SwitchTheme from "./SwitchTheme";
 // import bootstrap from "./themes/bootstrap";
 import jagTheme1 from "./themes/jagTheme1";
 import jagTheme2 from "./themes/jagTheme2";
+import { Box } from "@jag-ui-react/core";
 
 const themes = {
   jagTheme2,

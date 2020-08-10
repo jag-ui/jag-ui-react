@@ -47,8 +47,8 @@ export const Radio = React.forwardRef(({ className, sx, variant = "radio", ...pr
         position: "absolute",
         opacity: 0,
         zIndex: -1,
-        width: 1,
-        height: 1,
+        width: "inherit",
+        height: "inherit",
         overflow: "hidden",
       }}
     />

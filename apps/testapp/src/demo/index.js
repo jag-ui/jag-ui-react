@@ -26,7 +26,7 @@ import TypographyDemo from "./TypographyDemo";
 
 export default function Demo() {
   return (
-    <Box px={3} variant="styles.root">
+    <Box px={5}>
       <AlertDemo />
       <BadgeDemo />
       <LinkDemo />

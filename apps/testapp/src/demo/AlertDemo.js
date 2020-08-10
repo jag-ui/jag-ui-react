@@ -8,7 +8,7 @@ export default function AlertDemo() {
     <Box>
       <Heading>Alert Demo</Heading>
       <Divider />
-      <Box my={2} px={3}>
+      <Box my={2}>
         <Heading as="h3" mt={3} mb={2}>
           Alerts: (Solid){" "}
         </Heading>

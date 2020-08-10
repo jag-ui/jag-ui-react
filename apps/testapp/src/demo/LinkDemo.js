@@ -7,7 +7,7 @@ import { FaCog, FaTimes, FaGlobe } from "react-icons/fa";
 const SimpleButtonDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="styles.h5" mb={3}>
         Default Link [variant="simple"]
       </Heading>
 
@@ -18,8 +18,8 @@ const SimpleButtonDemo = () => {
         <Link href="#" xcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" xcolor="white" mr={3}>
-          White
+        <Link href="#" xcolor="muted" mr={3}>
+          Muted
         </Link>
         <Link href="#" xcolor="success" mr={3}>
           Success
@@ -45,8 +45,8 @@ const SimpleButtonDemo = () => {
         <Link href="#" kind="button" xcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="white" mr={3}>
-          White
+        <Link href="#" kind="button" xcolor="muted" mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" xcolor="success" mr={3}>
           Success
@@ -73,8 +73,8 @@ const SimpleButtonDemo = () => {
         <Link href="#" kind="button" xcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="white" borderRadius="full" mr={3}>
-          White
+        <Link href="#" kind="button" xcolor="muted" borderRadius="full" mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" xcolor="success" borderRadius="full" mr={3}>
           Success
@@ -120,8 +120,8 @@ const SimpleButtonDemo = () => {
         <Link href="#" kind="button" xcolor="secondary" disabled mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="white" disabled mr={3}>
-          White
+        <Link href="#" kind="button" xcolor="muted" disabled mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" xcolor="success" disabled mr={3}>
           Success
@@ -150,9 +150,9 @@ const SimpleButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Link>
-        <Link href="#" kind="button" xcolor="white" mr={3}>
+        <Link href="#" kind="button" xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          White
+          Muted
         </Link>
         <Link href="#" kind="button" xcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -189,8 +189,8 @@ const OutlineButtonDemo = () => {
         <Link href="#" kind="button" variant="outline" xcolor="secondary" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="white" mr={3}>
-          White
+        <Link href="#" kind="button" variant="outline" xcolor="muted" mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" variant="outline" xcolor="success" mr={3}>
           Success
@@ -217,8 +217,8 @@ const OutlineButtonDemo = () => {
         <Link href="#" kind="button" variant="outline" xcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="white" borderRadius="full" mr={3}>
-          White
+        <Link href="#" kind="button" variant="outline" xcolor="muted" borderRadius="full" mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" variant="outline" xcolor="success" borderRadius="full" mr={3}>
           Success
@@ -264,8 +264,8 @@ const OutlineButtonDemo = () => {
         <Link href="#" kind="button" variant="outline" xcolor="secondary" disabled mr={3}>
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="white" disabled mr={3}>
-          White
+        <Link href="#" kind="button" variant="outline" xcolor="muted" disabled mr={3}>
+          Muted
         </Link>
         <Link href="#" kind="button" variant="outline" xcolor="success" disabled mr={3}>
           Success
@@ -294,9 +294,9 @@ const OutlineButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Link>
-        <Link href="#" kind="button" variant="outline" xcolor="white" mr={3}>
+        <Link href="#" kind="button" variant="outline" xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          White
+          Muted
         </Link>
         <Link href="#" kind="button" variant="outline" xcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -351,7 +351,7 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" xcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="white" mr={3}>
+        <Link variant="icon" xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
         <Link variant="icon" xcolor="success" mr={3}>
@@ -381,7 +381,7 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" xcolor="secondary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" xcolor="white" disabled mr={3}>
+        <Link variant="icon" xcolor="muted" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
         <Link variant="icon" xcolor="success" disabled mr={3}>
@@ -407,14 +407,14 @@ export default function LinkDemo() {
   // console.log("ButtonDemo: ", { theme });
 
   return (
-    <Box>
-      <Heading>Link Demo</Heading>
+    <>
+      <Heading mt={5}>Link Demo</Heading>
       <Divider />
-      <Box my={10} p={4}>
+      <Box p={4} boxShadow="default" bg="bg2">
         <SimpleButtonDemo />
         <OutlineButtonDemo />
         <LinkWithIconDemo />
       </Box>
-    </Box>
+    </>
   );
 }

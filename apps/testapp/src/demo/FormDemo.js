@@ -8,7 +8,7 @@ function FormDemo1() {
   const [switch1Val, setSwitch1Val] = useState(true);
   const [switch2Val, setSwitch2Val] = useState(true);
   return (
-    <Box my={10} p={4}>
+    <Box my={3} p={4} boxShadow="default" bg="bg2">
       <Heading mb={3}>Form1</Heading>
       <Box as="form" onSubmit={(e) => e.preventDefault()}>
         <Flex flexWrap="wrap">
@@ -107,10 +107,10 @@ function FormDemo1() {
 
         <Flex mb={3}>
           <Box ml="auto">
-            <Button variant="secondary" mr={2}>
+            <Button xcolor="secondary" mr={2}>
               Cancel
             </Button>
-            <Button variant="primary">Save</Button>
+            <Button xcolor="primary">Save</Button>
           </Box>
         </Flex>
       </Box>
@@ -124,30 +124,30 @@ function FormDemo2() {
   const [switch2Val, setSwitch2Val] = useState(true);
 
   return (
-    <Box my={10} p={4} bg={"#f7fafc"}>
+    <Box my={10} p={4} boxShadow="default" bg="bg2">
       <Heading mb={3}>Form1</Heading>
       <Box as="form" onSubmit={(e) => e.preventDefault()}>
         <Flex flexWrap="wrap">
           <Box pr={2} py={2} width={[1, 1 / 2]}>
             <Label htmlFor="firstName">First Name</Label>
-            <Input id="firstName" name="firstName" defaultValue="Jagadeesh" variant="shadowInput" />
+            <Input id="firstName" name="firstName" defaultValue="Jagadeesh" />
           </Box>
           <Box pl={2} py={2} width={[1, 1 / 2]}>
             <Label htmlFor="lastName">Last Name</Label>
-            <Input id="lastName" name="lastName" defaultValue="Palaniappan" variant="shadowInput" />
+            <Input id="lastName" name="lastName" defaultValue="Palaniappan" />
           </Box>
         </Flex>
         <Flex mb={3}>
           <Box width={1}>
             <Label htmlFor="description">Description</Label>
-            <Textarea id="description" name="description" variant="shadowTextarea" sx={{ height: "150px" }} />
+            <Textarea id="description" name="description" sx={{ height: "150px" }} />
           </Box>
         </Flex>
 
         <Flex flexWrap="wrap">
           <Box pr={2} py={2} width={[1, 1 / 2]}>
             <Label htmlFor="location">Location</Label>
-            <Select id="location" name="location" defaultValue="NYC" variant="shadowSelect">
+            <Select id="location" name="location" defaultValue="NYC">
               <option>NYC</option>
               <option>DC</option>
               <option>ATX</option>
@@ -223,10 +223,10 @@ function FormDemo2() {
 
         <Flex mb={3}>
           <Box ml="auto">
-            <Button variant="secondary" mr={2}>
+            <Button xcolor="secondary" mr={2}>
               Cancel
             </Button>
-            <Button variant="primary">Save</Button>
+            <Button xcolor="primary">Save</Button>
           </Box>
         </Flex>
       </Box>
@@ -240,7 +240,7 @@ export default function FormDemo() {
       <Heading>Form Demo</Heading>
       <Divider />
       <FormDemo1 />
-      <FormDemo2 />
+      {/* <FormDemo2 /> */}
     </Box>
   );
 }

@@ -19,8 +19,8 @@ const SimpleButtonDemo = () => {
         <Button xcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button xcolor="white" mr={3}>
-          White
+        <Button xcolor="muted" mr={3}>
+          Muted
         </Button>
         <Button xcolor="success" mr={3}>
           Success
@@ -50,8 +50,8 @@ const SimpleButtonDemo = () => {
         <Button xcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button xcolor="white" borderRadius="full" mr={3}>
-          White
+        <Button xcolor="muted" borderRadius="full" mr={3}>
+          Muted
         </Button>
         <Button xcolor="success" borderRadius="full" mr={3}>
           Success
@@ -100,8 +100,8 @@ const SimpleButtonDemo = () => {
         <Button xcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button xcolor="white" disabled mr={3}>
-          White
+        <Button xcolor="muted" disabled mr={3}>
+          Muted
         </Button>
         <Button xcolor="success" disabled mr={3}>
           Success
@@ -134,9 +134,9 @@ const SimpleButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button xcolor="white" mr={3}>
+        <Button xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          White
+          Muted
         </Button>
         <Button xcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -173,8 +173,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" xcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="white" mr={3}>
-          White
+        <Button variant="outline" xcolor="muted" mr={3}>
+          Muted
         </Button>
         <Button variant="outline" xcolor="success" mr={3}>
           Success
@@ -201,8 +201,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" xcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="white" borderRadius="full" mr={3}>
-          White
+        <Button variant="outline" xcolor="muted" borderRadius="full" mr={3}>
+          Muted
         </Button>
         <Button variant="outline" xcolor="success" borderRadius="full" mr={3}>
           Success
@@ -248,8 +248,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" xcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" xcolor="white" disabled mr={3}>
-          White
+        <Button variant="outline" xcolor="muted" disabled mr={3}>
+          Muted
         </Button>
         <Button variant="outline" xcolor="success" disabled mr={3}>
           Success
@@ -278,9 +278,9 @@ const OutlineButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button variant="outline" xcolor="white" mr={3}>
+        <Button variant="outline" xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          White
+          Muted
         </Button>
         <Button variant="outline" xcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -335,7 +335,7 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" xcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="white" mr={3}>
+        <Button variant="icon" xcolor="muted" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
         <Button variant="icon" xcolor="success" mr={3}>
@@ -365,7 +365,7 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" xcolor="secondary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" xcolor="white" disabled mr={3}>
+        <Button variant="icon" xcolor="muted" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
         <Button variant="icon" xcolor="success" disabled mr={3}>
@@ -391,14 +391,14 @@ export default function ButtonDemo() {
   // console.log("ButtonDemo: ", { theme });
 
   return (
-    <Box>
-      <Heading>Button Demo</Heading>
+    <>
+      <Heading mt={5}>Button Demo</Heading>
       <Divider />
-      <Box my={10} p={4}>
+      <Box p={4} boxShadow="default" bg="bg2">
         <SimpleButtonDemo />
         <OutlineButtonDemo />
         <BtnWithIconsDemo />
       </Box>
-    </Box>
+    </>
   );
 }

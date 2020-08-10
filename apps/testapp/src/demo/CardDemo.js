@@ -26,7 +26,7 @@ const ImgCard = ({ title }) => {
 
 const MyCustomCard = ({ icon, ...props }) => {
   return (
-    <Box boxShadow="default" bg="light" mb={3} {...props}>
+    <Box boxShadow="default" bg="bg2" mb={3} {...props}>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
           <Heading>Card Title</Heading>
@@ -41,10 +41,26 @@ const MyCustomCard = ({ icon, ...props }) => {
     </Box>
   );
 };
+const MyCustomCard2 = ({ icon, ...props }) => {
+  return (
+    <Box boxShadow="default" bg="bg1" mb={3} {...props}>
+      <Flex justifyContent="center">{icon}</Flex>
+      <Flex px={3} py={2}>
+        <Box flexGrow={1}>
+          <Heading>Card Title</Heading>
+          <Text>Card Description</Text>
+        </Box>
+        <Button>
+          <FaEllipsisH />
+        </Button>
+      </Flex>
+    </Box>
+  );
+};
 
 const MyImageCard = ({ icon, image }) => {
   return (
-    <Box boxShadow="default" bg="light" mb={3}>
+    <Box boxShadow="default" bg="bg2" mb={3}>
       {image && <Flex justifyContent="center">{image}</Flex>}
       {icon && <Flex justifyContent="center">{icon}</Flex>}
       <Flex px={3} py={2}>
@@ -88,10 +104,11 @@ const MyCustomImageCard = ({ imageUrl }) => {
 
 export default function CardDemo() {
   return (
-    <Box>
-      <Heading>Card Demo</Heading>
+    <>
+      <Heading mt={5}>Button Demo</Heading>
+      <Divider />
 
-      <Box my={10} p={4}>
+      <Box my={3}>
         <MyCustomCard icon={<Icon icon={<FaChartBar size={"32rem"} />} />} />
         <MyCustomCard icon={<Icon icon={<FaChartLine size={"32rem"} />} />} />
 
@@ -100,13 +117,13 @@ export default function CardDemo() {
           <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard2 icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard2 icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard2 icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
+          <MyCustomCard2 icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
-          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
-          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
-          <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
-          <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
           <MyCustomCard icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
         </Grid>
 
@@ -138,6 +155,6 @@ export default function CardDemo() {
           <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
         </Box>
       </Box>
-    </Box>
+    </>
   );
 }
