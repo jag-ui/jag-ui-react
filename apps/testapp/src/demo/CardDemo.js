@@ -1,10 +1,11 @@
-import { Button, Divider, Grid, Heading, Icon, Image, Text } from "@jag-ui-react/components";
+import { Button } from "@jag-ui-react/button";
+import { Divider, Grid, Heading, Icon, Image, Text } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
 import { FaChartBar, FaChartLine, FaEllipsisH } from "react-icons/fa";
 
-const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
-
+// const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
+/* 
 const ImgCard = ({ title }) => {
   return (
     <Box
@@ -23,7 +24,7 @@ const ImgCard = ({ title }) => {
     </Box>
   );
 };
-
+ */
 const MyCustomCard = ({ icon, ...props }) => {
   return (
     <Box boxShadow="default" bg="bg2" mb={3} {...props}>

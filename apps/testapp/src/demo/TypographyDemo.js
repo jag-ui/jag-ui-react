@@ -5,9 +5,9 @@ import React from "react";
 export default function TypographyDemo() {
   return (
     <Box>
-      <Heading>Typography Demo</Heading>
+      <Heading my={3}>Typography Demo</Heading>
       <Divider />
-      <Box my={10} p={4}>
+      <Box p={4} boxShadow="default" bg="bg2">
         <Heading variant="display">Display</Heading>
         <Heading>Default Heading</Heading>
         <Heading as="h1">Heading 1</Heading>

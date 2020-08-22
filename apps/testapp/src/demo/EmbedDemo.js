@@ -7,9 +7,10 @@ export default function EmbedDemo() {
     <Box>
       <Heading>Embed Demo</Heading>
       <Divider />
-      <Box my={10} p={4}>
+      <Box p={4} boxShadow="default" bg="bg2">
         {/* <Embed src="https://www.youtube.com/embed/gjnrtCKZqYg" allowFullScreen /> */}
         <Box
+          borderRadius={6}
           sx={{
             width: "100%",
             height: 0,

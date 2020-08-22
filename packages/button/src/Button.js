@@ -3,8 +3,7 @@ import { Box } from "@jag-ui-react/core";
 
 export const Button = React.forwardRef(
   ({ variant = "simple", vcolor = "default", vsize = "md", textColor, ...props }, ref) => {
-    console.log("Button22");
-
+    console.log("Button11");
     return (
       <Box
         ref={ref}
@@ -13,7 +12,7 @@ export const Button = React.forwardRef(
         vcolor={vcolor}
         vsize={vsize}
         {...props}
-        __themeKey="buttons111"
+        __themeKey="buttons"
         __css={{
           display: "inline-flex",
           alignItems: "center",

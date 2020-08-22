@@ -1,4 +1,4 @@
-import { Button } from "@jag-ui-react/components";
+import { Button } from "@jag-ui-react/button";
 import React from "react";
 import { useColorMode } from "theme-ui";
 

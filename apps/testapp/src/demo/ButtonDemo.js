@@ -1,8 +1,11 @@
-import { Button, Divider, Heading, Icon, IconButton, Link } from "@jag-ui-react/components";
+import { Button } from "@jag-ui-react/button";
+import { Divider, Heading, Icon } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
-import { FaCog, FaTimes, FaGlobe } from "react-icons/fa";
+import { FaCog, FaGlobe, FaTimes } from "react-icons/fa";
 // import { useThemeUI } from "theme-ui";
+
+console.log("Button", Button);
 
 const SimpleButtonDemo = () => {
   return (

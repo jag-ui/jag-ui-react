@@ -1,4 +1,5 @@
-import { Button, Divider, Heading } from "@jag-ui-react/components";
+import { Button } from "@jag-ui-react/button";
+import { Divider, Heading } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import { Checkbox, Field, Input, Label, Radio, Select, Slider, Switch, Textarea } from "@jag-ui-react/form";
 import React, { useState } from "react";

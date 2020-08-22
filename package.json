@@ -16,6 +16,7 @@
   "scripts": {
     "start": "yarn start:testapp",
     "start:testapp": "yarn workspace jag-ui-react-testapp start",
+    "watch": "lerna run watch --parallel",
     "watch:core": "yarn workspace @jag-ui-react/core watch",
     "watch:components": "yarn workspace @jag-ui-react/components watch",
     "watch:form": "yarn workspace @jag-ui-react/form watch",
@@ -43,11 +44,6 @@
     "lerna": "^3.20.2",
     "prettier": "^1.19.1",
     "microbundle": "^0.12.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test"
-    }
   },
   "jest": {
     "collectCoverageFrom": [

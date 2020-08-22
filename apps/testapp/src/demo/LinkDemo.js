@@ -12,25 +12,25 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4}>
-        <Link href="#" vcolor="primary" mr={3}>
+        <Link href="#" color="primary" mr={3}>
           Primary
         </Link>
-        <Link href="#" vcolor="secondary" mr={3}>
+        <Link href="#" color="text" mr={3}>
           Secondary
         </Link>
-        <Link href="#" vcolor="muted" mr={3}>
+        <Link href="#" color="muted" mr={3}>
           Muted
         </Link>
-        <Link href="#" vcolor="success" mr={3}>
+        <Link href="#" color="success" mr={3}>
           Success
         </Link>
-        <Link href="#" vcolor="danger" mr={3}>
+        <Link href="#" color="danger" mr={3}>
           Danger
         </Link>
-        <Link href="#" vcolor="info" mr={3}>
+        <Link href="#" color="info" mr={3}>
           Info
         </Link>
-        <Link href="#" vcolor="warning" mr={3}>
+        <Link href="#" color="warning" mr={3}>
           Warning
         </Link>
       </Flex>
@@ -345,25 +345,25 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="primary" mr={3}>
+        <Link variant="icon" color="primary" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="secondary" mr={3}>
+        <Link variant="icon" color="text" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="muted" mr={3}>
+        <Link variant="icon" color="muted" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="success" mr={3}>
+        <Link variant="icon" color="success" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="danger" mr={3}>
+        <Link variant="icon" color="danger" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="info" mr={3}>
+        <Link variant="icon" color="info" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="warning" mr={3}>
+        <Link variant="icon" color="warning" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
       </Flex>
@@ -375,25 +375,25 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="primary" disabled mr={3}>
+        <Link variant="icon" color="primary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="secondary" disabled mr={3}>
+        <Link variant="icon" color="text" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="muted" disabled mr={3}>
+        <Link variant="icon" color="muted" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="success" disabled mr={3}>
+        <Link variant="icon" color="success" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="danger" disabled mr={3}>
+        <Link variant="icon" color="danger" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="info" disabled mr={3}>
+        <Link variant="icon" color="info" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" vcolor="warning" disabled mr={3}>
+        <Link variant="icon" color="warning" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
       </Flex>

@@ -3,7 +3,7 @@ import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
 
 const AVATAR = "http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg";
-const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
+// const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 
 const RoundedImgDemo = () => {
   return (
@@ -62,16 +62,20 @@ export default function AvatarDemo() {
     <Box>
       <Heading>Image / Avatar Demo</Heading>
       <Divider />
-      <Box my={10} p={4}>
-        <Flex flexWrap="wrap" alignItems="center">
-          <Image src={AVATAR} variant="avatar" mx={2} />
-          <Image src={AVATAR} variant="avatar" size="50px" mx={2} />
-          <Image src={AVATAR} variant="avatar" size="60px" mx={2} />
-        </Flex>
-
+      <Box p={4} boxShadow="default" bg="bg2">
         <RoundedImgDemo />
-        <Box>
-          <Image src={IMG} />
+        <Flex flexWrap="wrap" alignItems="center">
+          <Image src={AVATAR} variant="avatar" size="2rem" mr={2} />
+          <Image src={AVATAR} variant="avatar" size="4rem" mr={2} />
+          <Image src={AVATAR} variant="avatar" size="6rem" mr={2} />
+        </Flex>
+        <Flex flexWrap="wrap" alignItems="center" mt={3}>
+          <Image src={AVATAR} variant="avatar" size="2rem" borderRadius={6} mr={2} />
+          <Image src={AVATAR} variant="avatar" size="4rem" borderRadius={6} mr={2} />
+          <Image src={AVATAR} variant="avatar" size="6rem" borderRadius={6} mr={2} />
+        </Flex>
+        <Box mt={3}>
+          <Image src="https://source.unsplash.com/random?sky" boxShadow="default" borderRadius={6} />
         </Box>
       </Box>
     </Box>

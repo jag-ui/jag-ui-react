@@ -28,20 +28,23 @@ export default function Demo() {
   return (
     <Box px={5}>
       <AlertDemo />
-      <BadgeDemo />
       <LinkDemo />
       <ButtonDemo />
       <CardDemo />
       <FormDemo />
 
+      <FlexDemo />
+      <GridDemo />
+      <ImageDemo />
+      <EmbedDemo />
+      <TypographyDemo />
+
+      {/* TODO */}
+      <BadgeDemo />
       <ContainerDemo />
       <DividerDemo />
       <DropdownDemo />
-      <EmbedDemo />
-      <FlexDemo />
 
-      <GridDemo />
-      <ImageDemo />
       <MessageDemo />
       <ModalDemo />
       <NavbarDemo />
@@ -51,7 +54,6 @@ export default function Demo() {
       <TableDemo />
       <TabsDemo />
       <TooltipDemo />
-      <TypographyDemo />
     </Box>
   );
 }
