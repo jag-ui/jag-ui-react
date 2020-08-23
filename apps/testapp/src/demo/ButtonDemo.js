@@ -1,4 +1,5 @@
-import { Button } from "@jag-ui-react/button";
+// import { Button } from "@jag-ui-react/button";
+import { Button } from "jag-ui-react";
 import { Divider, Heading, Icon } from "@jag-ui-react/components";
 import { Box, Flex } from "@jag-ui-react/core";
 import React from "react";
