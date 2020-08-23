@@ -2,6 +2,7 @@
 // and https://tailwindcss.com/components
 
 import Button from "./Button.style";
+import Modal from "./Modal.style";
 
 export const borderWidths = {
   px: "1px",
@@ -629,7 +630,7 @@ const text = {
     fontFamily: "heading",
     lineHeight: "heading",
     fontWeight: "heading",
-    color: "text",
+    color: "inherit",
   },
   display: {
     fontFamily: "heading",
@@ -666,8 +667,9 @@ export const tailwind = {
   inputs,
   transforms,
   transitions,
-  Button,
   links,
+  Button,
+  Modal,
 };
 
 export default tailwind;

@@ -13,7 +13,7 @@ const btnCommonStyles = {
 const btnColors = {
   ghost: {
     backgroundColor: "transparent",
-    color: "text",
+    color: "inherit",
     boxShadow: "none",
     "&:hover": {
       boxShadow: 3,

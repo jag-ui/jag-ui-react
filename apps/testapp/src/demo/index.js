@@ -27,9 +27,11 @@ import TypographyDemo from "./TypographyDemo";
 export default function Demo() {
   return (
     <Box px={5}>
+      <ButtonDemo />
+      <ModalDemo />
       <AlertDemo />
       <LinkDemo />
-      <ButtonDemo />
+
       <CardDemo />
       <FormDemo />
 
