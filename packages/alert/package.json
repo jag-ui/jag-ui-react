@@ -1,5 +1,5 @@
 {
-  "name": "jag-ui-react",
+  "name": "@jag-ui-react/alert",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -11,13 +11,7 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.0",
-    "theme-ui": "^0.3.1",
-    "@jag-ui-react/core": "^1.0.11",
-    "@jag-ui-react/box": "^0.0.0",
-    "@jag-ui-react/alert": "^0.0.0",
-    "@jag-ui-react/button": "^0.0.0",
-    "@jag-ui-react/link": "^0.0.0",
-    "@jag-ui-react/modal": "^0.0.0"
+    "@jag-ui-react/box": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"

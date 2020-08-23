@@ -4,6 +4,7 @@
 import Button from "./Button.style";
 import Link from "./Link.style";
 import Modal from "./Modal.style";
+import Alert from "./Alert.style";
 
 export const borderWidths = {
   px: "1px",
@@ -40,92 +41,6 @@ export const baseColors = {
   indigo: [null, "#ebf4ff", "#c3dafe", "#a3bffa", "#7f9cf5", "#667eea", "#5a67d8", "#4c51bf", "#434190", "#3c366b"],
   purple: [null, "#faf5ff", "#e9d8fd", "#d6bcfa", "#b794f4", "#9f7aea", "#805ad5", "#6b46c1", "#553c9a", "#44337a"],
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
-};
-
-const alertColors = {
-  default: {
-    backgroundColor: "transparent",
-    color: "text",
-  },
-  primary: {
-    backgroundColor: `primary`,
-    color: `white`,
-  },
-  secondary: {
-    backgroundColor: `secondary`,
-    color: `text`,
-  },
-  muted: {
-    backgroundColor: `muted`,
-    color: `white`,
-  },
-  success: {
-    backgroundColor: `success`,
-    color: `white`,
-  },
-  danger: {
-    backgroundColor: `danger`,
-    color: `white`,
-  },
-  info: {
-    backgroundColor: `info`,
-    color: `white`,
-  },
-  warning: {
-    backgroundColor: `warning`,
-    color: `white`,
-  },
-};
-
-const alertOutlineColors = {
-  primary: {
-    borderColor: `primary`,
-    color: `primary`,
-  },
-  secondary: {
-    borderColor: `text`,
-    color: `text`,
-  },
-  muted: {
-    borderColor: `gray.1`,
-    color: `gray.7`,
-  },
-  success: {
-    borderColor: `success`,
-    color: `success`,
-  },
-  danger: {
-    borderColor: `danger`,
-    color: `danger`,
-  },
-  info: {
-    borderColor: `info`,
-    color: `info`,
-  },
-  warning: {
-    borderColor: `warning`,
-    color: `warning`,
-  },
-};
-
-const alerts = {
-  base: {},
-  simple: {
-    styles: {
-      borderRadius: `default`,
-    },
-    colors: { ...alertColors },
-    // sizes: { ...btnSizes },
-  },
-  outline: {
-    styles: {
-      borderRadius: `default`,
-      borderWidth: `1px`,
-      borderStyle: `solid`,
-    },
-    colors: { ...alertOutlineColors },
-    // sizes: { ...btnSizes },
-  },
 };
 
 const forms = {
@@ -636,7 +551,6 @@ export const tailwind = {
   radii,
   zIndices,
   styles,
-  alerts,
   forms,
   text,
   inputs,
@@ -645,6 +559,7 @@ export const tailwind = {
   Button,
   Link,
   Modal,
+  Alert,
 };
 
 export default tailwind;

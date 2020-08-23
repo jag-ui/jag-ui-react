@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@jag-ui-react/box";
 
 export const Button = React.forwardRef((props, ref) => {
-  console.log("Button11");
   return (
     <Box
       ref={ref}
