@@ -17,7 +17,7 @@ const SimpleButtonDemo = () => {
 
       <Flex mb={4}>
         <Button mr={3}>Default</Button>
-        <Button vcolor="primary" mr={3}>
+        <Button variant="simple" vcolor="primary" mr={3}>
           Primary
         </Button>
         <Button vcolor="secondary" mr={3}>

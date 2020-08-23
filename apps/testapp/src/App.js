@@ -5,8 +5,10 @@ import SwitchTheme from "./SwitchTheme";
 // import bootstrap from "./themes/bootstrap";
 import jagTheme1 from "./themes/jagTheme1";
 import jagTheme2 from "./themes/jagTheme2";
+import jag1 from "./themes/jag1";
 
 const themes = {
+  jag1,
   jagTheme2,
   jagTheme1,
 };
