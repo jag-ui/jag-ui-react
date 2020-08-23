@@ -1,6 +1,5 @@
 import { Divider, Heading, Text, Icon } from "@jag-ui-react/components";
-import { Modal } from "@jag-ui-react/modal";
-import { Button, Box, Flex } from "jag-ui-react";
+import { Modal, Button, Box, Flex } from "jag-ui-react";
 import React, { useState } from "react";
 import { FaTimes, FaExclamationTriangle } from "react-icons/fa";
 
@@ -26,8 +25,8 @@ const LargeModalBody = () => (
     </ul>
     <h3>Third level</h3>
     <p>
-      Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac
-      tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.
+      Quisque ante lacus, malesuada ac auctor vitae, congue Phasellus lacus ex, semper ac tortor nec, fringilla
+      condimentum orci. Fusce eu rutrum tellus.
     </p>
     <ol>
       <li>Donec blandit a lorem id convallis.</li>

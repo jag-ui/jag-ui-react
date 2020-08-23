@@ -17,9 +17,6 @@
   },
   "dependencies": {
     "jag-ui-react": "^0.0.0",
-    "@jag-ui-react/box": "^0.0.0",
-    "@jag-ui-react/button": "^0.0.0",
-    "@jag-ui-react/modal": "^0.0.0",
     "@jag-ui-react/core": "^1.0.11",
     "@jag-ui-react/components": "^1.0.11",
     "@jag-ui-react/form": "^1.0.11",

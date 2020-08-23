@@ -28,10 +28,10 @@ export default function Demo() {
   return (
     <Box px={5}>
       <ButtonDemo />
-      <ModalDemo />
-      <AlertDemo />
       <LinkDemo />
+      <ModalDemo />
 
+      <AlertDemo />
       <CardDemo />
       <FormDemo />
 

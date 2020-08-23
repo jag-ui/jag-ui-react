@@ -2,6 +2,7 @@
 // and https://tailwindcss.com/components
 
 import Button from "./Button.style";
+import Link from "./Link.style";
 import Modal from "./Modal.style";
 
 export const borderWidths = {
@@ -39,32 +40,6 @@ export const baseColors = {
   indigo: [null, "#ebf4ff", "#c3dafe", "#a3bffa", "#7f9cf5", "#667eea", "#5a67d8", "#4c51bf", "#434190", "#3c366b"],
   purple: [null, "#faf5ff", "#e9d8fd", "#d6bcfa", "#b794f4", "#9f7aea", "#805ad5", "#6b46c1", "#553c9a", "#44337a"],
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
-};
-
-const linkCommonStyles = {
-  cursor: `pointer`,
-  lineHeight: `inherit`,
-  "&:disabled": {
-    opacity: ".65",
-    boxShadow: "none",
-    transform: "none",
-    cursor: "not-allowed",
-  },
-};
-
-const links = {
-  simple: {
-    ...linkCommonStyles,
-    // color: "primary",
-    textDecoration: "none",
-    ":hover": {
-      // fontWeight: "bold",
-      textDecoration: "underline",
-    },
-  },
-  icon: {
-    ...linkCommonStyles,
-  },
 };
 
 const alertColors = {
@@ -667,8 +642,8 @@ export const tailwind = {
   inputs,
   transforms,
   transitions,
-  links,
   Button,
+  Link,
   Modal,
 };
 
