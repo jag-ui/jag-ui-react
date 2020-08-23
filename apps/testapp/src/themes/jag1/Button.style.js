@@ -190,7 +190,7 @@ export const button = {
     // width: 300,
   },
   variants: {
-    simple: {
+    solid {
       variantStyle: {
         boxShadow: 3,
         border: `none`,
@@ -226,7 +226,7 @@ export const button = {
     },
   },
   defaultProps: {
-    variant: "simple",
+    variant: "solid,
     vsize: "md",
     vcolor: "ghost",
   },

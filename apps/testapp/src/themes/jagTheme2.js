@@ -225,7 +225,7 @@ const btnSizes = {
 };
 
 export const buttons = {
-  simple: {
+  solid: {
     styles: {
       ...btnCommonStyles,
       boxShadow: 3,
@@ -286,7 +286,7 @@ const linkCommonStyles = {
 };
 
 const links = {
-  simple: {
+  solid: {
     ...linkCommonStyles,
     // color: "primary",
     textDecoration: "none",
@@ -368,7 +368,7 @@ const alertOutlineColors = {
 
 const alerts = {
   base: {},
-  simple: {
+  solid: {
     styles: {
       borderRadius: `default`,
     },

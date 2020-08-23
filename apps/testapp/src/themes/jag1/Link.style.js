@@ -14,7 +14,7 @@ export const button = {
     ...linkCommonStyles,
   },
   variants: {
-    simple: {
+    solid: {
       variantStyle: {
         textDecoration: "none",
         ":hover": {
@@ -24,7 +24,7 @@ export const button = {
     },
   },
   defaultProps: {
-    variant: "simple",
+    variant: "solid",
   },
 };
 

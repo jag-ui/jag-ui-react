@@ -9,7 +9,7 @@ const SimpleButtonDemo = () => {
   return (
     <>
       <Heading variant="styles.h5" mb={3}>
-        Default Link [variant="simple"]
+        Default Link [variant="solid"]
       </Heading>
 
       <Flex mb={4}>
@@ -36,7 +36,7 @@ const SimpleButtonDemo = () => {
         </Link>
       </Flex>
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link Styled Link [kind="button"] [variant="simple"]
+        Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
       <Flex mb={4}>
@@ -64,7 +64,7 @@ const SimpleButtonDemo = () => {
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link Styled Link [kind="button"] [variant="simple"] [borderRadius="full"]
+        Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
       <Flex mb={4}>
@@ -180,7 +180,7 @@ const OutlineButtonDemo = () => {
   return (
     <>
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Default Link Styled Link [kind="button"] [variant="simple"]
+        Default Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
       <Flex mb={4}>
@@ -208,7 +208,7 @@ const OutlineButtonDemo = () => {
       </Flex>
 
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link Styled Link [kind="button"] [variant="simple"] [borderRadius="full"]
+        Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
       <Flex mb={4}>
@@ -324,7 +324,7 @@ const LinkWithIconDemo = () => {
   return (
     <>
       <Heading variant="styles.h5" mt={4} mb={3}>
-        Link with Icon [variant="simple"]
+        Link with Icon [variant="solid"]
       </Heading>
       <Flex mb={4}>
         <Link mr={3}>

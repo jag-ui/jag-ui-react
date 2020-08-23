@@ -69,7 +69,7 @@ export const alert = {
     borderRadius: `default`,
   },
   variants: {
-    simple: {
+    solid: {
       variantStyle: {},
       variantColors: { ...alertColors },
     },
@@ -82,7 +82,7 @@ export const alert = {
     },
   },
   defaultProps: {
-    variant: "simple",
+    variant: "solid",
   },
 };
 

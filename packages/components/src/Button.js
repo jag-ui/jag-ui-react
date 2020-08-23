@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@jag-ui-react/core";
 
 export const Button = React.forwardRef(
-  ({ variant = "simple", vcolor = "default", vsize = "md", textColor, ...props }, ref) => {
+  ({ variant = "solid", vcolor = "default", vsize = "md", textColor, ...props }, ref) => {
     console.log("Button22");
 
     return (

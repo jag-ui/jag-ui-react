@@ -13,7 +13,7 @@ export default function AlertDemo() {
         <Heading as="h3" mt={3} mb={2}>
           Alerts: (Solid){" "}
         </Heading>
-        <Alert variant="simple" vcolor="primary" my={2}>
+        <Alert variant="solid" vcolor="primary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -27,7 +27,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="simple" vcolor="secondary" my={2}>
+        <Alert variant="solid" vcolor="secondary" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -41,7 +41,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="simple" vcolor="success" my={2}>
+        <Alert variant="solid" vcolor="success" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -55,7 +55,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="simple" vcolor="danger" my={2}>
+        <Alert variant="solid" vcolor="danger" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
@@ -69,7 +69,7 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="simple" vcolor="info" my={2}>
+        <Alert variant="solid" vcolor="info" my={2}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
