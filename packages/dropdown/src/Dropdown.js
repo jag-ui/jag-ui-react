@@ -17,7 +17,7 @@ export const DropdownItem = React.forwardRef((props, ref) => {
 });
 DropdownItem.displayName = "DropdownItem";
 
-export const Dropdown = React.forwardRef(({ placement, active, children, ...props }, ref) => {
+export const Dropdown = React.forwardRef(({ active, placement, enableArrow = false, children, ...props }, ref) => {
   const buttonRef = useRef(null);
 
   let DropdownToggle = null;
@@ -46,7 +46,12 @@ export const Dropdown = React.forwardRef(({ placement, active, children, ...prop
   return (
     <Box ref={ref} {...props}>
       <Box ref={buttonRef}>{DropdownToggle}</Box>
-      <Popover triggerRef={buttonRef} placement={placement} active={active} disableArrow {...DropdownMenuProps}>
+      <Popover
+        triggerRef={buttonRef}
+        placement={placement}
+        active={active}
+        enableArrow={enableArrow}
+        {...DropdownMenuProps}>
         {DropdownMenu}
       </Popover>
     </Box>

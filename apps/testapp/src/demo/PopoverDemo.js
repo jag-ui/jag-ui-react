@@ -26,7 +26,7 @@ export default function PopoverDemo() {
     <Box>
       <Heading>Popover Demo</Heading>
       <Divider />
-      <Box m="14rem">
+      <Box m="12.5rem">
         <Flex justifyContent="space-between">
           <SamplePopover placement="top-start" />
           <SamplePopover placement="top" />
