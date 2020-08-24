@@ -138,105 +138,61 @@ const bsPopover = {
   ".popover-body": { padding: ".5rem .95rem", color: "#525f7f" },
 };
 
-export const popover = {
+export const popover11 = {
   baseStyle: {
-    top: "0",
-    left: "0",
-    zIndex: "1060",
-    maxWidth: "276px",
-    fontFamily: "Open Sans,sans-serif",
-    fontStyle: "normal",
-    fontWeight: "400",
-    lineHeight: "1.5",
-    textAlign: ["left", "start"],
-    textDecoration: "none",
-    textShadow: "none",
-    textTransform: "none",
-    letterSpacing: "normal",
-    wordBreak: "normal",
-    wordSpacing: "normal",
-    whiteSpace: "normal",
-    lineBreak: "auto",
-    fontSize: ".875rem",
-    wordWrap: "break-word",
-    backgroundColor: "#fff",
-    backgroundClip: "padding-box",
-    border: "1px solid rgba(0,0,0,.05)",
-    borderRadius: ".4375rem",
-    boxShadow: "0 .5rem 2rem 0 rgba(0,0,0,.2)",
-    '&[data-popper-placement^="top"]': {
-      marginBottom: ".75rem",
-    },
+    boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
+    borderRadius: "5px",
+    backgroundColor: "white",
+    padding: "20px",
+    textAlign: "center",
     '&[data-popper-placement^="top"] > #arrow': {
-      bottom: "calc((.75rem + 1px) * -1)",
-      ":after": {
-        borderWidth: ".75rem .75rem 0",
-        bottom: "1px",
-        borderTopColor: "#fff",
-      },
-      ":before": {
-        borderWidth: ".75rem .75rem 0",
-        bottom: "0",
-        borderTopColor: "transparent",
-      },
-    },
-
-    '&[data-popper-placement^="right"]': {
-      marginLeft: ".75rem",
-    },
-    '&[data-popper-placement^="right"] > #arrow': {
-      left: "calc((.75rem + 1px) * -1)",
-      width: ".75rem",
-      height: "1.5rem",
-      margin: ".4375rem 0",
-      ":after": {
-        borderWidth: ".75rem .75rem .75rem 0",
-        left: "1px",
-        borderRightColor: "#fff",
-      },
-      ":before": {
-        borderWidth: ".75rem .75rem .75rem 0",
-        left: "0",
-        borderRightColor: "transparent",
-      },
-    },
-    '&[data-popper-placement^="bottom"]': {
-      marginTop: ".75rem",
+      bottom: "-30px",
+      ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },
     '&[data-popper-placement^="bottom"] > #arrow': {
-      top: "calc((.75rem + 1px) * -1)",
-      width: ".75rem",
-      height: "1.5rem",
-      margin: ".4375rem 0",
-      ":after": {
-        borderWidth: "0 .75rem .75rem",
-        top: "1px",
-        borderBottomColor: "#fff",
-      },
-      ":before": {
-        borderWidth: "0 .75rem .75rem",
-        top: "0",
-        borderBottomColor: "transparent",
-      },
+      top: "-30px",
+      ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },
-    '&[data-popper-placement^="left"]': {
-      marginRight: ".75rem",
+    '&[data-popper-placement^="right"] > #arrow': {
+      left: "-30px",
+      ":after": { left: "25px", boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },
     '&[data-popper-placement^="left"] > #arrow': {
-      right: "calc((.75rem + 1px) * -1)",
-      width: ".75rem",
-      height: "1.5rem",
-      margin: ".4375rem 0",
-      ":after": {
-        borderWidth: ".75rem 0 .75rem .75rem",
-        right: "1px",
-        borderLeftColor: "#fff",
-      },
-      ":before": {
-        borderWidth: ".75rem 0 .75rem .75rem",
-        right: "0",
-        borderLeftColor: "transparent",
-      },
+      right: "-30px",
+      ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
+    },
+  },
+  variants: {
+    solid: {
+      variantStyle: {},
+      // variantColors: { ...alertColors },
+    },
+  },
+  defaultProps: {
+    variant: "solid",
+  },
+};
+
+export const popover = {
+  baseStyle: {
+    boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
+    borderRadius: "5px",
+    backgroundColor: "white",
+    padding: "20px",
+    textAlign: "center",
+    '&[data-popper-placement^="top"] > #arrow': {
+      bottom: "-30px",
+      ":after": { top: "-25px", boxShadow: "1px 1px 1px 1px rgba(0, 0, 0, 0.1)" },
+    },
+    '&[data-popper-placement^="bottom"] > #arrow': {
+      ":after": { top: "-25px", boxShadow: "-1px -1px 1px 1px rgba(0, 0, 0, 0.1)" },
+    },
+    '&[data-popper-placement^="left"] > #arrow': {
+      right: "30px",
+      ":after": { left: "36px", boxShadow: "1px -1px 1px 1px rgba(0, 0, 0, 0.1)" },
+    },
+    '&[data-popper-placement^="right"] > #arrow': {
+      ":after": { left: "-25px", boxShadow: "-1px 1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },
   },
   variants: {
@@ -253,20 +209,18 @@ export const popover = {
 export const arrow = {
   baseStyle: {
     position: "absolute",
-    display: "block",
-    ":after": {
+    width: "10px",
+    height: "10px",
+    backgroundColor: "inherit",
+    "&:after": {
+      content: '" "',
+      backgroundColor: "inherit",
       position: "absolute",
-      display: "block",
-      content: '""',
-      borderColor: "transparent",
-      borderStyle: "solid",
-    },
-    ":before": {
-      position: "absolute",
-      display: "block",
-      content: '""',
-      borderColor: "transparent",
-      borderStyle: "solid",
+      top: "0",
+      left: "0",
+      transform: "rotate(45deg)",
+      width: "10px",
+      height: "10px",
     },
   },
   variants: {
