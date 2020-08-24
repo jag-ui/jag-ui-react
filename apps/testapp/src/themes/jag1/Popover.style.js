@@ -3,9 +3,7 @@ export const popover = {
     boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
     borderRadius: "5px",
     backgroundColor: "white",
-    padding: "20px",
-    textAlign: "center",
-
+    // padding: "10px",
     '&[data-popper-placement^="top"] > .popover-arrow': {
       bottom: "5px",
       ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },

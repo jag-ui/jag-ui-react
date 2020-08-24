@@ -15,12 +15,14 @@ const SamplePopover = ({ placement }) => {
         </DropdownToggle>
         <DropdownMenu bg="primary" color="white">
           <DropdownItem header>Header</DropdownItem>
-          <DropdownItem>Some Action</DropdownItem>
+          enhanced <DropdownItem as="button">Some Action</DropdownItem>
           <DropdownItem disabled>Action (disabled)</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>Foo Action</DropdownItem>
-          <DropdownItem>Bar Action</DropdownItem>
-          <DropdownItem>Quo Action</DropdownItem>
+          <DropdownItem as="a" href="http://www.jagadeeshpalaniappan.com" target="_blank">
+            Menu Item (Anchor)
+          </DropdownItem>
+          <DropdownItem as="button">Bar Action</DropdownItem>
+          <DropdownItem as="button">Quo Action</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </Flex>

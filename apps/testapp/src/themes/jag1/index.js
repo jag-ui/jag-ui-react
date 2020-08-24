@@ -6,6 +6,7 @@ import Link from "./Link.style";
 import Modal from "./Modal.style";
 import Alert from "./Alert.style";
 import Popover from "./Popover.style";
+import Dropdown from "./Dropdown.style";
 
 export const borderWidths = {
   px: "1px",
@@ -562,6 +563,7 @@ export const tailwind = {
   Modal,
   Alert,
   Popover,
+  Dropdown,
 };
 
 export default tailwind;

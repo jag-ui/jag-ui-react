@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Box } from "@jag-ui-react/box";
 import { Popover } from "@jag-ui-react/popover";
+import { Divider } from "@jag-ui-react/components";
 
 export const DropdownToggle = React.forwardRef((props, ref) => {
   return <Box ref={ref} {...props} __themeKey="Dropdown.toggle"></Box>;
@@ -12,8 +13,73 @@ export const DropdownMenu = React.forwardRef((props, ref) => {
 });
 DropdownMenu.displayName = "DropdownMenu";
 
-export const DropdownItem = React.forwardRef((props, ref) => {
-  return <Box ref={ref} {...props} __themeKey="Dropdown.menuItem"></Box>;
+export const DropdownItem = React.forwardRef(({ header, disabled, divider, ...props }, ref) => {
+  if (header) {
+    return (
+      <Box
+        ref={ref}
+        {...props}
+        __themeKey="Dropdown.menuItem.header"
+        __css={{
+          display: "flex",
+          alignItems: "center",
+          width: "100%",
+          bg: "inherit",
+          color: "inherit",
+          lineHeight: "inherit",
+          border: 0,
+          cursor: "not-allowed",
+          appearance: "none",
+          opacity: ".65",
+          boxShadow: "none",
+          transform: "none",
+        }}></Box>
+    );
+  } else if (disabled) {
+    return (
+      <Box
+        ref={ref}
+        {...props}
+        __themeKey="Dropdown.menuItem.disabled"
+        __css={{
+          display: "flex",
+          alignItems: "center",
+          width: "100%",
+          bg: "inherit",
+          color: "inherit",
+          lineHeight: "inherit",
+          fontSize: "inherit",
+          border: 0,
+          cursor: "not-allowed",
+          appearance: "none",
+          opacity: ".65",
+          boxShadow: "none",
+          transform: "none",
+        }}></Box>
+    );
+  } else if (divider) {
+    return <Divider ref={ref} {...props} __themeKey="Dropdown.menuItem.divider" />;
+  }
+  return (
+    <Box
+      ref={ref}
+      {...props}
+      __themeKey="Dropdown.menuItem.root"
+      __css={{
+        display: "flex",
+        alignItems: "center",
+        width: "100%",
+        bg: "inherit",
+        color: "inherit",
+        lineHeight: "inherit",
+        fontSize: "inherit",
+        border: 0,
+        cursor: "pointer",
+        appearance: "none",
+        textDecoration: "none",
+        flexGrow: 1,
+      }}></Box>
+  );
 });
 DropdownItem.displayName = "DropdownItem";
 
