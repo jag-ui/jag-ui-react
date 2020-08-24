@@ -2,7 +2,6 @@ import { Box } from "@jag-ui-react/core";
 import React from "react";
 import AlertDemo from "./AlertDemo";
 import BadgeDemo from "./BadgeDemo";
-import LinkDemo from "./LinkDemo";
 import ButtonDemo from "./ButtonDemo";
 import CardDemo from "./CardDemo";
 import ContainerDemo from "./ContainerDemo";
@@ -13,6 +12,7 @@ import FlexDemo from "./FlexDemo";
 import FormDemo from "./FormDemo";
 import GridDemo from "./GridDemo";
 import ImageDemo from "./ImageDemo";
+import LinkDemo from "./LinkDemo";
 import MessageDemo from "./MessageDemo";
 import ModalDemo from "./ModalDemo";
 import NavbarDemo from "./NavbarDemo";
@@ -27,14 +27,16 @@ import TypographyDemo from "./TypographyDemo";
 export default function Demo() {
   return (
     <Box px={5}>
+      <AlertDemo />
       <ButtonDemo />
       <LinkDemo />
       <ModalDemo />
 
-      <AlertDemo />
+      <DropdownDemo />
+      <PopoverDemo />
+
       <CardDemo />
       <FormDemo />
-
       <FlexDemo />
       <GridDemo />
       <ImageDemo />
@@ -45,13 +47,12 @@ export default function Demo() {
       <BadgeDemo />
       <ContainerDemo />
       <DividerDemo />
-      <DropdownDemo />
 
       <MessageDemo />
       <ModalDemo />
       <NavbarDemo />
       <PaginationDemo />
-      <PopoverDemo />
+
       <ProgressDemo />
       <TableDemo />
       <TabsDemo />

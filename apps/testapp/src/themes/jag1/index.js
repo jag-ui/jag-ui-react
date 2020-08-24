@@ -5,6 +5,7 @@ import Button from "./Button.style";
 import Link from "./Link.style";
 import Modal from "./Modal.style";
 import Alert from "./Alert.style";
+import Popover from "./Popover.style";
 
 export const borderWidths = {
   px: "1px",
@@ -560,6 +561,7 @@ export const tailwind = {
   Link,
   Modal,
   Alert,
+  Popover,
 };
 
 export default tailwind;
