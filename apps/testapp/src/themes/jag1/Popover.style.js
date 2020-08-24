@@ -6,19 +6,19 @@ export const popover = {
     padding: "20px",
     textAlign: "center",
 
-    '&[data-popper-placement^="top"] > #arrow': {
+    '&[data-popper-placement^="top"] > .popover-arrow': {
       bottom: "5px",
       ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },
-    '&[data-popper-placement^="bottom"] > #arrow': {
+    '&[data-popper-placement^="bottom"] > .popover-arrow': {
       top: "-5px",
       ":after": { boxShadow: "-1px -1px 1px rgba(0, 0, 0, 0.1)" },
     },
-    '&[data-popper-placement^="left"] > #arrow': {
+    '&[data-popper-placement^="left"] > .popover-arrow': {
       right: "5px",
       ":after": { boxShadow: "1px -1px 1px rgba(0, 0, 0, 0.1)" },
     },
-    '&[data-popper-placement^="right"] > #arrow': {
+    '&[data-popper-placement^="right"] > .popover-arrow': {
       left: "-5px",
       ":after": { boxShadow: "-1px 1px 1px rgba(0, 0, 0, 0.1)" },
     },

@@ -10,7 +10,7 @@ const SamplePopover = ({ placement }) => {
       <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef} mr={3} vcolor="primary">
         Popover "{placement}"
       </Button>
-      <Popover triggerRef={buttonRef} placement={placement} active={showPopper} bg="primary" color="white">
+      <Popover triggerRef={buttonRef} placement={placement} active={showPopper} bg="primary" color="white" disableArrow>
         <Box width="200px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
           nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,
