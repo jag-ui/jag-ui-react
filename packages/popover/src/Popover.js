@@ -50,7 +50,7 @@ export const Popover = React.forwardRef(({ active, triggerRef, placement, childr
 
   return active ? (
     <Box ref={popperRef} {...props} __themeKey="Popover.root" __css={styles.popper} {...attributes.popper}>
-      <Box id="arrow" ref={setArrowRef} __themeKey="Popover.arrow" __css={styles.arrow}></Box>
+      <Box id="arrow" ref={setArrowRef} __themeKey="Popover.arrow" sx={styles.arrow}></Box>
       <Box __themeKey="Popover.container">{children}</Box>
     </Box>
   ) : null;
