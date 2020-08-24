@@ -15,7 +15,7 @@ const SamplePopover = ({ placement }) => {
         </DropdownToggle>
         <DropdownMenu bg="primary" color="white">
           <DropdownItem header>Header</DropdownItem>
-          enhanced <DropdownItem as="button">Some Action</DropdownItem>
+          <DropdownItem as="button">Some Action</DropdownItem>
           <DropdownItem disabled>Action (disabled)</DropdownItem>
           <DropdownItem divider />
           <DropdownItem as="a" href="http://www.jagadeeshpalaniappan.com" target="_blank">
