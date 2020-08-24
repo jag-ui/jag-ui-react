@@ -13,7 +13,7 @@ const SamplePopover = ({ placement }) => {
             Dropdown "{placement}"
           </Button>
         </DropdownToggle>
-        <DropdownMenu bg="primary" color="white">
+        <DropdownMenu bg="white">
           <DropdownItem header>Header</DropdownItem>
           <DropdownItem as="button">Some Action</DropdownItem>
           <DropdownItem disabled>Action (disabled)</DropdownItem>

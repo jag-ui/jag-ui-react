@@ -5,6 +5,7 @@ const menuItem = {
     cursor: "pointer",
     "&:hover": {
       bg: "primaryHover",
+      color: "white",
     },
   },
 };
