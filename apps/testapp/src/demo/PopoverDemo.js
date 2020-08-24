@@ -11,7 +11,7 @@ const SamplePopover = () => {
       <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef}>
         Toggle Popover
       </Button>
-      <Popover triggerRef={buttonRef} placement="bottom" active={showPopper}>
+      <Popover triggerRef={buttonRef} active={showPopper}>
         Hello Popover!
       </Popover>
     </>
