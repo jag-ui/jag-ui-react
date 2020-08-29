@@ -1,6 +1,6 @@
 import React from "react";
 import { keyframes } from "@emotion/core";
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 
 const spin = keyframes({
   from: {

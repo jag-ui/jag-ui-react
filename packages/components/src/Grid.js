@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 
 const px = (n) => (typeof n === "number" ? n + "px" : n);
 

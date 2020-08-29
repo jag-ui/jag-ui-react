@@ -1,5 +1,5 @@
-import { Divider, Grid, Heading } from "@jag-ui-react/components";
-import { Box } from "@jag-ui-react/core";
+import { Divider, Grid, Heading } from "jag-ui-react";
+import { Box } from "@jag-ui-react/box";
 import React from "react";
 
 export default function GridDemo() {

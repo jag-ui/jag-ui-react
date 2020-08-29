@@ -1,4 +1,4 @@
-import { Divider, Heading } from "@jag-ui-react/components";
+import { Divider, Heading } from "jag-ui-react";
 import React, { useState, useRef } from "react";
 import { Box, Flex, Button, Tooltip } from "jag-ui-react";
 

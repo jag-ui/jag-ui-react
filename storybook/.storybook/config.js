@@ -1,5 +1,5 @@
-import { addParameters, configure } from '@storybook/react';
-import { themes } from '@storybook/theming';
+import { addParameters, configure } from "@storybook/react";
+import { themes } from "@storybook/theming";
 
 addParameters({
   options: {
@@ -7,8 +7,8 @@ addParameters({
   },
 });
 
-const comps = require.context('@jag-ui-react/components/src', true, /.stories.js$/);
+const comps = require.context("jag-ui-react/src", true, /.stories.js$/);
 
 configure(() => {
-  comps.keys().forEach(filename => comps(filename));
+  comps.keys().forEach((filename) => comps(filename));
 }, module);

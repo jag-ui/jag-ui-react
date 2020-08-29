@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 import { Button } from "@jag-ui-react/button";
 
 export const Link = React.forwardRef(({ kind = "link", ...props }, ref) => {

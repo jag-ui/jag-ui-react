@@ -1,4 +1,4 @@
-import { Divider, Heading } from "@jag-ui-react/components";
+import { Divider, Heading } from "jag-ui-react";
 import { Box, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex } from "jag-ui-react";
 import React, { useRef, useState } from "react";
 

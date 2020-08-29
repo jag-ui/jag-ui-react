@@ -1,5 +1,5 @@
-import { Divider, Donut, Heading, Progress, Spinner } from "@jag-ui-react/components";
-import { Box } from "@jag-ui-react/core";
+import { Divider, Heading, Progress, Spinner } from "jag-ui-react";
+import { Box } from "@jag-ui-react/box";
 import React from "react";
 
 export default function ProgressDemo() {
@@ -14,7 +14,6 @@ export default function ProgressDemo() {
           </Progress>
         </Box>
         <Spinner />
-        <Donut value={1 / 2} />
       </Box>
     </Box>
   );

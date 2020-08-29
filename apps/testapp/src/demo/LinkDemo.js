@@ -1,6 +1,6 @@
-import { Divider, Heading, Icon } from "@jag-ui-react/components";
+import { Divider, Heading, Icon } from "jag-ui-react";
 import { Link } from "jag-ui-react";
-import { Box, Flex } from "@jag-ui-react/core";
+import { Box, Flex } from "@jag-ui-react/box";
 import React from "react";
 import { FaCog, FaTimes, FaGlobe } from "react-icons/fa";
 // import { useThemeUI } from "theme-ui";

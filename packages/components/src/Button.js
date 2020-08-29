@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 
 export const Button = React.forwardRef(
   ({ variant = "solid", vcolor = "default", vsize = "md", textColor, ...props }, ref) => {

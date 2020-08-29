@@ -1,4 +1,4 @@
-import { Divider, Heading, Text, Icon } from "@jag-ui-react/components";
+import { Divider, Heading, Text, Icon } from "jag-ui-react";
 import { Modal, Button, Box, Flex } from "jag-ui-react";
 import React, { useState } from "react";
 import { FaTimes, FaExclamationTriangle } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 
 export const Donut = React.forwardRef(
   ({ size = 128, strokeWidth = 2, value = 0, min = 0, max = 1, title, ...props }, ref) => {

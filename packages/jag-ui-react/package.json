@@ -33,7 +33,16 @@
     "@jag-ui-react/switch": "^0.0.0",
     "@jag-ui-react/textarea": "^0.0.0",
     "@jag-ui-react/utils": "^0.0.0",
-    "@jag-ui-react/svg": "^0.0.0"
+    "@jag-ui-react/svg": "^0.0.0",
+    "@jag-ui-react/image": "^0.0.0",
+    "@jag-ui-react/badge": "^0.0.0",
+    "@jag-ui-react/card": "^0.0.0",
+    "@jag-ui-react/layout": "^0.0.0",
+    "@jag-ui-react/divider": "^0.0.0",
+    "@jag-ui-react/embed": "^0.0.0",
+    "@jag-ui-react/text": "^0.0.0",
+    "@jag-ui-react/loader": "^0.0.0",
+    "@jag-ui-react/icon": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"

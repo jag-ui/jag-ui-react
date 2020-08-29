@@ -1,4 +1,4 @@
-import { Box } from "@jag-ui-react/core";
+import { Box } from "@jag-ui-react/box";
 import React from "react";
 import AlertDemo from "./AlertDemo";
 import BadgeDemo from "./BadgeDemo";
@@ -13,7 +13,6 @@ import FormDemo from "./FormDemo";
 import GridDemo from "./GridDemo";
 import ImageDemo from "./ImageDemo";
 import LinkDemo from "./LinkDemo";
-import MessageDemo from "./MessageDemo";
 import ModalDemo from "./ModalDemo";
 import NavbarDemo from "./NavbarDemo";
 import PaginationDemo from "./PaginationDemo";
@@ -49,7 +48,6 @@ export default function Demo() {
       <ContainerDemo />
       <DividerDemo />
 
-      <MessageDemo />
       <ModalDemo />
       <NavbarDemo />
       <PaginationDemo />
