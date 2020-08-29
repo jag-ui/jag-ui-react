@@ -98,6 +98,8 @@ export const colors = {
 
   // COMP:
   divider: "rgba(255, 255, 255, 0.12)",
+  tooltipBg: "rgb(0 0 0 / 90%)",
+  tooltipText: "white",
 
   inputBg: baseColors.white,
   inputColor: baseColors.gray[7],
@@ -135,6 +137,8 @@ export const colors = {
 
       // COMP:
       divider: "rgba(255, 255, 255, 0.06)",
+      tooltipBg: "rgb(255, 255, 255 / 90%)",
+      tooltipText: "white",
 
       // INPUT:
       inputBg: "rgb(23, 43, 58)",

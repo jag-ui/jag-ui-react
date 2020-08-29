@@ -34,6 +34,7 @@ export default function Demo() {
 
       <DropdownDemo />
       <PopoverDemo />
+      <TooltipDemo />
 
       <CardDemo />
       <FormDemo />
@@ -56,7 +57,6 @@ export default function Demo() {
       <ProgressDemo />
       <TableDemo />
       <TabsDemo />
-      <TooltipDemo />
     </Box>
   );
 }
