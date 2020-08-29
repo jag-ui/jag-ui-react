@@ -1,0 +1,21 @@
+{
+  "name": "@jag-ui-react/utils",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --jsx React.createElement",
+    "watch": "microbundle watch --no-compress --jsx React.createElement",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "@styled-system/should-forward-prop": "^5.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@jag-ui-react/checkbox",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --jsx React.createElement",
+    "watch": "microbundle watch --no-compress --jsx React.createElement",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "@jag-ui-react/box": "0.0.0",
+    "@jag-ui-react/svg": "0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
+  "license": "MIT"
+}
