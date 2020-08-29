@@ -1,7 +1,6 @@
 import { Button, Box, Flex, Divider, Heading, Icon } from "jag-ui-react";
 import React from "react";
 import { FaCog, FaGlobe, FaTimes } from "react-icons/fa";
-// import { useThemeUI } from "theme-ui";
 
 console.log("Button", Button);
 

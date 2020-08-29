@@ -2,8 +2,6 @@ import { Box, Divider, Flex, Heading, Icon, Link } from "jag-ui-react";
 import React from "react";
 import { FaCog, FaGlobe, FaTimes } from "react-icons/fa";
 
-// import { useThemeUI } from "theme-ui";
-
 const SimpleButtonDemo = () => {
   return (
     <>
