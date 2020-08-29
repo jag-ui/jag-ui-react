@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "theme-ui";
-import { ResetCss } from "jag-ui-react";
+// import { ResetCss } from "jag-ui-react";
 
 import Demo from "./demo";
 import SwitchTheme from "./SwitchTheme";
@@ -20,7 +20,6 @@ function App() {
   console.log({ currTheme });
   return (
     <ThemeProvider theme={themes[Object.keys(themes)[currTheme]]}>
-      <ResetCss />
       <SwitchTheme themes={themes} currTheme={currTheme} setCurrTheme={setCurrTheme} />
       <Demo />
     </ThemeProvider>

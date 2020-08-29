@@ -23,7 +23,7 @@ export const Popover = React.forwardRef(
     const { styles, attributes } = usePopper(triggerRef.current, popperRef.current, { placement, modifiers });
 
     return active ? (
-      <Box ref={popperRef} {...props} __themeKey="Popover.root" __css={styles.popper} {...attributes.popper}>
+      <Box ref={popperRef} {...props} __themeKey="Popover.root" style={styles.popper} {...attributes.popper}>
         <Box
           className="popover-arrow"
           ref={setArrowRef}

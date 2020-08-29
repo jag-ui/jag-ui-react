@@ -18,7 +18,6 @@ export { Select } from "@jag-ui-react/select";
 export { Slider } from "@jag-ui-react/slider";
 export { Switch } from "@jag-ui-react/switch";
 export { Textarea } from "@jag-ui-react/textarea";
-export { SVG } from "@jag-ui-react/svg";
 
 //
 export { Avatar, Image } from "@jag-ui-react/image";
@@ -29,4 +28,4 @@ export { Divider } from "@jag-ui-react/divider";
 export { Embed } from "@jag-ui-react/embed";
 export { Heading, Text, Label } from "@jag-ui-react/text";
 export { Progress, Spinner } from "@jag-ui-react/loader";
-export { Icon } from "@jag-ui-react/icon";
+export { Icon, Svg } from "@jag-ui-react/icon";
