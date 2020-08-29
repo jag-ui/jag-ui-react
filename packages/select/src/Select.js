@@ -1,10 +1,10 @@
-import { Box, Flex } from "@jag-ui-react/box";
+import { Box } from "@jag-ui-react/box";
 import { DropdownCaret } from "@jag-ui-react/icons";
 import { getMargin, omitMargin } from "@jag-ui-react/utils";
 import React from "react";
 
 export const Select = React.forwardRef((props, ref) => (
-  <Flex __themeKey="Select.root" {...getMargin(props)}>
+  <Box __themeKey="Select.root" __css={{ display: "flex" }} {...getMargin(props)}>
     <Box
       ref={ref}
       as="select"
@@ -32,5 +32,5 @@ export const Select = React.forwardRef((props, ref) => (
         pointerEvents: "none",
       }}
     />
-  </Flex>
+  </Box>
 ));

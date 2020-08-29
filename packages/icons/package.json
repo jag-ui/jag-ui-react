@@ -12,6 +12,7 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.0",
+    "@jag-ui-react/box": "^0.0.0",
     "@jag-ui-react/svg": "^0.0.0"
   },
   "publishConfig": {

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import shouldForwardProp from "@styled-system/should-forward-prop";
 import { color, compose, flexbox, layout, space, typography, shadow, border } from "styled-system";
-import { css, get } from "@jag-ui-react/core";
+import { css, get } from "@theme-ui/css";
 
 const sx = (props) => css(props.sx)(props.theme);
 const base = (props) => css(props.__css)(props.theme);

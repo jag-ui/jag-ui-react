@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@jag-ui-react/box";
-import { Label } from "@jag-ui-react/label";
+import { Label } from "@jag-ui-react/text";
 import { Input } from "@jag-ui-react/input";
 import { getMargin, omitMargin } from "@jag-ui-react/utils";
 

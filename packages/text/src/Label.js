@@ -1,4 +1,4 @@
-import { Flex } from "@jag-ui-react/box";
+import { Flex } from "@jag-ui-react/layout";
 import React from "react";
 
 export const Label = React.forwardRef((props, ref) => <Flex ref={ref} as="label" __themeKey="Label.root" {...props} />);

@@ -1,5 +1,4 @@
-import { Button } from "@jag-ui-react/button";
-import { Box, Flex, Divider, Grid, Heading, Icon, Image, Text } from "jag-ui-react";
+import { Box, Button, Divider, Flex, Grid, Heading, Icon, Image, Text } from "jag-ui-react";
 import React from "react";
 import { FaChartBar, FaChartLine, FaEllipsisH } from "react-icons/fa";
 
