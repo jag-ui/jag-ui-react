@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Box } from "@jag-ui-react/box";
 import { Popover } from "@jag-ui-react/popover";
-import { Divider } from "jag-ui-react";
+import { Divider } from "@jag-ui-react/divider";
 
 export const DropdownToggle = React.forwardRef((props, ref) => {
   return <Box ref={ref} {...props} __themeKey="Dropdown.toggle"></Box>;

@@ -1,5 +1,4 @@
-import { Divider, Heading, IconButton, Text } from "jag-ui-react";
-import { Box } from "@jag-ui-react/box";
+import { Box, Divider, Heading, IconButton, Text } from "jag-ui-react";
 import { Alert } from "jag-ui-react";
 import React from "react";
 import { FaExclamationTriangle, FaTimes } from "react-icons/fa";

@@ -1,4 +1,4 @@
-import { Box } from "@jag-ui-react/box";
+import { Box } from "jag-ui-react";
 import React from "react";
 import AlertDemo from "./AlertDemo";
 import BadgeDemo from "./BadgeDemo";

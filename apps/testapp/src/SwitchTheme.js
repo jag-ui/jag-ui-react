@@ -1,5 +1,4 @@
-import { Button } from "@jag-ui-react/button";
-import { Box } from "@jag-ui-react/box";
+import { Box, Button } from "jag-ui-react";
 import React from "react";
 import SwitchColorBtn from "./SwitchColorBtn";
 

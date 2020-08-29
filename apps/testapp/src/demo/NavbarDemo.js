@@ -1,5 +1,4 @@
-import { Divider, Heading, Link, NavLink, Text } from "jag-ui-react";
-import { Box, Flex } from "@jag-ui-react/box";
+import { Box, Flex, Divider, Heading, Link, NavLink, Text } from "jag-ui-react";
 import React from "react";
 
 const NavBarEx = () => {

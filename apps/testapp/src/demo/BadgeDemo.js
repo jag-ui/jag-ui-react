@@ -1,5 +1,4 @@
-import { Avatar, Badge, Divider, Heading } from "jag-ui-react";
-import { Box } from "@jag-ui-react/box";
+import { Box, Avatar, Badge, Divider, Heading } from "jag-ui-react";
 import React from "react";
 
 const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
