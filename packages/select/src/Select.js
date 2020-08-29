@@ -1,13 +1,7 @@
 import { Box, Flex } from "@jag-ui-react/box";
-import { Svg } from "@jag-ui-react/svg";
+import { DropdownCaret } from "@jag-ui-react/icons";
 import { getMargin, omitMargin } from "@jag-ui-react/utils";
 import React from "react";
-
-const CaretIcon = (props) => (
-  <Svg {...props}>
-    <path d="M7 10l5 5 5-5z" />
-  </Svg>
-);
 
 export const Select = React.forwardRef((props, ref) => (
   <Flex __themeKey="Select.root" {...getMargin(props)}>
@@ -30,7 +24,7 @@ export const Select = React.forwardRef((props, ref) => (
         bg: "transparent",
       }}
     />
-    <CaretIcon
+    <DropdownCaret
       __themeKey="Select.caret"
       sx={{
         ml: -28,

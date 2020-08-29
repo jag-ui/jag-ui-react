@@ -9,11 +9,10 @@
     "watch": "microbundle watch --no-compress --jsx React.createElement",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@jag-ui-react/core": "^1.0.11"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "@jag-ui-react/svg": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"
