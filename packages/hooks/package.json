@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react/popover",
+  "name": "@jag-ui-react/hooks",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -8,14 +8,10 @@
     "prepare": "microbundle --no-compress --jsx React.createElement",
     "watch": "microbundle watch --no-compress --jsx React.createElement"
   },
-  "dependencies": {
-    "@popperjs/core": "2.4.0",
-    "react-popper": "2.2.3"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "@jag-ui-react/box": "^0.0.0",
-    "@jag-ui-react/hooks": "^0.0.0",
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "@jag-ui-react/box": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"

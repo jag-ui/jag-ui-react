@@ -49,6 +49,7 @@ function FormDemo1() {
                   name="sex"
                   value="male"
                   checked={gender === "male"}
+                  onChange={() => console.log("Changed1...")}
                   onClick={() => setGender("male")}
                 />
                 Male
@@ -59,6 +60,7 @@ function FormDemo1() {
                   name="sex"
                   value="female"
                   checked={gender === "female"}
+                  onChange={() => console.log("Changed2...")}
                   onClick={() => setGender("female")}
                 />
                 Female

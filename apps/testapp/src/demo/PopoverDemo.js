@@ -1,5 +1,5 @@
 import { Divider, Heading } from "@jag-ui-react/components";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Box, Flex, Button, Popover } from "jag-ui-react";
 
 const SamplePopover = ({ placement }) => {
@@ -10,7 +10,14 @@ const SamplePopover = ({ placement }) => {
       <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef} mr={3} vcolor="primary" vsize="sm">
         Popover "{placement}"
       </Button>
-      <Popover triggerRef={buttonRef} placement={placement} active={showPopper} bg="primary" color="white" p={2}>
+      <Popover
+        triggerRef={buttonRef}
+        placement={placement}
+        active={showPopper}
+        onOutsideClick={() => setShowPopper(false)}
+        bg="primary"
+        color="white"
+        p={2}>
         <Box width="200px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
           nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,

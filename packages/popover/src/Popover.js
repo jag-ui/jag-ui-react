@@ -1,11 +1,15 @@
 import { Box } from "@jag-ui-react/box";
+import { useOnClickOutside } from "@jag-ui-react/hooks";
 import React, { useRef, useState } from "react";
 import { usePopper } from "react-popper";
 
 export const Popover = React.forwardRef(
-  ({ active, enableArrow = true, triggerRef, placement, children, ...props }, ref) => {
+  ({ triggerRef, placement, active, enableArrow = true, onOutsideClick, children, ...props }, ref) => {
     const popperRef = useRef(null);
     const [arrowRef, setArrowRef] = useState(null);
+
+    // enableOutsideClick: only if 'onOutsideClick' prop passed
+    useOnClickOutside(!!onOutsideClick, triggerRef, onOutsideClick);
 
     let modifiers = [];
     if (enableArrow) {

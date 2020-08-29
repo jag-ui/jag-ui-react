@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaTimes, FaExclamationTriangle } from "react-icons/fa";
 
 const LargeModalBody = () => (
-  <div class="content">
+  <div className="content">
     <h1>Hello World</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla

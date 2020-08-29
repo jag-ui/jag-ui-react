@@ -21,7 +21,8 @@
     "@jag-ui-react/popover": "^0.0.0",
     "@jag-ui-react/dropdown": "^0.0.0",
     "@jag-ui-react/tooltip": "^0.0.0",
-    "@jag-ui-react/reset-css": "^0.0.0"
+    "@jag-ui-react/reset-css": "^0.0.0",
+    "@jag-ui-react/hooks": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"

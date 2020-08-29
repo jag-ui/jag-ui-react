@@ -7,7 +7,7 @@ const SamplePopover = ({ placement }) => {
   const buttonRef = useRef(null);
   return (
     <Flex>
-      <Dropdown active={showPopper} placement={placement}>
+      <Dropdown active={showPopper} placement={placement} onOutsideClick={() => setShowPopper(false)}>
         <DropdownToggle caret>
           <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef} vcolor="primary" vsize="sm">
             Dropdown "{placement}"

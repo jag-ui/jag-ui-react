@@ -4,9 +4,11 @@ const arrow = {
     width: "0",
     height: "0",
     backgroundColor: "inherit",
+    color: "inherit",
     "&:after": {
       content: '" "',
       backgroundColor: "inherit",
+      color: "inherit",
       position: "absolute",
       top: "0",
       left: "0",

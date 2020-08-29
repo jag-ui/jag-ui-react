@@ -7,3 +7,4 @@ export { Popover } from "@jag-ui-react/popover";
 export { Tooltip } from "@jag-ui-react/tooltip";
 export { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "@jag-ui-react/dropdown";
 export { ResetCss } from "@jag-ui-react/reset-css";
+export { useOnClickOutside } from "@jag-ui-react/hooks";
