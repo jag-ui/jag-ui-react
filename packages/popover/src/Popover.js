@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { usePopper } from "react-popper";
 
 export const Popover = React.forwardRef(
-  ({ triggerRef, placement, active, enableArrow = true, onOutsideClick, children, ...props }, ref) => {
+  ({ triggerRef, placement = "top", active, enableArrow = true, onOutsideClick, children, ...props }, ref) => {
     const popperRef = useRef(null);
     const [arrowRef, setArrowRef] = useState(null);
 

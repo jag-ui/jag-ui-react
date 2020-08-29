@@ -28,15 +28,15 @@ export default function TypographyDemo() {
         <Heading as="h4" variant="styles.h4">
           Theme Heading 4
         </Heading>
-        <Heading as="h5" variant="styles.h5">
+        <Heading as="h5" variant="styles.h5" maxLength={4}>
           Theme Heading 5
         </Heading>
         <Heading as="h6" variant="styles.h6">
           Theme Heading 6
         </Heading>
 
-        <Text fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
-          Responsive Font Size
+        <Text maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
+          Responsive Font Size Responsive Font Size
         </Text>
         <Text fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
           Responsive Font Size

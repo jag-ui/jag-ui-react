@@ -26,6 +26,7 @@ import TypographyDemo from "./TypographyDemo";
 export default function Demo() {
   return (
     <Box px={5}>
+      <TypographyDemo />
       <AlertDemo />
       <ButtonDemo />
       <LinkDemo />
@@ -36,7 +37,7 @@ export default function Demo() {
       <TooltipDemo />
 
       <CardDemo />
-      <FormDemo />
+      {/* <FormDemo /> */}
       <FlexDemo />
       <GridDemo />
       <ImageDemo />

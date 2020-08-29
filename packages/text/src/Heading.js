@@ -1,17 +1,6 @@
 import React from "react";
-import { Box } from "@jag-ui-react/box";
+import { Text } from "./Text";
 
 export const Heading = React.forwardRef((props, ref) => (
-  <Box
-    ref={ref}
-    as="h2"
-    variant="heading"
-    {...props}
-    __themeKey="text"
-    __css={{
-      fontFamily: "heading",
-      fontWeight: "heading",
-      lineHeight: "heading",
-    }}
-  />
+  <Text ref={ref} as="h2" {...props} __themeKey="Heading.root" />
 ));
