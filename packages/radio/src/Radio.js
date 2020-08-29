@@ -37,41 +37,9 @@ const RadioIcon = (props) => (
   </React.Fragment>
 );
 
-export const Radio = React.forwardRef(({ className, sx, variant = "radio", ...props }, ref) => (
-  <Box>
-    <Box
-      ref={ref}
-      as="input"
-      type="radio"
-      {...props}
-      sx={{
-        position: "absolute",
-        opacity: 0,
-        zIndex: -1,
-        width: "inherit",
-        height: "inherit",
-        overflow: "hidden",
-      }}
-    />
-    <Box
-      as={RadioIcon}
-      aria-hidden="true"
-      __themeKey="forms"
-      variant={variant}
-      className={className}
-      sx={sx}
-      __css={{
-        // todo: system props??
-        mr: 2,
-        borderRadius: 9999,
-        color: "gray",
-        "input:checked ~ &": {
-          color: "primary",
-        },
-        "input:focus ~ &": {
-          bg: "highlight",
-        },
-      }}
-    />
+export const Radio = React.forwardRef(({ className, ...props }, ref) => (
+  <Box __themeKey="Radio.root">
+    <Box ref={ref} as="input" type="radio" __themeKey="Radio.radio" {...props} />
+    <Box as={RadioIcon} aria-hidden="true" __themeKey="Radio.icon" className={className} />
   </Box>
 ));

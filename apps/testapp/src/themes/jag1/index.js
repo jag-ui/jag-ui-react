@@ -1,12 +1,23 @@
 // Based on https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 // and https://tailwindcss.com/components
 
+import Common from "./Common.style";
+
 import Button from "./Button.style";
 import Link from "./Link.style";
 import Modal from "./Modal.style";
 import Alert from "./Alert.style";
 import Popover from "./Popover.style";
 import Dropdown from "./Dropdown.style";
+
+import Checkbox from "./Checkbox.style";
+import Input from "./Input.style";
+import Label from "./Label.style";
+import Radio from "./Radio.style";
+import Select from "./Select.style";
+import Slider from "./Slider.style";
+import Switch from "./Switch.style";
+import Textarea from "./Textarea.style";
 
 export const borderWidths = {
   px: "1px",
@@ -43,42 +54,6 @@ export const baseColors = {
   indigo: [null, "#ebf4ff", "#c3dafe", "#a3bffa", "#7f9cf5", "#667eea", "#5a67d8", "#4c51bf", "#434190", "#3c366b"],
   purple: [null, "#faf5ff", "#e9d8fd", "#d6bcfa", "#b794f4", "#9f7aea", "#805ad5", "#6b46c1", "#553c9a", "#44337a"],
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
-};
-
-const forms = {
-  input: {
-    display: "block",
-    width: "100%",
-    height: "calc(1.5em + 1.25rem + 5px)",
-    px: 3,
-    py: 2,
-    fontSize: 2,
-    // fontSize: "0.875rem",
-    fontWeight: "body",
-    lineHeight: "1.5",
-    color: "inputColor",
-    backgroundColor: "inputBg",
-    backgroundClip: "padding-box",
-    borderRadius: "0.25rem",
-    boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
-    border: 0,
-    transition: "box-shadow .15s ease",
-    ":focus": {
-      color: "inputFocusColor",
-      backgroundColor: "inputFocusBg",
-      boxShadow: "0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)",
-      outline: "none !important",
-      borderWidth: "1px",
-      borderStyle: "solid",
-      borderColor: "inputFocusBorder",
-    },
-  },
-  textarea: {
-    variant: "forms.input",
-  },
-  select: {
-    variant: "forms.input",
-  },
 };
 
 export const colors = {
@@ -186,56 +161,6 @@ export const fontWeights = {
   ...baseFontWeights,
   body: baseFontWeights.normal,
   heading: baseFontWeights.bold,
-};
-
-const commonInputStyles = {
-  py: 2,
-  px: 3,
-  fontSize: `100%`,
-  borderRadius: `default`,
-  appearance: `none`,
-  lineHeight: `tight`,
-};
-
-export const inputs = {
-  shadow: {
-    ...commonInputStyles,
-    border: `none`,
-    color: `gray.7`,
-    boxShadow: `default`,
-    "&:focus": {
-      outline: `none`,
-      boxShadow: `outline`,
-    },
-  },
-  inline: {
-    ...commonInputStyles,
-    backgroundColor: `gray.2`,
-    borderWidth: `2px`,
-    borderStyle: `solid`,
-    borderColor: `gray.2`,
-    color: `gray.7`,
-    "&:focus": {
-      outline: `none`,
-      borderColor: `primary`,
-      backgroundColor: `white`,
-    },
-  },
-  underline: {
-    ...commonInputStyles,
-    backgroundColor: `transparent`,
-    border: `none`,
-    borderBottomWidth: `2px`,
-    borderBottomStyle: `solid`,
-    borderBottomColor: `primary`,
-    borderRadius: `0px`,
-    color: `gray.7`,
-    "&:focus": {
-      outline: `none`,
-      borderColor: `primary`,
-      backgroundColor: `white`,
-    },
-  },
 };
 
 export const letterSpacings = {
@@ -557,17 +482,26 @@ export const tailwind = {
   radii,
   zIndices,
   styles,
-  forms,
   text,
-  inputs,
   transforms,
   transitions,
+
+  // Comp:
+  Common,
   Button,
   Link,
   Modal,
   Alert,
   Popover,
   Dropdown,
+  Input,
+  Textarea,
+  Select,
+  Switch,
+  Checkbox,
+  Label,
+  Radio,
+  Slider,
 };
 
 export default tailwind;

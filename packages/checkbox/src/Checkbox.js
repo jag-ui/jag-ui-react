@@ -1,6 +1,6 @@
-import React from "react";
 import { Box } from "@jag-ui-react/box";
 import { Svg } from "@jag-ui-react/svg";
+import React from "react";
 
 const CheckboxChecked = (props) => (
   <Svg {...props}>
@@ -37,42 +37,10 @@ const CheckboxIcon = (props) => (
   </React.Fragment>
 );
 
-export const Checkbox = React.forwardRef(({ className, sx, variant = "checkbox", children, ...props }, ref) => (
-  <Box>
-    <Box
-      ref={ref}
-      as="input"
-      type="checkbox"
-      {...props}
-      sx={{
-        position: "absolute",
-        opacity: 0,
-        zIndex: -1,
-        width: "inherit",
-        height: "inherit",
-        overflow: "hidden",
-      }}
-    />
-    <Box
-      as={CheckboxIcon}
-      aria-hidden="true"
-      __themeKey="forms"
-      variant={variant}
-      className={className}
-      sx={sx}
-      __css={{
-        mr: 2,
-        borderRadius: 4,
-        color: "gray",
-        "input:checked ~ &": {
-          color: "primary",
-        },
-        "input:focus ~ &": {
-          color: "primary",
-          bg: "highlight",
-        },
-      }}
-    />
+export const Checkbox = React.forwardRef(({ variant, children, ...props }, ref) => (
+  <Box __themeKey="Checkbox.root">
+    <Box ref={ref} as="input" type="checkbox" variant={variant} __themeKey="Checkbox.checkbox" {...props} />
+    <Box as={CheckboxIcon} aria-hidden="true" variant={variant} __themeKey="Checkbox.icon" />
     {children}
   </Box>
 ));

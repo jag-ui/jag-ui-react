@@ -5,9 +5,8 @@ export const Textarea = React.forwardRef((props, ref) => (
   <Box
     ref={ref}
     as="textarea"
-    variant="textarea"
     {...props}
-    __themeKey="forms"
+    __themeKey="Textarea.root"
     __css={{
       display: "block",
       width: "100%",
