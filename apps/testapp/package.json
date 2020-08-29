@@ -19,7 +19,6 @@
     "jag-ui-react": "^0.0.0",
     "@jag-ui-react/core": "^1.0.11",
     "@jag-ui-react/components": "^1.0.11",
-    "@jag-ui-react/form": "^1.0.11",
     "@jag-ui-react/icons": "^1.0.11",
     "@react-workspaces/react-scripts": "3.4.0-alpha-01",
     "@theme-ui/color": "^0.3.1",

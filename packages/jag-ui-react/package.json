@@ -22,7 +22,18 @@
     "@jag-ui-react/dropdown": "^0.0.0",
     "@jag-ui-react/tooltip": "^0.0.0",
     "@jag-ui-react/reset-css": "^0.0.0",
-    "@jag-ui-react/hooks": "^0.0.0"
+    "@jag-ui-react/hooks": "^0.0.0",
+    "@jag-ui-react/checkbox": "^0.0.0",
+    "@jag-ui-react/field": "^0.0.0",
+    "@jag-ui-react/input": "^0.0.0",
+    "@jag-ui-react/label": "^0.0.0",
+    "@jag-ui-react/radio": "^0.0.0",
+    "@jag-ui-react/select": "^0.0.0",
+    "@jag-ui-react/slider": "^0.0.0",
+    "@jag-ui-react/switch": "^0.0.0",
+    "@jag-ui-react/textarea": "^0.0.0",
+    "@jag-ui-react/utils": "^0.0.0",
+    "@jag-ui-react/svg": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"
