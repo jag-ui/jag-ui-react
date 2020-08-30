@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Flex, Grid, Icon, Image, Text } from "jag-ui-react";
 import React from "react";
 import { FaChartBar, FaChartLine, FaEllipsisH } from "react-icons/fa";
-import { Heading } from "../components/Heading";
+import { Heading } from "../../components/Heading";
 
 // const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
 /* 

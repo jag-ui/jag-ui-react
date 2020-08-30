@@ -1,6 +1,6 @@
 import { Box, Flex, Divider, Text } from "jag-ui-react";
 import React from "react";
-import { Heading } from "../components/Heading";
+import { Heading } from "../../components/Heading";
 const FlexboxWrapEx = () => {
   return (
     <>

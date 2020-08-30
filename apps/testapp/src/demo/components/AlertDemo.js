@@ -1,7 +1,7 @@
 import { Alert, Box, Divider, IconButton, Text } from "jag-ui-react";
 import React from "react";
 import { FaExclamationTriangle, FaTimes } from "react-icons/fa";
-import { Heading } from "../components/Heading";
+import { Heading } from "../../components/Heading";
 
 export default function AlertDemo() {
   return (

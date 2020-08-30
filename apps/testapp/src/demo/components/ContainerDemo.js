@@ -1,6 +1,6 @@
 import { Box, Container, Divider } from "jag-ui-react";
 import React from "react";
-import { Heading } from "../components/Heading";
+import { Heading } from "../../components/Heading";
 
 export default function ContainerDemo() {
   return (

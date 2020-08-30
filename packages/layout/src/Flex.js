@@ -1,7 +1,4 @@
-import styled from "@emotion/styled";
 import { Box } from "@jag-ui-react/box";
+import React from "react";
 
-export const Flex = styled(Box)({
-  display: "flex",
-  // alignItems: "center",
-});
+export const Flex = React.forwardRef((props, ref) => <Box ref={ref} {...props} __css={{ display: "flex" }} />);

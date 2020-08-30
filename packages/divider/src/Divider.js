@@ -9,8 +9,9 @@ export const Divider = React.forwardRef((props, ref) => (
     {...props}
     __css={{
       color: "divider",
+      width: "70%",
       m: 0,
-      my: 2,
+      // my: 2,
       border: 0,
       borderBottom: "1px solid",
     }}

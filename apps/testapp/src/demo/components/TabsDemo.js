@@ -1,11 +1,10 @@
 import { Box, Divider } from "jag-ui-react";
 import React from "react";
-import { Heading } from "../components/Heading";
-
-export default function TableDemo() {
+import { Heading } from "../../components/Heading";
+export default function TabsDemo() {
   return (
     <Box>
-      <Heading>Table Demo</Heading>
+      <Heading>Tabs Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
         xxxxxxx

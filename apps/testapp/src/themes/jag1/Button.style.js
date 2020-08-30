@@ -224,6 +224,11 @@ export const button = {
       variantColors: btnIconColors,
       variantSizes: btnSizes,
     },
+    none: {
+      variantStyle: {},
+      variantColors: {},
+      variantSizes: {},
+    },
   },
   defaultProps: {
     variant: "solid",

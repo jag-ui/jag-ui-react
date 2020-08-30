@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex, Icon } from "jag-ui-react";
 import React, { useRef, useState } from "react";
 import { FaCog } from "react-icons/fa";
-import { Heading } from "../components/Heading";
+import { Heading } from "../../components/Heading";
 
 const SampleDropdown = ({ placement }) => {
   const [showPopper, setShowPopper] = useState(false);
