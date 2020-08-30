@@ -1,37 +1,41 @@
 import {
   Box,
+  Divider,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Flex,
   Icon,
   Link,
   Text,
-  Divider,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Popover,
 } from "jag-ui-react";
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   FaAsterisk,
   FaCogs,
+  FaEllipsisH,
   FaList,
   FaQuestion,
   FaShapes,
   FaTheaterMasks,
   FaUserCircle,
-  FaEllipsisH,
 } from "react-icons/fa";
 
-const SideNavItemDropdown = ({ icon, placement }) => {
+const SideNavItemDropdown = ({ icon, children }) => {
   const [showPopper, setShowPopper] = useState(false);
   const triggerRef = useRef(null);
   return (
     <Flex>
       <Dropdown active={showPopper} placement="right" onOutsideClick={() => setShowPopper(false)} width="full">
         <DropdownToggle caret>
-          <SideNavItem ref={triggerRef} onClick={() => setShowPopper(!showPopper)} icon={icon} active={showPopper}>
-            Themes
+          <SideNavItem
+            ref={triggerRef}
+            onClick={() => setShowPopper(!showPopper)}
+            icon={icon}
+            active={showPopper}
+            border={0}>
+            {children}
           </SideNavItem>
         </DropdownToggle>
         <DropdownMenu bg="white" color="text">
@@ -56,6 +60,7 @@ const sidenavItemStyles = {
   height: "60px",
   mb: 1,
   userSelect: "none",
+  transition: "0.8s",
   "&:hover": {
     bg: "rgb(0 0 0 / 0.25)",
   },
@@ -66,14 +71,9 @@ const sidenavItemActiveStyles = {
   bg: "rgb(0 0 0 / 0.25)",
   borderLeft: "2px solid",
 };
-const SideNavItem = React.forwardRef(({ active, icon, children, onClick }, ref) => {
+const SideNavItem = React.forwardRef(({ active, icon, children, ...props }, ref) => {
   return (
-    <Link
-      ref={ref}
-      variant="none"
-      kind="button"
-      sx={active ? sidenavItemActiveStyles : sidenavItemStyles}
-      onClick={onClick}>
+    <Link ref={ref} variant="none" kind="button" sx={active ? sidenavItemActiveStyles : sidenavItemStyles} {...props}>
       <Icon py={1} icon={icon} />
       <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">
         {children}
@@ -81,37 +81,6 @@ const SideNavItem = React.forwardRef(({ active, icon, children, onClick }, ref) 
     </Link>
   );
 });
-
-const SideNavItemDropdown11 = ({ active, icon, children }) => {
-  const [showPopper, setShowPopper] = useState(false);
-  const triggerRef = useRef(null);
-  return (
-    <>
-      <SideNavItem ref={triggerRef} onClick={() => setShowPopper(!showPopper)} icon={<FaTheaterMasks size={20} />}>
-        Themes
-      </SideNavItem>
-      <Popover
-        triggerRef={triggerRef}
-        placement="right"
-        enableArrow={false}
-        active={showPopper}
-        onOutsideClick={() => setShowPopper(false)}
-        p={2}>
-        <DropdownMenu bg="white">
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem as="button">Some Action</DropdownItem>
-          <DropdownItem disabled>Action (disabled)</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem as="a" href="http://www.jagadeeshpalaniappan.com" target="_blank">
-            Menu Item (Anchor)
-          </DropdownItem>
-          <DropdownItem as="button">Bar Action</DropdownItem>
-          <DropdownItem as="button">Quo Action</DropdownItem>
-        </DropdownMenu>
-      </Popover>
-    </>
-  );
-};
 
 const Logo = () => {
   return (
