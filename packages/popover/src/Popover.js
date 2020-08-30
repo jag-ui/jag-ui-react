@@ -9,7 +9,7 @@ export const Popover = React.forwardRef(
     const [arrowRef, setArrowRef] = useState(null);
 
     // enableOutsideClick: only if 'onOutsideClick' prop passed
-    useOnClickOutside(!!onOutsideClick, triggerRef, onOutsideClick);
+    useOnClickOutside(!!onOutsideClick, popperRef, onOutsideClick);
 
     let modifiers = [];
     if (enableArrow) {
