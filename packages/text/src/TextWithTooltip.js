@@ -36,9 +36,6 @@ export const TextWithTooltip = React.forwardRef(
           onMouseLeave={() => setShowPopper(false)}
           ref={triggerRef}
           __themeKey="TextWithTooltip.text"
-          __css={{
-            display: "inline-flex",
-          }}
           {...props}>
           {displayText}
         </Box>

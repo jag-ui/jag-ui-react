@@ -2,6 +2,7 @@
 // and https://tailwindcss.com/components
 
 import Common from "./Common.style";
+import Text from "./Text.style";
 
 import Button from "./Button.style";
 import Link from "./Link.style";
@@ -160,7 +161,7 @@ export const baseFontWeights = {
 export const fontWeights = {
   ...baseFontWeights,
   body: baseFontWeights.normal,
-  heading: baseFontWeights.bold,
+  heading: baseFontWeights.medium,
 };
 
 export const letterSpacings = {
@@ -446,27 +447,6 @@ export const transitions = {
   },
 };
 
-const text = {
-  heading: {
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    color: "inherit",
-  },
-  display: {
-    fontFamily: "heading",
-    fontWeight: "heading",
-    lineHeight: "heading",
-    fontSize: [6, 7],
-    color: "text",
-  },
-  caps: {
-    textTransform: "uppercase",
-    letterSpacing: "0.1em",
-    color: "text",
-  },
-};
-
 export const tailwind = {
   borderWidths,
   breakpoints,
@@ -482,12 +462,12 @@ export const tailwind = {
   radii,
   zIndices,
   styles,
-  text,
   transforms,
   transitions,
 
   // Comp:
   Common,
+  Text,
   Button,
   Link,
   Modal,

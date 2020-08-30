@@ -1,40 +1,81 @@
-import { Box, Divider, Heading, Text } from "jag-ui-react";
+import { Box, Divider, Text } from "jag-ui-react";
 import React from "react";
 
 export default function TypographyDemo() {
   return (
     <Box>
-      <Heading my={3}>Typography Demo</Heading>
+      <Text my={3}>Typography Demo</Text>
       <Divider />
+      <Text variant="h4" as="h4">
+        Text (Variants):
+      </Text>
       <Box p={4} boxShadow="default" bg="bg2">
-        <Heading variant="display">Display</Heading>
-        <Heading>Default Heading</Heading>
-        <Heading as="h1">Heading 1</Heading>
-        <Heading as="h3">Heading 2</Heading>
-        <Heading as="h3">Heading 3</Heading>
-        <Heading as="h4">Heading 4</Heading>
-        <Heading as="h5">Heading 5</Heading>
-        <Heading as="h6">Heading 6</Heading>
+        <Text variant="h1" as="h1">
+          Heading 1
+        </Text>
+        <Text variant="h2" as="h2">
+          Heading 2
+        </Text>
+        <Text variant="h3" as="h3">
+          Heading 3
+        </Text>
+        <Text variant="h4" as="h4">
+          Heading 4
+        </Text>
+        <Text variant="h5" as="h5">
+          Heading 5
+        </Text>
+        <Text variant="h6" as="h6">
+          Heading 6
+        </Text>
+        <Box>
+          <Text variant="display">Display</Text>
+        </Box>
+        <Divider />
+        <Box mb={3}>
+          <Text>Default Text</Text>
+        </Box>
+        <Box mb={3}>
+          <Text variant="muted">Muted Text</Text>
+        </Box>
+        <Box mb={3}>
+          <Text variant="caps">CAPS TEXT</Text>
+        </Box>
+        <Box mb={3}>
+          <Text as="p">
+            This is pragarph text, Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+            print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+            thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+          </Text>
+        </Box>
+      </Box>
 
-        <Heading as="h1" variant="styles.h1">
-          Theme Heading 1
-        </Heading>
-        <Heading as="h2" variant="styles.h2">
-          Theme Heading 2
-        </Heading>
-        <Heading as="h3" variant="styles.h3">
-          Theme Heading 3
-        </Heading>
-        <Heading as="h4" variant="styles.h4">
-          Theme Heading 4
-        </Heading>
-        <Heading as="h5" variant="styles.h5" maxLength={4}>
-          Theme Heading 5
-        </Heading>
-        <Heading as="h6" variant="styles.h6">
-          Theme Heading 6
-        </Heading>
+      <Text variant="h4" as="h4" mt={3} mb={2}>
+        Text (with Tooltip):
+      </Text>
+      <Box p={4} boxShadow="default" bg="bg2">
+        <Text enableTooltip>This is very very long text (has tooltip)</Text>
+        <Text enableTooltip tooltip="Hello! Tooltip">
+          This is very very long text (has custom tooltip)
+        </Text>
 
+        <Text maxLength={15}>This is very very long text (tooltip has full text)</Text>
+
+        <Text as="p" maxLength={50} truncateType="middle">
+          This is very very very very very very very long text (truncateType is "middle")
+        </Text>
+
+        <Text as="p" maxLength={100}>
+          This is pragarph text, Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+          print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+          thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+        </Text>
+      </Box>
+
+      <Text variant="h4" as="h4" mt={3} mb={2}>
+        Text (Custom Styles):
+      </Text>
+      <Box p={4} boxShadow="default" bg="bg2">
         <Text maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
           Responsive Font Size Responsive Font Size
         </Text>
@@ -43,7 +84,6 @@ export default function TypographyDemo() {
         </Text>
 
         <Text sx={{ fontSize: 4, fontWeight: "bold" }}>Hello</Text>
-        <Text variant="caps">Hello</Text>
       </Box>
     </Box>
   );
