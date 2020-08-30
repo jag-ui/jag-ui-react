@@ -3,7 +3,7 @@ import React from "react";
 
 export const Tooltip = React.forwardRef(({ children, ...props }, ref) => {
   return (
-    <Popover bg="tooltipBg" color="tooltipText" enableArrow={true} p={2} {...props}>
+    <Popover enableArrow={true} bg="tooltipBg" color="tooltipText" mx={2} p={2} {...props}>
       {children}
     </Popover>
   );

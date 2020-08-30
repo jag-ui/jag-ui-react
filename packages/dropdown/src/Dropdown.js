@@ -84,7 +84,7 @@ export const DropdownItem = React.forwardRef(({ header, disabled, divider, ...pr
 DropdownItem.displayName = "DropdownItem";
 
 export const Dropdown = React.forwardRef(
-  ({ active, placement, enableArrow = false, onOutsideClick, children, ...props }, ref) => {
+  ({ active, placement = "bottom", enableArrow = false, onOutsideClick, children, ...props }, ref) => {
     const buttonRef = useRef(null);
 
     let DropdownToggle = null;
