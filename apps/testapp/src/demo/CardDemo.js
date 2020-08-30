@@ -29,10 +29,8 @@ const MyCustomCard = ({ icon, ...props }) => {
     <Box boxShadow="default" bg="bg2" mb={3} {...props}>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Text variant="h4" as="h4">
-            Card Title
-          </Text>
-          <Text>Card Description</Text>
+          <Text variant="h5">Card Title</Text>
+          <Text variant="muted">Card Description</Text>
         </Box>
         <Button>
           <FaEllipsisH />
@@ -49,10 +47,8 @@ const MyCustomCard2 = ({ icon, ...props }) => {
       <Flex justifyContent="center">{icon}</Flex>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Text variant="h4" as="h4">
-            Card Title
-          </Text>
-          <Text>Card Description</Text>
+          <Text variant="h5">Card Title</Text>
+          <Text variant="muted">Card Description</Text>
         </Box>
         <Button>
           <FaEllipsisH />
@@ -69,10 +65,8 @@ const MyImageCard = ({ icon, image }) => {
       {icon && <Flex justifyContent="center">{icon}</Flex>}
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Text variant="h4" as="h4">
-            Card Title
-          </Text>
-          <Text>Card Description</Text>
+          <Text variant="h5">Card Title</Text>
+          <Text variant="muted">Card Description</Text>
         </Box>
         <Button variant="icon">
           <FaEllipsisH />
@@ -97,8 +91,12 @@ const MyCustomImageCard = ({ imageUrl }) => {
       {/* {icon && <Flex justifyContent="center">{icon}</Flex>} */}
       <Flex px={3} py={2} mt="auto" flexGrow={1}>
         <Box flexGrow={1}>
-          <Heading color="white">Card Title</Heading>
-          <Text color="white">Card Description</Text>
+          <Text variant="h5" color="white">
+            Card Title
+          </Text>
+          <Text variant="muted" color="white">
+            Card Description
+          </Text>
         </Box>
         <Button variant="icon" color="white">
           <FaEllipsisH />
@@ -151,7 +149,7 @@ export default function CardDemo() {
           <MyCustomImageCard imageUrl="https://source.unsplash.com/random?sky" />
         </Grid>
 
-        <Heading variant="styles.h5" mt={4} mb={3}>
+        <Heading mt={4} mb={3}>
           Responsive Widths
         </Heading>
 

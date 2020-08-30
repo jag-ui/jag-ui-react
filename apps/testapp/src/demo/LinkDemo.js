@@ -5,7 +5,7 @@ import { Heading } from "../components/Heading";
 const SimpleButtonDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mb={3}>
+      <Heading variant="h5" mb={3}>
         Default Link [variant="solid"]
       </Heading>
 
@@ -32,7 +32,7 @@ const SimpleButtonDemo = () => {
           Warning
         </Link>
       </Flex>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
@@ -60,7 +60,7 @@ const SimpleButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
@@ -88,7 +88,7 @@ const SimpleButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
@@ -107,7 +107,7 @@ const SimpleButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [disabled]
       </Heading>
 
@@ -135,7 +135,7 @@ const SimpleButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link with Icons
       </Heading>
 
@@ -176,7 +176,7 @@ const SimpleButtonDemo = () => {
 const OutlineButtonDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Default Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
@@ -204,7 +204,7 @@ const OutlineButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
@@ -232,7 +232,7 @@ const OutlineButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
@@ -251,7 +251,7 @@ const OutlineButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link Styled Link [kind="button"] [disabled]
       </Heading>
 
@@ -279,7 +279,7 @@ const OutlineButtonDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link with Icons
       </Heading>
 
@@ -320,7 +320,7 @@ const OutlineButtonDemo = () => {
 const LinkWithIconDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link with Icon [variant="solid"]
       </Heading>
       <Flex mb={4}>
@@ -335,7 +335,7 @@ const LinkWithIconDemo = () => {
         </Link>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link with Icon [variant="icon"]
       </Heading>
 
@@ -365,7 +365,7 @@ const LinkWithIconDemo = () => {
           <Icon icon={<FaCog />} />
         </Link>
       </Flex>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Link with Icon [variant="icon"] [disabled]
       </Heading>
 

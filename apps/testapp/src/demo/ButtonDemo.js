@@ -6,7 +6,7 @@ import { Heading } from "../components/Heading";
 const SimpleButtonDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Default Button [variant="solid"]
       </Heading>
 
@@ -35,7 +35,7 @@ const SimpleButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [variant="solid"] [borderRadius="full"]
       </Heading>
 
@@ -66,7 +66,7 @@ const SimpleButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [vsize="..."]
       </Heading>
 
@@ -85,7 +85,7 @@ const SimpleButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [disabled]
       </Heading>
 
@@ -116,7 +116,7 @@ const SimpleButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button with Icon & Text [diabled]
       </Heading>
 
@@ -161,7 +161,7 @@ const SimpleButtonDemo = () => {
 const OutlineButtonDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Default Button [variant="solid"]
       </Heading>
 
@@ -189,7 +189,7 @@ const OutlineButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [variant="solid"] [borderRadius="full"]
       </Heading>
 
@@ -217,7 +217,7 @@ const OutlineButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [vsize="..."]
       </Heading>
 
@@ -236,7 +236,7 @@ const OutlineButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button [disabled]
       </Heading>
 
@@ -264,7 +264,7 @@ const OutlineButtonDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button with Icon & Text
       </Heading>
 
@@ -305,7 +305,7 @@ const OutlineButtonDemo = () => {
 const BtnWithIconsDemo = () => {
   return (
     <>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button with Icon [variant="solid"]
       </Heading>
       <Flex mb={4}>
@@ -320,7 +320,7 @@ const BtnWithIconsDemo = () => {
         </Button>
       </Flex>
 
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button with Icon [variant="icon"]
       </Heading>
 
@@ -350,7 +350,7 @@ const BtnWithIconsDemo = () => {
           <Icon icon={<FaCog />} />
         </Button>
       </Flex>
-      <Heading variant="styles.h5" mt={4} mb={3}>
+      <Heading variant="h5" mt={4} mb={3}>
         Button with Icon [variant="icon"] [disabled]
       </Heading>
 
