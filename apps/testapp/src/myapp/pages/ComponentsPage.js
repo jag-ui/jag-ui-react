@@ -1,6 +1,6 @@
 import { Box, Flex } from "jag-ui-react";
 import React from "react";
-import { Link, Route, Switch, useParams, useRouteMatch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import All from "../../demo/components";
 import AlertDemo from "../../demo/components/AlertDemo";
 import BadgeDemo from "../../demo/components/BadgeDemo";
@@ -102,6 +102,7 @@ function ComponentsPage(props) {
           <Route path="/components/typography">
             <TypographyDemo />
           </Route>
+          <Redirect to="/components/all" />
         </Switch>
       </Box>
     </Flex>

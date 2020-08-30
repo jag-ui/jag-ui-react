@@ -23,10 +23,10 @@ const LeftPanelNavItem = React.forwardRef(({ to, icon, children, ...props }, ref
       as={NavLink}
       to={to}
       exact
+      activeClassName="active"
       ref={ref}
       variant="none"
       kind="button"
-      activeClassName="active"
       sx={sidenavItemStyles}
       {...props}>
       <Icon py={1} icon={icon} mr={3} />

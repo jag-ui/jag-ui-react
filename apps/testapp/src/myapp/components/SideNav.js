@@ -21,7 +21,7 @@ import {
   FaTheaterMasks,
   FaUserCircle,
 } from "react-icons/fa";
-import { Link as RRLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SideNavItemDropdown = ({ icon, children }) => {
   const [showPopper, setShowPopper] = useState(false);
@@ -61,26 +61,26 @@ const sidenavItemStyles = {
   height: "60px",
   mb: 1,
   userSelect: "none",
-  transition: "0.8s",
+  transition: "background 0.8s",
   "&:hover": {
     bg: "rgb(0 0 0 / 0.25)",
   },
+  "&.active": {
+    bg: "rgb(0 0 0 / 0.25)",
+    borderLeft: "2px solid",
+  },
 };
 
-const sidenavItemActiveStyles = {
-  ...sidenavItemStyles,
-  bg: "rgb(0 0 0 / 0.25)",
-  borderLeft: "2px solid",
-};
-const SideNavItem = React.forwardRef(({ to, active, icon, children, ...props }, ref) => {
+const SideNavItem = React.forwardRef(({ to, icon, children, ...props }, ref) => {
+  const routeProps = to ? { as: NavLink, to, exact: true } : {};
   return (
     <Link
+      {...routeProps}
+      activeClassName="active"
       ref={ref}
-      as={RRLink}
-      to={to}
       variant="none"
       kind="button"
-      sx={active ? sidenavItemActiveStyles : sidenavItemStyles}
+      sx={sidenavItemStyles}
       {...props}>
       <Icon py={1} icon={icon} />
       <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">

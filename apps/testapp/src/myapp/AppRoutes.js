@@ -1,6 +1,6 @@
 import { Flex } from "jag-ui-react";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import SideNav from "./components/SideNav";
 import ComponentsPage from "./pages/ComponentsPage";
 
@@ -16,9 +16,7 @@ export default function AppRoutes() {
             <Route path="/components">
               <ComponentsPage />
             </Route>
-            <Route path="/">
-              <ComponentsPage />
-            </Route>
+            <Redirect to="/components" />
           </Switch>
         </Flex>
       </Flex>
