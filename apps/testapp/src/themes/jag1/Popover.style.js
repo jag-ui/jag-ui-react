@@ -53,6 +53,7 @@ const popover = {
     borderRadius: "5px",
     backgroundColor: "white",
     maxWidth: "80%",
+    mx: 1,
     '&[data-popper-placement^="top"] > .popover-arrow': {
       bottom: "5px",
       ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },

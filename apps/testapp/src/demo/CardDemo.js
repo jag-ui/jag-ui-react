@@ -29,7 +29,9 @@ const MyCustomCard = ({ icon, ...props }) => {
     <Box boxShadow="default" bg="bg2" mb={3} {...props}>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Heading>Card Title</Heading>
+          <Text variant="h4" as="h4">
+            Card Title
+          </Text>
           <Text>Card Description</Text>
         </Box>
         <Button>
@@ -47,7 +49,9 @@ const MyCustomCard2 = ({ icon, ...props }) => {
       <Flex justifyContent="center">{icon}</Flex>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Heading>Card Title</Heading>
+          <Text variant="h4" as="h4">
+            Card Title
+          </Text>
           <Text>Card Description</Text>
         </Box>
         <Button>
@@ -65,7 +69,9 @@ const MyImageCard = ({ icon, image }) => {
       {icon && <Flex justifyContent="center">{icon}</Flex>}
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
-          <Heading>Card Title</Heading>
+          <Text variant="h4" as="h4">
+            Card Title
+          </Text>
           <Text>Card Description</Text>
         </Box>
         <Button variant="icon">

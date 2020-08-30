@@ -33,7 +33,7 @@ export const TextWithTooltip = React.forwardRef(
       <Box ref={ref} __themeKey="TextWithTooltip.root">
         <Box
           onMouseEnter={() => setShowPopper(true)}
-          onMouseLeave={() => setShowPopper(false)}
+          onMouseLeave={() => setShowPopper(true)}
           ref={triggerRef}
           __themeKey="TextWithTooltip.text"
           {...props}>

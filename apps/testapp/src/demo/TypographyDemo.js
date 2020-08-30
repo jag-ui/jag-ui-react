@@ -54,22 +54,32 @@ export default function TypographyDemo() {
         Text (with Tooltip):
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
-        <Text enableTooltip>This is very very long text (has tooltip)</Text>
-        <Text enableTooltip tooltip="Hello! Tooltip">
-          This is very very long text (has custom tooltip)
-        </Text>
+        <Box mb={3}>
+          <Text enableTooltip>This is very very long text (has tooltip)</Text>
+        </Box>
+        <Box mb={3}>
+          <Text enableTooltip tooltip="Hello! Tooltip">
+            This is very very long text (has custom tooltip)
+          </Text>
+        </Box>
 
-        <Text maxLength={15}>This is very very long text (tooltip has full text)</Text>
+        <Box mb={3}>
+          <Text maxLength={15}>This is very very long text (tooltip has full text)</Text>
+        </Box>
 
-        <Text as="p" maxLength={50} truncateType="middle">
-          This is very very very very very very very long text (truncateType is "middle")
-        </Text>
+        <Box mb={3}>
+          <Text as="p" maxLength={50} truncateType="middle">
+            This is very very very very very very very long text (truncateType is "middle")
+          </Text>
+        </Box>
 
-        <Text as="p" maxLength={100}>
-          This is pragarph text, Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-          print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
-          thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
-        </Text>
+        <Box mb={3}>
+          <Text as="p" maxLength={100}>
+            This is pragarph text, Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+            print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+            thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+          </Text>
+        </Box>
       </Box>
 
       <Text variant="h4" as="h4" mt={3} mb={2}>

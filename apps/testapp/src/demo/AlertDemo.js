@@ -8,17 +8,17 @@ export default function AlertDemo() {
     <Box>
       <Heading>Alert Demo</Heading>
       <Divider />
-      <Box my={2}>
-        <Heading as="h3" mt={3} mb={2}>
-          Alerts: (Solid){" "}
+      <Box my={4}>
+        <Heading variant="h5" mt={3} mb={2}>
+          Alerts: (Solid)
         </Heading>
-        <Alert variant="solid" vcolor="primary" my={2}>
+        <Alert variant="solid" vcolor="primary" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
-              Primary Alert
+            <Text fontWeight="bold" mr={3}>
+              Primary Alert!
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
           </Box>
@@ -26,12 +26,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="solid" vcolor="secondary" my={2}>
+        <Alert variant="solid" vcolor="secondary" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Secondary Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -40,12 +40,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="solid" vcolor="success" my={2}>
+        <Alert variant="solid" vcolor="success" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Success Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -54,12 +54,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="solid" vcolor="danger" my={2}>
+        <Alert variant="solid" vcolor="danger" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Error Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -68,12 +68,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="solid" vcolor="info" my={2}>
+        <Alert variant="solid" vcolor="info" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Info Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -87,12 +87,12 @@ export default function AlertDemo() {
           Alerts: (Outline){" "}
         </Heading>
 
-        <Alert variant="outline" vcolor="primary" my={2}>
+        <Alert variant="outline" vcolor="primary" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Primary Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -101,12 +101,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="outline" vcolor="secondary" my={2}>
+        <Alert variant="outline" vcolor="secondary" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Secondary Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -115,12 +115,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="outline" vcolor="success" my={2}>
+        <Alert variant="outline" vcolor="success" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Success Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -129,12 +129,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="outline" vcolor="danger" my={2}>
+        <Alert variant="outline" vcolor="danger" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Error Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
@@ -143,12 +143,12 @@ export default function AlertDemo() {
             <FaTimes />
           </IconButton>
         </Alert>
-        <Alert variant="outline" vcolor="info" my={2}>
+        <Alert variant="outline" vcolor="info" my={4}>
           <Box mr={3}>
             <FaExclamationTriangle />
           </Box>
           <Box>
-            <Text fontWeight="bold" fontSize={2}>
+            <Text fontWeight="bold" mr={3}>
               Info Alert
             </Text>
             <Text fontSize={1}>This is a description of this alert</Text>
