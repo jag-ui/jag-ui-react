@@ -1,8 +1,8 @@
-import { Divider, Heading, Text, Icon } from "jag-ui-react";
+import { Divider, Text, Icon } from "jag-ui-react";
 import { Modal, Button, Box, Flex } from "jag-ui-react";
 import React, { useState } from "react";
 import { FaTimes, FaExclamationTriangle } from "react-icons/fa";
-
+import { Heading } from "../components/Heading";
 const LargeModalBody = () => (
   <div className="content">
     <h1>Hello World</h1>

@@ -1,6 +1,6 @@
-import { Divider, Heading } from "jag-ui-react";
-import { Box, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex } from "jag-ui-react";
+import { Box, Button, Divider, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex } from "jag-ui-react";
 import React, { useRef, useState } from "react";
+import { Heading } from "../components/Heading";
 
 const SamplePopover = ({ placement }) => {
   const [showPopper, setShowPopper] = useState(false);

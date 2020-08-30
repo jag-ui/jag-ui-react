@@ -1,7 +1,6 @@
-import { Divider, Heading } from "jag-ui-react";
-import React, { useState, useRef } from "react";
-import { Box, Flex, Button, Tooltip } from "jag-ui-react";
-
+import { Box, Button, Divider, Flex, Tooltip } from "jag-ui-react";
+import React, { useRef, useState } from "react";
+import { Heading } from "../components/Heading";
 const SampleTooltip = ({ placement }) => {
   const [showPopper, setShowPopper] = useState(false);
   const buttonRef = useRef(null);

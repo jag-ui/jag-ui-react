@@ -5,7 +5,6 @@ import {
   Divider,
   Field,
   Flex,
-  Heading,
   Input,
   Label,
   Radio,
@@ -15,6 +14,7 @@ import {
   Textarea,
 } from "jag-ui-react";
 import React, { useState } from "react";
+import { Heading } from "../components/Heading";
 
 function FormDemo1() {
   const [gender, setGender] = useState("male");

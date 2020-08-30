@@ -1,6 +1,6 @@
-import { Box, Divider, Heading } from "jag-ui-react";
+import { Box, Divider } from "jag-ui-react";
 import React from "react";
-
+import { Heading } from "../components/Heading";
 export default function TabsDemo() {
   return (
     <Box>

@@ -22,7 +22,7 @@ export { ResetCss } from "@jag-ui-react/reset-css";
 export { Select } from "@jag-ui-react/select";
 export { Slider } from "@jag-ui-react/slider";
 export { Switch } from "@jag-ui-react/switch";
-export { Heading, Label, Text } from "@jag-ui-react/text";
+export { Label, Text } from "@jag-ui-react/text";
 export { Textarea } from "@jag-ui-react/textarea";
 export { Tooltip } from "@jag-ui-react/tooltip";
 export { getMargin, getProps, getSystemProps, omitMargin } from "@jag-ui-react/utils";

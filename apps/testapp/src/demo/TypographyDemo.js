@@ -1,10 +1,10 @@
 import { Box, Divider, Text } from "jag-ui-react";
 import React from "react";
-
+import { Heading } from "../components/Heading";
 export default function TypographyDemo() {
   return (
     <Box>
-      <Text my={3}>Typography Demo</Text>
+      <Heading>Typography Demo</Heading>
       <Divider />
       <Text variant="h4" as="h4">
         Text (Variants):

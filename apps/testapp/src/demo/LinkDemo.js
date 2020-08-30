@@ -1,7 +1,7 @@
-import { Box, Divider, Flex, Heading, Icon, Link } from "jag-ui-react";
+import { Box, Divider, Flex, Icon, Link } from "jag-ui-react";
 import React from "react";
 import { FaCog, FaGlobe, FaTimes } from "react-icons/fa";
-
+import { Heading } from "../components/Heading";
 const SimpleButtonDemo = () => {
   return (
     <>
