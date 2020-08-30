@@ -8,7 +8,7 @@ import jag1 from "../themes/jag1";
 import jagTheme1 from "../themes/jagTheme1";
 import jagTheme2 from "../themes/jagTheme2";
 import SideNav from "./components/SideNav";
-import ComponentsPage from "./pages/ComponentsPage";
+import AppRoutes from "./AppRoutes";
 
 const themes = {
   jag1,
@@ -22,12 +22,7 @@ function MyApp() {
   return (
     <ThemeProvider theme={themes[Object.keys(themes)[currTheme]]}>
       <ResetCss />
-      <Flex width="full" height="100vh" bg="bg3">
-        <SideNav />
-        <Flex width="full" height="full">
-          <ComponentsPage />
-        </Flex>
-      </Flex>
+      <AppRoutes />
     </ThemeProvider>
   );
 }

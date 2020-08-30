@@ -21,6 +21,7 @@ import {
   FaTheaterMasks,
   FaUserCircle,
 } from "react-icons/fa";
+import { Link as RRLink } from "react-router-dom";
 
 const SideNavItemDropdown = ({ icon, children }) => {
   const [showPopper, setShowPopper] = useState(false);
@@ -71,9 +72,16 @@ const sidenavItemActiveStyles = {
   bg: "rgb(0 0 0 / 0.25)",
   borderLeft: "2px solid",
 };
-const SideNavItem = React.forwardRef(({ active, icon, children, ...props }, ref) => {
+const SideNavItem = React.forwardRef(({ to, active, icon, children, ...props }, ref) => {
   return (
-    <Link ref={ref} variant="none" kind="button" sx={active ? sidenavItemActiveStyles : sidenavItemStyles} {...props}>
+    <Link
+      ref={ref}
+      as={RRLink}
+      to={to}
+      variant="none"
+      kind="button"
+      sx={active ? sidenavItemActiveStyles : sidenavItemStyles}
+      {...props}>
       <Icon py={1} icon={icon} />
       <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">
         {children}
@@ -118,12 +126,18 @@ function SideNav(props) {
       <Logo />
       <Divider />
       <Flex flexDirection="column" width="full" flexGrow={1}>
-        <SideNavItem icon={<FaAsterisk size={20} />}>Learn</SideNavItem>
-        <SideNavItem icon={<FaShapes size={20} />} active>
+        <SideNavItem to="/learn" icon={<FaAsterisk size={20} />}>
+          Learn
+        </SideNavItem>
+        <SideNavItem to="/components" icon={<FaShapes size={20} />}>
           Components
         </SideNavItem>
-        <SideNavItem icon={<FaTheaterMasks size={20} />}>Themes</SideNavItem>
-        <SideNavItem icon={<FaList size={20} />}>API</SideNavItem>
+        <SideNavItem to="/themes" icon={<FaTheaterMasks size={20} />}>
+          Themes
+        </SideNavItem>
+        <SideNavItem to="/api" icon={<FaList size={20} />}>
+          API
+        </SideNavItem>
         <SideNavItemDropdown icon={<FaEllipsisH size={20} />}></SideNavItemDropdown>
       </Flex>
       <Flex flexDirection="column" width="full">
