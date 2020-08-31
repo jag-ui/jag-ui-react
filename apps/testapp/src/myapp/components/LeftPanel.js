@@ -1,4 +1,4 @@
-import { Box, Icon, Input, Link, Text } from "jag-ui-react";
+import { Box, Icon, Input, Button, Text } from "jag-ui-react";
 import React from "react";
 import { FaAsterisk, FaShapes, FaTheaterMasks } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -19,21 +19,20 @@ const sidenavItemStyles = {
 
 const LeftPanelNavItem = React.forwardRef(({ to, icon, children, ...props }, ref) => {
   return (
-    <Link
+    <Button
       as={NavLink}
       to={to}
       exact
       activeClassName="active"
       ref={ref}
       variant="none"
-      kind="button"
       sx={sidenavItemStyles}
       {...props}>
       <Icon py={1} icon={icon} mr={3} />
       <Text maxLength={20} tooltipPlacement="right" fontSize={1}>
         {children}
       </Text>
-    </Link>
+    </Button>
   );
 });
 function LeftPanel(props) {
@@ -91,7 +90,7 @@ function LeftPanel(props) {
         Image
       </LeftPanelNavItem>
       <LeftPanelNavItem to="/components/link" icon={<FaShapes size={20} />}>
-        Link
+        Button
       </LeftPanelNavItem>
       <LeftPanelNavItem to="/components/modal" icon={<FaShapes size={20} />}>
         Modal

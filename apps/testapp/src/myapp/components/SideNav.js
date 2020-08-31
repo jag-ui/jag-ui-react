@@ -7,7 +7,7 @@ import {
   DropdownToggle,
   Flex,
   Icon,
-  Link,
+  Button,
   Text,
 } from "jag-ui-react";
 import React, { useRef, useState } from "react";
@@ -74,25 +74,18 @@ const sidenavItemStyles = {
 const SideNavItem = React.forwardRef(({ to, icon, children, ...props }, ref) => {
   const routeProps = to ? { as: NavLink, to, exact: true } : {};
   return (
-    <Link
-      {...routeProps}
-      activeClassName="active"
-      ref={ref}
-      variant="none"
-      kind="button"
-      sx={sidenavItemStyles}
-      {...props}>
+    <Button {...routeProps} activeClassName="active" ref={ref} variant="none" sx={sidenavItemStyles} {...props}>
       <Icon py={1} icon={icon} />
       <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">
         {children}
       </Text>
-    </Link>
+    </Button>
   );
 });
 
 const Logo = () => {
   return (
-    <Link variant="none" kind="button" href="/">
+    <Button variant="none" href="/">
       <Text
         variant="caps"
         sx={{
@@ -103,7 +96,7 @@ const Logo = () => {
         }}>
         jag-ui
       </Text>
-    </Link>
+    </Button>
   );
 };
 

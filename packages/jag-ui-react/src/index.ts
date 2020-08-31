@@ -59,7 +59,7 @@ export { Icon, Svg } from "@jag-ui-react/icon";
 export { Avatar, Image } from "@jag-ui-react/image";
 export { Input } from "@jag-ui-react/input";
 export { Container, Flex, Grid } from "@jag-ui-react/layout";
-export { Link, NavLink } from "@jag-ui-react/link";
+export { Link } from "@jag-ui-react/link";
 export { Progress, Spinner } from "@jag-ui-react/loader";
 export { Modal } from "@jag-ui-react/modal";
 export { Popover } from "@jag-ui-react/popover";

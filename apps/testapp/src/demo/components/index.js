@@ -14,7 +14,6 @@ import GridDemo from "./GridDemo";
 import ImageDemo from "./ImageDemo";
 import LinkDemo from "./LinkDemo";
 import ModalDemo from "./ModalDemo";
-import NavbarDemo from "./NavbarDemo";
 import PaginationDemo from "./PaginationDemo";
 import PopoverDemo from "./PopoverDemo";
 import ProgressDemo from "./ProgressDemo";
@@ -50,7 +49,6 @@ export default function Demo() {
       <DividerDemo />
 
       <ModalDemo />
-      <NavbarDemo />
       <PaginationDemo />
 
       <ProgressDemo />

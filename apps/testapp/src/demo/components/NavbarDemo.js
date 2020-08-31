@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Link, NavLink, Text } from "jag-ui-react";
+import { Box, Divider, Flex, Link, Text } from "jag-ui-react";
 import React from "react";
 import { Heading } from "../../components/Heading";
 const NavBarEx = () => {
@@ -28,15 +28,15 @@ export default function NavbarDemo() {
       <Box my={10} p={4}>
         <NavBarEx />
         <Flex as="nav">
-          <NavLink href="#!" p={2}>
+          <Link href="#!" p={2}>
             Home
-          </NavLink>
-          <NavLink href="#!" p={2}>
+          </Link>
+          <Link href="#!" p={2}>
             Blog
-          </NavLink>
-          <NavLink href="#!" p={2}>
+          </Link>
+          <Link href="#!" p={2}>
             About
-          </NavLink>
+          </Link>
         </Flex>
       </Box>
     </Box>
