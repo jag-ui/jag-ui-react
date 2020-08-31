@@ -90,7 +90,7 @@ function LeftPanel(props) {
         Image
       </LeftPanelNavItem>
       <LeftPanelNavItem to="/components/link" icon={<FaShapes size={20} />}>
-        Button
+        Link
       </LeftPanelNavItem>
       <LeftPanelNavItem to="/components/modal" icon={<FaShapes size={20} />}>
         Modal

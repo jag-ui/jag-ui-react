@@ -29,7 +29,7 @@ const SideNavItemDropdown = ({ icon, children }) => {
   return (
     <Flex>
       <Dropdown active={showPopper} placement="right" onOutsideClick={() => setShowPopper(false)} width="full">
-        <DropdownToggle caret>
+        <DropdownToggle caret width="full">
           <SideNavItem
             ref={triggerRef}
             onClick={() => setShowPopper(!showPopper)}
@@ -62,6 +62,7 @@ const sidenavItemStyles = {
   mb: 1,
   userSelect: "none",
   transition: "background 0.8s",
+  width: "full",
   "&:hover": {
     bg: "rgb(0 0 0 / 0.25)",
   },

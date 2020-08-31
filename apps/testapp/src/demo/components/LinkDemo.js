@@ -9,7 +9,7 @@ const SimpleButtonDemo = () => {
         Default Link [variant="solid"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Link href="#" color="primary" mr={3}>
           Primary
         </Link>
@@ -36,7 +36,7 @@ const SimpleButtonDemo = () => {
         Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" vcolor="primary" mr={3}>
           Primary
         </Button>
@@ -64,7 +64,7 @@ const SimpleButtonDemo = () => {
         Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
@@ -92,7 +92,7 @@ const SimpleButtonDemo = () => {
         Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
@@ -111,7 +111,7 @@ const SimpleButtonDemo = () => {
         Link Styled Link [kind="button"] [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" vcolor="primary" disabled mr={3}>
           Primary
         </Button>
@@ -139,7 +139,7 @@ const SimpleButtonDemo = () => {
         Link with Icons
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
@@ -180,7 +180,7 @@ const OutlineButtonDemo = () => {
         Default Link Styled Link [kind="button"] [variant="solid"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" variant="outline" vcolor="primary" mr={3}>
           Primary
         </Button>
@@ -208,7 +208,7 @@ const OutlineButtonDemo = () => {
         Link Styled Link [kind="button"] [variant="solid"] [borderRadius="full"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" variant="outline" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
@@ -236,7 +236,7 @@ const OutlineButtonDemo = () => {
         Link Styled Link [kind="button"] [vsize="..."]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" variant="outline" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
@@ -255,7 +255,7 @@ const OutlineButtonDemo = () => {
         Link Styled Link [kind="button"] [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" variant="outline" vcolor="primary" disabled mr={3}>
           Primary
         </Button>
@@ -283,7 +283,7 @@ const OutlineButtonDemo = () => {
         Link with Icons
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button as="a" href="#" variant="outline" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
@@ -323,7 +323,7 @@ const LinkWithIconDemo = () => {
       <Heading variant="h5" mt={4} mb={3}>
         Link with Icon [variant="solid"]
       </Heading>
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Link mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
@@ -339,7 +339,7 @@ const LinkWithIconDemo = () => {
         Link with Icon [variant="icon"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Link variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
@@ -369,7 +369,7 @@ const LinkWithIconDemo = () => {
         Link with Icon [variant="icon"] [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Link variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>

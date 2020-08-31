@@ -10,7 +10,7 @@ const SimpleButtonDemo = () => {
         Default Button [variant="solid"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button mr={3}>Default</Button>
         <Button variant="solid" vcolor="primary" mr={3}>
           Primary
@@ -39,7 +39,7 @@ const SimpleButtonDemo = () => {
         Button [variant="solid"] [borderRadius="full"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button borderRadius="full" mr={3}>
           Default
         </Button>
@@ -70,7 +70,7 @@ const SimpleButtonDemo = () => {
         Button [vsize="..."]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
@@ -89,7 +89,7 @@ const SimpleButtonDemo = () => {
         Button [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button disabled mr={3}>
           Default
         </Button>
@@ -120,7 +120,7 @@ const SimpleButtonDemo = () => {
         Button with Icon & Text [diabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Default
@@ -165,7 +165,7 @@ const OutlineButtonDemo = () => {
         Default Button [variant="solid"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="outline" vcolor="primary" mr={3}>
           Primary
         </Button>
@@ -193,7 +193,7 @@ const OutlineButtonDemo = () => {
         Button [variant="solid"] [borderRadius="full"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="outline" vcolor="primary" borderRadius="full" mr={3}>
           Primary
         </Button>
@@ -221,7 +221,7 @@ const OutlineButtonDemo = () => {
         Button [vsize="..."]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="outline" vcolor="primary" vsize="sm" mr={3}>
           Small
         </Button>
@@ -240,7 +240,7 @@ const OutlineButtonDemo = () => {
         Button [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="outline" vcolor="primary" disabled mr={3}>
           Primary
         </Button>
@@ -268,7 +268,7 @@ const OutlineButtonDemo = () => {
         Button with Icon & Text
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="outline" vcolor="primary" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
           Primary
@@ -308,7 +308,7 @@ const BtnWithIconsDemo = () => {
       <Heading variant="h5" mt={4} mb={3}>
         Button with Icon [variant="solid"]
       </Heading>
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
@@ -324,7 +324,7 @@ const BtnWithIconsDemo = () => {
         Button with Icon [variant="icon"]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
@@ -354,7 +354,7 @@ const BtnWithIconsDemo = () => {
         Button with Icon [variant="icon"] [disabled]
       </Heading>
 
-      <Flex mb={4}>
+      <Flex mb={4} flexWrap="wrap">
         <Button variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>

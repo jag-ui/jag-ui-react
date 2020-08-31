@@ -19,6 +19,7 @@ export const Button = React.forwardRef((props, ref) => {
         cursor: "pointer",
         appearance: "none",
         textDecoration: "none",
+        flexShrink: 0,
       }}
     />
   );
