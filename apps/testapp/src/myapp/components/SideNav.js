@@ -9,6 +9,9 @@ import {
   Icon,
   Button,
   Text,
+  Image,
+  Popover,
+  Link,
 } from "jag-ui-react";
 import React, { useRef, useState } from "react";
 import {
@@ -20,38 +23,119 @@ import {
   FaShapes,
   FaTheaterMasks,
   FaUserCircle,
+  FaLinkedin,
+  FaGithub,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const SideNavItemDropdown = ({ icon, children }) => {
+const AVATAR = "http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg";
+
+const SideNavItemMore = ({ children }) => {
   const [showPopper, setShowPopper] = useState(false);
   const triggerRef = useRef(null);
   return (
-    <Flex>
-      <Dropdown active={showPopper} placement="right" onOutsideClick={() => setShowPopper(false)} width="full">
-        <DropdownToggle caret width="full">
-          <SideNavItem
-            ref={triggerRef}
-            onClick={() => setShowPopper(!showPopper)}
-            icon={icon}
-            active={showPopper}
-            border={0}>
-            {children}
+    <>
+      <SideNavItem ref={triggerRef} onClick={() => setShowPopper(!showPopper)} active={showPopper} border={0}>
+        <Icon py={1} icon={<FaEllipsisH size={20} />} />
+      </SideNavItem>
+      <Popover
+        triggerRef={triggerRef}
+        enableArrow={false}
+        placement="right"
+        active={showPopper}
+        onOutsideClick={() => setShowPopper(false)}>
+        <Flex flexWrap="wrap" minHeight="25vh" maxWidth="40vw" color="text" p={3}>
+          <SideNavItem to="/one" icon={<FaAsterisk size={20} />} mr={2} width="90px">
+            Learn
           </SideNavItem>
-        </DropdownToggle>
-        <DropdownMenu bg="white" color="text">
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem as="button">Some Action</DropdownItem>
-          <DropdownItem disabled>Action (disabled)</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem as="a" href="http://www.jagadeeshpalaniappan.com" target="_blank">
-            Menu Item (Anchor)
-          </DropdownItem>
-          <DropdownItem as="button">Bar Action</DropdownItem>
-          <DropdownItem as="button">Quo Action</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-    </Flex>
+          <SideNavItem to="/two" icon={<FaShapes size={20} />} mr={2} width="90px">
+            Components
+          </SideNavItem>
+          <SideNavItem to="/three" icon={<FaTheaterMasks size={20} />} mr={2} width="90px">
+            Themes
+          </SideNavItem>
+          <SideNavItem to="/four" icon={<FaList size={20} />} mr={2} width="90px">
+            API
+          </SideNavItem>
+          <SideNavItem icon={<FaQuestion size={20} />} mr={2} width="90px">
+            Help
+          </SideNavItem>
+          <SideNavItem to="/one" icon={<FaAsterisk size={20} />} mr={2} width="90px">
+            Learn
+          </SideNavItem>
+          <SideNavItem to="/two" icon={<FaShapes size={20} />} mr={2} width="90px">
+            Components
+          </SideNavItem>
+          <SideNavItem to="/three" icon={<FaTheaterMasks size={20} />} mr={2} width="90px">
+            Themes
+          </SideNavItem>
+          <SideNavItem to="/four" icon={<FaList size={20} />} mr={2} width="90px">
+            API
+          </SideNavItem>
+          <SideNavItem icon={<FaQuestion size={20} />} mr={2} width="90px">
+            Help
+          </SideNavItem>
+          <SideNavItem to="/one" icon={<FaAsterisk size={20} />} mr={2} width="90px">
+            Learn
+          </SideNavItem>
+          <SideNavItem to="/two" icon={<FaShapes size={20} />} mr={2} width="90px">
+            Components
+          </SideNavItem>
+          <SideNavItem to="/three" icon={<FaTheaterMasks size={20} />} mr={2} width="90px">
+            Themes
+          </SideNavItem>
+          <SideNavItem to="/four" icon={<FaList size={20} />} mr={2} width="90px">
+            API
+          </SideNavItem>
+          <SideNavItem icon={<FaQuestion size={20} />} mr={2} width="90px">
+            Help
+          </SideNavItem>
+        </Flex>
+      </Popover>
+    </>
+  );
+};
+
+const SideNavItemDev = ({ children }) => {
+  const [showPopper, setShowPopper] = useState(false);
+  const triggerRef = useRef(null);
+  return (
+    <>
+      <SideNavItem ref={triggerRef} onClick={() => setShowPopper(!showPopper)} active={showPopper} border={0}>
+        <Image src={AVATAR} variant="avatar" size="2.5rem" borderRadius={9999} />
+      </SideNavItem>
+      <Popover
+        triggerRef={triggerRef}
+        placement="right-start"
+        active={showPopper}
+        onOutsideClick={() => setShowPopper(false)}
+        p={2}
+        mb={3}>
+        <Box width="400px" color="text">
+          <Text variant="muted" mb={2}>
+            Developed By:
+          </Text>
+          <Flex>
+            <Image src={AVATAR} variant="avatar" borderRadius={6} size="7rem" mr={3} />
+            <Box>
+              <Text fontWeight="semibold" color="primary">
+                Jagadeesh Palaniappan
+              </Text>
+              <Text> Fullstack Developer</Text>
+              <Text> San Francisco, CA</Text>
+              <Box>
+                <Link href="https://www.linkedin.com/in/jagadeeshpalaniappan/" target="_blank" mr={2}>
+                  <Icon py={1} icon={<FaLinkedin size={20} />} />
+                </Link>
+                <Link href="https://github.com/jagadeeshpalaniappan" target="_blank">
+                  <Icon py={1} icon={<FaGithub size={20} />} />
+                </Link>
+              </Box>
+            </Box>
+          </Flex>
+        </Box>
+      </Popover>
+    </>
   );
 };
 
@@ -62,7 +146,6 @@ const sidenavItemStyles = {
   mb: 1,
   userSelect: "none",
   transition: "background 0.8s",
-  width: "full",
   "&:hover": {
     bg: "rgb(0 0 0 / 0.25)",
   },
@@ -72,11 +155,12 @@ const sidenavItemStyles = {
   },
 };
 
-const SideNavItem = React.forwardRef(({ to, icon, children, ...props }, ref) => {
+const SideNavItem = React.forwardRef(({ to, icon, image, children, ...props }, ref) => {
   const routeProps = to ? { as: NavLink, to, exact: true } : {};
   return (
     <Button {...routeProps} activeClassName="active" ref={ref} variant="none" sx={sidenavItemStyles} {...props}>
-      <Icon py={1} icon={icon} />
+      {icon && <Icon py={1} icon={icon} />}
+      {image && <Image src={image} variant="avatar" size="2rem" />}
       <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">
         {children}
       </Text>
@@ -132,12 +216,13 @@ function SideNav(props) {
         <SideNavItem to="/api" icon={<FaList size={20} />}>
           API
         </SideNavItem>
-        <SideNavItemDropdown icon={<FaEllipsisH size={20} />}></SideNavItemDropdown>
+        {/* <SideNavItemMore icon={<FaEllipsisH size={20} />}></SideNavItemMore> */}
+        <SideNavItemMore />
       </Flex>
       <Flex flexDirection="column" width="full">
         <SideNavItem icon={<FaQuestion size={20} />}>Help</SideNavItem>
         <SideNavItem icon={<FaCogs size={20} />}>Settings</SideNavItem>
-        <SideNavItem icon={<FaUserCircle size={25} />}></SideNavItem>
+        <SideNavItemDev />
       </Flex>
     </Box>
   );
