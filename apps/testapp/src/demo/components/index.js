@@ -37,7 +37,7 @@ export default function Demo() {
       <TooltipDemo />
 
       <CardDemo />
-      {/* <FormDemo /> */}
+      <FormDemo />
       <FlexDemo />
       <GridDemo />
       <ImageDemo />
