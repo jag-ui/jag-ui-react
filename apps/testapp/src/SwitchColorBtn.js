@@ -35,7 +35,7 @@ const SwitchColorBtn = () => {
 
   return (
     <Button title="Change color mode" onClick={cycleMode} display="flex">
-      <Dot /> Switch Color
+      <Dot /> Theme Color [TODO: Dropdown]
     </Button>
   );
 };

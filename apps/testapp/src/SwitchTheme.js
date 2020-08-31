@@ -5,7 +5,7 @@ import SwitchColorBtn from "./SwitchColorBtn";
 const SwitchThemeBtn = ({ onClick }) => {
   return (
     <Button title="Change color mode" onClick={onClick} display="flex" mr={3}>
-      Switch Theme
+      Theme [TODO: Dropdown]
     </Button>
   );
 };
@@ -16,8 +16,10 @@ const SwitchTheme = ({ themes, currTheme, setCurrTheme }) => {
       currTheme: {currTheme}
       <SwitchThemeBtn
         onClick={() => {
-          currTheme + 1 <= Object.keys(themes).length - 1 ? setCurrTheme(currTheme + 1) : setCurrTheme(0);
-          console.log(Object.keys(themes).length, currTheme + 1 > Object.keys(themes).length - 1);
+          if (currTheme && themes) {
+            currTheme + 1 <= Object.keys(themes).length - 1 ? setCurrTheme(currTheme + 1) : setCurrTheme(0);
+            console.log(Object.keys(themes).length, currTheme + 1 > Object.keys(themes).length - 1);
+          }
         }}
       />
       <SwitchColorBtn />

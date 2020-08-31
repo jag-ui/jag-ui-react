@@ -108,8 +108,8 @@ export const colors = {
       background: "rgb(23, 43, 58)",
       bg1: "rgba(15, 32, 45, 0.50)",
       bg2: "rgb(15, 32, 45)",
-      bg3: "rgba(9, 20, 28, 0.50)",
-      bg4: "rgb(9, 20, 28)",
+      bg3: "rgba(9, 20, 28)",
+      bg4: "rgb(9, 20, 28, 0.30)",
 
       // COMP:
       divider: "rgba(255, 255, 255, 0.06)",
