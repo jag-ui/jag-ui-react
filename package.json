@@ -40,7 +40,8 @@
     "jest-prop-type-error": "^1.1.0",
     "lerna": "^3.20.2",
     "microbundle": "^0.12.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.9.5"
   },
   "jest": {
     "collectCoverageFrom": [

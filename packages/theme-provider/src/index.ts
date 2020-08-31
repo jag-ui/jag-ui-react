@@ -31,12 +31,7 @@ const BodyStyles = () =>
     },
   });
 
-interface ThemeProviderProps extends Pick<CoreThemeProviderProps, "theme"> {
-  children?: React.ReactNode;
-  components?: MDXProviderComponents;
-}
-
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, components, children }) => {
+export const ThemeProvider: React.FC<any> = ({ theme, components, children }) => {
   const outer = useThemeUI();
 
   if (typeof outer.setColorMode === "function") {

@@ -24,7 +24,7 @@
   "peerDependencies": {
     "react": "^16.11.0"
   },
-  "author": "Brent Jackson",
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

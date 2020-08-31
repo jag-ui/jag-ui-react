@@ -17,7 +17,7 @@
     "@jag-ui-react/core": "^0.0.0",
     "@jag-ui-react/mdx": "^0.0.0"
   },
-  "author": "Brent Jackson",
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
