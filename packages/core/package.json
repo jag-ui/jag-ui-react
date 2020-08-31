@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react-core/core",
+  "name": "@jag-ui-react/core",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.0",
-    "@jag-ui-react-core/css": "^0.0.0",
+    "@jag-ui-react/css": "^0.0.0",
     "deepmerge": "^4.2.2"
   },
   "peerDependencies": {

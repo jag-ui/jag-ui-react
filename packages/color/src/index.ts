@@ -1,5 +1,5 @@
 import * as P from "polished";
-import { get, Theme } from "@jag-ui-react-core/css";
+import { get, Theme } from "@jag-ui-react/css";
 
 /**
  * Get color from theme.colors

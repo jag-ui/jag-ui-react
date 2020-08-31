@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react-core/mdx",
+  "name": "@jag-ui-react/mdx",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -17,8 +17,8 @@
     "@mdx-js/react": "^1.0.0"
   },
   "devDependencies": {
-    "@jag-ui-react-core/core": "^0.0.0",
-    "@jag-ui-react-core/css": "^0.0.0",
+    "@jag-ui-react/core": "^0.0.0",
+    "@jag-ui-react/css": "^0.0.0",
     "@types/mdx-js__react": "^1.5.1"
   },
   "peerDependencies": {

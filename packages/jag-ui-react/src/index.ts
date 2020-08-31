@@ -1,3 +1,49 @@
+// ################ CORE ################
+import { jsx } from "@jag-ui-react/core";
+
+export {
+  jsx,
+  Context,
+  merge,
+  useThemeUI,
+  ContextValue,
+  IntrinsicSxElements,
+  SxProps,
+  SxStyleProp,
+} from "@jag-ui-react/core";
+export { useColorMode, InitializeColorMode } from "@jag-ui-react/color-modes";
+export { Styled, components } from "@jag-ui-react/mdx";
+export { ThemeProvider } from "@jag-ui-react/theme-provider";
+export {
+  css,
+  get,
+  ColorMode,
+  ColorModesScale,
+  CSSObject,
+  CSSProperties,
+  CSSPseudoSelectorProps,
+  ResponsiveStyleValue,
+  ThemeUICSSProperties,
+  ThemeUIStyleObject,
+  Theme,
+  ThemeStyles,
+  TLengthStyledSystem,
+  ThemeDerivedStyles,
+} from "@jag-ui-react/css";
+
+// TODO: work this into root provider/global styles?
+export const BaseStyles = (props: Record<string, unknown>) =>
+  jsx("div", {
+    ...props,
+    sx: {
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "body",
+      variant: "styles",
+    },
+  });
+
+// ################ COMPONENTS ################
 export { Alert } from "@jag-ui-react/alert";
 export { Badge } from "@jag-ui-react/badge";
 export { Box } from "@jag-ui-react/box";

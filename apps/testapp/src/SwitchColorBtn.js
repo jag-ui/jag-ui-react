@@ -1,6 +1,6 @@
 import { Button } from "jag-ui-react";
 import React from "react";
-import { useColorMode } from "jag-ui-react-core";
+import { useColorMode } from "jag-ui-react";
 
 const modes = ["lite", "dark"];
 const Dot = (props) => (

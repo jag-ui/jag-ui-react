@@ -1,4 +1,4 @@
-import { css } from "@jag-ui-react-core/css";
+import { css } from "@jag-ui-react/css";
 
 const toVarName = (key) => `--theme-ui-${key}`;
 const toVarValue = (key, value) => `var(${toVarName(key)}, ${value})`;

@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { render, fireEvent, cleanup, act } from "@testing-library/react";
 import { matchers } from "jest-emotion";
 import mockConsole from "jest-mock-console";
-import { jsx, ThemeProvider, useThemeUI } from "@jag-ui-react-core/core";
+import { jsx, ThemeProvider, useThemeUI } from "@jag-ui-react/core";
 import { ColorModeProvider, useColorMode, InitializeColorMode } from "../src";
 
 const STORAGE_KEY = "theme-ui-color-mode";

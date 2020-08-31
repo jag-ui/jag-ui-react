@@ -1,6 +1,6 @@
 import { jsx as emotion, ThemeContext as EmotionContext } from "@emotion/core";
 import { version as __EMOTION_VERSION__ } from "@emotion/core/package.json";
-import { css } from "@jag-ui-react-core/css";
+import { css } from "jag-ui-react";
 import deepmerge from "deepmerge";
 import * as React from "react";
 // import "./react-jsx";

@@ -1,4 +1,4 @@
-import { Theme } from "@jag-ui-react-core/css";
+import { Theme } from "@jag-ui-react/css";
 
 import {
   darken,

@@ -1,6 +1,6 @@
 import React from "react";
-import { jsx, useThemeUI, merge, Context } from "@jag-ui-react-core/core";
-import { get } from "@jag-ui-react-core/css";
+import { jsx, useThemeUI, merge, Context } from "@jag-ui-react/core";
+import { get } from "@jag-ui-react/css";
 import { Global, ThemeContext as EmotionContext } from "@emotion/core";
 import { toCustomProperties, createColorStyles } from "./custom-properties";
 

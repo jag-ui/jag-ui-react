@@ -1,17 +1,17 @@
-# @jag-ui-react-core/color
+# @jag-ui-react/color
 
 Color manipulation utilities for Theme UI
 
 ```sh
-npm i @jag-ui-react-core/color
+npm i @jag-ui-react/color
 ```
 
-Import utilities from the `@jag-ui-react-core/color` package and use them with colors in the `sx` prop.
+Import utilities from the `@jag-ui-react/color` package and use them with colors in the `sx` prop.
 
 ```js
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { darken, lighten } from "@jag-ui-react-core/color";
+import { darken, lighten } from "@jag-ui-react/color";
 
 export default (props) => (
   <div
@@ -29,7 +29,7 @@ export default (props) => (
 ### `getColor`
 
 ```js
-import { getColor } from "@jag-ui-react-core/color";
+import { getColor } from "@jag-ui-react/color";
 // getColor(theme, 'primary')
 ```
 
@@ -38,7 +38,7 @@ import { getColor } from "@jag-ui-react-core/color";
 Darken a color by an amount 0–1
 
 ```js
-import { darken } from "@jag-ui-react-core/color";
+import { darken } from "@jag-ui-react/color";
 // darken('primary', amount)
 ```
 
@@ -47,7 +47,7 @@ import { darken } from "@jag-ui-react-core/color";
 Lighten a color by an amount 0–1
 
 ```js
-import { lighten } from "@jag-ui-react-core/color";
+import { lighten } from "@jag-ui-react/color";
 // lighten('primary', amount)
 ```
 
@@ -56,7 +56,7 @@ import { lighten } from "@jag-ui-react-core/color";
 Rotate the hue of a color by an amount 0–360
 
 ```js
-import { rotate } from "@jag-ui-react-core/color";
+import { rotate } from "@jag-ui-react/color";
 // rotate('primary', degrees)
 ```
 
@@ -65,7 +65,7 @@ import { rotate } from "@jag-ui-react-core/color";
 Set the hue of a color to a degree 0–360
 
 ```js
-import { hue } from "@jag-ui-react-core/color";
+import { hue } from "@jag-ui-react/color";
 // hue('primary', degrees)
 ```
 
@@ -74,7 +74,7 @@ import { hue } from "@jag-ui-react-core/color";
 Set the saturation of a color to an amount 0–1
 
 ```js
-import { saturation } from "@jag-ui-react-core/color";
+import { saturation } from "@jag-ui-react/color";
 // saturation('primary', amount)
 ```
 
@@ -83,7 +83,7 @@ import { saturation } from "@jag-ui-react-core/color";
 Set the lightness of a color to an amount 0–1
 
 ```js
-import { lightness } from "@jag-ui-react-core/color";
+import { lightness } from "@jag-ui-react/color";
 // lightness('primary', amount)
 ```
 
@@ -92,7 +92,7 @@ import { lightness } from "@jag-ui-react-core/color";
 Desaturate a color by an amount 0–1
 
 ```js
-import { desaturate } from "@jag-ui-react-core/color";
+import { desaturate } from "@jag-ui-react/color";
 // desaturate('primary', amount)
 ```
 
@@ -101,7 +101,7 @@ import { desaturate } from "@jag-ui-react-core/color";
 Saturate a color by an amount 0–1
 
 ```js
-import { saturate } from "@jag-ui-react-core/color";
+import { saturate } from "@jag-ui-react/color";
 // saturate('primary', amount)
 ```
 
@@ -110,7 +110,7 @@ import { saturate } from "@jag-ui-react-core/color";
 Shade a color by an amount 0–1
 
 ```js
-import { shade } from "@jag-ui-react-core/color";
+import { shade } from "@jag-ui-react/color";
 // shade('primary', amount)
 ```
 
@@ -119,7 +119,7 @@ import { shade } from "@jag-ui-react-core/color";
 Tint a color by an amount 0–1
 
 ```js
-import { tint } from "@jag-ui-react-core/color";
+import { tint } from "@jag-ui-react/color";
 // tint('primary', amount)
 ```
 
@@ -128,7 +128,7 @@ import { tint } from "@jag-ui-react-core/color";
 Set the transparency of a color to an amount 0-1
 
 ```js
-import { alpha } from "@jag-ui-react-core/color";
+import { alpha } from "@jag-ui-react/color";
 // alpha('primary', amount)
 ```
 
@@ -137,7 +137,7 @@ import { alpha } from "@jag-ui-react-core/color";
 Similar to `alpha`, but decreases opacity by the given amount.
 
 ```js
-import { transparentize } from "@jag-ui-react-core/color";
+import { transparentize } from "@jag-ui-react/color";
 // transparentize('primary', amount)
 ```
 
@@ -146,7 +146,7 @@ import { transparentize } from "@jag-ui-react-core/color";
 Mix two colors by a specific ratio
 
 ```js
-import { mix } from "@jag-ui-react-core/color";
+import { mix } from "@jag-ui-react/color";
 // mix('primary', 'secondary', ratio)
 ```
 
@@ -155,7 +155,7 @@ import { mix } from "@jag-ui-react-core/color";
 Get the complement of a color
 
 ```js
-import { complement } from "@jag-ui-react-core/color";
+import { complement } from "@jag-ui-react/color";
 // complement('primary')
 ```
 
@@ -164,7 +164,7 @@ import { complement } from "@jag-ui-react-core/color";
 Get the inverted color
 
 ```js
-import { invert } from "@jag-ui-react-core/color";
+import { invert } from "@jag-ui-react/color";
 // invert('primary')
 ```
 
@@ -173,7 +173,7 @@ import { invert } from "@jag-ui-react-core/color";
 Desaturate the color to grayscale
 
 ```js
-import { grayscale } from "@jag-ui-react-core/color";
+import { grayscale } from "@jag-ui-react/color";
 // grayscale('primary')
 ```
 

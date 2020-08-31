@@ -1,5 +1,5 @@
-import { jsx, IntrinsicSxElements } from "@jag-ui-react-core/core";
-import { css, get, Theme } from "@jag-ui-react-core/css";
+import { jsx, IntrinsicSxElements } from "@jag-ui-react/core";
+import { css, get, Theme } from "@jag-ui-react/css";
 import { ComponentType, FC, ReactNode, DetailedHTMLProps, HTMLAttributes, ElementType, ComponentProps } from "react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { MDXProvider as _MDXProvider, useMDXComponents } from "@mdx-js/react";

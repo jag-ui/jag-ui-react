@@ -19,7 +19,6 @@
     "jag-ui-react": "^0.0.0",
     "@jag-ui-react/icons": "^0.0.0",
     "@react-workspaces/react-scripts": "3.4.0-alpha-01",
-    "@jag-ui-react-core/color": "^0.0.0",
     "@styled-system/should-forward-prop": "^5.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

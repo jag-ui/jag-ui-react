@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "@jag-ui-react-core/core";
+import { jsx } from "@jag-ui-react/core";
 import { mdx } from "@mdx-js/react";
 import renderer from "react-test-renderer";
 import { render, cleanup } from "@testing-library/react";

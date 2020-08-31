@@ -2,7 +2,7 @@
 import { mdx } from "@mdx-js/react";
 import renderer from "react-test-renderer";
 import { matchers } from "jest-emotion";
-import { ThemeProvider } from "@jag-ui-react-core/core";
+import { ThemeProvider } from "@jag-ui-react/core";
 import { themed, Styled, components, MDXProvider } from "../src";
 
 expect.extend(matchers);

@@ -1,11 +1,11 @@
-# @jag-ui-react-core/core
+# @jag-ui-react/core
 
 Core Emotion and JSX implementation for Theme UI
 
 https://theme-ui.com
 
 ```sh
-npm i @jag-ui-react-core/core
+npm i @jag-ui-react/core
 ```
 
 ## Usage

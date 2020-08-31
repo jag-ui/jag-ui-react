@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react-core/color-modes",
+  "name": "@jag-ui-react/color-modes",
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.0",
-    "@jag-ui-react-core/core": "^0.0.0",
-    "@jag-ui-react-core/css": "^0.0.0",
+    "@jag-ui-react/core": "^0.0.0",
+    "@jag-ui-react/css": "^0.0.0",
     "deepmerge": "^4.2.2"
   },
   "peerDependencies": {

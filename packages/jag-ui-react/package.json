@@ -3,15 +3,14 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
   "sideEffects": false,
   "scripts": {
     "prepare": "microbundle --no-compress --jsx React.createElement",
     "watch": "microbundle watch --no-compress --jsx React.createElement"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^16.8.0",
-    "jag-ui-react-core": "^0.0.0",
+  "dependencies": {
     "@jag-ui-react/box": "^0.0.0",
     "@jag-ui-react/alert": "^0.0.0",
     "@jag-ui-react/button": "^0.0.0",
@@ -25,7 +24,6 @@
     "@jag-ui-react/checkbox": "^0.0.0",
     "@jag-ui-react/field": "^0.0.0",
     "@jag-ui-react/input": "^0.0.0",
-    "@jag-ui-react/label": "^0.0.0",
     "@jag-ui-react/radio": "^0.0.0",
     "@jag-ui-react/select": "^0.0.0",
     "@jag-ui-react/slider": "^0.0.0",
@@ -40,7 +38,15 @@
     "@jag-ui-react/embed": "^0.0.0",
     "@jag-ui-react/text": "^0.0.0",
     "@jag-ui-react/loader": "^0.0.0",
-    "@jag-ui-react/icon": "^0.0.0"
+    "@jag-ui-react/icon": "^0.0.0",
+    "@jag-ui-react/color-modes": "^0.0.0",
+    "@jag-ui-react/core": "^0.0.0",
+    "@jag-ui-react/css": "^0.0.0",
+    "@jag-ui-react/mdx": "^0.0.0",
+    "@jag-ui-react/theme-provider": "^0.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   },
   "publishConfig": {
     "access": "public"

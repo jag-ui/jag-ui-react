@@ -1,4 +1,4 @@
-import { ThemeUIStyleObject } from "@jag-ui-react-core/css";
+import { ThemeUIStyleObject } from "@jag-ui-react/css";
 
 /**
  * The `sx` prop accepts a `SxStyleProp` object and properties that are part of

@@ -4,10 +4,10 @@ import {
   ThemeProvider as CoreProvider,
   ThemeProviderProps as CoreThemeProviderProps,
   IntrinsicSxElements,
-} from "@jag-ui-react-core/core";
-import { css, Theme } from "@jag-ui-react-core/css";
-import { ColorModeProvider } from "@jag-ui-react-core/color-modes";
-import { MDXProvider, MDXProviderComponents } from "@jag-ui-react-core/mdx";
+} from "@jag-ui-react/core";
+import { css, Theme } from "@jag-ui-react/css";
+import { ColorModeProvider } from "@jag-ui-react/color-modes";
+import { MDXProvider, MDXProviderComponents } from "@jag-ui-react/mdx";
 import { Global } from "@emotion/core";
 
 const BodyStyles = () =>
