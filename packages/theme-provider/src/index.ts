@@ -3,8 +3,9 @@ import {
   useThemeUI,
   ThemeProvider as CoreProvider,
   ThemeProviderProps as CoreThemeProviderProps,
+  IntrinsicSxElements,
 } from "@jag-ui-react/core";
-import { css } from "@jag-ui-react/css";
+import { css, Theme } from "@jag-ui-react/css";
 import { ColorModeProvider } from "@jag-ui-react/color-modes";
 import { MDXProvider, MDXProviderComponents } from "@jag-ui-react/mdx";
 import { Global } from "@emotion/core";
@@ -12,7 +13,7 @@ import { Global } from "@emotion/core";
 const BodyStyles = () =>
   jsx(Global, {
     styles: (emotionTheme) => {
-      const theme = emotionTheme;
+      const theme = emotionTheme as Theme;
       if (theme.useBodyStyles === false || (theme.styles && !theme.styles.root)) {
         return false;
       }

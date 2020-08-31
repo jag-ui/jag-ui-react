@@ -10,7 +10,6 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
     "@styled-system/should-forward-prop": "^5.1.2"
   },
   "publishConfig": {

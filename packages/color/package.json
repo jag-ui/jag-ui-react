@@ -1,5 +1,5 @@
 {
-  "name": "@jag-ui-react/color",
+  "name": "@jag-ui-react-core/color",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -10,8 +10,10 @@
     "watch": "microbundle watch --no-compress"
   },
   "dependencies": {
-    "@jag-ui-react/css": "^0.0.0",
     "polished": "^3.4.1"
+  },
+  "peerDependencies": {
+    "@jag-ui-react-core/css": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"
