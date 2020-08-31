@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ThemeProvider } from "theme-ui";
+import { ThemeProvider } from "jag-ui-react-core";
 // import { ThemeProvider } from "emotion-theming";
 // import { ThemeProvider } from "./theme";
 import { ResetCss } from "jag-ui-react";

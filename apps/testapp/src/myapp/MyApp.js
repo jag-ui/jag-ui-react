@@ -2,7 +2,7 @@
 // import { ThemeProvider } from "./theme";
 import { Flex, ResetCss } from "jag-ui-react";
 import React, { useState } from "react";
-import { ThemeProvider } from "theme-ui";
+import { ThemeProvider } from "jag-ui-react-core";
 import jag1 from "../themes/jag1";
 // import bootstrap from "./themes/bootstrap";
 import jagTheme1 from "../themes/jagTheme1";

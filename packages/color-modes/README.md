@@ -1,0 +1,29 @@
+# @jag-ui-react-core/color-modes
+
+Adds support for user-controlled color modes
+
+https://theme-ui.com
+
+**Note:** _This package is included in the main `theme-ui` package, and generally should not be used on its own._
+
+```sh
+npm i @jag-ui-react-core/color-modes
+```
+
+```jsx
+import { ThemeProvider } from "@jag-ui-react-core/core";
+import { ColorModeProvider } from "@jag-ui-react-core/color-modes";
+import theme from "./theme";
+
+export default (props) => (
+  <ThemeProvider theme={theme}>
+    <ColorModeProvider>{props.children}</ColorModeProvider>
+  </ThemeProvider>
+);
+```
+
+## API
+
+- `useColorMode`
+- `ColorModeProvider`
+- `InitializeColorMode`

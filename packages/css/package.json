@@ -1,0 +1,22 @@
+{
+  "name": "@jag-ui-react-core/css",
+  "version": "0.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --tsconfig tsconfig.json",
+    "watch": "microbundle watch --no-compress --tsconfig tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "csstype": "^2.5.7"
+  }
+}

@@ -1,2 +1,2 @@
-export { css, get } from "@theme-ui/css";
+export { css, get } from "@jag-ui-react-core/css";
 export { Box } from "./Box";

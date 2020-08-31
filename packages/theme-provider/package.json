@@ -1,0 +1,25 @@
+{
+  "name": "@jag-ui-react-core/theme-provider",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --tsconfig tsconfig.json",
+    "watch": "microbundle watch --no-compress --tsconfig tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.0",
+    "@jag-ui-react-core/color-modes": "^0.0.0",
+    "@jag-ui-react-core/core": "^0.0.0",
+    "@jag-ui-react-core/mdx": "^0.0.0"
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
