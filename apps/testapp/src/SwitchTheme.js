@@ -1,27 +1,50 @@
-import { Box, Button } from "jag-ui-react";
-import React from "react";
-import SwitchColorBtn from "./SwitchColorBtn";
+import { Box, Icon, useColorMode } from "jag-ui-react";
+import React, { useContext, useState } from "react";
+import { FaPalette, FaTheaterMasks } from "react-icons/fa";
+import MyDropdown from "./myapp/components/MyDropdown";
+import { MyAppContext } from "./myapp/MyAppContext";
+import { colorModes, themes } from "./themes";
 
-const SwitchThemeBtn = ({ onClick }) => {
+const SwitchColorBtn = () => {
+  const [colorMode, setColorMode] = useState(colorModes[0]);
+  const [, setMode] = useColorMode();
+  const selectColor = (item) => {
+    setMode(item.id);
+    setColorMode(item);
+  };
+
   return (
-    <Button title="Change color mode" onClick={onClick} display="flex" mr={3}>
-      Theme [TODO: Dropdown]
-    </Button>
+    <>
+      <MyDropdown
+        defaultTitle={"Select Color"}
+        leftIcon={<Icon icon={<FaPalette />} mr={2} />}
+        selectedItem={colorMode}
+        items={colorModes}
+        onSelect={selectColor}
+      />
+    </>
+  );
+};
+
+const SwitchThemeBtn = () => {
+  const { theme, setTheme } = useContext(MyAppContext);
+  return (
+    <>
+      <MyDropdown
+        defaultTitle={"Select Theme"}
+        leftIcon={<Icon icon={<FaTheaterMasks />} mr={2} />}
+        selectedItem={theme}
+        items={themes}
+        onSelect={setTheme}
+      />
+    </>
   );
 };
 
 const SwitchTheme = ({ themes, currTheme, setCurrTheme }) => {
   return (
     <Box display="flex" justifyContent="flex-end" py={2}>
-      currTheme: {currTheme}
-      <SwitchThemeBtn
-        onClick={() => {
-          if (currTheme && themes) {
-            currTheme + 1 <= Object.keys(themes).length - 1 ? setCurrTheme(currTheme + 1) : setCurrTheme(0);
-            console.log(Object.keys(themes).length, currTheme + 1 > Object.keys(themes).length - 1);
-          }
-        }}
-      />
+      <SwitchThemeBtn />
       <SwitchColorBtn />
     </Box>
   );

@@ -1,42 +1,33 @@
-import { Button } from "jag-ui-react";
-import React from "react";
-import { useColorMode } from "jag-ui-react";
+import { Icon, useColorMode } from "jag-ui-react";
+import React, { useState } from "react";
+import { FaPalette } from "react-icons/fa";
+import MyDropdown from "./myapp/components/MyDropdown";
 
-const modes = ["lite", "dark"];
-const Dot = (props) => (
-  <svg
-    viewBox="0 0 32 32"
-    width="24"
-    height="24"
-    fill="currentcolor"
-    style={{
-      display: "block",
-    }}>
-    <circle cx="16" cy="16" r="14" fill="none" stroke="currentcolor" strokeWidth="4" />
-    <path
-      d={`
-        M 16 0
-        A 16 16 0 0 0 16 32
-        z
-      `}
-    />
-  </svg>
-);
+const colors = [
+  { id: "lightBlue", name: "Light - Blue" },
+  { id: "darkBlue", name: "Dark - Blue" },
+];
 
 const SwitchColorBtn = () => {
+  const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [mode, setMode] = useColorMode();
+  console.log({ mode });
 
-  const cycleMode = (e) => {
-    const i = (modes.indexOf(mode) + 1) % modes.length;
-    const newColorMode = modes[i];
-    console.log({ newColorMode });
-    setMode(newColorMode);
+  const handleSelectColor = (item) => {
+    setMode(item.id);
+    setSelectedColor(item);
   };
 
   return (
-    <Button title="Change color mode" onClick={cycleMode} display="flex">
-      <Dot /> Theme Color [TODO: Dropdown]
-    </Button>
+    <>
+      <MyDropdown
+        defaultTitle={"Select Color"}
+        leftIcon={<Icon icon={<FaPalette />} mr={2} />}
+        selectedItem={selectedColor}
+        items={colors}
+        onSelect={handleSelectColor}
+      />
+    </>
   );
 };
 

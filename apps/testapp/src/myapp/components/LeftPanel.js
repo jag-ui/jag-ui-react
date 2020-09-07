@@ -41,8 +41,8 @@ function LeftPanel(props) {
       sx={{
         bg: "bg2",
         height: "100%",
-        width: "320px",
-        maxWidth: "320px",
+        width: "280px",
+        maxWidth: "280px",
         flexShrink: 0,
         overflowX: "hidden",
         overflowY: "auto",

@@ -100,7 +100,7 @@ export const colors = {
   warningHover: baseColors.yellow[8],
 
   modes: {
-    dark: {
+    darkBlue: {
       // TEXT:
       text: baseColors.gray[6],
 
