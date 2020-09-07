@@ -10,7 +10,7 @@ const SimpleButtonDemo = () => {
       </Heading>
 
       <Flex mb={4} flexWrap="wrap">
-        <Link href="#" color="primary" mr={3}>
+        <Link href="#" color="primary.main" mr={3}>
           Primary
         </Link>
         <Link href="#" color="text" mr={3}>
@@ -343,7 +343,7 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" color="primary" mr={3}>
+        <Link variant="icon" color="primary.main" mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
         <Link variant="icon" color="text" mr={3}>
@@ -373,7 +373,7 @@ const LinkWithIconDemo = () => {
         <Link variant="icon" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
-        <Link variant="icon" color="primary" disabled mr={3}>
+        <Link variant="icon" color="primary.main" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Link>
         <Link variant="icon" color="text" disabled mr={3}>

@@ -1,6 +1,6 @@
 const linkCommonStyles = {
-  cursor: `pointer`,
-  lineHeight: `inherit`,
+  cursor: "pointer",
+  lineHeight: "inherit",
   "&:disabled": {
     opacity: ".65",
     boxShadow: "none",

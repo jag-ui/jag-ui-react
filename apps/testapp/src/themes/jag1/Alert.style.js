@@ -4,69 +4,69 @@ const alertColors = {
     color: "text",
   },
   primary: {
-    backgroundColor: `primary`,
-    color: `white`,
+    backgroundColor: "primary",
+    color: "white",
   },
   secondary: {
-    backgroundColor: `secondary`,
-    color: `text`,
+    backgroundColor: "secondary",
+    color: "text",
   },
   muted: {
-    backgroundColor: `muted`,
-    color: `white`,
+    backgroundColor: "muted",
+    color: "white",
   },
   success: {
-    backgroundColor: `success`,
-    color: `white`,
+    backgroundColor: "success",
+    color: "white",
   },
   danger: {
-    backgroundColor: `danger`,
-    color: `white`,
+    backgroundColor: "danger",
+    color: "white",
   },
   info: {
-    backgroundColor: `info`,
-    color: `white`,
+    backgroundColor: "info",
+    color: "white",
   },
   warning: {
-    backgroundColor: `warning`,
-    color: `white`,
+    backgroundColor: "warning",
+    color: "white",
   },
 };
 
 const alertOutlineColors = {
   primary: {
-    borderColor: `primary`,
-    color: `primary`,
+    borderColor: "primary",
+    color: "primary",
   },
   secondary: {
-    borderColor: `text`,
-    color: `text`,
+    borderColor: "text",
+    color: "text",
   },
   muted: {
-    borderColor: `gray.1`,
-    color: `gray.7`,
+    borderColor: "gray.1",
+    color: "gray.7",
   },
   success: {
-    borderColor: `success`,
-    color: `success`,
+    borderColor: "success",
+    color: "success",
   },
   danger: {
-    borderColor: `danger`,
-    color: `danger`,
+    borderColor: "danger",
+    color: "danger",
   },
   info: {
-    borderColor: `info`,
-    color: `info`,
+    borderColor: "info",
+    color: "info",
   },
   warning: {
-    borderColor: `warning`,
-    color: `warning`,
+    borderColor: "warning",
+    color: "warning",
   },
 };
 
 export const alert = {
   baseStyle: {
-    borderRadius: `default`,
+    borderRadius: "default",
   },
   variants: {
     solid: {
@@ -75,8 +75,8 @@ export const alert = {
     },
     outline: {
       variantStyle: {
-        borderWidth: `1px`,
-        borderStyle: `solid`,
+        borderWidth: "1px",
+        borderStyle: "solid",
       },
       variantColors: { ...alertOutlineColors },
     },

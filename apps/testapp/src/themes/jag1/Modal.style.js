@@ -3,28 +3,28 @@ const btnColors = {
     backgroundColor: "bg1",
   },
   primary: {
-    backgroundColor: `primaryHover`,
-    color: `white`,
+    backgroundColor: "primaryHover",
+    color: "white",
   },
   secondary: {
-    backgroundColor: `secondaryHover`,
-    color: `text`,
+    backgroundColor: "secondaryHover",
+    color: "text",
   },
   success: {
-    backgroundColor: `successHover`,
-    color: `white`,
+    backgroundColor: "successHover",
+    color: "white",
   },
   danger: {
-    backgroundColor: `dangerHover`,
-    color: `white`,
+    backgroundColor: "dangerHover",
+    color: "white",
   },
   info: {
-    backgroundColor: `infoHover`,
-    color: `white`,
+    backgroundColor: "infoHover",
+    color: "white",
   },
   warning: {
-    backgroundColor: `warningHover`,
-    color: `white`,
+    backgroundColor: "warningHover",
+    color: "white",
   },
 };
 

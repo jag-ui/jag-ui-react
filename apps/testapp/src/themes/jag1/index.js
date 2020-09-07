@@ -58,7 +58,7 @@ export const baseColors = {
 };
 
 export const colors = {
-  ...baseColors,
+  // ...baseColors,
 
   // TEXT:
   text: baseColors.gray[7],
@@ -87,8 +87,14 @@ export const colors = {
   inputFocusBorder: baseColors.blue[7],
 
   // ALL-COLORS:
-  primary: baseColors.blue[7],
-  primaryHover: baseColors.blue[8],
+  primary: {
+    main: baseColors.blue[7],
+    light: baseColors.blue[6],
+    dark: baseColors.blue[8],
+    contrastText: "#fff",
+  },
+  // primary: baseColors.blue[7],
+  // primaryHover: baseColors.blue[8],
   secondary: baseColors.gray[1],
   secondaryHover: baseColors.gray[3],
   muted: baseColors.gray[6],

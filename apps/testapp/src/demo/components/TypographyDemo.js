@@ -90,7 +90,7 @@ export default function TypographyDemo() {
         Text (Custom Styles):
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
-        <Text as="span" maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
+        <Text as="span" maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary.main">
           Responsive Font Size Responsive Font Size
         </Text>
         <Text as="span" fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
