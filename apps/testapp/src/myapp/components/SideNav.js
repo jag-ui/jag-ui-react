@@ -25,6 +25,7 @@ import {
   FaUserCircle,
   FaLinkedin,
   FaGithub,
+  FaGlobe,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -124,6 +125,9 @@ const SideNavItemDev = ({ children }) => {
               <Text> Fullstack Developer</Text>
               <Text> San Francisco, CA</Text>
               <Box>
+                <Link href="https://jagadeeshpalaniappan.com/" target="_blank" mr={2}>
+                  <Icon py={1} icon={<FaGlobe size={20} />} />
+                </Link>
                 <Link href="https://www.linkedin.com/in/jagadeeshpalaniappan/" target="_blank" mr={2}>
                   <Icon py={1} icon={<FaLinkedin size={20} />} />
                 </Link>
@@ -147,10 +151,10 @@ const sidenavItemStyles = {
   userSelect: "none",
   transition: "background 0.8s",
   "&:hover": {
-    bg: "rgb(0 0 0 / 0.25)",
+    bg: "sideNavHover",
   },
   "&.active": {
-    bg: "rgb(0 0 0 / 0.25)",
+    bg: "sideNavHover",
     borderLeft: "2px solid",
   },
 };
@@ -193,8 +197,8 @@ function SideNav(props) {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        bg: "primary",
-        color: "white",
+        bg: "sideNav",
+        color: "sideNavText",
         width: "70px",
         maxWidth: "70px",
         flexShrink: 0,

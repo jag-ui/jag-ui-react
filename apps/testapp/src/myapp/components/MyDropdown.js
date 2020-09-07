@@ -1,6 +1,17 @@
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex, Text, Icon } from "jag-ui-react";
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Flex, Text, Icon, Box } from "jag-ui-react";
 import React, { useRef, useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaCheck } from "react-icons/fa";
+
+const MyDropdownItem = ({ item, selectedItem, onSelect }) => {
+  return (
+    <DropdownItem as="button" key={item.id} onClick={() => onSelect(item)}>
+      <Box as="span" width="1.5rem" color="primary">
+        {selectedItem && selectedItem.id === item.id && <FaCheck />}
+      </Box>
+      {item.name}
+    </DropdownItem>
+  );
+};
 
 const MyDropdown = ({ selectedItem, items, onSelect, defaultTitle, leftIcon, ...props }) => {
   const [dropdownActive, setDropdownActive] = useState(false);
@@ -13,20 +24,14 @@ const MyDropdown = ({ selectedItem, items, onSelect, defaultTitle, leftIcon, ...
     <Dropdown active={dropdownActive} placement="bottom-end" onOutsideClick={() => setDropdownActive(false)} {...props}>
       <DropdownToggle>
         <Button onClick={() => setDropdownActive(!dropdownActive)} ref={buttonRef} variant="outline" vcolor="primary">
-          <Flex alignItems="center">
-            {leftIcon}
-            <Text>{selectedItem ? selectedItem.name : defaultTitle}</Text>
-            <Icon icon={<FaChevronDown />} ml={2} />
-          </Flex>
+          {leftIcon}
+          <Text flexShrink={0}>{selectedItem ? selectedItem.name : defaultTitle}</Text>
+          <Icon icon={<FaChevronDown />} ml={2} />
         </Button>
       </DropdownToggle>
       <DropdownMenu bg="white" width={200}>
         {items &&
-          items.map((item) => (
-            <DropdownItem as="button" key={item.id} onClick={() => handleSelect(item)}>
-              {item.name}
-            </DropdownItem>
-          ))}
+          items.map((item) => <MyDropdownItem item={item} selectedItem={selectedItem} onSelect={handleSelect} />)}
       </DropdownMenu>
     </Dropdown>
   );

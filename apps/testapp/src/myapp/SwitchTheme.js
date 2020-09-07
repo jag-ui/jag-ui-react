@@ -21,6 +21,7 @@ const SwitchColorBtn = () => {
         selectedItem={colorMode}
         items={colorModes}
         onSelect={selectColor}
+        ml={2}
       />
     </>
   );
@@ -36,15 +37,14 @@ const SwitchThemeBtn = () => {
         selectedItem={theme}
         items={themes}
         onSelect={setTheme}
-        mr={2}
       />
     </>
   );
 };
 
-const SwitchTheme = ({ themes, currTheme, setCurrTheme }) => {
+const SwitchTheme = () => {
   return (
-    <Box display="flex" justifyContent="flex-end" py={2}>
+    <Box display="flex" justifyContent="flex-end" flexWrap="wrap" py={2}>
       <SwitchThemeBtn />
       <SwitchColorBtn />
     </Box>

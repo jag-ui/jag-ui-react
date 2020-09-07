@@ -55,20 +55,24 @@ export default function TypographyDemo() {
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
         <Box mb={3}>
-          <Text enableTooltip>This is very very long text (has tooltip)</Text>
+          <Text as="span" enableTooltip>
+            This is very very long text (has tooltip)
+          </Text>
         </Box>
         <Box mb={3}>
-          <Text enableTooltip tooltip="Hello! Tooltip">
+          <Text as="span" enableTooltip tooltip="Hello! Tooltip">
             This is very very long text (has custom tooltip)
           </Text>
         </Box>
 
         <Box mb={3}>
-          <Text maxLength={15}>This is very very long text (tooltip has full text)</Text>
+          <Text as="span" maxLength={15}>
+            This is very very long text (tooltip has full text)
+          </Text>
         </Box>
 
         <Box mb={3}>
-          <Text as="p" maxLength={50} truncateType="middle">
+          <Text as="span" maxLength={50} truncateType="middle">
             This is very very very very very very very long text (truncateType is "middle")
           </Text>
         </Box>
@@ -86,10 +90,10 @@ export default function TypographyDemo() {
         Text (Custom Styles):
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
-        <Text maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
+        <Text as="span" maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary">
           Responsive Font Size Responsive Font Size
         </Text>
-        <Text fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
+        <Text as="span" fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
           Responsive Font Size
         </Text>
 
