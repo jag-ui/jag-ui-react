@@ -36,6 +36,7 @@ const SwitchThemeBtn = () => {
         selectedItem={theme}
         items={themes}
         onSelect={setTheme}
+        mr={2}
       />
     </>
   );
