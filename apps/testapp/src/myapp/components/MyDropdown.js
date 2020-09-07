@@ -20,7 +20,7 @@ const MyDropdown = ({ selectedItem, items, onSelect, defaultTitle, leftIcon, ...
           </Flex>
         </Button>
       </DropdownToggle>
-      <DropdownMenu bg="white">
+      <DropdownMenu bg="white" width={200}>
         {items &&
           items.map((item) => (
             <DropdownItem as="button" key={item.id} onClick={() => handleSelect(item)}>

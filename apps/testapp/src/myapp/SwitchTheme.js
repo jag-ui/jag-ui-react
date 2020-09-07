@@ -1,9 +1,9 @@
 import { Box, Icon, useColorMode } from "jag-ui-react";
 import React, { useContext, useState } from "react";
 import { FaPalette, FaTheaterMasks } from "react-icons/fa";
-import MyDropdown from "./myapp/components/MyDropdown";
-import { MyAppContext } from "./myapp/MyAppContext";
-import { colorModes, themes } from "./themes";
+import MyDropdown from "./components/MyDropdown";
+import { MyAppContext } from "./MyAppContext";
+import { colorModes, themes } from "../themes";
 
 const SwitchColorBtn = () => {
   const [colorMode, setColorMode] = useState(colorModes[0]);

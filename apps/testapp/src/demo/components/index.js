@@ -24,7 +24,7 @@ import TypographyDemo from "./TypographyDemo";
 
 export default function Demo() {
   return (
-    <Box px={5}>
+    <Box>
       <TypographyDemo />
       <AlertDemo />
       <ButtonDemo />
