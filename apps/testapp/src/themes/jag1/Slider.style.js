@@ -21,7 +21,7 @@ export const button = {
     bg: "gray",
     ":focus": {
       outline: "none",
-      color: "primary",
+      color: "primary.main",
     },
     "&::-webkit-slider-thumb": thumb,
     "&::-moz-range-thumb": thumb,

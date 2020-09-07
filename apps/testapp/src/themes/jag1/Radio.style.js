@@ -17,7 +17,7 @@ export const icon = {
     borderRadius: 9999,
     color: "gray",
     "input:checked ~ &": {
-      color: "primary",
+      color: "primary.main",
     },
     "input:focus ~ &": {
       bg: "highlight",

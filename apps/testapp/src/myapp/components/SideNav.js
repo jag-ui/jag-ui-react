@@ -179,7 +179,7 @@ const Logo = () => {
         variant="caps"
         sx={{
           fontWeight: "bold",
-          fontSize: 0,
+          fontSize: 1,
           userSelect: "none",
           py: 2,
         }}>

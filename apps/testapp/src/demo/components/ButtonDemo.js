@@ -18,8 +18,8 @@ const SimpleButtonDemo = () => {
         <Button vcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button vcolor="muted" mr={3}>
-          Muted
+        <Button vcolor="white" mr={3}>
+          White
         </Button>
         <Button vcolor="success" mr={3}>
           Success
@@ -49,8 +49,8 @@ const SimpleButtonDemo = () => {
         <Button vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button vcolor="muted" borderRadius="full" mr={3}>
-          Muted
+        <Button vcolor="white" borderRadius="full" mr={3}>
+          White
         </Button>
         <Button vcolor="success" borderRadius="full" mr={3}>
           Success
@@ -99,8 +99,8 @@ const SimpleButtonDemo = () => {
         <Button vcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button vcolor="muted" disabled mr={3}>
-          Muted
+        <Button vcolor="white" disabled mr={3}>
+          White
         </Button>
         <Button vcolor="success" disabled mr={3}>
           Success
@@ -133,9 +133,9 @@ const SimpleButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button vcolor="muted" mr={3}>
+        <Button vcolor="white" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          Muted
+          White
         </Button>
         <Button vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -172,8 +172,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" vcolor="secondary" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" vcolor="muted" mr={3}>
-          Muted
+        <Button variant="outline" vcolor="white" mr={3}>
+          White
         </Button>
         <Button variant="outline" vcolor="success" mr={3}>
           Success
@@ -200,8 +200,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" vcolor="secondary" borderRadius="full" mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" vcolor="muted" borderRadius="full" mr={3}>
-          Muted
+        <Button variant="outline" vcolor="white" borderRadius="full" mr={3}>
+          White
         </Button>
         <Button variant="outline" vcolor="success" borderRadius="full" mr={3}>
           Success
@@ -247,8 +247,8 @@ const OutlineButtonDemo = () => {
         <Button variant="outline" vcolor="secondary" disabled mr={3}>
           Secondary
         </Button>
-        <Button variant="outline" vcolor="muted" disabled mr={3}>
-          Muted
+        <Button variant="outline" vcolor="white" disabled mr={3}>
+          White
         </Button>
         <Button variant="outline" vcolor="success" disabled mr={3}>
           Success
@@ -277,9 +277,9 @@ const OutlineButtonDemo = () => {
           <Icon icon={<FaCog />} mr={2} />
           Secondary
         </Button>
-        <Button variant="outline" vcolor="muted" mr={3}>
+        <Button variant="outline" vcolor="white" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
-          Muted
+          White
         </Button>
         <Button variant="outline" vcolor="success" mr={3}>
           <Icon icon={<FaCog />} mr={2} />
@@ -334,7 +334,7 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" vcolor="secondary" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" vcolor="muted" mr={3}>
+        <Button variant="icon" vcolor="white" mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
         <Button variant="icon" vcolor="success" mr={3}>
@@ -364,7 +364,7 @@ const BtnWithIconsDemo = () => {
         <Button variant="icon" vcolor="secondary" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
-        <Button variant="icon" vcolor="muted" disabled mr={3}>
+        <Button variant="icon" vcolor="white" disabled mr={3}>
           <Icon icon={<FaCog />} />
         </Button>
         <Button variant="icon" vcolor="success" disabled mr={3}>

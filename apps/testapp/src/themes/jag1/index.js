@@ -91,12 +91,25 @@ export const colors = {
     main: baseColors.blue[7],
     light: baseColors.blue[6],
     dark: baseColors.blue[8],
-    contrastText: "#fff",
+    contrastText: baseColors.white,
+  },
+  secondary: {
+    main: baseColors.gray[7],
+    light: baseColors.gray[6],
+    dark: baseColors.gray[8],
+    contrastText: baseColors.white,
+  },
+  gray: {
+    main: baseColors.gray[1],
+    light: baseColors.gray[2],
+    dark: baseColors.gray[3],
+    contrastText: baseColors.white,
   },
   // primary: baseColors.blue[7],
   // primaryHover: baseColors.blue[8],
-  secondary: baseColors.gray[1],
-  secondaryHover: baseColors.gray[3],
+
+  // secondary: baseColors.gray[1],
+  // secondaryHover: baseColors.gray[3],
   muted: baseColors.gray[6],
   mutedHover: baseColors.gray[7],
   success: baseColors.green[7],
@@ -156,7 +169,18 @@ export const fonts = {
   monospace: baseFonts.mono,
 };
 
-export const fontSizes = ["0.875rem", "1rem", "1.25rem", "1.5rem", "1.875rem", "2.25rem", "3rem", "4rem", "4.5rem"];
+export const fontSizes = [
+  "0",
+  "0.875rem",
+  "1rem",
+  "1.25rem",
+  "1.5rem",
+  "1.875rem",
+  "2.25rem",
+  "3rem",
+  "4rem",
+  "4.5rem",
+];
 
 export const baseFontWeights = {
   hairline: "100",
@@ -323,7 +347,6 @@ const heading = {
   fontWeight: "heading",
   lineHeight: "heading",
   m: 0,
-  mb: 1,
 };
 
 export const styles = {
@@ -337,7 +360,7 @@ export const styles = {
     overflowY: "auto",
   },
   a: {
-    color: "primary",
+    color: "primary.main",
     textDecoration: "none",
     ":hover": {
       textDecoration: "underline",
@@ -371,6 +394,7 @@ export const styles = {
     fontSize: 1,
     mb: 2,
   },
+
   code: {},
   pre: {},
   hr: {

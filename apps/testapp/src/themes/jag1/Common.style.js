@@ -27,7 +27,7 @@ export const inputs = {
     color: "gray.7",
     "&:focus": {
       outline: "none",
-      borderColor: "primary",
+      borderColor: "primary.main",
       backgroundColor: "white",
     },
   },
@@ -37,12 +37,12 @@ export const inputs = {
     border: "none",
     borderBottomWidth: "2px",
     borderBottomStyle: "solid",
-    borderBottomColor: "primary",
+    borderBottomColor: "primary.main",
     borderRadius: "0px",
     color: "gray.7",
     "&:focus": {
       outline: "none",
-      borderColor: "primary",
+      borderColor: "primary.main",
       backgroundColor: "white",
     },
   },

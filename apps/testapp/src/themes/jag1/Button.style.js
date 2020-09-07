@@ -25,21 +25,21 @@ const btnColors = {
     },
   },
   primary: {
-    backgroundColor: "primary",
-    color: "white",
-    "&:hover": { backgroundColor: "primaryHover" },
-    "&:hover&:disabled": { backgroundColor: "primary" },
+    backgroundColor: "primary.main",
+    color: "primary.contrastText",
+    "&:hover": { backgroundColor: "primary.dark" },
+    "&:hover&:disabled": { backgroundColor: "primary.main" },
   },
   secondary: {
-    backgroundColor: "secondary",
-    color: "text",
-    "&:hover": { backgroundColor: "secondaryHover" },
-    "&:hover&:disabled": { backgroundColor: "secondary" },
+    backgroundColor: "secondary.main",
+    color: "secondary.contrastText",
+    "&:hover": { backgroundColor: "secondary.dark" },
+    "&:hover&:disabled": { backgroundColor: "secondary.main" },
   },
-  muted: {
-    backgroundColor: "muted",
-    color: "white",
-    "&:hover": { backgroundColor: "mutedHover" },
+  white: {
+    backgroundColor: "white",
+    color: "text",
+    "&:hover": { backgroundColor: "transparent" },
     "&:hover&:disabled": { backgroundColor: "muted" },
   },
   success: {
@@ -70,22 +70,22 @@ const btnColors = {
 
 const btnOutlineColors = {
   primary: {
-    borderColor: "primary",
-    color: "primary",
+    borderColor: "primary.main",
+    color: "primary.main",
     "&:hover": {
-      backgroundColor: "primaryHover",
-      color: "white",
+      backgroundColor: "primary.dark",
+      color: "primary.contrastText",
     },
-    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: "primary", color: "primary" },
+    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: "primary.main", color: "primary.main" },
   },
   secondary: {
-    borderColor: "text",
-    color: "text",
+    borderColor: "secondary.main",
+    color: "secondary.main",
     "&:hover": {
-      backgroundColor: "secondaryHover",
-      color: "text",
+      backgroundColor: "secondary.dark",
+      color: "secondary.contrastText",
     },
-    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: "secondary", color: "text" },
+    "&:hover&:disabled": { backgroundColor: "transparent", borderColor: "secondary.main", color: "secondary.main" },
   },
   muted: {
     borderColor: "mutedHover",
@@ -140,14 +140,14 @@ const btnOutlineColors = {
 
 const btnIconColors = {
   primary: {
-    color: "primary",
-    "&:hover": { color: "primaryHover" },
-    "&:hover&:disabled": { color: "primary" },
+    color: "primary.main",
+    "&:hover": { color: "primary.dark" },
+    "&:hover&:disabled": { color: "primary.main" },
   },
   secondary: {
     color: "secondary",
-    "&:hover": { color: "secondaryHover" },
-    "&:hover&:disabled": { color: "secondary" },
+    "&:hover": { color: "secondary.dark" },
+    "&:hover&:disabled": { color: "secondary.main" },
   },
   muted: {
     color: "muted",

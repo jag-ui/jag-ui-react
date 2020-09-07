@@ -130,7 +130,9 @@ function ColorModal({ vsize, vcolor }) {
       <Modal onOverlayClick={closeModal} active={modalOpened} vsize={vsize} vcolor={vcolor} px={3} py={3}>
         <Flex mb={2}>
           <Icon icon={<FaExclamationTriangle size={"2rem"} />} mr={3} />
-          <Heading>Modal Title</Heading>
+          <Text variant="title" as="h3">
+            Modal Title
+          </Text>
         </Flex>
         <Box flexGrow={1}>
           <Text>Lorem ipsum dolor sit amet, </Text>

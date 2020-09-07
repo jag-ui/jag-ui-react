@@ -4,8 +4,8 @@ const menuItem = {
     py: 1,
     cursor: "pointer",
     "&:hover": {
-      bg: "primaryHover",
-      color: "white",
+      bg: "primary.dark",
+      color: "primary.contrastText",
     },
   },
 };

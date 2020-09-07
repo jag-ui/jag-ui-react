@@ -3,11 +3,11 @@ const btnColors = {
     backgroundColor: "bg1",
   },
   primary: {
-    backgroundColor: "primaryHover",
-    color: "white",
+    backgroundColor: "primary.dark",
+    color: "primary.contrastText",
   },
   secondary: {
-    backgroundColor: "secondaryHover",
+    backgroundColor: "secondary.dark",
     color: "text",
   },
   success: {
@@ -29,11 +29,11 @@ const btnColors = {
 };
 
 const btnSizes = {
-  xs: { width: "35%", height: "15%" },
-  sm: { width: "40%", height: "30%" },
-  md: { width: "60%", height: "50%" },
-  lg: { width: "80%", height: "60%" },
-  xl: { width: "90%", height: "90%" },
+  xs: { width: "45%", height: "25%" },
+  sm: { width: "50%", height: "40%" },
+  md: { width: "70%", height: "60%" },
+  lg: { width: "90%", height: "70%" },
+  xl: { width: "95%", height: "80%" },
 };
 
 export const modalContainer = {

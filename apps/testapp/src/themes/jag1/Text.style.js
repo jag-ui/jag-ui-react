@@ -4,6 +4,11 @@ const heading = {
   lineHeight: "heading",
   mb: 1,
 };
+const body = {
+  fontFamily: "body",
+  fontWeight: "body",
+  lineHeight: "body",
+};
 
 export const root = {
   baseStyle: {
@@ -57,28 +62,27 @@ export const root = {
     // BASIC:
     body: {
       variantStyle: {
-        fontFamily: "body",
-        fontWeight: "body",
-        lineHeight: "body",
+        ...body,
         fontSize: 1,
       },
     },
 
     muted: {
       variantStyle: {
-        fontFamily: "body",
-        fontWeight: "body",
-        lineHeight: "body",
-        fontSize: 0,
+        ...body,
+        fontSize: 1,
         color: "muted",
       },
     },
-
+    title: {
+      variantStyle: {
+        ...body,
+        fontSize: 3,
+      },
+    },
     display: {
       variantStyle: {
-        fontFamily: "body",
-        fontWeight: "body",
-        lineHeight: "body",
+        ...body,
         fontSize: [6, 7],
       },
     },
@@ -87,6 +91,7 @@ export const root = {
       variantStyle: {
         textTransform: "uppercase",
         letterSpacing: "0.1em",
+        fontSize: 1,
       },
     },
   },

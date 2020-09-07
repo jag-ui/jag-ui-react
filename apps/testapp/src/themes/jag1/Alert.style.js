@@ -4,7 +4,7 @@ const alertColors = {
     color: "text",
   },
   primary: {
-    backgroundColor: "primary",
+    backgroundColor: "primary.main",
     color: "white",
   },
   secondary: {
@@ -35,8 +35,8 @@ const alertColors = {
 
 const alertOutlineColors = {
   primary: {
-    borderColor: "primary",
-    color: "primary",
+    borderColor: "primary.main",
+    color: "primary.main",
   },
   secondary: {
     borderColor: "text",
