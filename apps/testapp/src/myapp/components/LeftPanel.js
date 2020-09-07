@@ -39,6 +39,7 @@ function LeftPanel(props) {
   return (
     <Box
       sx={{
+        display: ["none", "block"],
         bg: "bg2",
         height: "100%",
         width: "280px",

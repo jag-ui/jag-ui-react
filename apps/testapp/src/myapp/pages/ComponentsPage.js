@@ -31,7 +31,7 @@ function ComponentsPage(props) {
   return (
     <Flex width="full" height="full">
       <LeftPanel />
-      <Box width="full" height="full" overflowY="auto" px={4} py={2}>
+      <Box width="full" height="full" overflowY="auto" px={[2, 4]} py={2}>
         <SwitchTheme />
         <Switch>
           <Route path={`/components/all`}>
