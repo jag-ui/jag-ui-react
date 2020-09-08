@@ -3,9 +3,9 @@ import React, { useContext, useState } from "react";
 import { FaPalette, FaTheaterMasks } from "react-icons/fa";
 import MyDropdown from "./components/MyDropdown";
 import { MyAppContext } from "./MyAppContext";
-import { colorModes, themes } from "../themes";
+import { themes } from "../themes";
 
-const SwitchColorBtn = () => {
+const SwitchColorBtn = ({ colorModes }) => {
   const [colorMode, setColorMode] = useState(colorModes[0]);
   const [, setMode] = useColorMode();
   const selectColor = (item) => {
@@ -27,8 +27,7 @@ const SwitchColorBtn = () => {
   );
 };
 
-const SwitchThemeBtn = () => {
-  const { theme, setTheme } = useContext(MyAppContext);
+const SwitchThemeBtn = ({ theme, setTheme }) => {
   return (
     <>
       <MyDropdown
@@ -43,10 +42,11 @@ const SwitchThemeBtn = () => {
 };
 
 const SwitchTheme = () => {
+  const { theme, setTheme } = useContext(MyAppContext);
   return (
     <Box display="flex" justifyContent="flex-end" flexWrap="wrap" py={2}>
-      <SwitchThemeBtn />
-      <SwitchColorBtn />
+      <SwitchThemeBtn theme={theme} setTheme={setTheme} />
+      {theme.colorModes && <SwitchColorBtn colorModes={theme.colorModes} />}
     </Box>
   );
 };
