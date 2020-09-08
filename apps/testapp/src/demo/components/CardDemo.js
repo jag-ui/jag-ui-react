@@ -113,8 +113,8 @@ export default function CardDemo() {
       <Divider />
 
       <Box my={3}>
-        <MyCustomCard icon={<Icon icon={<FaChartBar size={"32rem"} />} />} />
-        <MyCustomCard icon={<Icon icon={<FaChartLine size={"32rem"} />} />} />
+        <MyCustomCard icon={<Icon icon={<FaChartBar size={"20rem"} />} />} />
+        <MyCustomCard icon={<Icon icon={<FaChartLine size={"20rem"} />} />} />
 
         <Grid columns={[1, 2, 3, 4]}>
           <MyCustomCard icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
