@@ -27,7 +27,7 @@ export default function TooltipDemo() {
     <Box>
       <Heading>Tooltip Demo</Heading>
       <Divider />
-      <Box m="3rem">
+      <Box>
         <Flex justifyContent="space-between">
           <SampleTooltip placement="top-start" />
           <SampleTooltip placement="top" />
@@ -35,14 +35,14 @@ export default function TooltipDemo() {
         </Flex>
         <Flex mt={3} mb={4} height="250px" justifyContent="space-between">
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-start" height="100%" my={10}>
-            <SampleTooltip placement="left-start" />
-            <SampleTooltip placement="left" />
-            <SampleTooltip placement="left-end" />
-          </Flex>
-          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
             <SampleTooltip placement="right-start" />
             <SampleTooltip placement="right" />
             <SampleTooltip placement="right-end" />
+          </Flex>
+          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
+            <SampleTooltip placement="left-start" />
+            <SampleTooltip placement="left" />
+            <SampleTooltip placement="left-end" />
           </Flex>
         </Flex>
         <Flex justifyContent="space-between">

@@ -32,7 +32,7 @@ export default function PopoverDemo() {
     <Box>
       <Heading>Popover Demo</Heading>
       <Divider />
-      <Box m="12.5rem">
+      <Box>
         <Flex justifyContent="space-between">
           <SamplePopover placement="top-start" />
           <SamplePopover placement="top" />
@@ -40,16 +40,17 @@ export default function PopoverDemo() {
         </Flex>
         <Flex mt={3} mb={4} height="250px" justifyContent="space-between">
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-start" height="100%" my={10}>
-            <SamplePopover placement="left-start" />
-            <SamplePopover placement="left" />
-            <SamplePopover placement="left-end" />
-          </Flex>
-          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
             <SamplePopover placement="right-start" />
             <SamplePopover placement="right" />
             <SamplePopover placement="right-end" />
           </Flex>
+          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
+            <SamplePopover placement="left-start" />
+            <SamplePopover placement="left" />
+            <SamplePopover placement="left-end" />
+          </Flex>
         </Flex>
+
         <Flex justifyContent="space-between">
           <SamplePopover placement="bottom-start" />
           <SamplePopover placement="bottom" />

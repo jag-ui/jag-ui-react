@@ -80,7 +80,7 @@ export default function DropdownDemo() {
       </Flex>
 
       <Heading>Dropdown (All Placements)</Heading>
-      <Box m="12.5rem">
+      <Box>
         <Flex justifyContent="space-between">
           <SampleDropdown placement="top-start" />
           <SampleDropdown placement="top" />
@@ -88,14 +88,14 @@ export default function DropdownDemo() {
         </Flex>
         <Flex mt={3} mb={4} height="250px" justifyContent="space-between">
           <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-start" height="100%" my={10}>
-            <SampleDropdown placement="left-start" />
-            <SampleDropdown placement="left" />
-            <SampleDropdown placement="left-end" />
-          </Flex>
-          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
             <SampleDropdown placement="right-start" />
             <SampleDropdown placement="right" />
             <SampleDropdown placement="right-end" />
+          </Flex>
+          <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-end" height="100%" my={10}>
+            <SampleDropdown placement="left-start" />
+            <SampleDropdown placement="left" />
+            <SampleDropdown placement="left-end" />
           </Flex>
         </Flex>
         <Flex justifyContent="space-between">

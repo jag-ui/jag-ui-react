@@ -154,9 +154,21 @@ export default function CardDemo() {
         </Heading>
 
         <Box>
-          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
-          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartLine size={"12rem"} />} />} />
-          <MyCustomCard width={[300, 450, 800]} mx="auto" icon={<Icon icon={<FaChartBar size={"12rem"} />} />} />
+          <MyCustomCard
+            width={["100%", "100%", "60%"]}
+            mx="auto"
+            icon={<Icon icon={<FaChartLine size={"12rem"} />} />}
+          />
+          <MyCustomCard
+            width={["100%", "100%", "60%"]}
+            mx="auto"
+            icon={<Icon icon={<FaChartLine size={"12rem"} />} />}
+          />
+          <MyCustomCard
+            width={["100%", "100%", "60%"]}
+            mx="auto"
+            icon={<Icon icon={<FaChartLine size={"12rem"} />} />}
+          />
         </Box>
       </Box>
     </>
