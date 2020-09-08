@@ -20,7 +20,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Primary Alert!
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -34,7 +34,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Secondary Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -48,7 +48,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Success Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -62,7 +62,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Error Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -76,7 +76,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Info Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -95,7 +95,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Primary Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -109,7 +109,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Secondary Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -123,7 +123,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Success Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -137,7 +137,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Error Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />
@@ -151,7 +151,7 @@ export default function AlertDemo() {
             <Text fontWeight="bold" mr={3}>
               Info Alert
             </Text>
-            <Text fontSize={1}>This is a description of this alert</Text>
+            <Text>This is a description of this alert</Text>
           </Box>
           <IconButton ml="auto" mr={-2}>
             <FaTimes />

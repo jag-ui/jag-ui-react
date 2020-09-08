@@ -21,7 +21,7 @@ const menuItemHeader = {
   baseStyle: {
     px: 2,
     py: 0.5,
-    fontSize: "0.8rem",
+    fontSize: "xs",
   },
 };
 

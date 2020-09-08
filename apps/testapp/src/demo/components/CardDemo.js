@@ -3,27 +3,6 @@ import React from "react";
 import { FaChartBar, FaChartLine, FaEllipsisH } from "react-icons/fa";
 import { Heading } from "../../components/Heading";
 
-// const IMG = "https://via.placeholder.com/800/f2f2f2/fff.png";
-/* 
-const ImgCard = ({ title }) => {
-  return (
-    <Box
-      sx={{
-        px: 4,
-        py: 6,
-        backgroundImage: "url(https://source.unsplash.com/random/1024x768)",
-        backgroundSize: "cover",
-        borderRadius: 8,
-        color: "light",
-        bg: "gray",
-      }}>
-      <Heading textAlign="center" fontSize={[5, 6]}>
-        {title}
-      </Heading>
-    </Box>
-  );
-};
- */
 const MyCustomCard = ({ icon, ...props }) => {
   return (
     <Box boxShadow="default" bg="bg2" mb={3} {...props}>
@@ -32,8 +11,8 @@ const MyCustomCard = ({ icon, ...props }) => {
           <Text variant="h5">Card Title</Text>
           <Text variant="muted">Card Description</Text>
         </Box>
-        <Button>
-          <FaEllipsisH />
+        <Button variant="icon">
+          <Icon icon={<FaEllipsisH />} />
         </Button>
       </Flex>
       <Divider />
@@ -109,7 +88,7 @@ const MyCustomImageCard = ({ imageUrl }) => {
 export default function CardDemo() {
   return (
     <>
-      <Heading mt={5}>Button Demo</Heading>
+      <Heading>Card Demo</Heading>
       <Divider />
 
       <Box my={3}>

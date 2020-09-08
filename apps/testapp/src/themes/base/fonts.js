@@ -35,19 +35,28 @@ export const fonts = {
   heading: "inherit",
   monospace: baseFonts.mono,
 };
-
-export const fontSizes = [
-  "0",
-  "0.875rem",
-  "1rem",
-  "1.25rem",
-  "1.5rem",
-  "1.875rem",
-  "2.25rem",
-  "3rem",
-  "4rem",
-  "4.5rem",
-];
+/* 
+export const fontSizes = {
+  0: "0",
+  1: "0.875rem",
+  2: "1rem",
+  3: "1.25rem",
+  4: "1.5rem",
+  5: "1.875rem",
+  6: "2.25rem",
+  7: "3rem",
+  8: "4rem",
+  9: "4.5rem",
+}; */
+export const fontSizes = {
+  xs: "0.7rem",
+  sm: "0.875rem",
+  md: "1rem",
+  lg: "1.25rem",
+  xl: "1.5rem",
+  "2xl": "1.875rem",
+  "3xl": "2rem",
+};
 
 export const baseFontWeights = {
   hairline: "100",

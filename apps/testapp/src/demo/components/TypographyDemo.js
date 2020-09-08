@@ -51,6 +51,18 @@ export default function TypographyDemo() {
       </Box>
 
       <Text variant="h4" as="h4" mt={3} mb={2}>
+        Text (Sizes):
+      </Text>
+      <Box p={4} boxShadow="default" bg="bg2">
+        <Text fontSize="xs">Text (xs)</Text>
+        <Text fontSize="sm">Text (sm)</Text>
+        <Text fontSize="md">Text (md)</Text>
+        <Text fontSize="lg">Text (lg)</Text>
+        <Text fontSize="xl">Text (xl)</Text>
+        <Text fontSize="2xl">Text (2xl)</Text>
+      </Box>
+
+      <Text variant="h4" as="h4" mt={3} mb={2}>
         Text (with Tooltip):
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
@@ -87,17 +99,15 @@ export default function TypographyDemo() {
       </Box>
 
       <Text variant="h4" as="h4" mt={3} mb={2}>
-        Text (Custom Styles):
+        Text (Responsive):
       </Text>
       <Box p={4} boxShadow="default" bg="bg2">
-        <Text as="span" maxLength={8} fontSize={[3, 4, 5]} fontWeight="bold" color="primary.main">
+        <Text as="span" maxLength={8} fontSize={["xs", "md", "2xl"]} fontWeight="bold" color="primary.main">
           Responsive Font Size Responsive Font Size
         </Text>
-        <Text as="span" fontSize={[3, 4, 5]} fontWeight="bold" color="secondary">
+        <Text as="span" fontSize={["xs", "md", "2xl"]} fontWeight="bold" color="secondary">
           Responsive Font Size
         </Text>
-
-        <Text sx={{ fontSize: 4, fontWeight: "bold" }}>Hello</Text>
       </Box>
     </Box>
   );

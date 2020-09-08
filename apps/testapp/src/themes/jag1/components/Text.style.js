@@ -20,42 +20,42 @@ export const root = {
     h1: {
       variantStyle: {
         ...heading,
-        fontSize: 6,
+        fontSize: "3xl",
       },
     },
 
     h2: {
       variantStyle: {
         ...heading,
-        fontSize: 5,
+        fontSize: "2xl",
       },
     },
 
     h3: {
       variantStyle: {
         ...heading,
-        fontSize: 4,
+        fontSize: "xl",
       },
     },
 
     h4: {
       variantStyle: {
         ...heading,
-        fontSize: 3,
+        fontSize: "lg",
       },
     },
 
     h5: {
       variantStyle: {
         ...heading,
-        fontSize: 2,
+        fontSize: "md",
       },
     },
 
     h6: {
       variantStyle: {
         ...heading,
-        fontSize: 1,
+        fontSize: "sm",
       },
     },
 
@@ -63,35 +63,28 @@ export const root = {
     body: {
       variantStyle: {
         ...body,
-        fontSize: 1,
+        fontSize: "md",
       },
     },
 
     muted: {
       variantStyle: {
         ...body,
-        fontSize: 1,
+        fontSize: "md",
         color: "muted",
       },
     },
     title: {
       variantStyle: {
         ...body,
-        fontSize: 3,
+        fontSize: "lg",
       },
     },
-    display: {
-      variantStyle: {
-        ...body,
-        fontSize: [6, 7],
-      },
-    },
-
     caps: {
       variantStyle: {
         textTransform: "uppercase",
         letterSpacing: "0.1em",
-        fontSize: 1,
+        fontSize: "md",
       },
     },
   },

@@ -391,7 +391,7 @@ export default function ButtonDemo() {
 
   return (
     <>
-      <Heading mt={5}>Button Demo</Heading>
+      <Heading>Button Demo</Heading>
       <Divider />
       <Box p={4} boxShadow="default" bg="bg2">
         <SimpleButtonDemo />

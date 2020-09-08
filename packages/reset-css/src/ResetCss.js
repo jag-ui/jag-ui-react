@@ -11,7 +11,7 @@ export const ResetCss = () => (
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;      
         -moz-osx-font-smoothing: grayscale; 
-        touch-action: manipulation; 
+        touch-action: manipulation;
       }
 
       body {

@@ -1,31 +1,16 @@
-import {
-  Box,
-  Divider,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Flex,
-  Icon,
-  Button,
-  Text,
-  Image,
-  Popover,
-  Link,
-} from "jag-ui-react";
+import { Box, Button, Divider, Flex, Icon, Image, Link, Popover, Text } from "jag-ui-react";
 import React, { useRef, useState } from "react";
 import {
   FaAsterisk,
   FaCogs,
   FaEllipsisH,
+  FaGithub,
+  FaGlobe,
+  FaLinkedin,
   FaList,
   FaQuestion,
   FaShapes,
   FaTheaterMasks,
-  FaUserCircle,
-  FaLinkedin,
-  FaGithub,
-  FaGlobe,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -45,7 +30,7 @@ const SideNavItemMore = ({ children }) => {
         placement="right"
         active={showPopper}
         onOutsideClick={() => setShowPopper(false)}>
-        <Flex flexWrap="wrap" minHeight="25vh" maxWidth="40vw" color="text" p={3}>
+        <Flex flexWrap="wrap" minHeight="25vh" maxWidth="37vw" color="text" p={3}>
           <SideNavItem to="/one" icon={<FaAsterisk size={20} />} mr={2} width="90px">
             Learn
           </SideNavItem>
@@ -165,7 +150,7 @@ const SideNavItem = React.forwardRef(({ to, icon, image, children, ...props }, r
     <Button {...routeProps} activeClassName="active" ref={ref} variant="none" sx={sidenavItemStyles} {...props}>
       {icon && <Icon py={1} icon={icon} />}
       {image && <Image src={image} variant="avatar" size="2rem" />}
-      <Text maxLength={12} tooltipPlacement="right" fontSize="0.65rem">
+      <Text maxLength={12} tooltipPlacement="right" fontSize="xs">
         {children}
       </Text>
     </Button>
@@ -179,7 +164,7 @@ const Logo = () => {
         variant="caps"
         sx={{
           fontWeight: "bold",
-          fontSize: 1,
+          fontSize: "xs",
           userSelect: "none",
           py: 2,
         }}>
@@ -206,7 +191,7 @@ function SideNav(props) {
         overflowY: "hidden",
       }}>
       <Logo />
-      <Divider />
+      <Divider color="rgb(0 0 0 / 8%)" mb={1} />
       <Flex flexDirection="column" width="full" flexGrow={1}>
         <SideNavItem to="/learn" icon={<FaAsterisk size={20} />}>
           Learn

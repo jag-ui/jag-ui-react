@@ -10,7 +10,7 @@ export const styles = {
     fontFamily: "body",
     lineHeight: "body",
     fontWeight: "body",
-    fontSize: 1,
+    fontSize: "inherit",
     maxWidth: "100%",
     overflowX: "hidden",
     overflowY: "auto",

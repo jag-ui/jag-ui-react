@@ -1,6 +1,5 @@
 const btnCommonStyles = {
   cursor: "pointer",
-  fontSize: "100%",
   lineHeight: "inherit",
   "&:disabled": {
     opacity: ".65",

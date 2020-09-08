@@ -1,11 +1,11 @@
-import { Box, Icon, Input, Button, Text } from "jag-ui-react";
+import { Box, Button, Icon, Input, Text } from "jag-ui-react";
 import React from "react";
-import { FaAsterisk, FaShapes, FaTheaterMasks } from "react-icons/fa";
+import { FaAsterisk, FaShapes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-const sidenavItemStyles = {
+const leftPanelItemStyles = {
   display: "flex",
   justifyContent: "flex-start",
-  height: "50px",
+  height: "40px",
   px: 3,
   mb: 1,
   userSelect: "none",
@@ -26,10 +26,10 @@ const LeftPanelNavItem = React.forwardRef(({ to, icon, children, ...props }, ref
       activeClassName="active"
       ref={ref}
       variant="none"
-      sx={sidenavItemStyles}
+      sx={leftPanelItemStyles}
       {...props}>
       <Icon py={1} icon={icon} mr={3} />
-      <Text maxLength={20} tooltipPlacement="right" fontSize={1}>
+      <Text maxLength={20} tooltipPlacement="right" fontSize="sm">
         {children}
       </Text>
     </Button>
@@ -49,7 +49,7 @@ function LeftPanel(props) {
         overflowY: "auto",
       }}>
       <Box p={3}>
-        <Input name="componentSearch" placeholder="Search" bg="transparent" fontSize={1} />
+        <Input name="componentSearch" placeholder="Search" bg="transparent" fontSize="sm" />
       </Box>
       <LeftPanelNavItem to="/components/all" icon={<FaAsterisk size={20} />}>
         All Components

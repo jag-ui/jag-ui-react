@@ -9,7 +9,7 @@ export const Badge = React.forwardRef((props, ref) => (
     __css={{
       display: "inline-block",
       verticalAlign: "baseline",
-      fontSize: 0,
+      fontSize: "sm",
       fontWeight: "bold",
       whiteSpace: "nowrap",
       px: 1,

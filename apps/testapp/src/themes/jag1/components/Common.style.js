@@ -1,7 +1,7 @@
 const commonInputStyles = {
   py: 2,
   px: 3,
-  fontSize: "100%",
+  fontSize: "inherit",
   borderRadius: "default",
   appearance: "none",
   lineHeight: "tight",
@@ -57,8 +57,6 @@ const input = {
   height: "calc(1.5em + 1.25rem + 5px)",
   px: 3,
   py: 2,
-  fontSize: 2,
-  // fontSize: "0.875rem",
   fontWeight: "body",
   lineHeight: "1.5",
   color: "inputColor",

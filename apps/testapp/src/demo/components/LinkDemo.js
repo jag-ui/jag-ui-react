@@ -406,7 +406,7 @@ export default function LinkDemo() {
 
   return (
     <>
-      <Heading mt={5}>Link Demo</Heading>
+      <Heading>Link Demo</Heading>
       <Divider />
       <Box p={4} boxShadow="default" bg="bg2">
         <SimpleButtonDemo />
