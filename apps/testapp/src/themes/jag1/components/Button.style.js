@@ -194,7 +194,7 @@ export const button = {
       variantStyle: {
         boxShadow: 3,
         border: "none",
-        fontWeight: "bold",
+        fontWeight: "semibold",
         borderRadius: "default",
       },
       variantColors: btnColors,

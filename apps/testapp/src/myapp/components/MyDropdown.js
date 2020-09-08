@@ -5,7 +5,7 @@ import { FaChevronDown, FaCheck } from "react-icons/fa";
 const MyDropdownItem = ({ item, selectedItem, onSelect }) => {
   return (
     <DropdownItem as="button" key={item.id} onClick={() => onSelect(item)}>
-      <Box as="span" width="1.5rem" color="primary">
+      <Box as="span" width="1.5rem" color="primary.main">
         {selectedItem && selectedItem.id === item.id && <FaCheck />}
       </Box>
       {item.name}

@@ -16,6 +16,7 @@ import Select from "./Select.style";
 import Slider from "./Slider.style";
 import Switch from "./Switch.style";
 import Textarea from "./Textarea.style";
+import Divider from "./Divider.style";
 
 export default {
   Common,
@@ -34,4 +35,5 @@ export default {
   Label,
   Radio,
   Slider,
+  Divider,
 };
