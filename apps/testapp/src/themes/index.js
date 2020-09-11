@@ -1,11 +1,10 @@
-import jag1 from "./theme1";
-import jagTheme1 from "../themes/jagTheme1";
-import jagTheme2 from "../themes/jagTheme2";
+import theme1 from "./theme1";
+import theme2 from "./theme2";
 
 export const themeStyles = {
   theme0: {},
-  theme1: jag1,
-  theme2: jagTheme2,
+  theme1,
+  theme2,
 };
 
 export const themes = [
