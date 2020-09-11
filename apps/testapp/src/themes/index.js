@@ -1,4 +1,4 @@
-import jag1 from "../themes/jag1";
+import jag1 from "./theme1";
 import jagTheme1 from "../themes/jagTheme1";
 import jagTheme2 from "../themes/jagTheme2";
 
