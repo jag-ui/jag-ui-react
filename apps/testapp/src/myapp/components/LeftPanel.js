@@ -10,10 +10,10 @@ const leftPanelItemStyles = {
   mb: 1,
   userSelect: "none",
   "&:hover": {
-    bg: "bg3",
+    bg: "bg.main",
   },
   "&.active": {
-    bg: "bg3",
+    bg: "bg.main",
   },
 };
 
@@ -40,7 +40,7 @@ function LeftPanel(props) {
     <Box
       sx={{
         display: ["none", "block"],
-        bg: "bg2",
+        bg: "bg.card",
         height: "100%",
         width: "230px",
         maxWidth: "230px",

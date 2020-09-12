@@ -5,7 +5,7 @@ import { Heading } from "../../components/Heading";
 
 const MyCustomCard = ({ icon, ...props }) => {
   return (
-    <Box boxShadow="default" bg="bg2" mb={3} {...props}>
+    <Box boxShadow="default" bg="bg.card" mb={3} {...props}>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>
           <Text variant="h5">Card Title</Text>
@@ -39,7 +39,7 @@ const MyCustomCard2 = ({ icon, ...props }) => {
 
 const MyImageCard = ({ icon, image }) => {
   return (
-    <Box boxShadow="default" bg="bg2" mb={3}>
+    <Box boxShadow="default" bg="bg.card" mb={3}>
       {image && <Flex justifyContent="center">{image}</Flex>}
       {icon && <Flex justifyContent="center">{icon}</Flex>}
       <Flex px={3} py={2}>

@@ -25,6 +25,14 @@ export const baseColors = {
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
 };
 
+const bg = {
+  main: "#f3f2f1",
+  card: "#fff",
+  light: "fff",
+  dark: "#f9f8f7",
+  darker: "#f3f2f1",
+  contrastText: "#252424",
+};
 const primary = {
   main: "#6264a7",
   light: "rgb(226, 226, 246)",
@@ -73,6 +81,7 @@ export const colors = {
   inputFocusBorder: baseColors.blue[7],
 
   // ALL-COLORS:
+  bg,
   primary,
   secondary,
 

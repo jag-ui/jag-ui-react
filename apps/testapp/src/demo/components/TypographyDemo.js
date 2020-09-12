@@ -9,7 +9,7 @@ export default function TypographyDemo() {
       <Text variant="h4" as="h4">
         Text (Variants):
       </Text>
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <Text variant="h1" as="h1">
           Heading 1
         </Text>
@@ -53,7 +53,7 @@ export default function TypographyDemo() {
       <Text variant="h4" as="h4" mt={3} mb={2}>
         Text (Sizes):
       </Text>
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <Text fontSize="xs">Text (xs)</Text>
         <Text fontSize="sm">Text (sm)</Text>
         <Text fontSize="md">Text (md)</Text>
@@ -65,7 +65,7 @@ export default function TypographyDemo() {
       <Text variant="h4" as="h4" mt={3} mb={2}>
         Text (with Tooltip):
       </Text>
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <Box mb={3}>
           <Text as="span" enableTooltip>
             This is very very long text (has tooltip)
@@ -101,7 +101,7 @@ export default function TypographyDemo() {
       <Text variant="h4" as="h4" mt={3} mb={2}>
         Text (Responsive):
       </Text>
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <Text as="span" maxLength={8} fontSize={["xs", "md", "2xl"]} fontWeight="bold" color="primary.main">
           Responsive Font Size Responsive Font Size
         </Text>

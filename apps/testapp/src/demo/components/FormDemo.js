@@ -21,7 +21,7 @@ function FormDemo1() {
   const [switch1Val, setSwitch1Val] = useState(true);
   const [switch2Val, setSwitch2Val] = useState(true);
   return (
-    <Box my={3} p={4} boxShadow="default" bg="bg2">
+    <Box my={3} p={4} boxShadow="default" bg="bg.card">
       <Heading mb={3}>Form1</Heading>
       <Box as="form" onSubmit={(e) => e.preventDefault()}>
         <Flex flexWrap="wrap">
@@ -139,7 +139,7 @@ function FormDemo2() {
   const [switch2Val, setSwitch2Val] = useState(true);
 
   return (
-    <Box my={10} p={4} boxShadow="default" bg="bg2">
+    <Box my={10} p={4} boxShadow="default" bg="bg.card">
       <Heading mb={3}>Form1</Heading>
       <Box as="form" onSubmit={(e) => e.preventDefault()}>
         <Flex flexWrap="wrap">

@@ -393,7 +393,7 @@ export default function ButtonDemo() {
     <>
       <Heading>Button Demo</Heading>
       <Divider />
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4}>
         <SimpleButtonDemo />
         <OutlineButtonDemo />
         <BtnWithIconsDemo />

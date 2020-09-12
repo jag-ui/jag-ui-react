@@ -61,7 +61,7 @@ export default function AvatarDemo() {
     <Box>
       <Heading>Image / Avatar Demo</Heading>
       <Divider />
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <RoundedImgDemo />
         <Flex flexWrap="wrap" alignItems="center">
           <Image src={AVATAR} variant="avatar" size="2rem" mr={2} />

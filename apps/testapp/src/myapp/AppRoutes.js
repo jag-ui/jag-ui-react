@@ -7,7 +7,7 @@ import ComponentsPage from "./pages/ComponentsPage";
 export default function AppRoutes() {
   return (
     <Router>
-      <Flex width="full" height="100vh" bg="bg3">
+      <Flex width="full" height="100vh" bg="bg.main">
         <SideNav />
         <Flex width="full" height="full">
           <Switch>

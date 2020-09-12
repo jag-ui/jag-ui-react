@@ -182,7 +182,7 @@ function SideNav(props) {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        bg: "sideNav",
+        bg: "primary.darker",
         color: "sideNavText",
         width: "70px",
         maxWidth: "70px",

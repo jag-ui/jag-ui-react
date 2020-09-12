@@ -25,6 +25,30 @@ export const baseColors = {
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
 };
 
+const bg = {
+  main: baseColors.gray[3],
+  light: baseColors.white,
+  dark: baseColors.gray[6],
+  darker: baseColors.gray[6],
+  contrastText: baseColors.gray[7],
+  card: baseColors.gray[1], // baseColors.white
+};
+const primary = {
+  main: baseColors.blue[7],
+  light: baseColors.blue[6],
+  dark: baseColors.blue[8],
+  darker: baseColors.blue[8],
+  contrastText: baseColors.white,
+};
+
+const secondary = {
+  main: baseColors.gray[7],
+  light: baseColors.gray[6],
+  dark: baseColors.gray[8],
+  darker: baseColors.gray[9],
+  contrastText: baseColors.white,
+};
+
 export const colors = {
   // ...baseColors,
 
@@ -57,18 +81,9 @@ export const colors = {
   inputFocusBorder: baseColors.blue[7],
 
   // ALL-COLORS:
-  primary: {
-    main: baseColors.blue[7],
-    light: baseColors.blue[6],
-    dark: baseColors.blue[8],
-    contrastText: baseColors.white,
-  },
-  secondary: {
-    main: baseColors.gray[7],
-    light: baseColors.gray[6],
-    dark: baseColors.gray[8],
-    contrastText: baseColors.white,
-  },
+  bg,
+  primary,
+  secondary,
   gray: {
     main: baseColors.gray[1],
     light: baseColors.gray[2],

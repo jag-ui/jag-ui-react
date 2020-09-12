@@ -6,7 +6,7 @@ export default function EmbedDemo() {
     <Box>
       <Heading>Embed Demo</Heading>
       <Divider />
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         {/* <Embed src="https://www.youtube.com/embed/gjnrtCKZqYg" allowFullScreen /> */}
         <Box
           borderRadius={6}

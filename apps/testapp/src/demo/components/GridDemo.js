@@ -7,46 +7,46 @@ export default function GridDemo() {
     <Box>
       <Heading my={3}>Grid Demo</Heading>
       <Divider />
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <Grid width={[128, null, 192]} mb={3}>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
         </Grid>
         <Grid gap={2} columns={[2, null, 4]} mb={3}>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
         </Grid>
         <Grid gap={2} columns={[2, "1fr 2fr"]} mb={3}>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
-          <Box p={1} bg="bg3">
+          <Box p={1} bg="bg.main">
             Box
           </Box>
         </Grid>

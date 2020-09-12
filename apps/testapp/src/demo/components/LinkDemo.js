@@ -408,7 +408,7 @@ export default function LinkDemo() {
     <>
       <Heading>Link Demo</Heading>
       <Divider />
-      <Box p={4} boxShadow="default" bg="bg2">
+      <Box p={4} boxShadow="default" bg="bg.card">
         <SimpleButtonDemo />
         <OutlineButtonDemo />
         <LinkWithIconDemo />
