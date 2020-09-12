@@ -22,7 +22,7 @@ const MyCustomCard = ({ icon, ...props }) => {
 };
 const MyCustomCard2 = ({ icon, ...props }) => {
   return (
-    <Box boxShadow="default" bg="bg1" mb={3} {...props}>
+    <Box boxShadow="default" bg="bg.card" mb={3} {...props}>
       <Flex justifyContent="center">{icon}</Flex>
       <Flex px={3} py={2}>
         <Box flexGrow={1}>

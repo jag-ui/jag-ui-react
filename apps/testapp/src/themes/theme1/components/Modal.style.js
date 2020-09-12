@@ -1,6 +1,6 @@
 const btnColors = {
   default: {
-    backgroundColor: "bg1",
+    backgroundColor: "bg.card",
   },
   primary: {
     backgroundColor: "primary.dark",
