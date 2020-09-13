@@ -1,7 +1,8 @@
 import React from "react";
 import { Box } from "@jag-ui-react/box";
+import { Icon } from "@jag-ui-react/icon";
 
-export const IconButton = React.forwardRef(({ size = 5, ...props }, ref) => (
+export const IconButton = React.forwardRef(({ size = 5, icon, ...props }, ref) => (
   <Box
     ref={ref}
     as="button"
@@ -23,6 +24,7 @@ export const IconButton = React.forwardRef(({ size = 5, ...props }, ref) => (
       width: size,
       height: size,
       padding: 1,
-    }}
-  />
+    }}>
+    <Icon icon={icon} />
+  </Box>
 ));

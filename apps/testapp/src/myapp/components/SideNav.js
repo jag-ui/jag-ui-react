@@ -66,12 +66,13 @@ const SideNavDropDown = ({ options }) => {
 const sidenavItemStyles = {
   display: "flex",
   flexDirection: "column",
+  bg: "transparent",
+  userSelect: "none",
+  textRendering: "optimizeLegibility",
+  transition: "background 0.8s, opacity 0.8s",
   height: "50px",
   mb: "0.1rem",
-  userSelect: "none",
-  transition: "background 0.8s, opacity 0.8s",
   opacity: 0.63,
-  textRendering: "optimizeLegibility",
   cursor: "pointer",
   "&:hover": {
     bg: "sideNavHover",

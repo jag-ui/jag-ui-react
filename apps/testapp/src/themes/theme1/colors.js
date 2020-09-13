@@ -51,22 +51,24 @@ const secondary = {
 
 export const colors = {
   // ...baseColors,
-
-  gray: baseColors.gray,
-
-  // TEXT:
-  text: baseColors.gray[7],
-  textMuted: baseColors.gray[6],
+  // gray: baseColors.gray,
+  // ALL-COLORS:
+  bg,
+  primary,
+  secondary,
+  gray: {
+    main: baseColors.gray[1],
+    light: baseColors.gray[2],
+    dark: baseColors.gray[3],
+    contrastText: baseColors.white,
+  },
 
   // BG:
   background: baseColors.white,
-  // background: baseColors.gray[2],
-  bg1: baseColors.white,
-  bg2: baseColors.gray[1],
-  bg3: baseColors.gray[3],
-  bg4: baseColors.gray[6],
 
   // COMP:
+  text: baseColors.gray[7],
+  textMuted: baseColors.gray[6],
   divider: "rgb(160 174 192 / 20%)",
   tooltipBg: "rgb(0 0 0 / 90%)",
   tooltipText: "white",
@@ -80,16 +82,6 @@ export const colors = {
   inputFocusColor: baseColors.blue[7],
   inputFocusBorder: baseColors.blue[7],
 
-  // ALL-COLORS:
-  bg,
-  primary,
-  secondary,
-  gray: {
-    main: baseColors.gray[1],
-    light: baseColors.gray[2],
-    dark: baseColors.gray[3],
-    contrastText: baseColors.white,
-  },
   // primary: baseColors.blue[7],
   // primaryHover: baseColors.blue[8],
 

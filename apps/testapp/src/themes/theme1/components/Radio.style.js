@@ -1,12 +1,5 @@
 export const radio = {
-  baseStyle: {
-    position: "absolute",
-    opacity: 0,
-    zIndex: -1,
-    width: "inherit",
-    height: "inherit",
-    overflow: "hidden",
-  },
+  baseStyle: {},
   variants: {},
   defaultProps: {},
 };
@@ -20,7 +13,7 @@ export const icon = {
       color: "primary.main",
     },
     "input:focus ~ &": {
-      bg: "highlight",
+      bg: "primary.main",
     },
   },
   variants: {},

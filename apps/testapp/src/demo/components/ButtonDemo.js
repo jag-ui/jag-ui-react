@@ -1,4 +1,4 @@
-import { Button, Box, Flex, Divider, Icon } from "jag-ui-react";
+import { Button, Box, Flex, Divider, Icon, IconButton } from "jag-ui-react";
 import React from "react";
 import { FaCog, FaGlobe, FaTimes } from "react-icons/fa";
 import { Heading } from "../../components/Heading";
@@ -309,15 +309,10 @@ const BtnWithIconsDemo = () => {
         Button with Icon [variant="solid"]
       </Heading>
       <Flex mb={4} flexWrap="wrap">
-        <Button mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button mr={3}>
-          <Icon icon={<FaTimes />} />
-        </Button>
-        <Button mr={3}>
-          <Icon icon={<FaGlobe />} />
-        </Button>
+        <IconButton icon={<FaCog />} mr={3} />
+        <IconButton icon={<FaTimes />} mr={3} />
+
+        <IconButton icon={<FaGlobe />} mr={3} />
       </Flex>
 
       <Heading variant="h5" mt={4} mb={3}>
@@ -325,60 +320,42 @@ const BtnWithIconsDemo = () => {
       </Heading>
 
       <Flex mb={4} flexWrap="wrap">
-        <Button variant="icon" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="primary" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="secondary" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="white" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="success" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="danger" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="info" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="warning" mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
+        <IconButton icon={<FaCog />} mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="primary" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="secondary" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="white" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="success" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="danger" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="info" mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="warning" mr={3} />
       </Flex>
       <Heading variant="h5" mt={4} mb={3}>
         Button with Icon [variant="icon"] [disabled]
       </Heading>
 
       <Flex mb={4} flexWrap="wrap">
-        <Button variant="icon" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="primary" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="secondary" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="white" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="success" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="danger" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="info" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
-        <Button variant="icon" vcolor="warning" disabled mr={3}>
-          <Icon icon={<FaCog />} />
-        </Button>
+        <IconButton icon={<FaCog />} disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="primary" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="secondary" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="white" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="success" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="danger" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} vcolor="info" disabled mr={3} />
+
+        <IconButton icon={<FaCog />} variant="icon" vcolor="warning" disabled mr={3} />
       </Flex>
     </>
   );

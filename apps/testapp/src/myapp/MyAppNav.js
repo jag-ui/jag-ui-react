@@ -21,7 +21,7 @@ const AVATAR = "http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg";
 
 const Logo = () => {
   return (
-    <Button variant="none" href="/">
+    <Button variant="none" href="/" bg="transparent">
       <Text
         variant="caps"
         sx={{

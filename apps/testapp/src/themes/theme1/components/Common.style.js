@@ -49,22 +49,17 @@ export const inputs = {
 };
 
 const input = {
-  display: "block",
-  width: "100%",
-  p: 2,
-  appearance: "none",
   bg: "transparent",
   height: "calc(1.5em + 1.25rem + 5px)",
+  border: 0,
   px: 3,
   py: 2,
   fontWeight: "body",
   lineHeight: "1.5",
   color: "inputColor",
   backgroundColor: "inputBg",
-  backgroundClip: "padding-box",
   borderRadius: "0.25rem",
   boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
-  border: 0,
   transition: "box-shadow .15s ease",
   ":focus": {
     color: "inputFocusColor",

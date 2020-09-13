@@ -1,14 +1,15 @@
+import notheme from "./notheme";
 import theme1 from "./theme1";
 import theme2 from "./theme2";
 
 export const themeStyles = {
-  theme0: {},
+  notheme,
   theme1,
   theme2,
 };
 
 export const themes = [
-  { id: "theme0", name: "No Theme" },
+  { id: "notheme", name: "No Theme" },
   {
     id: "theme1",
     name: "Theme 1",

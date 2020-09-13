@@ -27,7 +27,14 @@ const RadioIcon = (props) => (
 
 export const Radio = React.forwardRef(({ className, ...props }, ref) => (
   <Box __themeKey="Radio.root">
-    <Box ref={ref} as="input" type="radio" __themeKey="Radio.radio" {...props} />
+    <Box
+      {...props}
+      ref={ref}
+      as="input"
+      type="radio"
+      __themeKey="Radio.radio"
+      __css={{ position: "absolute", opacity: 0, zIndex: -1, width: "inherit", height: "inherit", overflow: "hidden" }}
+    />
     <Box as={RadioIcon} aria-hidden="true" __themeKey="Radio.icon" className={className} />
   </Box>
 ));

@@ -1,15 +1,3 @@
-export const checkbox = {
-  baseStyle: {
-    position: "absolute",
-    opacity: 0,
-    zIndex: -1,
-    width: "inherit",
-    height: "inherit",
-    overflow: "hidden",
-  },
-  variants: {},
-  defaultProps: {},
-};
 export const icon = {
   baseStyle: {
     mr: 2,
@@ -27,4 +15,4 @@ export const icon = {
   defaultProps: {},
 };
 
-export default { checkbox, icon };
+export default { icon };

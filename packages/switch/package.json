@@ -4,6 +4,12 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "sideEffects": false,
+  "lib": {
+    "entryFile": "dist/index.js",
+    "umdModuleIds": {
+      "switch": "switch"
+    }
+  },
   "scripts": {
     "prepare": "microbundle --no-compress --jsx React.createElement",
     "watch": "microbundle watch --no-compress --jsx React.createElement",

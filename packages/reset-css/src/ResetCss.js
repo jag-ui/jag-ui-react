@@ -48,7 +48,6 @@ export const ResetCss = () => (
       }
 
       a {
-        background-color: transparent;
         color: inherit;
         text-decoration: inherit;
       }
@@ -202,7 +201,6 @@ export const ResetCss = () => (
       }
 
       button {
-        background: transparent;
         padding: 0;
       }
 

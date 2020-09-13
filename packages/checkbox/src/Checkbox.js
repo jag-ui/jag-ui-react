@@ -27,7 +27,22 @@ const CheckboxIcon = (props) => (
 
 export const Checkbox = React.forwardRef(({ variant, children, ...props }, ref) => (
   <Box __themeKey="Checkbox.root">
-    <Box ref={ref} as="input" type="checkbox" variant={variant} __themeKey="Checkbox.checkbox" {...props} />
+    <Box
+      ref={ref}
+      {...props}
+      as="input"
+      type="checkbox"
+      variant={variant}
+      __themeKey="Checkbox.checkbox"
+      __css={{
+        position: "absolute",
+        opacity: 0,
+        zIndex: -1,
+        width: "inherit",
+        height: "inherit",
+        overflow: "hidden",
+      }}
+    />
     <Box as={CheckboxIcon} aria-hidden="true" variant={variant} __themeKey="Checkbox.icon" />
     {children}
   </Box>

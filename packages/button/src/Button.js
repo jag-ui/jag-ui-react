@@ -20,6 +20,12 @@ export const Button = React.forwardRef((props, ref) => {
         appearance: "none",
         textDecoration: "none",
         flexShrink: 0,
+        "&:disabled": {
+          opacity: ".65",
+          boxShadow: "none",
+          transform: "none",
+          cursor: "not-allowed",
+        },
       }}
     />
   );
