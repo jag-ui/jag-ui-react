@@ -49,7 +49,7 @@ export const fontSizes = {
   9: "4.5rem",
 }; */
 export const fontSizes = {
-  xs: "0.7rem",
+  xs: "0.65rem",
   sm: "0.875rem",
   md: "1rem",
   lg: "1.25rem",

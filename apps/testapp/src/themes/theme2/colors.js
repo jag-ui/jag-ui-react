@@ -58,14 +58,6 @@ export const colors = {
   text: baseColors.gray[7],
   textMuted: baseColors.gray[6],
 
-  // BG:
-  background: baseColors.white,
-  // background: baseColors.gray[2],
-  bg1: baseColors.white,
-  bg2: baseColors.gray[1],
-  bg3: baseColors.gray[3],
-  bg4: baseColors.gray[6],
-
   // COMP:
   divider: "rgb(160 174 192 / 20%)",
   tooltipBg: "rgb(0 0 0 / 90%)",

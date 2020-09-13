@@ -11,12 +11,15 @@ export default function AppRoutes() {
         <SideNav />
         <Flex width="full" height="full">
           <Switch>
-            <Route path="/learn">Learn Body</Route>
+            <Route path="/home">Home Body</Route>
             <Route path="/themes">Themes Body</Route>
+            <Route path="/api">API Body</Route>
+            <Route path="/help">API Body</Route>
+            <Route path="/settings">Settings</Route>
             <Route path="/components">
               <ComponentsPage />
             </Route>
-            <Redirect to="/components" />
+            <Redirect to="/home" />
           </Switch>
         </Flex>
       </Flex>
