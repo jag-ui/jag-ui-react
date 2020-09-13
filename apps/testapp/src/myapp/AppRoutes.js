@@ -3,12 +3,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import SideNav from "./components/SideNav";
 import ComponentsPage from "./pages/ComponentsPage";
+import MyAppNav from "./MyAppNav";
 
 export default function AppRoutes() {
   return (
     <Router>
       <Flex width="full" height="100vh" bg="bg.main">
-        <SideNav />
+        <MyAppNav />
         <Flex width="full" height="full">
           <Switch>
             <Route path="/home">Home Body</Route>

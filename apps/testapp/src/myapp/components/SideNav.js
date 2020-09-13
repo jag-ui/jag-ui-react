@@ -1,33 +1,15 @@
-import { Box, Button, Divider, Flex, Icon, Image, Link, Popover, Text } from "jag-ui-react";
+import { Box, Button, Flex, Icon, Image, Popover, Text } from "jag-ui-react";
 import React, { useRef, useState } from "react";
-import {
-  FaAccessibleIcon,
-  FaAddressBook,
-  FaAnchor,
-  FaAsterisk,
-  FaCode,
-  FaCogs,
-  FaEllipsisH,
-  FaGithub,
-  FaGlobe,
-  FaLinkedin,
-  FaList,
-  FaQuestion,
-  FaShapes,
-  FaTheaterMasks,
-  FaHome,
-} from "react-icons/fa";
+import { FaEllipsisH } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-
-const AVATAR = "http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg";
 
 const sidenavDDItemStyles = {
   mr: 2,
-  width: "90px",
+  width: "70px",
   opacity: 1,
   display: "flex",
   flexDirection: "column",
-  height: "50px",
+  height: "60px",
   mb: "0.1rem",
   userSelect: "none",
   textRendering: "optimizeLegibility",
@@ -43,17 +25,6 @@ const sidenavDDItemStyles = {
   },
 };
 
-const moreOptions = [
-  { id: "one", name: "One", icon: <FaCogs size={14} /> },
-  { id: "two", name: "Two", icon: <FaAddressBook size={14} /> },
-  { id: "three", name: "Three", icon: <FaTheaterMasks size={14} /> },
-  { id: "four", name: "Four", icon: <FaList size={14} /> },
-  { id: "five", name: "Five", icon: <FaShapes size={14} /> },
-  { id: "six", name: "Six", icon: <FaGlobe size={14} /> },
-  { id: "seven", name: "Five", icon: <FaAccessibleIcon size={14} /> },
-  { id: "seven", name: "Seven", icon: <FaAnchor size={14} /> },
-];
-
 const SideNavDropDownItem = ({ children, ...props }) => {
   return (
     <SideNavItem sx={sidenavDDItemStyles} {...props}>
@@ -62,7 +33,7 @@ const SideNavDropDownItem = ({ children, ...props }) => {
   );
 };
 
-const SideNavDropDown = ({ children }) => {
+const SideNavDropDown = ({ options }) => {
   const [showPopper, setShowPopper] = useState(false);
   const triggerRef = useRef(null);
   return (
@@ -81,61 +52,12 @@ const SideNavDropDown = ({ children }) => {
         active={showPopper}
         onOutsideClick={() => setShowPopper(false)}>
         <Flex flexWrap="wrap" alignContent="flex-start" minHeight="25vh" maxWidth="37vw" color="text" p={3}>
-          {moreOptions.map((option) => (
-            <SideNavDropDownItem to={option.id} icon={option.icon}>
-              {option.name}
+          {options.map((option) => (
+            <SideNavDropDownItem to={option.to} icon={option.icon}>
+              {option.title}
             </SideNavDropDownItem>
           ))}
         </Flex>
-      </Popover>
-    </>
-  );
-};
-
-const SideNavItemDev = ({ children }) => {
-  const [showPopper, setShowPopper] = useState(false);
-  const triggerRef = useRef(null);
-  return (
-    <>
-      <SideNavItem
-        ref={triggerRef}
-        onClick={() => setShowPopper(!showPopper)}
-        active={showPopper}
-        border={0}
-        image={AVATAR}></SideNavItem>
-      <Popover
-        triggerRef={triggerRef}
-        placement="right-start"
-        active={showPopper}
-        onOutsideClick={() => setShowPopper(false)}
-        p={2}
-        mb={3}>
-        <Box width="400px" color="text">
-          <Text variant="muted" mb={2}>
-            Developed By:
-          </Text>
-          <Flex>
-            <Image src={AVATAR} variant="avatar" borderRadius={6} size="7rem" mr={3} />
-            <Box>
-              <Text fontWeight="semibold" color="primary">
-                Jagadeesh Palaniappan
-              </Text>
-              <Text> Fullstack Developer</Text>
-              <Text> San Francisco, CA</Text>
-              <Box>
-                <Link href="https://jagadeeshpalaniappan.com/" target="_blank" mr={2}>
-                  <Icon py={1} icon={<FaGlobe size={14} />} />
-                </Link>
-                <Link href="https://www.linkedin.com/in/jagadeeshpalaniappan/" target="_blank" mr={2}>
-                  <Icon py={1} icon={<FaLinkedin size={14} />} />
-                </Link>
-                <Link href="https://github.com/jagadeeshpalaniappan" target="_blank">
-                  <Icon py={1} icon={<FaGithub size={14} />} />
-                </Link>
-              </Box>
-            </Box>
-          </Flex>
-        </Box>
       </Popover>
     </>
   );
@@ -162,10 +84,10 @@ const sidenavItemStyles = {
   },
 };
 
-const SideNavItem = React.forwardRef(({ to, title, icon, image, children, ...props }, ref) => {
-  const routeProps = to ? { as: NavLink, to, exact: true } : {};
+export const SideNavItem = React.forwardRef(({ to, href, title, icon, image, children, ...props }, ref) => {
+  const routeProps = to ? { as: NavLink, to, exact: true } : href ? { as: "a", href } : {};
   return (
-    <Button {...routeProps} activeClassName="active" ref={ref} variant="none" sx={sidenavItemStyles} {...props}>
+    <Button ref={ref} variant="none" sx={sidenavItemStyles} activeClassName="active" {...routeProps} {...props}>
       {icon && <Icon py={1} icon={icon} />}
       {image && <Image src={image} variant="avatar" size="2.5rem" borderRadius={9999} />}
       {title && (
@@ -178,38 +100,7 @@ const SideNavItem = React.forwardRef(({ to, title, icon, image, children, ...pro
   );
 });
 
-const Logo = () => {
-  return (
-    <Button variant="none" href="/">
-      <Text
-        variant="caps"
-        sx={{
-          fontWeight: "bold",
-          fontSize: "xs",
-          userSelect: "none",
-          py: 2,
-        }}>
-        jag-ui
-      </Text>
-    </Button>
-  );
-};
-
-const topOptions = [
-  { id: "/home", name: "Home", icon: <FaHome size={14} /> },
-  { id: "/components", name: "Components", icon: <FaCode size={14} /> },
-  { id: "/themes", name: "Themes", icon: <FaTheaterMasks size={14} /> },
-  { id: "/api", name: "API", icon: <FaList size={14} /> },
-  { component: <SideNavDropDown /> },
-];
-const bottomOptions = [
-  { id: "/help", name: "Help", icon: <FaQuestion size={14} /> },
-  { id: "/settings", name: "Settings", icon: <FaCogs size={14} /> },
-  { id: "/github", name: "Github", icon: <FaGithub size={14} /> },
-  { component: <SideNavItemDev /> },
-];
-
-function SideNav({ width = "55px" }) {
+export const SideNav = ({ width = "55px", topOptions, moreOptions, bottomOptions }) => {
   return (
     <Box
       sx={{
@@ -225,30 +116,21 @@ function SideNav({ width = "55px" }) {
         overflowX: "hidden",
         overflowY: "hidden",
       }}>
-      <Logo />
-      <Divider color="rgb(0 0 0 / 8%)" mb={1} />
       <Flex flexDirection="column" width="full" flexGrow={1}>
-        {topOptions.map((option) =>
-          option && option.component ? (
-            option.component
-          ) : (
-            <SideNavItem to={option.id} icon={option.icon} title={option.name} />
-          ),
-        )}
+        {topOptions &&
+          topOptions.map((option) =>
+            option && option.component ? option.component : <SideNavItem key={option.id} {...option} />,
+          )}
+        {moreOptions && <SideNavDropDown options={moreOptions} />}
       </Flex>
       <Flex flexDirection="column" width="full">
-        {bottomOptions.map((option) =>
-          option && option.component ? (
-            option.component
-          ) : (
-            <SideNavItem to={option.id} icon={option.icon} title={option.name} />
-          ),
-        )}
+        {bottomOptions &&
+          bottomOptions.map((option) =>
+            option && option.component ? option.component : <SideNavItem key={option.id} {...option} />,
+          )}
       </Flex>
     </Box>
   );
-}
+};
 
 SideNav.propTypes = {};
-
-export default SideNav;
