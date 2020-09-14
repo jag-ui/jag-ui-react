@@ -14,8 +14,6 @@ const SamplePopover = ({ placement }) => {
         placement={placement}
         active={showPopper}
         onOutsideClick={() => setShowPopper(false)}
-        bg="primary.main"
-        color="white"
         p={2}>
         <Box width="200px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,

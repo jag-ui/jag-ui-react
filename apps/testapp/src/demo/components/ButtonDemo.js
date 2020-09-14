@@ -309,10 +309,10 @@ const BtnWithIconsDemo = () => {
         Button with Icon [variant="solid"]
       </Heading>
       <Flex mb={4} flexWrap="wrap">
-        <IconButton icon={<FaCog />} mr={3} />
-        <IconButton icon={<FaTimes />} mr={3} />
+        <IconButton icon={<FaCog />} tooltip="This is Tooltip" mr={3} />
+        <IconButton icon={<FaTimes />} tooltip="This is Tooltip" mr={3} />
 
-        <IconButton icon={<FaGlobe />} mr={3} />
+        <IconButton icon={<FaGlobe />} tooltip="This is Tooltip" mr={3} />
       </Flex>
 
       <Heading variant="h5" mt={4} mb={3}>

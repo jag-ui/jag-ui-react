@@ -23,13 +23,54 @@ export const Popover = React.forwardRef(
     const { styles, attributes } = usePopper(triggerRef.current, popperRef.current, { placement, modifiers });
 
     return active ? (
-      <Box ref={popperRef} {...props} __themeKey="Popover.root" style={styles.popper} {...attributes.popper}>
+      <Box
+        ref={popperRef}
+        {...props}
+        {...attributes.popper}
+        style={styles.popper}
+        __themeKey="Popover.root"
+        __css={{
+          backgroundColor: "white",
+          maxWidth: "80%",
+          '&[data-popper-placement^="top"] > .popover-arrow': {
+            bottom: "5px",
+          },
+          '&[data-popper-placement^="bottom"] > .popover-arrow': {
+            top: "-5px",
+          },
+          '&[data-popper-placement^="left"] > .popover-arrow': {
+            right: "5px",
+            top: "-5px",
+          },
+          '&[data-popper-placement^="right"] > .popover-arrow': {
+            left: "-5px",
+            top: "-5px",
+          },
+        }}>
         <Box
-          className="popover-arrow"
           ref={setArrowRef}
-          __themeKey="Popover.arrow"
           sx={styles.arrow}
-          hidden={!enableArrow}></Box>
+          hidden={!enableArrow}
+          className="popover-arrow"
+          __themeKey="Popover.arrow"
+          __css={{
+            position: "absolute",
+            width: "0",
+            height: "0",
+            backgroundColor: "inherit",
+            color: "inherit",
+            "&:after": {
+              content: '" "',
+              backgroundColor: "inherit",
+              color: "inherit",
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "10px",
+              height: "10px",
+              transform: "rotate(45deg)",
+            },
+          }}></Box>
         <Box __themeKey="Popover.container">{children}</Box>
       </Box>
     ) : null;
