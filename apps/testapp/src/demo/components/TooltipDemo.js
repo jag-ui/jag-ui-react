@@ -27,7 +27,7 @@ export default function TooltipDemo() {
     <Box>
       <Heading>Tooltip Demo</Heading>
       <Divider />
-      <Box>
+      <Box mt="200px" mb="500px">
         <Flex justifyContent="space-between">
           <SampleTooltip placement="top-start" />
           <SampleTooltip placement="top" />

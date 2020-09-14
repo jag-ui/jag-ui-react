@@ -28,6 +28,10 @@ const notheme = {
   zIndices,
   transforms,
   transitions,
+  colors: {
+    background: "#fff",
+    text: "#000",
+  },
 };
 
 export default notheme;

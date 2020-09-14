@@ -6,16 +6,15 @@ const SamplePopover = ({ placement }) => {
   const buttonRef = useRef(null);
   return (
     <Flex>
-      <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef} mr={3} vcolor="primary" vsize="sm">
+      <Button onClick={() => setShowPopper(!showPopper)} ref={buttonRef} p={3} m={3} vcolor="primary" vsize="sm">
         Popover "{placement}"
       </Button>
       <Popover
         triggerRef={buttonRef}
         placement={placement}
         active={showPopper}
-        onOutsideClick={() => setShowPopper(false)}
-        p={2}>
-        <Box width="200px">
+        onOutsideClick={() => setShowPopper(false)}>
+        <Box width="200px" p={2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
           nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,
           sollicitudin vel erat vel, interdum mattis neque.
@@ -30,7 +29,7 @@ export default function PopoverDemo() {
     <Box>
       <Heading>Popover Demo</Heading>
       <Divider />
-      <Box>
+      <Box mt="200px" mb="500px">
         <Flex justifyContent="space-between">
           <SamplePopover placement="top-start" />
           <SamplePopover placement="top" />
