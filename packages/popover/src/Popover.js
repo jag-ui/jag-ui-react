@@ -1,30 +1,8 @@
 import { Box } from "@jag-ui-react/box";
 import { useOnClickOutside } from "@jag-ui-react/hooks";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { usePopper } from "react-popper";
-import { rootStyle, arrowStyle } from "./PopoverStyles";
-
-const Example = () => {
-  const [referenceElement, setReferenceElement] = useState(null);
-  const [popperElement, setPopperElement] = useState(null);
-  const [arrowElement, setArrowElement] = useState(null);
-  const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    modifiers: [{ name: "arrow", options: { element: arrowElement } }],
-  });
-
-  return (
-    <>
-      <button type="button" ref={setReferenceElement}>
-        Reference element
-      </button>
-
-      <div ref={setPopperElement} style={styles.popper} {...attributes.popper}>
-        Popper element
-        <div ref={setArrowElement} style={styles.arrow} />
-      </div>
-    </>
-  );
-};
+import { arrowStyle, rootStyle } from "./PopoverStyles";
 
 export const Popover = React.forwardRef(
   (
@@ -36,6 +14,7 @@ export const Popover = React.forwardRef(
       onOutsideClick,
       children,
       popoverColor = "inherit",
+      __component = "Popover",
       ...props
     },
     ref,
@@ -64,7 +43,7 @@ export const Popover = React.forwardRef(
         {...props}
         {...attributes.popper}
         style={styles.popper}
-        __themeKey="Popover.root"
+        __themeKey={`${__component}.root`}
         __css={{
           ...rootStyle,
           // zIndex: "1060",
@@ -77,15 +56,20 @@ export const Popover = React.forwardRef(
           style={styles.arrow}
           data-popper-arrow
           className="popover-arrow"
-          __themeKey="Popover.arrow"
+          __themeKey={`${__component}.arrow`}
           __css={{
             ...arrowStyle,
             color: popoverColor,
           }}
         />
-        <Box __themeKey="Popover.container" bg="inherit">
-          {children}
-        </Box>
+
+        {__component === "Popover" ? (
+          <Box __themeKey={`${__component}.container`} bg="inherit">
+            {children}
+          </Box>
+        ) : (
+          children
+        )}
       </Box>
     ) : null;
   },

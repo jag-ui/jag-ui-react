@@ -8,7 +8,7 @@ const SampleTooltip = ({ placement }) => {
     <Flex>
       <Button
         onMouseEnter={() => setShowPopper(true)}
-        onMouseLeave={() => setShowPopper(true)}
+        onMouseLeave={() => setShowPopper(false)}
         ref={buttonRef}
         mr={3}
         vcolor="primary"
