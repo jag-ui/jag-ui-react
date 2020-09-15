@@ -114,6 +114,7 @@ export const colors = {
   // ...baseColors,
   // gray: baseColors.gray,
   // ALL-COLORS:
+  background: lightColor.bg.main,
   bg: lightColor.bg,
   primary: lightColor.primary,
   secondary: lightColor.secondary,
@@ -123,9 +124,6 @@ export const colors = {
     dark: baseColors.gray[3],
     contrastText: baseColors.white,
   },
-
-  // BG:
-  background: baseColors.white,
 
   // COMP:
   text: baseColors.gray[7],

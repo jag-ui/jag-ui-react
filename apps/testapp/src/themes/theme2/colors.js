@@ -73,6 +73,7 @@ export const colors = {
   inputFocusBorder: baseColors.blue[7],
 
   // ALL-COLORS:
+  background: bg.main,
   bg,
   primary,
   secondary,
