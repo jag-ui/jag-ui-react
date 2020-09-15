@@ -1,6 +1,6 @@
 const arrow = {
   baseStyle: {
-    color: "salmon",
+    color: "#fff",
   },
   variants: {
     solid: {
@@ -18,7 +18,7 @@ const popover = {
     border: 0,
     boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
     borderRadius: "5px",
-    backgroundColor: "salmon",
+    backgroundColor: "#fff",
     maxWidth: "80%",
     // '&[data-popper-placement^="top"] > .popover-arrow': {
     //   ":after": { boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.1)" },
