@@ -1,10 +1,7 @@
 const a = {
   baseStyle: {
     alignItems: "center",
-    borderBottomColor: "#dbdbdb",
-    borderBottomStyle: "solid",
-    borderBottomWidth: "1px",
-    color: "#4a4a4a",
+    color: "inherit",
     display: "flex",
     justifyContent: "center",
     marginBottom: "-1px",
@@ -15,6 +12,8 @@ const a = {
     line: {
       variantStyle: {
         "&.active": {
+          borderBottomStyle: "solid",
+          borderBottomWidth: "1px",
           borderBottomColor: "primary.main",
           color: "primary.main",
         },
@@ -28,7 +27,7 @@ const a = {
         "&.active": {
           color: "primary.main",
           backgroundColor: "inherit",
-          borderColor: "#dbdbdb",
+          borderColor: "divider",
           borderBottomColor: "transparent !important",
         },
       },
@@ -36,9 +35,10 @@ const a = {
     },
     toggle: {
       variantStyle: {
-        borderColor: "#dbdbdb",
+        borderColor: "inherit",
         borderStyle: "solid",
         borderWidth: "1px",
+        borderLeftWidth: "0",
         marginBottom: "0",
         position: "relative",
         "&.active": {
@@ -65,7 +65,7 @@ const li = {
 
 const tabLineStyle = {
   alignItems: "center",
-  borderBottomColor: "#dbdbdb",
+  borderBottomColor: "divider",
   borderBottomStyle: "solid",
   borderBottomWidth: "1px",
   display: "flex",
@@ -99,7 +99,8 @@ const ul = {
         ...tabLineStyle,
         display: "inline-flex",
         borderBottom: "none",
-        "& > li:first-child a": {
+        "& > li:first-child > a": {
+          borderLeftWidth: "1px",
           // borderTopLeftRadius: "4px",
           // borderBottomLeftRadius: "4px",
           borderBottomLeftRadius: "290486px",
@@ -134,6 +135,7 @@ const root = {
     toggle: {
       variantStyle: {
         display: "inline-flex",
+        color: "primary.main",
       },
       variantColors: {},
     },

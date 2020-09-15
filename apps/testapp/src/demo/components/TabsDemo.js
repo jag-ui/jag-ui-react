@@ -28,7 +28,7 @@ const SimpleTabs = ({ variant }) => {
 const BoxedTabs = ({ variant }) => {
   const [activeTabId, setActiveTabId] = useState(1);
   return (
-    <Box my={3} bg="bg.card" pt={2}>
+    <Box my={3} bg="bg.main" pt={2}>
       <Tabs variant={variant}>
         <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
           Tab 1
@@ -51,7 +51,7 @@ const BoxedTabs = ({ variant }) => {
 const ToggelTabs = ({ variant }) => {
   const [activeTabId, setActiveTabId] = useState(1);
   return (
-    <Box my={3} bg="bg.card" p={3}>
+    <Box my={3} p={3}>
       <Flex justifyContent="center">
         <Tabs variant={variant}>
           <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>

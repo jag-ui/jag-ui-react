@@ -62,7 +62,7 @@ export const colors = {
   divider: "rgb(160 174 192 / 20%)",
   tooltipBg: "rgb(0 0 0 / 90%)",
   tooltipText: "white",
-  sideNav: baseColors.blue[8],
+  sideNav: primary.darker,
   sideNavHover: "rgb(0 0 0 / 0.25)",
   sideNavText: baseColors.white,
 

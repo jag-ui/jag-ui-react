@@ -25,37 +25,98 @@ export const baseColors = {
   pink: [null, "#fff5f7", "#fed7e2", "#fbb6ce", "#f687b3", "#ed64a6", "#d53f8c", "#b83280", "#97266d", "#702459"],
 };
 
-const bg = {
-  main: baseColors.gray[3],
-  light: baseColors.white,
-  dark: baseColors.gray[6],
-  darker: baseColors.gray[6],
-  contrastText: baseColors.gray[7],
-  card: baseColors.gray[1], // baseColors.white
-};
-const primary = {
-  main: baseColors.blue[7],
-  light: baseColors.blue[6],
-  dark: baseColors.blue[8],
-  darker: baseColors.blue[8],
-  contrastText: baseColors.white,
+const lightColor = {
+  bg: {
+    main: baseColors.gray[3],
+    light: baseColors.white,
+    dark: baseColors.gray[6],
+    darker: baseColors.gray[6],
+    contrastText: baseColors.gray[7],
+    card: baseColors.gray[1], // baseColors.white
+  },
+  primary: {
+    main: baseColors.blue[7],
+    light: baseColors.blue[6],
+    dark: baseColors.blue[8],
+    darker: baseColors.blue[8],
+    contrastText: baseColors.white,
+  },
+  secondary: {
+    main: baseColors.gray[7],
+    light: baseColors.gray[6],
+    dark: baseColors.gray[8],
+    darker: baseColors.gray[9],
+    contrastText: baseColors.white,
+  },
 };
 
-const secondary = {
-  main: baseColors.gray[7],
-  light: baseColors.gray[6],
-  dark: baseColors.gray[8],
-  darker: baseColors.gray[9],
-  contrastText: baseColors.white,
+const darkBlueColor = {
+  bg: {
+    main: "rgb(23, 43, 58)",
+    light: "rgba(15, 32, 45, 0.50)",
+    dark: "rgb(15, 32, 45)",
+    darker: "rgba(9, 20, 28)",
+    contrastText: baseColors.gray[7],
+    card: "rgba(9, 20, 28)",
+  },
+  primary: {
+    main: baseColors.blue[7],
+    light: baseColors.blue[6],
+    dark: baseColors.blue[8],
+    darker: baseColors.blue[8],
+    contrastText: baseColors.white,
+  },
+  secondary: {
+    main: baseColors.gray[7],
+    light: baseColors.gray[6],
+    dark: baseColors.gray[8],
+    darker: baseColors.gray[9],
+    contrastText: baseColors.white,
+  },
+};
+
+const darkBlue = {
+  bg: darkBlueColor.bg,
+  primary: darkBlueColor.primary,
+  secondary: darkBlueColor.secondary,
+
+  // TEXT:
+  text: baseColors.gray[6],
+
+  // BG:
+  background: "rgb(23, 43, 58)",
+  bg1: "rgba(15, 32, 45, 0.50)",
+  bg2: "rgb(15, 32, 45)",
+  bg3: "rgba(9, 20, 28)",
+  bg4: "rgb(9, 20, 28, 0.30)",
+
+  // COMP:
+  divider: "rgba(255, 255, 255, 0.06)",
+  tooltipBg: "rgb(255, 255, 255 / 90%)",
+  tooltipText: "white",
+  sideNav: darkBlueColor.bg.dark,
+  sideNavHover: "rgb(0 0 0 / 0.25)",
+  sideNavText: baseColors.gray[6],
+
+  // INPUT:
+  inputBg: "rgb(23, 43, 58)",
+  inputColor: "baseColors.gray[6]",
+  inputFocusBg: "rgb(23, 43, 58)",
+  inputFocusColor: baseColors.white,
+  inputFocusBorder: baseColors.white,
+
+  // BTN:
+  secondary: "rgb(15, 32, 45)",
+  secondaryHover: "rgb(9, 20, 28)",
 };
 
 export const colors = {
   // ...baseColors,
   // gray: baseColors.gray,
   // ALL-COLORS:
-  bg,
-  primary,
-  secondary,
+  bg: lightColor.bg,
+  primary: lightColor.primary,
+  secondary: lightColor.secondary,
   gray: {
     main: baseColors.gray[1],
     light: baseColors.gray[2],
@@ -99,35 +160,6 @@ export const colors = {
   warningHover: baseColors.yellow[8],
 
   modes: {
-    darkBlue: {
-      // TEXT:
-      text: baseColors.gray[6],
-
-      // BG:
-      background: "rgb(23, 43, 58)",
-      bg1: "rgba(15, 32, 45, 0.50)",
-      bg2: "rgb(15, 32, 45)",
-      bg3: "rgba(9, 20, 28)",
-      bg4: "rgb(9, 20, 28, 0.30)",
-
-      // COMP:
-      divider: "rgba(255, 255, 255, 0.06)",
-      tooltipBg: "rgb(255, 255, 255 / 90%)",
-      tooltipText: "white",
-      sideNav: "rgba(15, 32, 45, 0.50)",
-      sideNavHover: "rgb(0 0 0 / 0.25)",
-      sideNavText: baseColors.gray[6],
-
-      // INPUT:
-      inputBg: "rgb(23, 43, 58)",
-      inputColor: "baseColors.gray[6]",
-      inputFocusBg: "rgb(23, 43, 58)",
-      inputFocusColor: baseColors.white,
-      inputFocusBorder: baseColors.white,
-
-      // BTN:
-      secondary: "rgb(15, 32, 45)",
-      secondaryHover: "rgb(9, 20, 28)",
-    },
+    darkBlue,
   },
 };

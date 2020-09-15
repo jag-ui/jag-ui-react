@@ -109,7 +109,7 @@ export const SideNav = ({ width = "55px", topOptions, moreOptions, bottomOptions
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        bg: "primary.darker",
+        bg: "sideNav",
         color: "sideNavText",
         width,
         maxWidth: width,
