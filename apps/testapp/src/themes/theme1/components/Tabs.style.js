@@ -15,8 +15,8 @@ const a = {
     line: {
       variantStyle: {
         "&.active": {
-          borderBottomColor: "#3273dc",
-          color: "#3273dc",
+          borderBottomColor: "primary.main",
+          color: "primary.main",
         },
       },
       variantColors: {},
@@ -26,8 +26,8 @@ const a = {
         border: "1px solid transparent",
         borderRadius: "4px 4px 0 0",
         "&.active": {
-          color: "#3273dc",
-          backgroundColor: "#fff",
+          color: "primary.main",
+          backgroundColor: "inherit",
           borderColor: "#dbdbdb",
           borderBottomColor: "transparent !important",
         },
@@ -42,8 +42,8 @@ const a = {
         marginBottom: "0",
         position: "relative",
         "&.active": {
-          backgroundColor: "#3273dc",
-          borderColor: "#3273dc",
+          backgroundColor: "primary.main",
+          borderColor: "primary.main",
           color: "#fff",
           zIndex: "1",
         },
@@ -59,6 +59,7 @@ const a = {
 const li = {
   baseStyle: {
     display: "block",
+    backgroundColor: "inherit",
   },
 };
 
@@ -75,7 +76,9 @@ const tabLineStyle = {
 };
 
 const ul = {
-  baseStyle: {},
+  baseStyle: {
+    backgroundColor: "inherit",
+  },
   variants: {
     line: {
       variantStyle: {
@@ -86,12 +89,15 @@ const ul = {
     boxed: {
       variantStyle: {
         ...tabLineStyle,
+        paddingLeft: "10px",
+        paddingRight: "10px",
       },
       variantColors: {},
     },
     toggle: {
       variantStyle: {
         ...tabLineStyle,
+        display: "inline-flex",
         borderBottom: "none",
         "& > li:first-child a": {
           // borderTopLeftRadius: "4px",
@@ -117,10 +123,18 @@ const ul = {
 };
 
 const root = {
-  baseStyle: {},
+  baseStyle: {
+    backgroundColor: "inherit",
+  },
   variants: {
     line: {
       variantStyle: {},
+      variantColors: {},
+    },
+    toggle: {
+      variantStyle: {
+        display: "inline-flex",
+      },
       variantColors: {},
     },
   },
