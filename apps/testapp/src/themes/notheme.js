@@ -13,6 +13,7 @@ import {
   transitions,
   zIndices,
 } from "./base";
+import components from "./theme1/components";
 
 const notheme = {
   borderWidths,
@@ -32,6 +33,7 @@ const notheme = {
     background: "#fff",
     text: "#000",
   },
+  ...components,
 };
 
 export default notheme;

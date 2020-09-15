@@ -71,4 +71,5 @@ export { Switch } from "@jag-ui-react/switch";
 export { Label, Text } from "@jag-ui-react/text";
 export { Textarea } from "@jag-ui-react/textarea";
 export { Tooltip } from "@jag-ui-react/tooltip";
+export { Tabs, TabItem } from "@jag-ui-react/tabs";
 export { getMargin, getProps, getSystemProps, omitMargin } from "@jag-ui-react/utils";

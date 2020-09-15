@@ -18,6 +18,7 @@ import Slider from "./Slider.style";
 import Switch from "./Switch.style";
 import Textarea from "./Textarea.style";
 import Divider from "./Divider.style";
+import Tabs from "./Tabs.style";
 
 export default {
   Common,
@@ -38,4 +39,5 @@ export default {
   Radio,
   Slider,
   Divider,
+  Tabs,
 };

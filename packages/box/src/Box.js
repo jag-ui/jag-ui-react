@@ -37,9 +37,10 @@ const themeStyles = ({ theme, variant, vcolor, vsize, __themeKey = "variants" })
     if (variantSizes && variantSizes[vsize]) results.push(css(variantSizes[vsize]));
     // color:
     if (variantColors && variantColors[vcolor]) results.push(css(variantColors[vcolor]));
+
+    console.log(__themeKey, { theme, componentTheme, componentVariant, variant, vcolor, vsize, results });
   }
 
-  // console.log(__themeKey, { theme, componentTheme, componentVariant, variant, vcolor, vsize, results });
   return results;
 };
 
