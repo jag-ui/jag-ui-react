@@ -21,6 +21,7 @@ import TableDemo from "./TableDemo";
 import TabsDemo from "./TabsDemo";
 import TooltipDemo from "./TooltipDemo";
 import TypographyDemo from "./TypographyDemo";
+import BreadcrumbDemo from "./BreadcrumbDemo";
 
 export default function Demo() {
   return (
@@ -54,6 +55,7 @@ export default function Demo() {
       <ProgressDemo />
       <TableDemo />
       <TabsDemo />
+      <BreadcrumbDemo />
     </Box>
   );
 }

@@ -44,7 +44,8 @@
     "@jag-ui-react/css": "^0.0.0",
     "@jag-ui-react/mdx": "^0.0.0",
     "@jag-ui-react/theme-provider": "^0.0.0",
-    "@jag-ui-react/tabs": "^0.0.0"
+    "@jag-ui-react/tabs": "^0.0.0",
+    "@jag-ui-react/breadcrumb": "^0.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0"

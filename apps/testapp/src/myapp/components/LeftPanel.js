@@ -120,6 +120,9 @@ function LeftPanel(props) {
       <LeftPanelNavItem to="/components/typography" icon={<FaShapes size={20} />}>
         Typography
       </LeftPanelNavItem>
+      <LeftPanelNavItem to="/components/breadcrumb" icon={<FaShapes size={20} />}>
+        Breadcrumb
+      </LeftPanelNavItem>
     </Box>
   );
 }

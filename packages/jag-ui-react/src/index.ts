@@ -72,4 +72,5 @@ export { Label, Text } from "@jag-ui-react/text";
 export { Textarea } from "@jag-ui-react/textarea";
 export { Tooltip } from "@jag-ui-react/tooltip";
 export { Tabs, TabItem } from "@jag-ui-react/tabs";
+export { Breadcrumb, BreadcrumbItem } from "@jag-ui-react/breadcrumb";
 export { getMargin, getProps, getSystemProps, omitMargin } from "@jag-ui-react/utils";

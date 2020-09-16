@@ -24,6 +24,7 @@ import TableDemo from "../../demo/components/TableDemo";
 import TabsDemo from "../../demo/components/TabsDemo";
 import TooltipDemo from "../../demo/components/TooltipDemo";
 import TypographyDemo from "../../demo/components/TypographyDemo";
+import BreadcrumbDemo from "../../demo/components/BreadcrumbDemo";
 import LeftPanel from "../components/LeftPanel";
 import SwitchTheme from "../SwitchTheme";
 
@@ -103,6 +104,9 @@ function ComponentsPage(props) {
           </Route>
           <Route path="/components/typography">
             <TypographyDemo />
+          </Route>
+          <Route path="/components/breadcrumb">
+            <BreadcrumbDemo />
           </Route>
           <Redirect to="/components/all" />
         </Switch>
