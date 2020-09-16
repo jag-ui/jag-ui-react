@@ -2,11 +2,11 @@ import { Box, Divider, Tabs, TabItem, Flex } from "jag-ui-react";
 import React, { useState } from "react";
 import { Heading } from "../../components/Heading";
 
-const SimpleTabs = ({ variant }) => {
+const SimpleTabs = ({ vsize }) => {
   const [activeTabId, setActiveTabId] = useState(1);
   return (
     <Box my={3} bg="bg.card">
-      <Tabs variant={variant}>
+      <Tabs vsize={vsize}>
         <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
           Tab 1
         </TabItem>
@@ -20,16 +20,20 @@ const SimpleTabs = ({ variant }) => {
           Tab 4
         </TabItem>
       </Tabs>
-      <Box p={3}>Tab Content {activeTabId}....</Box>
+      <Box p={3}>
+        Tab Content {activeTabId}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi dolorem
+        iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste, dolor dignissimos, ex
+        suscipit nesciunt error? Minima, placeat? Quaerat?
+      </Box>
     </Box>
   );
 };
 
-const BoxedTabs = ({ variant }) => {
+const BoxedTabs = ({ vsize }) => {
   const [activeTabId, setActiveTabId] = useState(1);
   return (
     <Box my={3} bg="bg.main" pt={2}>
-      <Tabs variant={variant}>
+      <Tabs variant="boxed" vsize={vsize} px={2}>
         <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
           Tab 1
         </TabItem>
@@ -43,17 +47,21 @@ const BoxedTabs = ({ variant }) => {
           Tab 4
         </TabItem>
       </Tabs>
-      <Box p={3}>Tab Content {activeTabId}....</Box>
+      <Box p={3}>
+        Tab Content {activeTabId}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi dolorem
+        iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste, dolor dignissimos, ex
+        suscipit nesciunt error? Minima, placeat? Quaerat?
+      </Box>
     </Box>
   );
 };
 
-const ToggelTabs = ({ variant }) => {
+const ToggelTabs = ({ vsize }) => {
   const [activeTabId, setActiveTabId] = useState(1);
   return (
     <Box my={3} p={3}>
       <Flex justifyContent="center">
-        <Tabs variant={variant}>
+        <Tabs variant="toggle" vsize={vsize}>
           <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
             Tab 1
           </TabItem>
@@ -68,7 +76,11 @@ const ToggelTabs = ({ variant }) => {
           </TabItem>
         </Tabs>
       </Flex>
-      Tab Content {activeTabId}....
+      <Box p={3}>
+        Tab Content {activeTabId}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi dolorem
+        iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste, dolor dignissimos, ex
+        suscipit nesciunt error? Minima, placeat? Quaerat?
+      </Box>
     </Box>
   );
 };
@@ -79,9 +91,25 @@ export default function TabsDemo() {
       <Heading>Tabs Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
-        <SimpleTabs variant="" />
-        <BoxedTabs variant="boxed" />
-        <ToggelTabs variant="toggle" />
+        <SimpleTabs />
+        <BoxedTabs />
+        <ToggelTabs />
+
+        <Heading mt={3}>Size: xs</Heading>
+        <Divider mb={3} />
+        <SimpleTabs vsize="xs" />
+        <BoxedTabs vsize="xs" />
+        <ToggelTabs vsize="xs" />
+        <Heading mt={3}>Size: sm</Heading>
+        <Divider mb={3} />
+        <SimpleTabs vsize="sm" />
+        <BoxedTabs vsize="sm" />
+        <ToggelTabs vsize="sm" />
+        <Heading mt={3}>Size: lg</Heading>
+        <Divider mb={3} />
+        <SimpleTabs vsize="lg" />
+        <BoxedTabs vsize="lg" />
+        <ToggelTabs vsize="lg" />
       </Box>
     </Box>
   );

@@ -77,6 +77,7 @@ export const colors = {
   bg,
   primary,
   secondary,
+  divider: "rgb(160 174 192 / 20%)",
 
   gray: {
     main: baseColors.gray[1],
@@ -113,7 +114,7 @@ export const colors = {
       bg4: "rgb(9, 20, 28, 0.30)",
 
       // COMP:
-      divider: "rgba(255, 255, 255, 0.06)",
+      divider: "rgb(160 174 192 / 20%)",
       tooltipBg: "rgb(255, 255, 255 / 90%)",
       tooltipText: "white",
       sideNav: "rgba(15, 32, 45, 0.50)",
