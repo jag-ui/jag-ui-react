@@ -1,23 +1,18 @@
 const btnSizes = {
   none: {},
-  xs: { px: 1, py: 1 },
-  sm: { px: 2, py: 1 },
-  md: { px: 3, py: 2 },
-  lg: { px: 4, py: 3 },
-  xl: { px: 5, py: 3 },
+  xs: { px: 2, py: 0.5 },
+  sm: { px: 3, py: 1 },
+  md: { px: 3, py: 1.5 },
+  lg: { px: 4, py: 2 },
+  xl: { px: 5, py: 2.5 },
 };
 
 const root = {
-  baseStyle: {
-    cursor: "pointer",
-  },
+  baseStyle: {},
   variants: {
     line: {
       variantStyle: {
-        display: "flex",
-        alignItems: "center",
-        alignSelf: "stretch",
-        color: "inherit",
+        marginRight: "1px",
         "&.active": {
           borderBottomWidth: "1px",
           borderBottomStyle: "solid",
@@ -31,10 +26,7 @@ const root = {
     },
     boxed: {
       variantStyle: {
-        display: "flex",
-        alignItems: "center",
-        alignSelf: "stretch",
-        color: "inherit",
+        marginRight: "1px",
         "&.active": {
           color: "primary.main",
           marginBottom: "-1px",
@@ -51,12 +43,10 @@ const root = {
     },
     toggle: {
       variantStyle: {
-        borderColor: "inherit",
-        borderStyle: "solid",
         borderWidth: "1px",
+        borderStyle: "solid",
+        borderColor: "inherit",
         borderLeftWidth: "0",
-        marginBottom: "0",
-        position: "relative",
         "&:first-child": {
           borderLeftWidth: "1px",
           // borderTopLeftRadius: "4px",

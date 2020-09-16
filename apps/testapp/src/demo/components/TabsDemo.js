@@ -1,5 +1,6 @@
-import { Box, Divider, Tabs, TabItem, Flex } from "jag-ui-react";
+import { Box, Divider, Flex, Icon, TabItem, Tabs } from "jag-ui-react";
 import React, { useState } from "react";
+import { FaCamera, FaCogs, FaMusic, FaStar } from "react-icons/fa";
 import { Heading } from "../../components/Heading";
 
 const SimpleTabs = ({ vsize }) => {
@@ -8,16 +9,16 @@ const SimpleTabs = ({ vsize }) => {
     <Box my={3} bg="bg.card">
       <Tabs vsize={vsize}>
         <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
-          Tab 1
+          <Icon icon={<FaMusic />} mr={2} /> Tab 1
         </TabItem>
         <TabItem active={activeTabId === 2} onClick={() => setActiveTabId(2)}>
-          Tab 2
+          <Icon icon={<FaStar />} mr={2} /> Tab 2
         </TabItem>
         <TabItem active={activeTabId === 3} onClick={() => setActiveTabId(3)}>
-          Tab 3
+          <Icon icon={<FaCogs />} mr={2} /> Tab 3
         </TabItem>
         <TabItem active={activeTabId === 4} onClick={() => setActiveTabId(4)}>
-          Tab 4
+          <Icon icon={<FaCamera />} mr={2} /> Tab 4
         </TabItem>
       </Tabs>
       <Box p={3}>
@@ -35,16 +36,16 @@ const BoxedTabs = ({ vsize }) => {
     <Box my={3} bg="bg.main" pt={2}>
       <Tabs variant="boxed" vsize={vsize} px={2}>
         <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
-          Tab 1
+          <Icon icon={<FaMusic />} mr={2} /> Tab 1
         </TabItem>
         <TabItem active={activeTabId === 2} onClick={() => setActiveTabId(2)}>
-          Tab 2
+          <Icon icon={<FaStar />} mr={2} /> Tab 2
         </TabItem>
         <TabItem active={activeTabId === 3} onClick={() => setActiveTabId(3)}>
-          Tab 3
+          <Icon icon={<FaCogs />} mr={2} /> Tab 3
         </TabItem>
         <TabItem active={activeTabId === 4} onClick={() => setActiveTabId(4)}>
-          Tab 4
+          <Icon icon={<FaCamera />} mr={2} /> Tab 4
         </TabItem>
       </Tabs>
       <Box p={3}>
@@ -63,16 +64,16 @@ const ToggelTabs = ({ vsize }) => {
       <Flex justifyContent="center">
         <Tabs variant="toggle" vsize={vsize}>
           <TabItem active={activeTabId === 1} onClick={() => setActiveTabId(1)}>
-            Tab 1
+            <Icon icon={<FaMusic />} mr={2} /> Tab 1
           </TabItem>
           <TabItem active={activeTabId === 2} onClick={() => setActiveTabId(2)}>
-            Tab 2
+            <Icon icon={<FaStar />} mr={2} /> Tab 2
           </TabItem>
           <TabItem active={activeTabId === 3} onClick={() => setActiveTabId(3)}>
-            Tab 3
+            <Icon icon={<FaCogs />} mr={2} /> Tab 3
           </TabItem>
           <TabItem active={activeTabId === 4} onClick={() => setActiveTabId(4)}>
-            Tab 4
+            <Icon icon={<FaCamera />} mr={2} /> Tab 4
           </TabItem>
         </Tabs>
       </Flex>
@@ -91,24 +92,25 @@ export default function TabsDemo() {
       <Heading>Tabs Demo</Heading>
       <Divider />
       <Box my={10} p={4}>
-        <SimpleTabs />
-        <BoxedTabs />
-        <ToggelTabs />
-
-        <Heading mt={3}>Size: xs</Heading>
+        <Heading mt={3}>Tabs: [variant="line"]</Heading>
         <Divider mb={3} />
         <SimpleTabs vsize="xs" />
-        <BoxedTabs vsize="xs" />
-        <ToggelTabs vsize="xs" />
-        <Heading mt={3}>Size: sm</Heading>
-        <Divider mb={3} />
         <SimpleTabs vsize="sm" />
-        <BoxedTabs vsize="sm" />
-        <ToggelTabs vsize="sm" />
-        <Heading mt={3}>Size: lg</Heading>
-        <Divider mb={3} />
+        <SimpleTabs vsize="md" />
         <SimpleTabs vsize="lg" />
+
+        <Heading mt={3}>Tabs: [variant="boxed"]</Heading>
+        <Divider mb={3} />
+        <BoxedTabs vsize="xs" />
+        <BoxedTabs vsize="sm" />
+        <BoxedTabs vsize="md" />
         <BoxedTabs vsize="lg" />
+
+        <Heading mt={3}>Tabs: [variant="toggle"]</Heading>
+        <Divider mb={3} />
+        <ToggelTabs vsize="xs" />
+        <ToggelTabs vsize="sm" />
+        <ToggelTabs vsize="md" />
         <ToggelTabs vsize="lg" />
       </Box>
     </Box>
