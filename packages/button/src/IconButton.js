@@ -7,7 +7,13 @@ export const IconButton = React.forwardRef(({ size = 5, icon, tooltip, tooltipPr
   const buttonRef = useRef(null);
   const [showTooltip, setTooltip] = useState(false);
   return (
-    <Box ref={ref} {...props} __themeKey="IconButton.root">
+    <Box
+      ref={ref}
+      {...props}
+      __themeKey="IconButton.root"
+      __css={{
+        display: "inline-flex",
+      }}>
       <Box
         ref={buttonRef}
         as="button"
@@ -27,9 +33,8 @@ export const IconButton = React.forwardRef(({ size = 5, icon, tooltip, tooltipPr
           cursor: "pointer",
           appearance: "none",
           textDecoration: "none",
-          width: size,
-          height: size,
-          margin: 2,
+          // width: size,
+          //height: size,
         }}>
         <Icon icon={icon} __themeKey="IconButton.icon" />
       </Box>

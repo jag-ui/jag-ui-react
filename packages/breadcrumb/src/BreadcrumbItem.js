@@ -10,6 +10,7 @@ export const BreadcrumbItem = React.forwardRef(({ as = "a", delimiter = "/", del
         __css={{
           display: "inline-flex",
           alignItems: "center",
+          flexShrink: 0,
         }}
       />
     );
@@ -24,13 +25,14 @@ export const BreadcrumbItem = React.forwardRef(({ as = "a", delimiter = "/", del
           color: "primary.main",
           display: "inline-flex",
           alignItems: "center",
+          flexShrink: 0,
           ":hover": {
             color: "primary.dark",
           },
         }}
       />
       <Box
-        className="BreadcrumbItem"
+        className="BreadcrumbItem.delimiter"
         as="span"
         __css={{
           "&::after": {

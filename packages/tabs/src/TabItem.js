@@ -1,10 +1,10 @@
 import React from "react";
 import { Box } from "@jag-ui-react/box";
 
-export const TabItem = React.forwardRef(({ active, ...props }, ref) => (
+export const TabItem = React.forwardRef(({ as = "button", active, ...props }, ref) => (
   <Box
     ref={ref}
-    as="button"
+    as={as}
     className={active && "active"}
     {...props}
     __themeKey="TabItem.root"
@@ -15,6 +15,7 @@ export const TabItem = React.forwardRef(({ active, ...props }, ref) => (
       color: "inherit",
       backgroundColor: "inherit",
       cursor: "pointer",
+      flexShrink: 0,
     }}
   />
 ));

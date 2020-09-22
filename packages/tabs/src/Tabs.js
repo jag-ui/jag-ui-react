@@ -5,10 +5,10 @@ export const Tabs = React.forwardRef(({ children, variant, vsize, ...props }, re
   let tabItems = [];
 
   React.Children.forEach(children, (child) => {
-    if (child.type.displayName === "TabItem") {
-      const TabItem = React.cloneElement(child, { variant, vsize, ...child.props });
-      tabItems.push(TabItem);
-    }
+    // if (child.type.displayName === "TabItem") {
+    const TabItem = React.cloneElement(child, { variant, vsize, ...child.props });
+    tabItems.push(TabItem);
+    // }
   });
 
   return (

@@ -46,9 +46,9 @@ const themeStyles = ({ theme, variant, vcolor, vsize, __themeKey = "variants" })
 
 export const Box = styled("div", { shouldForwardProp })(
   {
-    boxSizing: "border-box",
-    margin: 0,
-    minWidth: 0,
+    // boxSizing: "border-box",
+    // margin: 0,
+    // minWidth: 0,
   },
   base,
   //   variant,

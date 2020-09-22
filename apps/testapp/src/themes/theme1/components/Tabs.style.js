@@ -4,6 +4,16 @@ const root = {
     whiteSpace: "nowrap",
     userSelect: "none",
     alignItems: "center",
+    overflowY: "auto",
+    "::-webkit-scrollbar": {
+      height: "1px",
+    },
+    "::-webkit-scrollbar-track": {
+      background: "transparent",
+    },
+    "::-webkit-scrollbar-thumb": {
+      backgroundColor: "blue",
+    },
   },
   variants: {
     boxed: {

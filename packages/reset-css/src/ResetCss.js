@@ -97,6 +97,7 @@ export const ResetCss = () => (
         font-size: 100%;
         line-height: 1.15;
         margin: 0;
+        background-color: inherit;
       }
 
       button,

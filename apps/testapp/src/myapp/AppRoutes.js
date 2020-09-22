@@ -1,28 +1,30 @@
-import { Flex } from "jag-ui-react";
+import { Box, Flex } from "jag-ui-react";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import SideNav from "./components/SideNav";
-import ComponentsPage from "./pages/ComponentsPage";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import MyAppNav from "./MyAppNav";
+import ComponentsPage from "./pages/ComponentsPage";
+import HomePage from "./pages/HomePage";
 
 export default function AppRoutes() {
   return (
     <Router>
-      <Flex width="full" height="100vh" bg="bg.main">
+      <Flex width="100%" height="100%" overflowY="hidden" bg="bg.main">
         <MyAppNav />
-        <Flex width="full" height="full">
+        <Box width="100%" height="100%" overflowY="hidden">
           <Switch>
-            <Route path="/home">Home Body</Route>
+            <Route path="/home">
+              <HomePage />
+            </Route>
             <Route path="/themes">Themes Body</Route>
             <Route path="/api">API Body</Route>
-            <Route path="/help">API Body</Route>
+            <Route path="/help">Help</Route>
             <Route path="/settings">Settings</Route>
             <Route path="/components">
               <ComponentsPage />
             </Route>
             <Redirect to="/home" />
           </Switch>
-        </Flex>
+        </Box>
       </Flex>
     </Router>
   );
