@@ -15,12 +15,12 @@ import {
   Tabs,
   Text,
 } from "jag-ui-react";
-import { InView } from "react-intersection-observer";
-import React, { useState, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   FaBoxes,
   FaCalendarAlt,
   FaChartLine,
+  FaCheck,
   FaChevronDown,
   FaCog,
   FaCogs,
@@ -35,6 +35,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { SideTab } from "../components/SideTab";
+import { useBreakpoint } from "../contexts/breakpoint";
 
 const TemplateInfo = () => {
   return (
@@ -83,7 +84,12 @@ const items = [
 
 const charts = Object.keys([...Array(10)]).map((i) => ({ id: i, title: `Chart ${i}` }));
 
-const allTabs = Object.keys([...Array(10)]).map((i) => ({ id: i, title: `My Long long Tab ${i}` }));
+const allTabs = Object.keys([...Array(10)]).map((i) => ({
+  id: i,
+  title: `My Long long Tab ${i}`,
+  visible: true,
+  icon: <FaMusic />,
+}));
 
 const Charts = ({ items }) => {
   return (
@@ -109,23 +115,21 @@ const MyTabItem = ({ item, active, onClick, onClose, onItemVisiblityChange, ...p
       maxWidth="200px"
       onMouseEnter={() => setCloseBtnHidden(false)}
       onMouseLeave={() => setCloseBtnHidden(true)}>
-      <InView as="div" onChange={(inView, entry) => onItemVisiblityChange({ item, inView, entry })}>
-        <Button as="button" variant="none" onClick={onClick} flexGrow={1} justifyContent="flex-start">
-          <Icon icon={<FaMusic />} mr={2} /> <Text maxLength={15}>{item.title}</Text>
-        </Button>
-        <IconButton
-          tooltip="Close Tab"
-          icon={<FaTimes />}
-          sx={{ visibility: closeBtnHidden ? "hidden" : "visible" }}
-          ml={2}
-          onClick={onClose}
-        />
-      </InView>
+      <Button as="button" variant="none" onClick={onClick} flexGrow={1} justifyContent="flex-start">
+        <Icon icon={<FaMusic />} mr={2} /> <Text maxLength={15}>{item.title}</Text>
+      </Button>
+      <IconButton
+        tooltip="Close Tab"
+        icon={<FaTimes />}
+        sx={{ visibility: closeBtnHidden ? "hidden" : "visible" }}
+        ml={2}
+        onClick={onClose}
+      />
     </TabItem>
   );
 };
 
-const MoreTabs = ({ items }) => {
+const MoreTabs = ({ items, max, toggleTabVisiblity }) => {
   const [showPopper, setShowPopper] = useState(false);
   const buttonRef = useRef(null);
   return (
@@ -135,50 +139,137 @@ const MoreTabs = ({ items }) => {
       </DropdownToggle>
       <DropdownMenu bg="white">
         <DropdownItem>
-          <Icon icon={<FaPlus />} mr={2} />
+          <Icon icon={<FaPlus />} mx={2} />
           Add Tab
         </DropdownItem>
         <DropdownItem divider />
-        {items && items.map((item) => <DropdownItem as="button">{item.title}</DropdownItem>)}
+        {max && (
+          <>
+            <DropdownItem disabled justifyContent="center">
+              select maximum "{max}"
+            </DropdownItem>
+            <DropdownItem divider />
+          </>
+        )}
+
+        {items &&
+          items.map((item) => (
+            <DropdownItem
+              as="button"
+              width="200px"
+              color={item.visible ? "primary.main" : "inherit"}
+              onClick={() => toggleTabVisiblity(item)}>
+              <Icon mr={2} icon={item.icon} />
+              <Text display="flex" flexGrow={1}>
+                {item.title}
+              </Text>
+              {item.visible && <Icon ml={2} icon={<FaCheck />} />}
+            </DropdownItem>
+          ))}
       </DropdownMenu>
     </Dropdown>
   );
 };
 
+const maxTabsConfig = {
+  xs: 1,
+  sm: 2,
+  md: 4,
+  lg: 5,
+};
+
+const getBestBp = (bp) => {
+  if (bp.xs) {
+    return "xs";
+  } else if (bp.sm) {
+    return "sm";
+  } else if (bp.md) {
+    return "md";
+  } else if (bp.lg) {
+    return "lg";
+  }
+  return "xl";
+};
+
 const TabsContainer = ({}) => {
+  const [tabs, setTabs] = useState(allTabs);
+  const [maxTabs, setMaxTabs] = useState(null);
   const [activeTabId, setActiveTabId] = useState(allTabs[0].id);
-  const [tabs, setTabs] = React.useState(allTabs);
-  const updateTabsVisiblity = React.useCallback(
-    ({ item, inView, entry }) => {
-      // console.log("updateTabsVisiblity", { item, inView, entry });
-      const updatedTabs = tabs.map((tab) => (tab.id === item.id ? { ...tab, visible: inView } : tab));
+  const visibleTabs = tabs.filter((tab) => tab.visible);
+
+  // updateMaxTabs:
+  const bp = useBreakpoint();
+  useEffect(() => {
+    const bestBp = getBestBp(bp);
+    const newMaxTabs = maxTabsConfig[bestBp];
+    setMaxTabs(newMaxTabs);
+  }, [bp]);
+
+  // visibleTabs:
+  useEffect(() => {
+    const visibleTabs = tabs.filter((tab) => tab.visible);
+    if (maxTabs && visibleTabs.length > maxTabs) {
+      // tabs: has more than 'maxTabs' limits
+      let max = maxTabs;
+      const updatedTabs = tabs.map((tab) => {
+        if (max > 0) {
+          max--;
+          return { ...tab, visible: true };
+        } else {
+          return { ...tab, visible: false };
+        }
+      });
+      console.log("updatedVisibleTabs:", { maxTabs, visibleTabs, tabs, updatedTabs });
       setTabs(updatedTabs);
+      const visibleTabs1 = updatedTabs.filter((tab) => tab.visible);
+      setActiveTabId(visibleTabs1[0].id);
+    }
+  }, [tabs, maxTabs]);
+
+  console.log("TabsContainer", { bp });
+
+  // const visibleTabs = tabs.filter((tab) => tab.visible);
+
+  const addVisibleTabs = useCallback(
+    (item) => {
+      const visibleTabs = tabs.filter((tab) => tab.visible);
+      const maxTabsNotSpecified = !maxTabs;
+      const canHaveMoreTabs = maxTabs && visibleTabs.length < maxTabs;
+      console.log("addVisibleTabs", item);
+      debugger;
+      // if: item already visible or canHaveMoreTabs
+      if (item.visible || maxTabsNotSpecified || canHaveMoreTabs) {
+        const updatedTabs = tabs.map((tab) => (tab.id === item.id ? { ...item, visible: !item.visible } : tab));
+        console.log("toggleTabVisiblity:", { tabs, maxTabs, updatedTabs });
+        setTabs(updatedTabs);
+        const visibleTabs1 = updatedTabs.filter((tab) => tab.visible);
+        if (visibleTabs1 && visibleTabs1.length > 0) {
+          setActiveTabId(visibleTabs1[0].id);
+        }
+      } else {
+        console.error("Can not add more than allowed tabs for this screen size", {
+          maxTabs,
+          visibleTabsLen: visibleTabs.length,
+        });
+      }
     },
-    [tabs],
+    [tabs, maxTabs],
   );
-  const hiddenTabs = tabs.filter((tab) => !tab.visible);
 
   return (
     <Box my={3} bg="bg.main">
       <Flex alignItems="center">
-        <Tabs
-          variant="boxed"
-          vsize="lg"
-          sx={{ overflowX: "hidden", overflowY: "hidden", flexWrap: "wrap", maxHeight: "37px" }}>
-          {tabs.map((tab) => (
-            <MyTabItem
-              item={tab}
-              active={tab.id === activeTabId}
-              onClick={() => setActiveTabId(tab.id)}
-              onItemVisiblityChange={updateTabsVisiblity}></MyTabItem>
+        <Tabs sx={{ flexGrow: 1 }} variant="boxed" vsize="lg">
+          {visibleTabs.map((tab) => (
+            <MyTabItem item={tab} active={tab.id === activeTabId} onClick={() => setActiveTabId(tab.id)}></MyTabItem>
           ))}
         </Tabs>
-        <MoreTabs items={hiddenTabs} />
+        <MoreTabs items={tabs} max={maxTabs} toggleTabVisiblity={addVisibleTabs} />
       </Flex>
       <Box p={3}>
-        Tab Content {activeTabId}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi dolorem
-        iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste, dolor dignissimos, ex
-        suscipit nesciunt error? Minima, placeat? Quaerat? ---
+        Tab Content {activeTabId} --- maxTabs: {maxTabs}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Expedita sequi dolorem iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste,
+        dolor dignissimos, ex suscipit nesciunt error? Minima, placeat? Quaerat? ---
         <Charts items={charts} />
       </Box>
     </Box>

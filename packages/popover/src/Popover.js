@@ -35,7 +35,7 @@ export const Popover = React.forwardRef(
     }
 
     const { styles, attributes } = usePopper(triggerRef && triggerRef.current, popperRef, { placement, modifiers });
-    console.log("usePopper", { styles, attributes });
+    // console.log("usePopper", { styles, attributes });
 
     return active ? (
       <Box

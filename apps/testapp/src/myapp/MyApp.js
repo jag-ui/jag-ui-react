@@ -5,6 +5,7 @@ import React, { useContext } from "react";
 import { themeStyles } from "../themes";
 import AppRoutes from "./AppRoutes";
 import { MyAppContext, MyAppContextProvider } from "./MyAppContext";
+import { BreakpointProvider } from "./contexts/breakpoint";
 
 function MyAppContainer() {
   const appContext = useContext(MyAppContext);
@@ -18,10 +19,20 @@ function MyAppContainer() {
   );
 }
 
+// ["640px", "768px", "1024px", "1280px"];
+const queries = {
+  xs: "(max-width: 320px)",
+  sm: "(max-width: 720px)",
+  md: "(max-width: 1024px)",
+  lg: "(max-width: 1280px)",
+};
+
 function MyApp() {
   return (
     <MyAppContextProvider>
-      <MyAppContainer />
+      <BreakpointProvider queries={queries}>
+        <MyAppContainer />
+      </BreakpointProvider>
     </MyAppContextProvider>
   );
 }
