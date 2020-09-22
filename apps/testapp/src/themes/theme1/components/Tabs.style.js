@@ -12,7 +12,7 @@ const root = {
       background: "transparent",
     },
     "::-webkit-scrollbar-thumb": {
-      backgroundColor: "blue",
+      backgroundColor: "gray.darker",
     },
   },
   variants: {

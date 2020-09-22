@@ -122,6 +122,7 @@ export const colors = {
     main: baseColors.gray[1],
     light: baseColors.gray[2],
     dark: baseColors.gray[3],
+    darker: baseColors.gray[5],
     contrastText: baseColors.white,
   },
 

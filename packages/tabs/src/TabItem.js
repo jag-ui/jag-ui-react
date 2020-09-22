@@ -5,7 +5,7 @@ export const TabItem = React.forwardRef(({ as = "button", active, ...props }, re
   <Box
     ref={ref}
     as={as}
-    className={active && "active"}
+    className={active ? "active" : undefined}
     {...props}
     __themeKey="TabItem.root"
     __css={{

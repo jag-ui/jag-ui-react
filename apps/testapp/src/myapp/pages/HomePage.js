@@ -1,7 +1,22 @@
 import { DropdownCaret } from "@jag-ui-react/icons";
-import { Box, Breadcrumb, BreadcrumbItem, Button, Flex, Icon, IconButton, TabItem, Tabs, Text } from "jag-ui-react";
+import {
+  Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  Flex,
+  Icon,
+  IconButton,
+  TabItem,
+  Tabs,
+  Text,
+} from "jag-ui-react";
 import { InView } from "react-intersection-observer";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   FaBoxes,
   FaCalendarAlt,
@@ -9,10 +24,12 @@ import {
   FaChevronDown,
   FaCog,
   FaCogs,
+  FaEllipsisH,
   FaEllipsisV,
   FaFileAlt,
   FaFilter,
   FaMusic,
+  FaPlus,
   FaSearch,
   FaTags,
   FaTimes,
@@ -101,10 +118,30 @@ const MyTabItem = ({ item, active, onClick, onClose, onItemVisiblityChange, ...p
           icon={<FaTimes />}
           sx={{ visibility: closeBtnHidden ? "hidden" : "visible" }}
           ml={2}
-          onClose={onClose}
+          onClick={onClose}
         />
       </InView>
     </TabItem>
+  );
+};
+
+const MoreTabs = ({ items }) => {
+  const [showPopper, setShowPopper] = useState(false);
+  const buttonRef = useRef(null);
+  return (
+    <Dropdown placement="bottom-end" active={showPopper} onOutsideClick={() => setShowPopper(false)} mx={2}>
+      <DropdownToggle caret>
+        <IconButton p={2} icon={<FaEllipsisH />} onClick={() => setShowPopper(!showPopper)} ref={buttonRef} />
+      </DropdownToggle>
+      <DropdownMenu bg="white">
+        <DropdownItem>
+          <Icon icon={<FaPlus />} mr={2} />
+          Add Tab
+        </DropdownItem>
+        <DropdownItem divider />
+        {items && items.map((item) => <DropdownItem as="button">{item.title}</DropdownItem>)}
+      </DropdownMenu>
+    </Dropdown>
   );
 };
 
@@ -113,7 +150,7 @@ const TabsContainer = ({}) => {
   const [tabs, setTabs] = React.useState(allTabs);
   const updateTabsVisiblity = React.useCallback(
     ({ item, inView, entry }) => {
-      console.log("updateTabsVisiblity", { item, inView, entry });
+      // console.log("updateTabsVisiblity", { item, inView, entry });
       const updatedTabs = tabs.map((tab) => (tab.id === item.id ? { ...tab, visible: inView } : tab));
       setTabs(updatedTabs);
     },
@@ -123,21 +160,25 @@ const TabsContainer = ({}) => {
 
   return (
     <Box my={3} bg="bg.main">
-      <Tabs variant="boxed" vsize="lg">
-        {tabs.map((tab) => (
-          <MyTabItem
-            item={tab}
-            active={tab.id === activeTabId}
-            onClick={() => setActiveTabId(tab.id)}
-            onItemVisiblityChange={updateTabsVisiblity}></MyTabItem>
-        ))}
-      </Tabs>
+      <Flex alignItems="center">
+        <Tabs
+          variant="boxed"
+          vsize="lg"
+          sx={{ overflowX: "hidden", overflowY: "hidden", flexWrap: "wrap", maxHeight: "37px" }}>
+          {tabs.map((tab) => (
+            <MyTabItem
+              item={tab}
+              active={tab.id === activeTabId}
+              onClick={() => setActiveTabId(tab.id)}
+              onItemVisiblityChange={updateTabsVisiblity}></MyTabItem>
+          ))}
+        </Tabs>
+        <MoreTabs items={hiddenTabs} />
+      </Flex>
       <Box p={3}>
         Tab Content {activeTabId}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi dolorem
         iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste, dolor dignissimos, ex
-        suscipit nesciunt error? Minima, placeat? Quaerat?
-        {JSON.stringify(hiddenTabs)}
-        ---
+        suscipit nesciunt error? Minima, placeat? Quaerat? ---
         <Charts items={charts} />
       </Box>
     </Box>
