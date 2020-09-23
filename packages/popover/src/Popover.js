@@ -30,12 +30,11 @@ export const Popover = React.forwardRef(
       // add: arrow modifiers (only if required)
       modifiers = [
         { name: "arrow", options: { element: arrowRef } },
-        // { name: "offset", options: { offset: [0, 10] } },
+        { name: "offset", options: { offset: [0, 10] } },
       ];
     }
 
     const { styles, attributes } = usePopper(triggerRef && triggerRef.current, popperRef, { placement, modifiers });
-    // console.log("usePopper", { styles, attributes, enableArrow });
 
     return active ? (
       <Box

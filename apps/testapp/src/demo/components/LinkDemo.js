@@ -400,10 +400,6 @@ const LinkWithIconDemo = () => {
 };
 
 export default function LinkDemo() {
-  // const context = useThemeUI();
-  // const { theme, components, colorMode, setColorMode } = context;
-  // console.log("ButtonDemo: ", { theme });
-
   return (
     <>
       <Heading>Link Demo</Heading>

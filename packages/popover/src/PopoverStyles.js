@@ -10,7 +10,7 @@ export const rootStyle = {
   backgroundClip: "padding-box",
 
   // TOP:
-  "&[data-popper-placement^=top]": { marginBottom: arrowSize },
+  // "&[data-popper-placement^=top]": { marginBottom: arrowSize },
   "&[data-popper-placement^=top] .popover-arrow": {
     bottom: `calc((${arrowSize} + 1px) * -1)`,
   },
@@ -30,7 +30,7 @@ export const rootStyle = {
   },
 
   // BOTTOM:
-  "&[data-popper-placement^=bottom]": { marginTop: arrowSize },
+  // "&[data-popper-placement^=bottom]": { marginTop: arrowSize },
   "&[data-popper-placement^=bottom] .popover-arrow": {
     top: `calc((${arrowSize} + 1px) * -1)`,
   },
@@ -48,7 +48,7 @@ export const rootStyle = {
 
   // LEFT
 
-  "&[data-popper-placement^=left]": { marginRight: arrowSize },
+  // "&[data-popper-placement^=left]": { marginRight: arrowSize },
   "&[data-popper-placement^=left] .popover-arrow": {
     right: `calc((${arrowSize} + 1px) * -1)`,
     width: "10px",
@@ -68,7 +68,7 @@ export const rootStyle = {
 
   // RIGHT
 
-  "&[data-popper-placement^=right]": { marginLeft: arrowSize },
+  // "&[data-popper-placement^=right]": { marginLeft: arrowSize },
   "&[data-popper-placement^=right] .popover-arrow": {
     left: `calc((${arrowSize} + 1px) * -1)`,
   },

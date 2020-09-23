@@ -10,7 +10,6 @@ import { BreakpointProvider } from "./contexts/breakpoint";
 function MyAppContainer() {
   const appContext = useContext(MyAppContext);
   const curTheme = themeStyles[appContext.theme.id];
-  console.log({ appContext, curTheme });
   return (
     <ThemeProvider theme={curTheme}>
       <ResetCss />

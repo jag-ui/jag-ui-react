@@ -53,10 +53,6 @@ const SimpleBreadcrumbDemo = () => {
 };
 
 export default function BreadcrumbDemo() {
-  // const context = useThemeUI();
-  // const { theme, components, colorMode, setColorMode } = context;
-  // console.log("ButtonDemo: ", { theme });
-
   return (
     <>
       <Heading>BreadcrumbItem Demo</Heading>

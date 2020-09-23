@@ -362,10 +362,6 @@ const BtnWithIconsDemo = () => {
 };
 
 export default function ButtonDemo() {
-  // const context = useThemeUI();
-  // const { theme, components, colorMode, setColorMode } = context;
-  // console.log("ButtonDemo: ", { theme });
-
   return (
     <>
       <Heading>Button Demo</Heading>

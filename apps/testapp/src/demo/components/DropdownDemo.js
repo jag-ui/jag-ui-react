@@ -80,7 +80,7 @@ export default function DropdownDemo() {
       </Flex>
 
       <Heading>Dropdown (All Placements)</Heading>
-      <Box>
+      <Box my={6}>
         <Flex justifyContent="space-between">
           <SampleDropdown placement="top-start" />
           <SampleDropdown placement="top" />

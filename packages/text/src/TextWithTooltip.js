@@ -19,7 +19,6 @@ const truncate = (str, maxLength, truncateType, separator = "...") => {
 
 export const TextWithTooltip = React.forwardRef(
   ({ maxLength, truncateType, tooltipPlacement, tooltip, children, ...props }, ref) => {
-    // console.log("TextWithTooltip", { maxLength });
     const [showPopper, setShowPopper] = useState(false);
     const triggerRef = useRef(null);
 

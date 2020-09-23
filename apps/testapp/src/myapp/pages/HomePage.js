@@ -212,14 +212,11 @@ const TabsContainer = ({}) => {
           return { ...tab, visible: false };
         }
       });
-      console.log("updatedVisibleTabs:", { maxTabs, visibleTabs, tabs, updatedTabs });
       setTabs(updatedTabs);
       const visibleTabs1 = updatedTabs.filter((tab) => tab.visible);
       setActiveTabId(visibleTabs1[0].id);
     }
   }, [tabs, maxTabs]);
-
-  console.log("TabsContainer", { bp });
 
   // const visibleTabs = tabs.filter((tab) => tab.visible);
 
@@ -228,12 +225,9 @@ const TabsContainer = ({}) => {
       const visibleTabs = tabs.filter((tab) => tab.visible);
       const maxTabsNotSpecified = !maxTabs;
       const canHaveMoreTabs = maxTabs && visibleTabs.length < maxTabs;
-      console.log("addVisibleTabs", item);
-      debugger;
       // if: item already visible or canHaveMoreTabs
       if (item.visible || maxTabsNotSpecified || canHaveMoreTabs) {
         const updatedTabs = tabs.map((tab) => (tab.id === item.id ? { ...item, visible: !item.visible } : tab));
-        console.log("toggleTabVisiblity:", { tabs, maxTabs, updatedTabs });
         setTabs(updatedTabs);
         const visibleTabs1 = updatedTabs.filter((tab) => tab.visible);
         if (visibleTabs1 && visibleTabs1.length > 0) {
