@@ -86,8 +86,6 @@ const SideNavItemDev = ({ children }) => {
 };
 
 const topOptions = [
-  { id: "logo", component: <Logo /> },
-  { id: "divider", component: <Divider color="rgb(0 0 0 / 8%)" mb={1} /> },
   { id: "home", to: "/home", title: "Home", icon: <FaHome size={14} /> },
   { id: "components", to: "/components", title: "Components", icon: <FaCode size={14} /> },
   { id: "themes", to: "/themes", title: "Themes", icon: <FaTheaterMasks size={14} /> },
@@ -103,7 +101,6 @@ const bottomOptions = [
     href: "https://github.com/jag-ui/jag-ui-react",
     target: "_blank",
   },
-  { id: "developedBy", component: <SideNavItemDev /> },
 ];
 
 const moreOptions = [
@@ -118,7 +115,20 @@ const moreOptions = [
 ];
 
 function MyAppNav(props) {
-  return <SideNav topOptions={topOptions} bottomOptions={bottomOptions} moreOptions={moreOptions} />;
+  return (
+    <SideNav
+      header={
+        <>
+          <Logo key="logo" />
+          <Divider color="rgb(0 0 0 / 8%)" mb={1} />
+        </>
+      }
+      footer={<SideNavItemDev />}
+      topOptions={topOptions}
+      bottomOptions={bottomOptions}
+      moreOptions={moreOptions}
+    />
+  );
 }
 
 MyAppNav.propTypes = {};

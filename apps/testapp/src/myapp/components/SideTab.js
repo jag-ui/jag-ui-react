@@ -38,6 +38,7 @@ export function SideTab({ items }) {
       <Box width="40px" height="100%" overflowY="hidden">
         {items.map((item) => (
           <SideTabItem
+            key={item.id}
             item={item}
             active={item.id === activeTab.id && !tabHidden}
             tabHidden={tabHidden}

@@ -35,7 +35,7 @@ export const Popover = React.forwardRef(
     }
 
     const { styles, attributes } = usePopper(triggerRef && triggerRef.current, popperRef, { placement, modifiers });
-    // console.log("usePopper", { styles, attributes });
+    // console.log("usePopper", { styles, attributes, enableArrow });
 
     return active ? (
       <Box
@@ -60,6 +60,7 @@ export const Popover = React.forwardRef(
           __css={{
             ...arrowStyle,
             color: popoverColor,
+            display: enableArrow ? "block" : "none",
           }}
         />
 

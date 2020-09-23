@@ -34,6 +34,7 @@ import {
   FaTags,
   FaTimes,
 } from "react-icons/fa";
+import { getItems } from "../../data";
 import { SideTab } from "../components/SideTab";
 import { useBreakpoint } from "../contexts/breakpoint";
 
@@ -82,21 +83,12 @@ const items = [
   { id: 6, title: "Search", icon: <FaSearch />, component: <Search /> },
 ];
 
-const charts = Object.keys([...Array(10)]).map((i) => ({ id: i, title: `Chart ${i}` }));
-
-const allTabs = Object.keys([...Array(10)]).map((i) => ({
-  id: i,
-  title: `My Long long Tab ${i}`,
-  visible: true,
-  icon: <FaMusic />,
-}));
-
 const Charts = ({ items }) => {
   return (
     <>
-      {Object.keys([...Array(10)]).map((i) => (
-        <Box mb={3} p={5} boxShadow="default" bg="bg.card">
-          {i}
+      {items.map((item) => (
+        <Box key={item.id} mb={3} p={5} boxShadow="default" bg="bg.card">
+          {item.title}
         </Box>
       ))}
     </>
@@ -154,6 +146,7 @@ const MoreTabs = ({ items, max, toggleTabVisiblity }) => {
         {items &&
           items.map((item) => (
             <DropdownItem
+              key={item.id}
               as="button"
               width="200px"
               color={item.visible ? "primary.main" : "inherit"}
@@ -190,10 +183,11 @@ const getBestBp = (bp) => {
   return "xl";
 };
 
+const tabsData = getItems("Tabs", 3, { visible: true });
 const TabsContainer = ({}) => {
-  const [tabs, setTabs] = useState(allTabs);
+  const [tabs, setTabs] = useState(tabsData);
   const [maxTabs, setMaxTabs] = useState(null);
-  const [activeTabId, setActiveTabId] = useState(allTabs[0].id);
+  const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
   const visibleTabs = tabs.filter((tab) => tab.visible);
 
   // updateMaxTabs:
@@ -260,7 +254,11 @@ const TabsContainer = ({}) => {
       <Flex alignItems="center" bg="bg.main">
         <Tabs sx={{ flexGrow: 1 }} variant="boxed" vsize="lg">
           {visibleTabs.map((tab) => (
-            <MyTabItem item={tab} active={tab.id === activeTabId} onClick={() => setActiveTabId(tab.id)}></MyTabItem>
+            <MyTabItem
+              key={tab.id}
+              item={tab}
+              active={tab.id === activeTabId}
+              onClick={() => setActiveTabId(tab.id)}></MyTabItem>
           ))}
         </Tabs>
         <MoreTabs items={tabs} max={maxTabs} toggleTabVisiblity={addVisibleTabs} />
@@ -269,7 +267,7 @@ const TabsContainer = ({}) => {
         Tab Content {activeTabId} --- maxTabs: {maxTabs}.... Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Expedita sequi dolorem iste explicabo assumenda. Quaerat, officiis quia doloribus repellendus debitis iste,
         dolor dignissimos, ex suscipit nesciunt error? Minima, placeat? Quaerat? ---
-        <Charts items={charts} />
+        <Charts items={getItems("Chartss", 10)} />
       </Box>
     </Box>
   );

@@ -1,14 +1,7 @@
 import { Box, Button, Divider, Flex, Icon, TabItem, Tabs } from "jag-ui-react";
 import React, { useState } from "react";
-import { FaMusic } from "react-icons/fa";
 import { Heading } from "../../components/Heading";
-
-const getItems = (text, n = 10) =>
-  Object.keys([...Array(n)]).map((i) => ({
-    id: i,
-    title: `Tab ${i}`,
-    icon: <FaMusic />,
-  }));
+import { getItems } from "../../data";
 
 const SimpleTabs = ({ vsize, items }) => {
   const [activeTabId, setActiveTabId] = useState(items[0].id);
