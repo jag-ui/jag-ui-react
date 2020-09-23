@@ -1,19 +1,9 @@
-const root = {
+const ul = {
   baseStyle: {
     display: "flex",
     whiteSpace: "nowrap",
     userSelect: "none",
     alignItems: "center",
-    overflowY: "auto",
-    "::-webkit-scrollbar": {
-      height: "1px",
-    },
-    "::-webkit-scrollbar-track": {
-      background: "transparent",
-    },
-    "::-webkit-scrollbar-thumb": {
-      backgroundColor: "gray.darker",
-    },
   },
   variants: {
     boxed: {
@@ -47,4 +37,20 @@ const root = {
   },
 };
 
-export default { root };
+const root = {
+  baseStyle: {
+    backgroundColor: "inherit",
+    overflowX: "auto",
+    "::-webkit-scrollbar": {
+      height: "1px",
+    },
+    "::-webkit-scrollbar-track": {
+      background: "transparent",
+    },
+    "::-webkit-scrollbar-thumb": {
+      backgroundColor: "gray.darker",
+    },
+  },
+};
+
+export default { root, ul };

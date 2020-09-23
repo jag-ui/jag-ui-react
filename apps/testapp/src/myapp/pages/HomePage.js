@@ -108,7 +108,6 @@ const MyTabItem = ({ item, active, onClick, onClose, onItemVisiblityChange, ...p
   return (
     <TabItem
       {...props}
-      as="div"
       active={active}
       ml={2}
       minWidth="80px"
@@ -257,8 +256,8 @@ const TabsContainer = ({}) => {
   );
 
   return (
-    <Box my={3} bg="bg.main">
-      <Flex alignItems="center">
+    <Box my={3}>
+      <Flex alignItems="center" bg="bg.main">
         <Tabs sx={{ flexGrow: 1 }} variant="boxed" vsize="lg">
           {visibleTabs.map((tab) => (
             <MyTabItem item={tab} active={tab.id === activeTabId} onClick={() => setActiveTabId(tab.id)}></MyTabItem>

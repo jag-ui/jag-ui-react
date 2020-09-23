@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@jag-ui-react/box";
 
-export const Tabs = React.forwardRef(({ children, variant, vsize, ...props }, ref) => {
+export const Tabs = React.forwardRef(({ as = "ul", children, variant, vsize, ...props }, ref) => {
   let tabItems = [];
 
   React.Children.forEach(children, (child) => {
@@ -13,7 +13,9 @@ export const Tabs = React.forwardRef(({ children, variant, vsize, ...props }, re
 
   return (
     <Box ref={ref} {...props} as="div" variant={variant} __themeKey="Tabs.root" __css={{}}>
-      {tabItems}
+      <Box ref={ref} {...props} as={as} variant={variant} __themeKey="Tabs.ul" __css={{}}>
+        {tabItems}
+      </Box>
     </Box>
   );
 });

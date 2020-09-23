@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@jag-ui-react/box";
 
-export const TabItem = React.forwardRef(({ as = "button", active, ...props }, ref) => (
+export const TabItem = React.forwardRef(({ as = "li", active, ...props }, ref) => (
   <Box
     ref={ref}
     as={as}
