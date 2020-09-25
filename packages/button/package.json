@@ -11,7 +11,9 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.0",
-    "@jag-ui-react/box": "^0.0.0"
+    "@jag-ui-react/box": "^0.0.0",
+    "@jag-ui-react/icon": "^0.0.0",
+    "@jag-ui-react/tooltip": "^0.0.0"
   },
   "publishConfig": {
     "access": "public"

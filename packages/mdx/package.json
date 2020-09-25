@@ -1,0 +1,32 @@
+{
+  "name": "@jag-ui-react/mdx",
+  "version": "0.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress --tsconfig tsconfig.json",
+    "watch": "microbundle watch --no-compress --tsconfig tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/mdx-js__react": "^1.5.1"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0",
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0",
+    "@jag-ui-react/core": "^0.0.0",
+    "@jag-ui-react/css": "^0.0.0"
+  },
+  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -11,7 +11,7 @@ export const ResetCss = () => (
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;      
         -moz-osx-font-smoothing: grayscale; 
-        touch-action: manipulation; 
+        touch-action: manipulation;
       }
 
       body {
@@ -48,7 +48,6 @@ export const ResetCss = () => (
       }
 
       a {
-        background-color: transparent;
         color: inherit;
         text-decoration: inherit;
       }
@@ -98,6 +97,7 @@ export const ResetCss = () => (
         font-size: 100%;
         line-height: 1.15;
         margin: 0;
+        background-color: inherit;
       }
 
       button,
@@ -202,7 +202,6 @@ export const ResetCss = () => (
       }
 
       button {
-        background: transparent;
         padding: 0;
       }
 

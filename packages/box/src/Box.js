@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import shouldForwardProp from "@styled-system/should-forward-prop";
 import { color, compose, flexbox, layout, space, typography, shadow, border } from "styled-system";
-import { css, get } from "@jag-ui-react/core";
+import { css, get } from "@jag-ui-react/css";
 
 const sx = (props) => css(props.sx)(props.theme);
 const base = (props) => css(props.__css)(props.theme);
@@ -37,17 +37,18 @@ const themeStyles = ({ theme, variant, vcolor, vsize, __themeKey = "variants" })
     if (variantSizes && variantSizes[vsize]) results.push(css(variantSizes[vsize]));
     // color:
     if (variantColors && variantColors[vcolor]) results.push(css(variantColors[vcolor]));
+
+    // console.log(__themeKey, { theme, componentTheme, componentVariant, variant, vcolor, vsize, results });
   }
 
-  // console.log(__themeKey, { theme, componentTheme, componentVariant, variant, vcolor, vsize, results });
   return results;
 };
 
 export const Box = styled("div", { shouldForwardProp })(
   {
-    boxSizing: "border-box",
-    margin: 0,
-    minWidth: 0,
+    // boxSizing: "border-box",
+    // margin: 0,
+    // minWidth: 0,
   },
   base,
   //   variant,

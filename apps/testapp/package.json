@@ -17,17 +17,18 @@
   },
   "dependencies": {
     "jag-ui-react": "^0.0.0",
-    "@jag-ui-react/core": "^1.0.11",
-    "@jag-ui-react/components": "^1.0.11",
-    "@jag-ui-react/form": "^1.0.11",
-    "@jag-ui-react/icons": "^1.0.11",
+    "@jag-ui-react/icons": "^0.0.0",
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0",
     "@react-workspaces/react-scripts": "3.4.0-alpha-01",
-    "@theme-ui/color": "^0.3.1",
-    "@theme-ui/presets": "^0.3.0",
+    "@styled-system/should-forward-prop": "^5.1.2",
+    "deepmerge": "^4.2.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.10.0",
-    "theme-ui": "^0.3.1"
+    "emotion-theming": "^10.0.27",
+    "react-router-dom": "^5.2.0",
+    "react-intersection-observer": "8.28.5"
   },
   "devDependencies": {
     "cross-env": "6.0.3",

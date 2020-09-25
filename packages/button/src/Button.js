@@ -19,6 +19,13 @@ export const Button = React.forwardRef((props, ref) => {
         cursor: "pointer",
         appearance: "none",
         textDecoration: "none",
+        flexShrink: 0,
+        "&:disabled": {
+          opacity: ".65",
+          boxShadow: "none",
+          transform: "none",
+          cursor: "not-allowed",
+        },
       }}
     />
   );

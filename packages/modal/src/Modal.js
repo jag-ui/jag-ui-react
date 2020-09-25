@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@jag-ui-react/box";
 
 export const Modal = React.forwardRef(({ active, children, onOverlayClick, ...props }, ref) => {
-  console.log("Modal11");
   return (
     <Box
       ref={ref}

@@ -1,4 +1,2 @@
-// export { useStyleConfig, useMultiStyleConfig } from "@chakra-ui/core";
-// export { multiStyleConfig } from "@chakra-ui/theme-tools";
+export { css, get } from "@jag-ui-react/css";
 export { Box } from "./Box";
-export { Flex } from "./Flex";

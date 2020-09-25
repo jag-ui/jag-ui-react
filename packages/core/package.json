@@ -1,28 +1,28 @@
 {
   "name": "@jag-ui-react/core",
-  "version": "1.0.11",
+  "version": "0.0.0",
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "prepare": "microbundle --no-compress --jsx React.createElement",
-    "watch": "microbundle watch --no-compress --jsx React.createElement",
+    "prepare": "microbundle --no-compress --tsconfig tsconfig.json",
+    "watch": "microbundle watch --no-compress --tsconfig tsconfig.json",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@emotion/core": "^10.0.0",
-    "@emotion/styled": "^10.0.0",
-    "@styled-system/color": "^5.1.2",
-    "@styled-system/should-forward-prop": "^5.1.2",
-    "@styled-system/space": "^5.1.2",
-    "@theme-ui/css": "^0.4.0-rc.1"
-  },
-  "peerDependencies": {
-    "react": "^16.8.0"
-  },
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "author": "Jagadeesh Palaniappan <jagadeeshpalaniappan@gmail.com>",
-  "license": "MIT"
+  "peerDependencies": {
+    "react": "^16.11.0",
+    "@emotion/core": "^10.0.0",
+    "@jag-ui-react/css": "^0.0.0",
+    "deepmerge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "react": "^16.11.0"
+  }
 }

@@ -1,15 +1,29 @@
 import { Box } from "@jag-ui-react/box";
 import { useOnClickOutside } from "@jag-ui-react/hooks";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { usePopper } from "react-popper";
+import { arrowStyle, rootStyle } from "./PopoverStyles";
 
 export const Popover = React.forwardRef(
-  ({ triggerRef, placement, active, enableArrow = true, onOutsideClick, children, ...props }, ref) => {
-    const popperRef = useRef(null);
-    const [arrowRef, setArrowRef] = useState(null);
+  (
+    {
+      triggerRef,
+      placement = "top",
+      active,
+      enableArrow = true,
+      onOutsideClick,
+      children,
+      popoverColor = "inherit",
+      __component = "Popover",
+      ...props
+    },
+    ref,
+  ) => {
+    const [popperRef, setPopperElement] = useState(null);
+    const [arrowRef, setArrowElement] = useState(null);
 
     // enableOutsideClick: only if 'onOutsideClick' prop passed
-    useOnClickOutside(!!onOutsideClick, triggerRef, onOutsideClick);
+    useOnClickOutside(!!onOutsideClick && active, popperRef, onOutsideClick);
 
     let modifiers = [];
     if (enableArrow) {
@@ -20,17 +34,42 @@ export const Popover = React.forwardRef(
       ];
     }
 
-    const { styles, attributes } = usePopper(triggerRef.current, popperRef.current, { placement, modifiers });
+    const { styles, attributes } = usePopper(triggerRef && triggerRef.current, popperRef, { placement, modifiers });
 
     return active ? (
-      <Box ref={popperRef} {...props} __themeKey="Popover.root" __css={styles.popper} {...attributes.popper}>
+      <Box
+        ref={setPopperElement}
+        {...props}
+        {...attributes.popper}
+        style={styles.popper}
+        __themeKey={`${__component}.root`}
+        __css={{
+          ...rootStyle,
+          // zIndex: "1060",
+          // maxWidth: "276px",
+          backgroundColor: popoverColor,
+        }}>
         <Box
+          ref={setArrowElement}
+          {...attributes.arrow}
+          style={styles.arrow}
+          data-popper-arrow
           className="popover-arrow"
-          ref={setArrowRef}
-          __themeKey="Popover.arrow"
-          sx={styles.arrow}
-          hidden={!enableArrow}></Box>
-        <Box __themeKey="Popover.container">{children}</Box>
+          __themeKey={`${__component}.arrow`}
+          __css={{
+            ...arrowStyle,
+            color: popoverColor,
+            display: enableArrow ? "block" : "none",
+          }}
+        />
+
+        {__component === "Popover" ? (
+          <Box __themeKey={`${__component}.container`} bg="inherit">
+            {children}
+          </Box>
+        ) : (
+          children
+        )}
       </Box>
     ) : null;
   },
