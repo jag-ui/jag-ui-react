@@ -1,12 +1,3 @@
-const btnSizes = {
-  none: {},
-  xs: { px: 2, py: 0.5 },
-  sm: { px: 2, py: 1 },
-  md: { px: 2, py: 1.5 },
-  lg: { px: 2, py: 2 },
-  xl: { px: 2, py: 2.5 },
-};
-
 const root = {
   baseStyle: {},
   variants: {
@@ -22,7 +13,7 @@ const root = {
         },
       },
       variantColors: {},
-      variantSizes: btnSizes,
+      variantSizes: {},
     },
     boxed: {
       variantStyle: {
@@ -39,7 +30,7 @@ const root = {
         },
       },
       variantColors: {},
-      variantSizes: btnSizes,
+      variantSizes: {},
     },
     toggle: {
       variantStyle: {
@@ -53,12 +44,14 @@ const root = {
           // borderBottomLeftRadius: "4px",
           borderBottomLeftRadius: "290486px",
           borderTopLeftRadius: "290486px",
+          paddingLeft: 2,
         },
         "&:last-child": {
           // borderTopRightRadius: "4px",
           // borderBottomRightRadius: "4px",
           borderBottomRightRadius: "290486px",
           borderTopRightRadius: "290486px",
+          paddingRight: 2,
         },
         "&.active": {
           backgroundColor: "primary.main",
@@ -68,7 +61,7 @@ const root = {
         },
       },
       variantColors: {},
-      variantSizes: btnSizes,
+      variantSizes: {},
     },
   },
   defaultProps: {
