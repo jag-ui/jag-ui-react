@@ -13,7 +13,7 @@ export const styles = {
     fontSize: "inherit",
     maxWidth: "100%",
     overflowX: "hidden",
-    overflowY: "auto",
+    overflowY: "hidden",
   },
   a: {
     color: "primary.main",
