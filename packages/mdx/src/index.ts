@@ -58,7 +58,7 @@ const tags: Array<keyof IntrinsicSxElements> = [
   "thematicBreak",
   // other
   "div",
-  // theme-ui
+  // jag-ui
   "root",
 ];
 

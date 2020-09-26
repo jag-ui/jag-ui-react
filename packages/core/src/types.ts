@@ -16,7 +16,7 @@ export interface SxProps {
    * ```ts
    * // @jsx jsx
    *
-   * import { jsx } from 'theme-ui'
+   * import { jsx } from 'jag-ui'
    * ```
    */
   sx?: SxStyleProp;

@@ -1,6 +1,6 @@
-import { expecter } from 'ts-snippet'
+import { expecter } from "ts-snippet";
 
-import { css, get, Theme } from '../src'
+import { css, get, Theme } from "../src";
 
 const expectSnippet = expecter(
   (code) => `
@@ -8,11 +8,11 @@ const expectSnippet = expecter(
 
   ${code}
 `,
-  { strict: true }
-)
+  { strict: true },
+);
 
-describe('Theme', () => {
-  test('shows friendly error only on bad property', () => {
+describe("Theme", () => {
+  test("shows friendly error only on bad property", () => {
     expectSnippet(`
       css({
         bg: 'salmon',
@@ -24,12 +24,10 @@ describe('Theme', () => {
           windows: 'baz',
         },
       })
-    `).toFail(
-      /Error snippet\.ts \(\d+,\d+\): Type '"foo"' is not assignable to type [\s\S]+'./
-    )
-  })
+    `).toFail(/Error snippet\.ts \(\d+,\d+\): Type '"foo"' is not assignable to type [\s\S]+'./);
+  });
 
-  test('shows friendly error on nested object', () => {
+  test("shows friendly error on nested object", () => {
     expectSnippet(`
       css({
         bg: 'salmon',
@@ -43,20 +41,20 @@ describe('Theme', () => {
         `Error snippet\\.ts \\(\\d+,\\d+\\): Type '{ color: string; widows: "bar"; }'` +
           ` is not assignable to type '[\\s\\S]+'.\\n\\s+` +
           `Types of property 'widows' are incompatible.\\n\\s+` +
-          `Type '"bar"' is not assignable to type [\\s\\S]+`
-      )
-    )
-  })
+          `Type '"bar"' is not assignable to type [\\s\\S]+`,
+      ),
+    );
+  });
 
-  test('accepts unknown CSS property without error', () => {
-    expect(css({ '> form': { windows: 'baz' } })({})).toStrictEqual({
-      '> form': { windows: 'baz' },
-    })
-  })
+  test("accepts unknown CSS property without error", () => {
+    expect(css({ "> form": { windows: "baz" } })({})).toStrictEqual({
+      "> form": { windows: "baz" },
+    });
+  });
 
-  test('infers Theme argument in computed style function', () => {
+  test("infers Theme argument in computed style function", () => {
     expectSnippet(`
-      import { get } from 'theme-ui'
+      import { get } from 'jag-ui'
 
       css({
         p: t => {
@@ -64,18 +62,18 @@ describe('Theme', () => {
           return get(t, 'sizes.5')
         }
       })
-    `).toInfer('theme', 'Theme')
-  })
+    `).toInfer("theme", "Theme");
+  });
 
-  test('accepts additional properties by declaration merging', () => {
+  test("accepts additional properties by declaration merging", () => {
     expectSnippet(`
-      import { Theme } from 'theme-ui';
+      import { Theme } from 'jag-ui';
 
       interface MySyntaxHighlightingTheme {
         foreground: string
       }
 
-      declare module 'theme-ui' {
+      declare module 'jag-ui' {
         interface Theme {
           syntaxHighlighting: MySyntaxHighlightingTheme
         }
@@ -88,34 +86,32 @@ describe('Theme', () => {
       }
 
       const syntaxHighlighting = theme.syntaxHighlighting
-    `).toInfer('syntaxHighlighting', 'MySyntaxHighlightingTheme')
-  })
+    `).toInfer("syntaxHighlighting", "MySyntaxHighlightingTheme");
+  });
 
-  test('works as described in the docs', () => {
+  test("works as described in the docs", () => {
     const theme: Theme = {
-      colors: { background: 'white', text: 'black', primary: '#07f' },
+      colors: { background: "white", text: "black", primary: "#07f" },
       space: [0, 8, 16, 32, 64, 128, 256],
       sizes: [0, 8, 16, 32, 64, 128, 256],
-    }
+    };
 
-    css({ size: (t) => get(t, 'space.3') + get(t, 'sizes.5') })
+    css({ size: (t) => get(t, "space.3") + get(t, "sizes.5") });
 
-    const parse = (x: string | number | undefined | {}) => parseInt(String(x))
+    const parse = (x: string | number | undefined | {}) => parseInt(String(x));
     css({
       size: (t) => parse(t.space?.[3]) + parse(t.sizes?.[5]),
-    })
+    });
 
     // Current limitation. If you broke this one, that's actually pretty awesome,
     // but TypeScript chapter in the docs needs an update.
     expectSnippet(`
       css({ size: (t) => t.space?.['xs'] + t.sizes?.['lg'] })
-    `).toFail(
-      /Element implicitly has an 'any' type because index expression is not of type 'number'/
-    )
-  })
-})
+    `).toFail(/Element implicitly has an 'any' type because index expression is not of type 'number'/);
+  });
+});
 
-describe('ColorMode', () => {
+describe("ColorMode", () => {
   const expectedSnippet = expectSnippet(`
     import { ColorMode } from './packages/css/src'
 
@@ -137,9 +133,9 @@ describe('ColorMode', () => {
     if (Array.isArray(seriousPink)) {
       const [light, medium, dark] = seriousPink
     }
-  `)
+  `);
 
-  expectedSnippet.toInfer('baseColors', '(string | undefined)[]')
-  expectedSnippet.toInfer('light', 'string')
-  expectedSnippet.toInfer('dark', 'string')
-})
+  expectedSnippet.toInfer("baseColors", "(string | undefined)[]");
+  expectedSnippet.toInfer("light", "string");
+  expectedSnippet.toInfer("dark", "string");
+});

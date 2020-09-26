@@ -2,9 +2,9 @@
 
 Adds support for user-controlled color modes
 
-https://theme-ui.com
+https://jag-ui.com
 
-**Note:** _This package is included in the main `theme-ui` package, and generally should not be used on its own._
+**Note:** _This package is included in the main `jag-ui` package, and generally should not be used on its own._
 
 ```sh
 npm i @jag-ui-react/color-modes

@@ -7,4 +7,4 @@ This package powers the `sx` prop in Theme UI.
 npm i @jag-ui-react/css
 ```
 
-https://theme-ui.com
+https://jag-ui.com

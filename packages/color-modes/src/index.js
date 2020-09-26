@@ -4,7 +4,7 @@ import { get } from "@jag-ui-react/css";
 import { Global, ThemeContext as EmotionContext } from "@emotion/core";
 import { toCustomProperties, createColorStyles } from "./custom-properties";
 
-const STORAGE_KEY = "theme-ui-color-mode";
+const STORAGE_KEY = "jag-ui-color-mode";
 
 const storage = {
   get: (init) => {
@@ -49,7 +49,7 @@ const useColorModeState = (theme = {}) => {
   // initialize state
   React.useEffect(() => {
     const stored = theme.useLocalStorage !== false && storage.get();
-    document.body.classList.remove("theme-ui-" + stored);
+    document.body.classList.remove("jag-ui-" + stored);
     if (!stored && theme.useColorSchemeMediaQuery) {
       const query = getMediaQuery();
       setMode(query);
@@ -128,14 +128,14 @@ export const ColorModeProvider = ({ children }) => {
 };
 
 const noflash = `(function() { try {
-  var mode = localStorage.getItem('theme-ui-color-mode');
+  var mode = localStorage.getItem('jag-ui-color-mode');
   if (!mode) return
-  document.body.classList.add('theme-ui-' + mode);
+  document.body.classList.add('jag-ui-' + mode);
 } catch (e) {} })();`;
 
 export const InitializeColorMode = () =>
   jsx("script", {
-    key: "theme-ui-no-flash",
+    key: "jag-ui-no-flash",
     dangerouslySetInnerHTML: {
       __html: noflash,
     },

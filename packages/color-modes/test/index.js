@@ -7,7 +7,7 @@ import mockConsole from "jest-mock-console";
 import { jsx, ThemeProvider, useThemeUI } from "@jag-ui-react/core";
 import { ColorModeProvider, useColorMode, InitializeColorMode } from "../src";
 
-const STORAGE_KEY = "theme-ui-color-mode";
+const STORAGE_KEY = "jag-ui-color-mode";
 
 afterEach(cleanup);
 beforeEach(() => {
@@ -168,7 +168,7 @@ test("converts color modes to css custom properties", () => {
       </ColorModeProvider>
     </ThemeProvider>,
   );
-  expect(tree.getByText("test")).toHaveStyleRule("color", "var(--theme-ui-colors-text,#000)");
+  expect(tree.getByText("test")).toHaveStyleRule("color", "var(--jag-ui-colors-text,#000)");
 });
 
 test("uses default mode", () => {
@@ -550,10 +550,10 @@ test("dot notation works with color modes and custom properties", () => {
   );
   const button = root.getByText("test");
   button.click();
-  expect(button).toHaveStyleRule("color", "var(--theme-ui-colors-header-title,tomato)");
+  expect(button).toHaveStyleRule("color", "var(--jag-ui-colors-header-title,tomato)");
 });
 
-test("raw color values are passed to theme-ui context when custom properties are enabled", () => {
+test("raw color values are passed to jag-ui context when custom properties are enabled", () => {
   let color;
   const Grabber = (props) => {
     const context = useThemeUI();

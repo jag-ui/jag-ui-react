@@ -10,7 +10,7 @@ Import utilities from the `@jag-ui-react/color` package and use them with colors
 
 ```js
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx } from "jag-ui";
 import { darken, lighten } from "@jag-ui-react/color";
 
 export default (props) => (

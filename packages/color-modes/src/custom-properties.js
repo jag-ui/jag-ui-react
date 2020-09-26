@@ -1,6 +1,6 @@
 import { css } from "@jag-ui-react/css";
 
-const toVarName = (key) => `--theme-ui-${key}`;
+const toVarName = (key) => `--jag-ui-${key}`;
 const toVarValue = (key, value) => `var(${toVarName(key)}, ${value})`;
 
 const join = (...args) => args.filter(Boolean).join("-");
@@ -78,7 +78,7 @@ export const createColorStyles = (theme = {}) => {
   const styles = objectToVars("colors", colors);
 
   Object.keys(modes).forEach((mode) => {
-    const key = `&.theme-ui-${mode}`;
+    const key = `&.jag-ui-${mode}`;
     styles[key] = objectToVars("colors", modes[mode]);
   });
 

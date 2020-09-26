@@ -113,8 +113,8 @@ test("grayscale", () => {
 
 const themeCustomProps = {
   colors: {
-    primary: "var(--theme-ui-colors-primary, #0cf)",
-    secondary: "var(--theme-ui-colors-primary, #639)",
+    primary: "var(--jag-ui-colors-primary, #0cf)",
+    secondary: "var(--jag-ui-colors-primary, #639)",
   },
 } as Theme;
 
@@ -206,7 +206,7 @@ test("darkenTomato", () => {
 
 const themeTomatoCustomProps = {
   colors: {
-    primary: "var(--theme-ui-colors-primary, tomato)",
+    primary: "var(--jag-ui-colors-primary, tomato)",
   },
 } as Theme;
 

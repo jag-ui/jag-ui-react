@@ -2,9 +2,9 @@
 
 MDX component context for Theme UI
 
-https://theme-ui.com
+https://jag-ui.com
 
-**Note:** _This package is included in the main `theme-ui` package and a separate installation is not required._
+**Note:** _This package is included in the main `jag-ui` package and a separate installation is not required._
 
 ```sh
 npm i @jag-ui-react/mdx
